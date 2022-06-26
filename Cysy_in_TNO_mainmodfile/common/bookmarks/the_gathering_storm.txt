@@ -550,11 +550,15 @@ bookmarks = {
 			focuses = {
 			}
 		}
-		"CYS" = {
+		"GNG" = {
 			minor = yes
-			history = "CYS_THENEWORDER_DESC"
+			history = "GNG_THENEWORDER_DESC"
 			ideology = despotism
 			ideas = {
+				GNG_between_two_worlds_dummy
+				GNG_corruption_the_finest_money_can_buy_dummy
+				GNG_fiscal_sound_dummy
+				GNG_kenpeitai_pervasive_kenpeitai_networks_dummy
 			}
 			focuses = {
 			}
