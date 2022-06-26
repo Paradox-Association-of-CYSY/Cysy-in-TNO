@@ -1,0 +1,45 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_news_cysy_xsdq"
+		texturefile = "gfx/event_pictures/news_cysy_xsdq.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_cysy_gbh"
+		texturefile = "gfx/event_pictures/news_cysy_gbh.dds"
+	} 
+	
+	spriteType = {
+		name = "GFX_news_cysy_gzb"
+		texturefile = "gfx/event_pictures/news_cysy_gzb.dds"
+	} 
+
+	spriteType = {
+		name = "GFX_news_cysy_lch"
+		texturefile = "gfx/event_pictures/news_cysy_lch.dds"
+	} 
+	spriteType = {
+		name = "GFX_news_cysy_zyf"
+		texturefile = "gfx/event_pictures/news_cysy_zyf.dds"
+	} 
+	spriteType = {
+		name = "GFX_news_cysy_smuf"
+		texturefile = "gfx/event_pictures/news_cysy_smuf.dds"
+	} 
+
+	spriteType = {
+		name = "GFX_news_cysy_lzs"
+		texturefile = "gfx/event_pictures/news_cysy_lzs.dds"
+	} 
+
+	spriteType = {
+		name = "GFX_cysy_1962_newyeargala1"
+		texturefile = "gfx/event_pictures/cysy_1962_newyeargala1.dds"
+	} 
+
+	spriteType = {
+		name = "GFX_cysy_1962_newyeargala2"
+		texturefile = "gfx/event_pictures/cysy_1962_newyeargala2.dds"
+	} 
+}

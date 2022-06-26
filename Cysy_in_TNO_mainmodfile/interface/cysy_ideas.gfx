@@ -1,0 +1,54 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_suannai"
+		texturefile = "gfx/interface/ideas/suannai.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_xu"
+		texturefile = "gfx/interface/ideas/xu.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_zfc"
+		texturefile = "gfx/interface/ideas/zfc.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_lch_zz"
+		texturefile = "gfx/interface/ideas/lch.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_xf_h"
+		texturefile = "gfx/interface/ideas/xuefei.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_zfc_gone"
+		texturefile = "gfx/interface/ideas/zfccash.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_no_suannai"
+		texturefile = "gfx/interface/ideas/nosuannai.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_the_zlp_company"
+		texturefile = "gfx/interface/ideas/cthf.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_tyzx_qilai"
+		texturefile = "gfx/interface/ideas/qilai.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_cysy_jbzxzs"
+		texturefile = "gfx/interface/ideas/jbzxzs.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_cysy_mmqb"
+		texturefile = "gfx/interface/ideas/mmqb.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_cysy_fenge"
+		texturefile = "gfx/interface/ideas/fenge.dds"
+	}
+	
+}

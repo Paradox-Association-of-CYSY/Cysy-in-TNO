@@ -1,0 +1,122 @@
+capital = 323
+
+oob = "CYS_1962"
+
+set_politics = {
+	ruling_party = despotism
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+
+}
+
+###Playable
+set_country_flag = tno_playable_country
+set_popularities = {
+    communist = 1
+    ultranationalism = 4
+    national_socialism = 1
+    socialist = 2
+    social_democracy = 1
+    liberal_democracy = 0
+    conservative_democracy = 0
+    authoritarian_democracy = 10
+    despotism = 37
+    fascism = 42
+    esoteric_nazism = 2
+}
+
+create_country_leader = {
+	name = "Zhang Fuchang"
+	desc = "POLITICS_LUCHUANHONG_DESC"
+	picture = "gfx/leaders/zfc.dds"
+	expire = "1999.1.1"
+	ideology = despotism_cysy_system_subtype
+}
+
+create_country_leader = {
+	name = "Movement United Front Conference"
+	desc = "POLITICS_MUFC_DESC"
+	picture = "gfx/leaders/mufc.tga"
+	expire = "1989.1.1"
+	ideology = social_democracy_popular_front_subtype
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Lu Chuanhong"
+	desc = "POLITICS_LUCHUANHONG_DESC"
+	picture = "gfx/leaders/lch.dds"
+	expire = "1999.1.1"
+	ideology = esoteric_nazism_burgundian_system_subtype
+	traits = {
+		dictator
+	}
+}
+
+create_country_leader = {
+	name = "Lézineau Saus"
+	desc = "POLITICS_LZS_DESC"
+	picture = "gfx/leaders/lzs.dds"
+	expire = "1999.1.1"
+	ideology = communist_cysy_student_reforming_subtype
+	traits = {
+		dictator
+	}
+}
+add_ideas = {
+	#MINISTERS
+	minister_social_democracy_popular_front
+	#POLITICAL
+	tno_political_parties_one_party_state
+	tno_religious_rights_state_religion
+	tno_trade_unions_illegal
+	tno_immigration_quota_immigration
+	tno_slavery_outlawed
+	tno_public_meetings_regulated
+	tno_press_rights_censored_press
+	tno_vote_franchise_elite_voting
+	tno_refugees_skilled
+	#MILITARY
+	tno_conscription_one_year_draft
+	tno_women_banned
+	tno_military_supervision_military_policing
+	tno_training_advanced_training_methods
+	tno_racial_integration_segregated_regiments
+	tno_draft_exemptions_civil_service_deferment
+	#SOCIAL
+	tno_safety_limited_regulations
+	tno_health_care_low_income_protections
+	tno_pollution_few_regulations
+	tno_education_public_education
+	tno_penal_system_penal_labor
+	tno_lgbt_rights_lgbt_outlawed
+	tno_gender_rights_gender_equality
+	tno_minorities_equal_rights
+	tno_security_data_cohesion
+	#ECONOMIC
+	tno_trade_laws_export_focus
+	tno_income_taxation_high_income_weighted
+	tno_minimum_wage_low_minimum_wage
+	tno_max_workhours_12_hour_work_day
+	tno_child_labor_illegal
+	tno_pensions_acceptable_pensions
+	tno_unemployment_trinket_subsidies
+	#DEVELOPMENT#
+	tno_industrial_expertise_experienced
+	tno_industrial_equipment_factory_complexes
+	tno_agriculture_basic_mechanized
+	tno_research_facilities_militarized
+	tno_academic_base_mass_illiteracy
+	tno_army_professionalism_professional
+	#CYSY
+	#cysy_zfc
+	#cysy_xu
+	#cysy_suannai
+	#cysy_lch_zz
+	#cysy_qilai
+	#cysy_jbzxzs
+	#cysy_mmqb
+	#cysy_fenge
+}

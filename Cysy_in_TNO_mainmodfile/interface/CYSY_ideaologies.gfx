@@ -1,0 +1,16 @@
+spriteTypes = {
+
+
+	spriteType = {
+		name = "GFX_ideology_communist_national_communism_subtype"
+		texturefile = "gfx/interface/ideologies/communist_national_communism_subtype.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_communist_cysy_student_reforming_subtype"
+		texturefile = "gfx/interface/ideologies/communist_cysy_student_reforming_subtype.dds"
+	}
+	spriteType = {
+		name = "GFX_despotism_cysy_system_subtype"
+		texturefile = "gfx/interface/ideologies/despotism_cysy_system_subtype.dds"
+	}
+}

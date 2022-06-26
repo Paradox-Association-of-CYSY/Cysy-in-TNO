@@ -1,0 +1,317 @@
+ideas = {
+	country = {
+		cysy_xu = {
+		    on_add = {log = "[GetDateText]: [Root.GetName]: add idea cysy_xu"}
+		
+			picture = xu
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			allowed = {
+				original_tag = "CYS"
+				always = no
+			}
+
+			modifier = {
+			    conscription = 1
+				conscription_factor = 1
+				free_production_units_modifier = 5
+				custom_modifier_tooltip = cysy_xu_custom
+			}
+		}
+		cysy_zfc = {
+		
+		    on_add = {log = "[GetDateText]: [Root.GetName]: add idea cysy_zfc"}
+			picture = zfc
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			allowed = {
+				original_tag = "CYS"
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.25
+				stability_factor = -0.15
+				command_power_gain_mult = -0.25
+				intelligence_agency_defense = -2
+				compliance_gain = -2.5
+				army_professionalism_monthly_rate = -2
+				custom_modifier_tooltip = cysy_zfc_custom
+			}
+		}
+		cysy_suannai = {
+		    on_add = {log = "[GetDateText]: [Root.GetName]: add idea cysy_suannai"}
+			
+			picture = suannai
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			allowed = {
+				original_tag = "CYS"
+				always = no
+			}
+			
+			removal_cost = -1
+			
+
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_factory_max_efficiency_factor  = -0.1
+				stability_factor = -0.2
+				custom_modifier_tooltip = cysy_suannai_custom
+			}
+		}
+
+		cysy_lch_zz = {
+		    on_add = {log = "[GetDateText]: [Root.GetName]: add idea cysy_lch_zz"}
+			
+			picture = lch_zz
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			allowed = {
+				original_tag = "CYS"
+				always = no
+			}
+			
+			removal_cost = -1
+			
+
+			modifier = {
+				stability_factor = 0.2
+				command_power_gain_mult = 0.2
+				political_power_factor = -0.2
+				drift_defence_factor = 0.3
+				monthly_population = -0.1
+
+				custom_modifier_tooltip = cysy_lch_zz_custom
+			}
+		}
+		 #########################
+		 
+		cysy_the_zlp_company = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea cysy_the_zlp_company"}
+			
+			picture = the_zlp_company 
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			allowed = {
+				original_tag = "CYS"
+				always = no
+			}
+			
+			removal_cost = -1
+			
+
+			modifier = {
+				income_rate_modifier = 0.5
+				stability_factor = 0.2
+				production_speed_buildings_factor = 0.15
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				political_power_factor = 0.25
+				custom_modifier_tooltip = cysy_zlp_company_custom
+			}
+		}
+
+		cysy_xf_h = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea cysy_xf_h"}
+			
+			picture = xf_h
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			allowed = {
+				original_tag = "CYS"
+				always = no
+			}
+			
+			removal_cost = -1
+			
+
+			modifier = {
+				income_rate_modifier = 0.2
+				production_speed_buildings_factor = 0.10
+				political_power_factor = -0.25
+				stability_factor = -0.25
+				custom_modifier_tooltip = cysy_xf_h_custom
+			}
+		}
+
+		cysy_no_suannai = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea cysy_no_suannai"}
+			
+			picture = no_suannai
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			allowed = {
+				original_tag = "CYS"
+				always = no
+			}
+			
+			removal_cost = -1
+			
+
+			modifier = {
+				stability_factor = -0.25
+				political_power_factor = 0.1
+				income_rate_modifier = 0.1
+				custom_modifier_tooltip = cysy_no_suannai_custom
+			}
+		}
+
+		cysy_zfc_gone = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea cysy_zfc_gone"}
+			
+			picture = zfc_gone
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			allowed = {
+				original_tag = "CYS"
+				always = no
+			}
+			
+			removal_cost = -1
+			
+
+			modifier = {
+				political_power_factor = 0.05
+				stability_factor = -0.05
+				command_power_gain_mult = -0.25
+				intelligence_agency_defense = -2
+				compliance_gain = -2.5
+				army_professionalism_monthly_rate = -2
+				income_rate_modifier = 0.1
+				custom_modifier_tooltip = cysy_zfc_gone_custom
+			}
+		}
+
+		##学生起义
+
+		cysy_qilai = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea cysy_zfc_gone"}
+			
+			picture = tyzx_qilai
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			allowed = {
+				original_tag = "CYS"
+				always = no
+			}
+			
+			removal_cost = -1
+			
+
+			modifier = {
+				political_power_factor = 0.25
+				stability_factor = 0.15
+				command_power_gain_mult = 0.05
+				custom_modifier_tooltip = cysy_qilai_custom
+			}
+		}
+		#阵线领导一切
+		cysy_jbzxzs = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea cysy_zfc_gone"}
+			
+			picture = cysy_jbzxzs
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			allowed = {
+				original_tag = "CYS"
+				always = no
+			}
+			
+			removal_cost = -1
+			
+
+			modifier = {
+				political_power_factor = 0.25
+				command_power_gain_mult = 0.05
+				custom_modifier_tooltip = cysy_jbzxzs_custom
+			}
+		}
+		#特务机构
+		cysy_mmqb = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea cysy_zfc_gone"}
+			
+			picture = cysy_mmqb
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			allowed = {
+				original_tag = "CYS"
+				always = no
+			}
+			
+			removal_cost = -1
+			
+
+			modifier = {
+				political_power_factor = -0.1
+				stability_factor = 0.15
+				custom_modifier_tooltip = cysy_mmqb_custom
+			}
+		}
+		#合适分班制
+		cysy_fenge = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea cysy_zfc_gone"}
+			
+			picture = cysy_fenge
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			allowed = {
+				original_tag = "CYS"
+				always = no
+			}
+			
+			removal_cost = -1
+			
+
+			modifier = {
+				political_power_factor = 0.05
+				war_support_factor = -0.05
+				custom_modifier_tooltip = cysy_fenge_custom
+			}
+		}
+		
+		
+	}
+}
+
+

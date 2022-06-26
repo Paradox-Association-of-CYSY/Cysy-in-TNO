@@ -1,0 +1,152 @@
+add_namespace = cysy
+
+news_event = {
+	id = cysy.1 #唯一ID。nuke_dropped是命名空间，可用于更好的组织，并用于本地化。
+	
+	title = cysy.1.t
+	
+	desc = cysy.1.d
+	
+	picture = GFX_news_cysy_xsdq  #＃图像显示在文本旁边。
+
+	major = yes  #＃可选：如果设置为“是”，则世界上的每个国家都会看到此事件
+
+	is_triggered_only = yes  #＃可选：如果设置为“yes”，则事件将仅通过命令发生
+
+
+	fire_only_once = yes  #＃可选：如果设置为“yes”，则事件永远不会发生多次
+
+	
+	option = {			#＃这是一个没有功能的选项的示例
+		name = cysy.1.a	#＃按钮上显示的可本地化文本。
+	}
+}
+news_event = {
+	id = cysy.2
+	
+	title = cysy.2.t
+	
+	desc = cysy.2.d
+	
+	picture = GFX_news_cysy_lch
+
+	major = yes
+
+	is_triggered_only = yes
+
+
+	fire_only_once = yes
+
+	
+	option = {
+		name = cysy.2.a
+	}
+}
+#country_event = {
+#	id = cysy.3
+#	
+#	title = cysy.3.t
+#	
+#	desc = cysy.3.d
+#	
+#	picture = GFX_news_cysy_gbh
+#
+#	major = yes
+#
+#	is_triggered_only = yes
+#
+#
+#	fire_only_once = yes
+#
+#	
+#	option = {
+#		name = cysy.3.a
+#		add_idea =  cysy_lch_zz
+#	}
+#}#
+news_event = {
+	id = cysy.4
+	
+	title = cysy.4.t
+	
+	desc = cysy.4.d
+	
+	picture = GFX_news_cysy_zyf
+
+	major = yes
+
+	is_triggered_only = yes
+
+
+	fire_only_once = yes
+
+	
+	option = {
+		name = cysy.4.a
+	}
+}
+
+news_event = {
+	id = cysy.5
+	
+	title = cysy.5.t
+	
+	desc = cysy.5.d
+	
+	picture = GFX_news_cysy_lch
+
+	major = yes
+
+	is_triggered_only = yes
+
+
+	fire_only_once = yes
+
+	
+	option = {
+		name = cysy.5.a
+	}
+}
+
+	news_event = {
+		id = cysy.6
+		
+		title = cysy.6.t
+		
+		desc = cysy.6.d
+		
+		picture = GFX_news_cysy_smuf
+	
+		major = yes
+	
+		is_triggered_only = yes
+	
+	
+		fire_only_once = yes
+	
+		
+		option = {
+			name = cysy.6.a
+		}
+	}
+	news_event = {
+		id = cysy.7
+		
+		title = cysy.7.t
+		
+		desc = cysy.7.d
+		
+		picture = GFX_news_cysy_lzs
+	
+		major = yes
+	
+		is_triggered_only = yes
+	
+	
+		fire_only_once = yes
+	
+		
+		option = {
+			name = cysy.7.a
+		}
+	}

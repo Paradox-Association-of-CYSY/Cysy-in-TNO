@@ -1,0 +1,71 @@
+add_namespace = cysyxx
+
+country_event = {
+	id = cysyxx.1 #唯一ID。nuke_dropped是命名空间，可用于更好的组织，并用于本地化。
+	
+	title = cysyxx.1.t
+	
+	desc = cysyxx.1.d
+	
+	picture = GFX_  #＃图像显示在文本旁边。
+
+	major = no  #＃可选：如果设置为“是”，则世界上的每个国家都会看到此事件
+
+	is_triggered_only = yes  #＃可选：如果设置为“yes”，则事件将仅通过命令发生
+
+
+	fire_only_once = yes  #＃可选：如果设置为“yes”，则事件永远不会发生多次
+
+	
+	option = {			#＃这是一个没有功能的选项的示例
+		name = cysyxx.1.a	#＃按钮上显示的可本地化文本。
+	}
+}
+#风味事件
+country_event = {
+	id = cysyxx.10001 
+	
+	title = cysyxx.10001.t
+	
+	desc = cysyxx.10001.d
+	
+	picture = GFX_cysy_1962_newyeargala1
+
+	major = yes  
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes  
+
+	
+	option = {			
+		name = cysyxx.10001.a	
+		hidden_effect = {
+			country_event = { id = cysyxx.10002 hours = 1 }
+		}
+	}
+}
+
+country_event = {
+	id = cysyxx.10002 
+	
+	title = cysyxx.10002.t
+	
+	desc = cysyxx.10002.d
+	
+	picture = GFX_cysy_1962_newyeargala1
+
+	major = yes  
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes  
+
+	
+	option = {			
+		name = cysyxx.10002.a	
+		
+	}
+}

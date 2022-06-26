@@ -1,0 +1,12 @@
+defined_text = {
+	name = GetWI_map_city_pic
+	text = {
+		trigger = {
+			var:china_acted_state = { state = 593 }
+		}
+		localization_key = "GFX_state_lore_img_593"
+	}
+	text = {
+		localization_key = "GFX_terrain_urban"
+	}
+}

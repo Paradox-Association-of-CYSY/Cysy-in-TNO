@@ -1,0 +1,31 @@
+focus_tree = {
+	id = CYS_lzs_win
+	country = {
+		factor = 0
+		modifier = {
+			tag = CYS
+			add = 10
+		}
+	}
+
+	default = no
+	focus = {
+		id = CYS_lzs_win
+		icon = GFX_goal_CYS_lzs_win
+		cost = 0.00
+		available = {
+			always = yes
+		}
+		x = 7
+		y = 0
+		completion_reward = {
+			
+		}
+	}
+
+
+
+
+
+	
+}
