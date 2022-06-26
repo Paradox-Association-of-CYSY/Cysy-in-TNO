@@ -16,9 +16,9 @@ state={
 			thermoelectric_plant = 1
 			infrastructure = 5
 			air_base = 1
+			schools = 3
 			9938 = {
-				schools = 3
-				naval_base = 1
+				naval_base = 3
 				coastal_bunker = 1
 				bunker = 1
 
