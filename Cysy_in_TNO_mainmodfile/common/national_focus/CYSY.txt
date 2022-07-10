@@ -1,5 +1,5 @@
 focus_tree = {
-	id = CYS_lzs_win
+	id = CYS_start_fake
 	country = {
 		factor = 0
 		modifier = {
@@ -9,23 +9,6 @@ focus_tree = {
 	}
 
 	default = no
-	focus = {
-		id = CYS_lzs_win
-		icon = GFX_goal_CYS_lzs_win
-		cost = 0.00
-		available = {
-			always = yes
-		}
-		x = 7
-		y = 0
-		completion_reward = {
-			
-		}
-	}
-
-
-
-
-
-	
+	shared_focus = CYS_prepare_for_the_new_school_year
+	shared_focus = CYS_pull_the_alarm
 }

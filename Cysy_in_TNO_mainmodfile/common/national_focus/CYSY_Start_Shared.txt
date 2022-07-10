@@ -1,0 +1,1347 @@
+##########################################
+##########################################
+##########################################
+#######   Oilfield Su Designed	  ########
+##########################################
+##########################################
+##########################################
+##########################################
+#shared_focus = {
+#	id = CYS_XXXXXX ##模板
+#	icon = GFX_goal_
+#	cost = 3.00
+#	prerequisite = {
+#		focus = XXXXXX
+#	}
+#	available = {
+#		CHI_is_not_in_crisis = yes
+#	}
+#	cancel_if_invalid = yes
+#	x = 0
+#	y = 0
+#	completion_reward = {
+#		log = "[GetDateText]: [Root.GetName]: Focus XXXXXX"
+#		hidden_effect = {
+#			country_event = {
+#			}
+#		}
+#	}
+#}
+##########################################
+#######  开  局  假  国  策  树	  #########
+##########################################
+shared_focus = {
+	id = CYS_prepare_for_the_new_school_year ##准备新学年招生
+	icon = GFX_goal_CYS_prepare_for_the_new_school_year
+	cost = 3.00
+	allow_branch = { has_country_flag = CYS_Start_focus_tree_on }
+	#prerequisite = {
+	#
+	#	focus = 
+	#}
+	available = {
+		CHI_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes
+	x = 9
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_prepare_for_the_new_school_year"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+###########张复昌计划################
+shared_focus = {
+	id = CYS_zfc_s_plan ##张复昌计划
+	icon = GFX_goal_CYS_zfc_s_plan
+	cost = 3.00
+
+	prerequisite = {
+		focus = CYS_prepare_for_the_new_school_year
+	}
+	mutually_exclusive = {
+		focus = CYS_zsp_s_plan
+	}
+	available = {
+		CHI_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes
+	x = 6
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_zfc_s_plan"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CYS_evaluate_the_scores ##成绩评估
+	icon = GFX_goal_CYS_evaluate_the_scores
+	cost = 3.00
+	allow_branch = { has_country_flag = CYS_Start_focus_tree_on }
+	prerequisite = {
+		focus = CYS_zfc_s_plan
+	}
+	available = {
+		CHI_is_not_in_crisis = yes
+ 	}
+	cancel_if_invalid = yes
+	x = 6
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_evaluate_the_scores"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CYS_number_like_the_old_days ##旧年数目
+	icon = GFX_goal_CYS_number_like_the_old_days
+	cost = 3.00
+	allow_branch = { has_country_flag = CYS_Start_focus_tree_on }
+	prerequisite = {
+		focus = CYS_evaluate_the_scores
+	}
+	available = {
+		CHI_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes
+	x = 4
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_number_like_the_old_days"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CYS_take_japanese_standards ##日本录取标准
+	icon = GFX_goal_CYS_take_japanese_standards
+	cost = 3.00
+	allow_branch = { has_country_flag = CYS_Start_focus_tree_on }
+	prerequisite = {
+		focus = CYS_evaluate_the_scores
+	}
+	available = {
+		CHI_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes
+	x = 6
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_take_japanese_standards"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CYS_scholarship_for_good_ones ##优生奖金
+	icon = GFX_goal_CYS_scholarship_for_good_ones
+	cost = 3.00
+	allow_branch = { has_country_flag = CYS_Start_focus_tree_on }
+	prerequisite = {
+		focus = CYS_evaluate_the_scores
+	}
+	available = {
+		CHI_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes
+	x = 8
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_scholarship_for_good_ones"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CYS_a_large_crowd_of_good_students ##学子芸芸
+	icon = GFX_goal_YS_a_crowd_of_good_students
+	cost = 3.00
+	allow_branch = { has_country_flag = CYS_Start_focus_tree_on }
+	prerequisite = {
+		focus = CYS_scholarship_for_good_ones
+	}
+	prerequisite = {
+		focus = CYS_take_japanese_standards
+	}
+	prerequisite = {
+		focus = CYS_number_like_the_old_days
+	}
+	available = {
+		CHI_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes
+	x = 6
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_a_large_crowd_of_good_students"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+
+
+###########张仕平计划################
+shared_focus = {
+	id = CYS_zsp_s_plan ##张仕平计划
+	icon = GFX_goal_CYS_zsp_s_plan
+	cost = 3.00
+
+	prerequisite = {
+		focus = CYS_prepare_for_the_new_school_year
+	}
+	mutually_exclusive = {
+		focus = CYS_zfc_s_plan
+	}
+	available = {
+		CHI_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes
+	x = 12
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_zsp_s_plan"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CYS_financial_reports ##财报统计
+	icon = GFX_goal_CYS_financial_reports
+	cost = 3.00
+	allow_branch = { has_country_flag = CYS_Start_focus_tree_on }
+	prerequisite = {
+		focus = CYS_zsp_s_plan
+	}
+	available = {
+		CHI_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes
+	x = 12
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_financial_reports"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CYS_think_about_taking_in_more_students ##考虑扩招
+	icon = GFX_goal_CYS_think_about_taking_in_more_students
+	cost = 3.00
+	allow_branch = { has_country_flag = CYS_Start_focus_tree_on }
+	prerequisite = {
+		focus = CYS_financial_reports
+	}
+	available = {
+		CHI_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes
+	x = 10
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus  CYS_think_about_taking_in_more_students"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CYS_the_door_will_be_open_for_them ##向他们敞开大门
+	icon = GFX_goal_CYS_the_door_will_be_open_for_them
+	cost = 3.00
+	allow_branch = { has_country_flag = CYS_Start_focus_tree_on }
+	prerequisite = {
+		focus = CYS_financial_reports
+	}
+	available = {
+		CHI_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes
+	x = 12
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_the_door_will_be_open_for_them"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CYS_this_is_the_true_charity ##这才是慈善
+	icon = GFX_goal_CYS_this_is_the_true_charity
+	cost = 3.00
+	allow_branch = { has_country_flag = CYS_Start_focus_tree_on }
+	prerequisite = {
+		focus = CYS_financial_reports
+	}
+	available = {
+		CHI_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes
+	x = 14
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_this_is_the_true_charity"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CYS_a_large_sum_of_good_money ##财源滚滚
+	icon = GFX_goal_CYS_a_large_sum_of_good_money
+	cost = 3.00
+	allow_branch = { has_country_flag = CYS_Start_focus_tree_on }
+	prerequisite = {
+		focus = CYS_think_about_taking_in_more_students
+	}
+	prerequisite = {
+		focus = CYS_the_door_will_be_open_for_them
+	}
+	prerequisite = {
+		focus = CYS_this_is_the_true_charity
+	}
+	available = {
+		CHI_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes
+	x = 12
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_a_large_sum_of_good_money"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+
+##########开学典礼###########
+
+shared_focus = {
+	id = CYS_opening_ceremony_of_year_61to62 #开学典礼
+	icon = GFX_goal_CYS_opening_ceremony_of_year_61to62
+	cost = 3.00
+	allow_branch = { has_country_flag = CYS_Start_focus_tree_on }
+	prerequisite = {
+		focus = CYS_a_large_crowd_of_good_students
+		focus = CYS_a_large_sum_of_good_money
+	}
+
+	available = {
+		CHI_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes
+	x = 9
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_opening_ceremony_of_year_61to62"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CYS_educational_research_survey_once_again ##再次教研调查
+	icon = GFX_goal_CYS_educational_research_survey_once_again
+	cost = 3.00
+	prerequisite = {
+		focus = CYS_opening_ceremony_of_year_61to62
+	}
+	available = {
+		CHI_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes
+	x = 5
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_educational_research_survey_once_again"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CYS_reevaluate_teachers ##重评教师等级
+	icon = GFX_goal_CYS_reevaluate_teachers
+	cost = 3.00
+	prerequisite = {
+		focus = CYS_educational_research_survey_once_again
+	}
+	available = {
+		CHI_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes
+	x = 3
+	y = 7
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_reevaluate_teachers"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CYS_revise_contracts ##修改合同
+	icon = GFX_goal_CYS_revise_contracts
+	cost = 3.00
+	prerequisite = {
+		focus = CYS_reevaluate_teachers
+	}
+	available = {
+		CHI_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes
+	x = 2
+	y = 8
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_revise_contracts"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CYS_teachers_get_competitive ##教师也得卷
+	icon = GFX_goal_CYS_teachers_get_competitive
+	cost = 3.00
+	prerequisite = {
+		focus = CYS_revise_contracts
+	}
+	available = {
+		CHI_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes
+	x = 2
+	y = 10
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_teachers_get_competitive"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CYS_show_our_respect_for_them ##尊重职业
+	icon = GFX_goal_CYS_show_our_respect_for_them
+	cost = 3.00
+	prerequisite = {
+		focus = CYS_reevaluate_teachers
+	}
+	available = {
+		CHI_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes
+	x = 4
+	y = 8
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_show_our_respect_for_them"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CYS_more_bonus_for_teachers ##增加教师奖金
+	icon = GFX_goal_CYS_more_bonus_for_teachers
+	cost = 3.00
+	prerequisite = {
+		focus = CYS_show_our_respect_for_them
+	}
+	available = {
+		CHI_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes
+	x = 4
+	y = 10
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_more_bonus_for_teachers"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+shared_focus = {
+	id = CYS_announcement_of_examination_plan ##公布考试计划
+	icon = GFX_goal_CYS_announcement_of_examination_plan
+	cost = 3.00
+	prerequisite = {
+		focus = CYS_educational_research_survey_once_again
+	}
+	available = {
+		CHI_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes
+	x = 7
+	y = 7
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_announcement_of_examination_plan"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CYS_speed_up_the_reform ##加快改革步伐
+	icon = GFX_goal_CYS_speed_up_the_reform
+	cost = 3.00
+	prerequisite = {
+		focus = CYS_opening_ceremony_of_year_61to62
+	}
+	available = {
+		CHI_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes
+	x = 13
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_speed_up_the_reform"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+shared_focus = {
+	id = CYS_some_new_met_guys ##提拔新人
+	icon = GFX_goal_CYS_some_new_met_guys
+	cost = 3.00
+	prerequisite = {
+		focus = CYS_speed_up_the_reform
+	}
+	mutually_exclusive = {
+		focus = CYS_japanese_experts
+	}
+	available = {
+		CHI_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes
+	x = 12
+	y = 7
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_speed_up_the_reform"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+shared_focus = {
+	id = CYS_japanese_experts ##日本专家
+	icon = GFX_goal_CYS_speed_up_the_reform
+	cost = 3.00
+	prerequisite = {
+		focus = CYS_speed_up_the_reform
+	}
+	mutually_exclusive = {
+		focus = CYS_some_new_met_guys
+	}
+	available = {
+		CHI_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes
+	x = 14
+	y = 7
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_speed_up_the_reform"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+shared_focus = {
+	id = CYS_current_situation_of_teochewese ##潮汕话现状
+	icon = GFX_goal_CYS_current_situation_of_teochewese
+	cost = 3.00
+	prerequisite = {
+		focus = CYS_japanese_experts
+		focus = CYS_some_new_met_guys
+	}
+	mutually_exclusive = {
+		focus = CYS_put_an_end_to_dialect
+	}
+	available = {
+		CHI_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes
+	x = 12
+	y = 8
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_current_situation_of_teochewese"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+shared_focus = {
+	id = CYS_put_an_end_to_dialect 	##杜绝方言
+	icon = GFX_goal_CYS_put_an_end_to_dialect
+	cost = 3.00
+	prerequisite = {
+		focus = CYS_japanese_experts
+		focus = CYS_some_new_met_guys
+	}
+	mutually_exclusive = {
+		focus = CYS_current_situation_of_teochewese
+	}
+	available = {
+		CHI_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes
+	x = 14
+	y = 8
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_put_an_end_to_dialect"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+shared_focus = {
+	id = CYS_more_languages_more_opportunities ##多语教学
+	icon = GFX_goal_CYS_more_languages_more_opportunities
+	cost = 3.00
+	prerequisite = {
+		focus = CYS_put_an_end_to_dialect
+		focus = CYS_current_situation_of_teochewese
+	}
+	mutually_exclusive = {
+		focus = CYS_unified_use_of_japanese
+	}
+	available = {
+		CHI_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes
+	x = 12
+	y = 9
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_more_languages_more_opportunities"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+shared_focus = {
+	id = CYS_unified_use_of_japanese ##统一使用日语
+	icon = GFX_goal_CYS_unified_use_of_japanese
+	cost = 3.00
+	prerequisite = {
+		focus = CYS_current_situation_of_teochewese
+		focus = CYS_put_an_end_to_dialect
+	}
+	mutually_exclusive = {
+		focus = CYS_more_languages_more_opportunities
+	}
+	available = {
+		CHI_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes
+	x = 14
+	y = 9
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_unified_use_of_japanese"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CYS_finally_implement_the_new_teaching_rules ##最终落实新教纲
+	icon = GFX_goal_CYS_finally_implement_the_new_teaching_rules
+	cost = 3.00
+	prerequisite = {
+		focus = CYS_more_languages_more_opportunitie
+		focus = CYS_unified_use_of_japanese
+	}
+	available = {
+		CHI_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes
+	x = 13
+	y = 10
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_finally_implement_the_new_teaching_rules"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CYS_stop_diverting_students ##t停止分流学生
+	icon = GFX_goal_CYS_stop_diverting_students
+	cost = 3.00
+	prerequisite = {
+		focus = CYS_some_new_met_guys
+
+	}
+	mutually_exclusive = {
+		focus = CYS_diverting_goes_on
+	}
+	available = {
+		CHI_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes
+	x = 10
+	y = 8
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_stop_diverting_students"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CYS_diverting_goes_on ##维护分班制度
+	icon = GFX_goal_CYS_diverting_goes_on
+	cost = 3.00
+	prerequisite = {
+		focus = CYS_some_new_met_guys
+	}
+	
+	prerequisite = {
+		focus = CYS_announcement_of_examination_plan
+
+	}
+	mutually_exclusive = {
+		focus = CYS_stop_diverting_students
+	}
+	available = {
+		CHI_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes
+	x = 8
+	y = 8
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_diverting_goes_on"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CYS_black_box_diverting ##暗箱操作
+	icon = GFX_goal_CYS_black_box_diverting
+	cost = 3.00
+	prerequisite = {
+		focus = CYS_diverting_goes_on
+	}
+	mutually_exclusive = {
+		focus = CYS_diverting_with_fairness
+	}
+	available = {
+		CHI_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes
+	x = 7
+	y = 9
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_black_box_diverting"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CYS_diverting_with_fairness ##公平分班
+	icon = GFX_goal_CYS_diverting_fairness
+	cost = 3.00
+	prerequisite = {
+		focus = CYS_diverting_goes_on
+	}
+	mutually_exclusive = {
+		focus = CYS_black_box_diverting
+	}
+	available = {
+		CHI_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes
+	x = 9
+	y = 9
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_diverting_with_fairness"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CYS_special_class_for_teachers_children ##教师子女班
+	icon = GFX_goal_CYS_diverting_fairness
+	cost = 3.00
+	prerequisite = {
+		focus = CYS_black_box_diverting
+	}
+	prerequisite = {
+		focus = CYS_show_our_respect_for_them 
+	}
+	available = {
+		CHI_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes
+	x = 6
+	y = 10
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_special_class_for_teachers_children"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CYS_make_up_the_list_for_next_year ##确定名单
+	icon = GFX_goal_CYS_diverting_fairness
+	cost = 3.00
+	prerequisite = {
+		focus = CYS_stop_diverting_students
+		focus = CYS_black_box_diverting
+		focus = CYS_diverting_with_fairness
+	}
+	available = {
+		CHI_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes
+	x = 8
+	y = 10
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_make_up_the_list_for_next_year"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CYS_new_years_eve_gala ##元旦晚会
+	icon = GFX_goal_CYS_new_years_eve_gala
+	cost = 3.00
+	prerequisite = {
+		focus = CYS_teachers_get_competitive
+		focus = CYS_more_bonus_for_teachers
+	}
+	prerequisite = {
+		focus = CYS_make_up_the_list_for_next_year
+	}
+	prerequisite = {
+		focus = CYS_finally_implement_the_new_teaching_rules
+	}
+	available = {
+		CHI_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes
+	x = 9
+	y = 11
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_new_years_eve_gala"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CYS_plan_for_the_winter_vacation ##安排寒假
+	icon = GFX_goal_CYS_plan_for_the_winter_vacation
+	cost = 0.8
+	prerequisite = {
+		focus = CYS_new_years_eve_gala
+
+	}
+	available = {
+		CHI_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes
+	x = 7
+	y = 12
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_plan_for_the_winter_vacation"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CYS_published_the_list_for_next_year ##公布名单
+	icon = GFX_goal_CYS_published_the_list_for_next_year 
+	cost = 0.8
+	prerequisite = {
+		focus = CYS_plan_for_the_winter_vacation
+	}
+	available = {
+		CHI_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes
+	x = 6
+	y = 13
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_published_the_list_for_next_year"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+shared_focus = {
+	id = CYS_saying_goodbye_for_the_moment ##暂时分别
+	icon = GFX_goal_CYS_saying_goodbye_for_the_moment
+	cost = 0.8
+	prerequisite = {
+		focus = CYS_plan_for_the_winter_vacation
+	}
+	available = {
+		CHI_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes
+	x = 8
+	y = 13
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_saying_goodbye_for_the_moment"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CYS_this_year_s_harvest ##简视成果
+	icon = GFX_goal_CYS_this_year_s_harvest
+	cost = 0.8
+	prerequisite = {
+		focus = CYS_new_years_eve_gala
+
+	}
+	available = {
+		CHI_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes
+	x = 11
+	y = 12
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_this_year_s_harvest"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CYS_teachers_annual_meeting ##教师年会
+	icon = GFX_goal_CYS_teachers_annual_meeting
+	cost = 0.8
+	prerequisite = {
+		focus = CYS_this_year_s_harvest
+	}
+	available = {
+		CHI_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes
+	x = 10
+	y = 13
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_teachers_annual_meeting"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+shared_focus = {
+	id = CYS_report_to_the_board ##向董事会汇报
+	icon = GFX_goal_CYS_report_to_the_board
+	cost = 0.8
+	prerequisite = {
+		focus = CYS_this_year_s_harvest
+	}
+	available = {
+		CHI_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes
+	x = 12
+	y = 13
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_report_to_the_board"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CYS_make_a_year_of_hard_work ##兢兢业业又一年
+	icon = GFX_goal_CYS_make_a_year_of_hard_work
+	cost = 0.8
+	prerequisite = {
+		focus = CYS_report_to_the_board
+	}
+	prerequisite = {
+		focus = CYS_teachers_annual_meeting
+	}
+	prerequisite = {
+		focus = CYS_published_the_list_for_next_year
+	}
+	prerequisite = {
+		focus = CYS_saying_goodbye_for_the_moment
+	}
+	available = {
+		CHI_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes
+	x = 9
+	y = 14
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_make_a_year_of_hard_work"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+
+
+##########################################
+#####   开  局  危  机  国  策  树	  #####
+##########################################
+
+
+shared_focus = {
+	id = CYS_pull_the_alarm ##拉响警报
+	icon = GFX_goal_CYS_pull_the_alarm
+	cost = 3.00
+	allow_branch = { has_country_flag = CYS_Start_crisis_focus_tree_on }
+	#prerequisite = {
+	#
+	#	focus = 
+	#}
+	available = {
+		CHI_is_not_in_crisis = no
+	}
+	cancel_if_invalid = yes
+	x = 20
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_pull_the_alarm"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+
+
+shared_focus = {
+	id = CYS_cooperate_with_the_command ##配合命令
+	icon = GFX_goal_CYS_cooperate_with_the_command
+	cost = 3.00
+
+	prerequisite = {
+		focus = CYS_pull_the_alarm
+	}
+	mutually_exclusive = {
+		focus = CYS_mobilize_ourselves
+	}
+	available = {
+		CHI_is_not_in_crisis = no
+	}
+	cancel_if_invalid = yes
+	x = 18
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_cooperate_with_the_command"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CYS_evacuate_the_school ##疏散撤离
+	icon = GFX_goal_CYS_evacuate_the_school
+	cost = 3.00
+
+	prerequisite = {
+		focus = CYS_cooperate_with_the_command
+	}
+
+	available = {
+		CHI_is_not_in_crisis = no
+	}
+	cancel_if_invalid = yes
+	x = 17
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_evacuate_the_school"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+shared_focus = {
+	id = CYS_hand_over_our_supplies ##交出物资
+	icon = GFX_goal_CYS_hand_over_our_supplies
+	cost = 3.00
+
+	prerequisite = {
+		focus = CYS_cooperate_with_the_command
+	}
+
+	available = {
+		CHI_is_not_in_crisis = no
+	}
+	cancel_if_invalid = yes
+	x = 19
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_hand_over_our_supplies"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+shared_focus = {
+	id = CYS_the_military_takes_over ##军方接管
+	icon = GFX_goal_CYS_the_military_takes_over
+	cost = 3.00
+
+	prerequisite = {
+		focus = CYS_hand_over_our_supplies
+	}
+	prerequisite = {
+		focus = CYS_evacuate_the_school
+	}
+	available = {
+		CHI_is_not_in_crisis = no
+	}
+	cancel_if_invalid = yes
+	x = 18
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_the_military_takes_over"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CYS_mobilize_ourselves ##校内动员
+	icon = GFX_goal_CYS_mobilize_ourselves
+	cost = 3.00
+
+	prerequisite = {
+		focus = CYS_pull_the_alarm
+	}
+	mutually_exclusive = {
+		focus = CYS_cooperate_with_the_command
+	}
+	available = {
+		CHI_is_not_in_crisis = no
+	}
+	cancel_if_invalid = yes
+	x = 22
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_mobilize_ourselves"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+
+
+shared_focus = {
+	id = CYS_construct_defenses ##修筑工事
+	icon = GFX_goal_CYS_construct_defenses
+	cost = 3.00
+
+	prerequisite = {
+		focus = CYS_mobilize_ourselves
+	}
+
+	available = {
+		CHI_is_not_in_crisis = no
+	}
+	cancel_if_invalid = yes
+	x = 21
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_construct_defenses"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+shared_focus = {
+	id = CYS_hoarding_more_supplies ##囤积粮食
+	icon = GFX_goal_CYS_hoarding_more_supplies
+	cost = 3.00
+
+	prerequisite = {
+		focus = CYS_mobilize_ourselves
+	}
+
+	available = {
+		CHI_is_not_in_crisis = no
+	}
+	cancel_if_invalid = yes
+	x = 23
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_hoarding_more_supplies"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+shared_focus = {
+	id = CYS_school_is_suspended_without_suspension ##停课不停学
+	icon = GFX_goal_CYS_school_is_suspended_without_suspension
+	cost = 3.00
+
+	prerequisite = {
+		focus = CYS_hoarding_more_supplies
+	}
+	prerequisite = {
+		focus = CYS_construct_defenses
+	}
+	available = {
+		CHI_is_not_in_crisis = no
+	}
+	cancel_if_invalid = yes
+	x = 22
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_school_is_suspended_without_suspension"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+shared_focus = {
+	id = CYS_local_gods_bless_us ##老爷保号...
+	icon = GFX_goal_CYS_local_gods_bless_us
+	cost = 3.00
+
+	prerequisite = {
+		focus = CYS_school_is_suspended_without_suspension
+		focus =CYS_the_military_takes_over
+	
+	}
+	available = {
+		CHI_is_not_in_crisis = no
+	}
+	cancel_if_invalid = yes
+	x = 20
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_local_gods_bless_us"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CYS_every_thing_will_be_alright ##...平安四顺
+	icon = GFX_goal_CYS_every_thing_will_be_alright
+	cost = 1.5
+
+	prerequisite = {
+		focus = CYS_local_gods_bless_us
+	
+	}
+	available = {
+		CHI_is_not_in_crisis = no
+	}
+	cancel_if_invalid = yes
+	x = 20
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_every_thing_will_be_alright"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
