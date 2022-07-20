@@ -14,7 +14,7 @@
 #		focus = XXXXXX
 #	}
 #	available = {
-#		CHI_is_not_in_crisis = yes
+#		CSY_is_not_in_crisis = yes
 #	}
 #	cancel_if_invalid = yes
 #	x = 0
@@ -40,7 +40,7 @@ shared_focus = {
 	#	focus = 
 	#}
 	available = {
-		CHI_is_not_in_crisis = yes
+		CSY_is_not_in_crisis = yes
 	}
 	cancel_if_invalid = yes
 	x = 9
@@ -66,7 +66,7 @@ shared_focus = {
 		focus = CYS_zsp_s_plan
 	}
 	available = {
-		CHI_is_not_in_crisis = yes
+		CSY_is_not_in_crisis = yes
 	}
 	cancel_if_invalid = yes
 	x = 6
@@ -89,7 +89,7 @@ shared_focus = {
 		focus = CYS_zfc_s_plan
 	}
 	available = {
-		CHI_is_not_in_crisis = yes
+		CSY_is_not_in_crisis = yes
  	}
 	cancel_if_invalid = yes
 	x = 6
@@ -112,7 +112,7 @@ shared_focus = {
 		focus = CYS_evaluate_the_scores
 	}
 	available = {
-		CHI_is_not_in_crisis = yes
+		CSY_is_not_in_crisis = yes
 	}
 	cancel_if_invalid = yes
 	x = 4
@@ -135,7 +135,7 @@ shared_focus = {
 		focus = CYS_evaluate_the_scores
 	}
 	available = {
-		CHI_is_not_in_crisis = yes
+		CSY_is_not_in_crisis = yes
 	}
 	cancel_if_invalid = yes
 	x = 6
@@ -158,7 +158,7 @@ shared_focus = {
 		focus = CYS_evaluate_the_scores
 	}
 	available = {
-		CHI_is_not_in_crisis = yes
+		CSY_is_not_in_crisis = yes
 	}
 	cancel_if_invalid = yes
 	x = 8
@@ -174,7 +174,7 @@ shared_focus = {
 
 shared_focus = {
 	id = CYS_a_large_crowd_of_good_students ##学子芸芸
-	icon = GFX_goal_YS_a_crowd_of_good_students
+	icon = GFX_goal_CYS_a_large_crowd_of_good_students
 	cost = 3.00
 	allow_branch = { has_country_flag = CYS_Start_focus_tree_on }
 	prerequisite = {
@@ -187,7 +187,7 @@ shared_focus = {
 		focus = CYS_number_like_the_old_days
 	}
 	available = {
-		CHI_is_not_in_crisis = yes
+		CSY_is_not_in_crisis = yes
 	}
 	cancel_if_invalid = yes
 	x = 6
@@ -215,7 +215,7 @@ shared_focus = {
 		focus = CYS_zfc_s_plan
 	}
 	available = {
-		CHI_is_not_in_crisis = yes
+		CSY_is_not_in_crisis = yes
 	}
 	cancel_if_invalid = yes
 	x = 12
@@ -238,7 +238,7 @@ shared_focus = {
 		focus = CYS_zsp_s_plan
 	}
 	available = {
-		CHI_is_not_in_crisis = yes
+		CSY_is_not_in_crisis = yes
 	}
 	cancel_if_invalid = yes
 	x = 12
@@ -261,7 +261,7 @@ shared_focus = {
 		focus = CYS_financial_reports
 	}
 	available = {
-		CHI_is_not_in_crisis = yes
+		CSY_is_not_in_crisis = yes
 	}
 	cancel_if_invalid = yes
 	x = 10
@@ -284,7 +284,7 @@ shared_focus = {
 		focus = CYS_financial_reports
 	}
 	available = {
-		CHI_is_not_in_crisis = yes
+		CSY_is_not_in_crisis = yes
 	}
 	cancel_if_invalid = yes
 	x = 12
@@ -307,7 +307,7 @@ shared_focus = {
 		focus = CYS_financial_reports
 	}
 	available = {
-		CHI_is_not_in_crisis = yes
+		CSY_is_not_in_crisis = yes
 	}
 	cancel_if_invalid = yes
 	x = 14
@@ -336,7 +336,7 @@ shared_focus = {
 		focus = CYS_this_is_the_true_charity
 	}
 	available = {
-		CHI_is_not_in_crisis = yes
+		CSY_is_not_in_crisis = yes
 	}
 	cancel_if_invalid = yes
 	x = 12
@@ -363,7 +363,7 @@ shared_focus = {
 	}
 
 	available = {
-		CHI_is_not_in_crisis = yes
+		CSY_is_not_in_crisis = yes
 	}
 	cancel_if_invalid = yes
 	x = 9
@@ -385,7 +385,7 @@ shared_focus = {
 		focus = CYS_opening_ceremony_of_year_61to62
 	}
 	available = {
-		CHI_is_not_in_crisis = yes
+		CSY_is_not_in_crisis = yes
 	}
 	cancel_if_invalid = yes
 	x = 5
@@ -407,7 +407,7 @@ shared_focus = {
 		focus = CYS_educational_research_survey_once_again
 	}
 	available = {
-		CHI_is_not_in_crisis = yes
+		CSY_is_not_in_crisis = yes
 	}
 	cancel_if_invalid = yes
 	x = 3
@@ -428,8 +428,11 @@ shared_focus = {
 	prerequisite = {
 		focus = CYS_reevaluate_teachers
 	}
+	mutually_exclusive = {
+		focus = CYS_show_our_respect_for_them
+	}
 	available = {
-		CHI_is_not_in_crisis = yes
+		CSY_is_not_in_crisis = yes
 	}
 	cancel_if_invalid = yes
 	x = 2
@@ -451,7 +454,7 @@ shared_focus = {
 		focus = CYS_revise_contracts
 	}
 	available = {
-		CHI_is_not_in_crisis = yes
+		CSY_is_not_in_crisis = yes
 	}
 	cancel_if_invalid = yes
 	x = 2
@@ -472,8 +475,11 @@ shared_focus = {
 	prerequisite = {
 		focus = CYS_reevaluate_teachers
 	}
+	mutually_exclusive = {
+		focus = CYS_revise_contracts
+	}
 	available = {
-		CHI_is_not_in_crisis = yes
+		CSY_is_not_in_crisis = yes
 	}
 	cancel_if_invalid = yes
 	x = 4
@@ -495,7 +501,7 @@ shared_focus = {
 		focus = CYS_show_our_respect_for_them
 	}
 	available = {
-		CHI_is_not_in_crisis = yes
+		CSY_is_not_in_crisis = yes
 	}
 	cancel_if_invalid = yes
 	x = 4
@@ -516,7 +522,7 @@ shared_focus = {
 		focus = CYS_educational_research_survey_once_again
 	}
 	available = {
-		CHI_is_not_in_crisis = yes
+		CSY_is_not_in_crisis = yes
 	}
 	cancel_if_invalid = yes
 	x = 7
@@ -538,7 +544,7 @@ shared_focus = {
 		focus = CYS_opening_ceremony_of_year_61to62
 	}
 	available = {
-		CHI_is_not_in_crisis = yes
+		CSY_is_not_in_crisis = yes
 	}
 	cancel_if_invalid = yes
 	x = 13
@@ -562,7 +568,7 @@ shared_focus = {
 		focus = CYS_japanese_experts
 	}
 	available = {
-		CHI_is_not_in_crisis = yes
+		CSY_is_not_in_crisis = yes
 	}
 	cancel_if_invalid = yes
 	x = 12
@@ -577,7 +583,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = CYS_japanese_experts ##日本专家
-	icon = GFX_goal_CYS_speed_up_the_reform
+	icon = GFX_goal_CYS_japanese_experts
 	cost = 3.00
 	prerequisite = {
 		focus = CYS_speed_up_the_reform
@@ -586,7 +592,7 @@ shared_focus = {
 		focus = CYS_some_new_met_guys
 	}
 	available = {
-		CHI_is_not_in_crisis = yes
+		CSY_is_not_in_crisis = yes
 	}
 	cancel_if_invalid = yes
 	x = 14
@@ -611,7 +617,7 @@ shared_focus = {
 		focus = CYS_put_an_end_to_dialect
 	}
 	available = {
-		CHI_is_not_in_crisis = yes
+		CSY_is_not_in_crisis = yes
 	}
 	cancel_if_invalid = yes
 	x = 12
@@ -636,7 +642,7 @@ shared_focus = {
 		focus = CYS_current_situation_of_teochewese
 	}
 	available = {
-		CHI_is_not_in_crisis = yes
+		CSY_is_not_in_crisis = yes
 	}
 	cancel_if_invalid = yes
 	x = 14
@@ -661,7 +667,7 @@ shared_focus = {
 		focus = CYS_unified_use_of_japanese
 	}
 	available = {
-		CHI_is_not_in_crisis = yes
+		CSY_is_not_in_crisis = yes
 	}
 	cancel_if_invalid = yes
 	x = 12
@@ -686,7 +692,7 @@ shared_focus = {
 		focus = CYS_more_languages_more_opportunities
 	}
 	available = {
-		CHI_is_not_in_crisis = yes
+		CSY_is_not_in_crisis = yes
 	}
 	cancel_if_invalid = yes
 	x = 14
@@ -705,11 +711,11 @@ shared_focus = {
 	icon = GFX_goal_CYS_finally_implement_the_new_teaching_rules
 	cost = 3.00
 	prerequisite = {
-		focus = CYS_more_languages_more_opportunitie
+		focus = CYS_more_languages_more_opportunities
 		focus = CYS_unified_use_of_japanese
 	}
 	available = {
-		CHI_is_not_in_crisis = yes
+		CSY_is_not_in_crisis = yes
 	}
 	cancel_if_invalid = yes
 	x = 13
@@ -735,7 +741,7 @@ shared_focus = {
 		focus = CYS_diverting_goes_on
 	}
 	available = {
-		CHI_is_not_in_crisis = yes
+		CSY_is_not_in_crisis = yes
 	}
 	cancel_if_invalid = yes
 	x = 10
@@ -765,7 +771,7 @@ shared_focus = {
 		focus = CYS_stop_diverting_students
 	}
 	available = {
-		CHI_is_not_in_crisis = yes
+		CSY_is_not_in_crisis = yes
 	}
 	cancel_if_invalid = yes
 	x = 8
@@ -790,7 +796,7 @@ shared_focus = {
 		focus = CYS_diverting_with_fairness
 	}
 	available = {
-		CHI_is_not_in_crisis = yes
+		CSY_is_not_in_crisis = yes
 	}
 	cancel_if_invalid = yes
 	x = 7
@@ -806,7 +812,7 @@ shared_focus = {
 
 shared_focus = {
 	id = CYS_diverting_with_fairness ##公平分班
-	icon = GFX_goal_CYS_diverting_fairness
+	icon = GFX_goal_CYS_diverting_with_fairness
 	cost = 3.00
 	prerequisite = {
 		focus = CYS_diverting_goes_on
@@ -815,7 +821,7 @@ shared_focus = {
 		focus = CYS_black_box_diverting
 	}
 	available = {
-		CHI_is_not_in_crisis = yes
+		CSY_is_not_in_crisis = yes
 	}
 	cancel_if_invalid = yes
 	x = 9
@@ -831,7 +837,7 @@ shared_focus = {
 
 shared_focus = {
 	id = CYS_special_class_for_teachers_children ##教师子女班
-	icon = GFX_goal_CYS_diverting_fairness
+	icon = GFX_goal_CYS_special_class_for_teachers_children
 	cost = 3.00
 	prerequisite = {
 		focus = CYS_black_box_diverting
@@ -840,7 +846,7 @@ shared_focus = {
 		focus = CYS_show_our_respect_for_them 
 	}
 	available = {
-		CHI_is_not_in_crisis = yes
+		CSY_is_not_in_crisis = yes
 	}
 	cancel_if_invalid = yes
 	x = 6
@@ -856,7 +862,7 @@ shared_focus = {
 
 shared_focus = {
 	id = CYS_make_up_the_list_for_next_year ##确定名单
-	icon = GFX_goal_CYS_diverting_fairness
+	icon = GFX_goal_CYS_make_up_the_list_for_next_year
 	cost = 3.00
 	prerequisite = {
 		focus = CYS_stop_diverting_students
@@ -864,7 +870,7 @@ shared_focus = {
 		focus = CYS_diverting_with_fairness
 	}
 	available = {
-		CHI_is_not_in_crisis = yes
+		CSY_is_not_in_crisis = yes
 	}
 	cancel_if_invalid = yes
 	x = 8
@@ -893,7 +899,7 @@ shared_focus = {
 		focus = CYS_finally_implement_the_new_teaching_rules
 	}
 	available = {
-		CHI_is_not_in_crisis = yes
+		CSY_is_not_in_crisis = yes
 	}
 	cancel_if_invalid = yes
 	x = 9
@@ -916,7 +922,7 @@ shared_focus = {
 
 	}
 	available = {
-		CHI_is_not_in_crisis = yes
+		CSY_is_not_in_crisis = yes
 	}
 	cancel_if_invalid = yes
 	x = 7
@@ -938,7 +944,7 @@ shared_focus = {
 		focus = CYS_plan_for_the_winter_vacation
 	}
 	available = {
-		CHI_is_not_in_crisis = yes
+		CSY_is_not_in_crisis = yes
 	}
 	cancel_if_invalid = yes
 	x = 6
@@ -959,7 +965,7 @@ shared_focus = {
 		focus = CYS_plan_for_the_winter_vacation
 	}
 	available = {
-		CHI_is_not_in_crisis = yes
+		CSY_is_not_in_crisis = yes
 	}
 	cancel_if_invalid = yes
 	x = 8
@@ -982,7 +988,7 @@ shared_focus = {
 
 	}
 	available = {
-		CHI_is_not_in_crisis = yes
+		CSY_is_not_in_crisis = yes
 	}
 	cancel_if_invalid = yes
 	x = 11
@@ -1004,7 +1010,7 @@ shared_focus = {
 		focus = CYS_this_year_s_harvest
 	}
 	available = {
-		CHI_is_not_in_crisis = yes
+		CSY_is_not_in_crisis = yes
 	}
 	cancel_if_invalid = yes
 	x = 10
@@ -1025,7 +1031,7 @@ shared_focus = {
 		focus = CYS_this_year_s_harvest
 	}
 	available = {
-		CHI_is_not_in_crisis = yes
+		CSY_is_not_in_crisis = yes
 	}
 	cancel_if_invalid = yes
 	x = 12
@@ -1056,7 +1062,7 @@ shared_focus = {
 		focus = CYS_saying_goodbye_for_the_moment
 	}
 	available = {
-		CHI_is_not_in_crisis = yes
+		CSY_is_not_in_crisis = yes
 	}
 	cancel_if_invalid = yes
 	x = 9
@@ -1086,7 +1092,7 @@ shared_focus = {
 	#	focus = 
 	#}
 	available = {
-		CHI_is_not_in_crisis = no
+		CSY_is_not_in_crisis = no
 	}
 	cancel_if_invalid = yes
 	x = 20
@@ -1113,7 +1119,7 @@ shared_focus = {
 		focus = CYS_mobilize_ourselves
 	}
 	available = {
-		CHI_is_not_in_crisis = no
+		CSY_is_not_in_crisis = no
 	}
 	cancel_if_invalid = yes
 	x = 18
@@ -1137,7 +1143,7 @@ shared_focus = {
 	}
 
 	available = {
-		CHI_is_not_in_crisis = no
+		CSY_is_not_in_crisis = no
 	}
 	cancel_if_invalid = yes
 	x = 17
@@ -1160,7 +1166,7 @@ shared_focus = {
 	}
 
 	available = {
-		CHI_is_not_in_crisis = no
+		CSY_is_not_in_crisis = no
 	}
 	cancel_if_invalid = yes
 	x = 19
@@ -1185,7 +1191,7 @@ shared_focus = {
 		focus = CYS_evacuate_the_school
 	}
 	available = {
-		CHI_is_not_in_crisis = no
+		CSY_is_not_in_crisis = no
 	}
 	cancel_if_invalid = yes
 	x = 18
@@ -1211,7 +1217,7 @@ shared_focus = {
 		focus = CYS_cooperate_with_the_command
 	}
 	available = {
-		CHI_is_not_in_crisis = no
+		CSY_is_not_in_crisis = no
 	}
 	cancel_if_invalid = yes
 	x = 22
@@ -1236,7 +1242,7 @@ shared_focus = {
 	}
 
 	available = {
-		CHI_is_not_in_crisis = no
+		CSY_is_not_in_crisis = no
 	}
 	cancel_if_invalid = yes
 	x = 21
@@ -1259,7 +1265,7 @@ shared_focus = {
 	}
 
 	available = {
-		CHI_is_not_in_crisis = no
+		CSY_is_not_in_crisis = no
 	}
 	cancel_if_invalid = yes
 	x = 23
@@ -1284,7 +1290,7 @@ shared_focus = {
 		focus = CYS_construct_defenses
 	}
 	available = {
-		CHI_is_not_in_crisis = no
+		CSY_is_not_in_crisis = no
 	}
 	cancel_if_invalid = yes
 	x = 22
@@ -1308,7 +1314,7 @@ shared_focus = {
 	
 	}
 	available = {
-		CHI_is_not_in_crisis = no
+		CSY_is_not_in_crisis = no
 	}
 	cancel_if_invalid = yes
 	x = 20
@@ -1332,7 +1338,7 @@ shared_focus = {
 	
 	}
 	available = {
-		CHI_is_not_in_crisis = no
+		CSY_is_not_in_crisis = no
 	}
 	cancel_if_invalid = yes
 	x = 20

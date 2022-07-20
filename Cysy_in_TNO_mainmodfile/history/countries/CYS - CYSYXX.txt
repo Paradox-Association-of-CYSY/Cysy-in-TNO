@@ -9,8 +9,9 @@ set_politics = {
 	elections_allowed = no
 
 }
-set_country_flag=CYS_Start_focus_tree_on
-set_country_flag=CYS_Start_crisis_focus_tree_on
+set_country_flag = CYS_Start_focus_tree_on
+set_country_flag = CYS_Start_crisis_focus_tree_on
+set_country_flag = CSY_hawaii_missile_crisis
 ###Playable
 set_country_flag = tno_playable_country
 set_popularities = {

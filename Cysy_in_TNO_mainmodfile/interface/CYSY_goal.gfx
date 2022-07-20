@@ -1,8 +1,0 @@
-spriteTypes = {
-
-	SpriteType = {
-		name = "GFX_goal_CYS_lzs_win"
-		texturefile = "gfx/interface/goals/goal_CYS_lzs_win.dds"
-	}
-	
-}

@@ -1,0 +1,254 @@
+spriteTypes = {
+
+	SpriteType = {
+		name = "GFX_goal_CYS_lzs_win"
+		texturefile = "gfx/interface/goals/goal_CYS_lzs_win.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_pull_the_alarm"
+		texturefile = "gfx/interface/goals/goal_CYS_pull_the_alarm.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_cooperate_with_the_command"
+		texturefile = "gfx/interface/goals/goal_CYS_cooperate_with_the_command.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_evacuate_the_school"
+		texturefile = "gfx/interface/goals/goal_CYS_evacuate_the_school.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_hand_over_our_supplies"
+		texturefile = "gfx/interface/goals/goal_CYS_hand_over_our_supplies.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_the_military_takes_over"
+		texturefile = "gfx/interface/goals/goal_CYS_the_military_takes_over.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_mobilize_ourselves"
+		texturefile = "gfx/interface/goals/goal_CYS_mobilize_ourselves.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_construct_defenses"
+		texturefile = "gfx/interface/goals/goal_CYS_construct_defenses.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_hoarding_more_supplies"
+		texturefile = "gfx/interface/goals/goal_CYS_hoarding_more_supplies.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_school_is_suspended_without_suspension"
+		texturefile = "gfx/interface/goals/goal_CYS_school_is_suspended_without_suspension.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_local_gods_bless_us"
+		texturefile = "gfx/interface/goals/goal_CYS_local_gods_bless_us.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_every_thing_will_be_alright"
+		texturefile = "gfx/interface/goals/goal_CYS_every_thing_will_be_alright.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_CYS_prepare_for_the_new_school_year"
+		texturefile = "gfx/interface/goals/goal_CYS_prepare_for_the_new_school_year.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_zfc_s_plan"
+		texturefile = "gfx/interface/goals/goal_CYS_zfc_s_plan.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_evaluate_the_scores"
+		texturefile = "gfx/interface/goals/goal_CYS_evaluate_the_scores.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_number_like_the_old_days"
+		texturefile = "gfx/interface/goals/goal_CYS_number_like_the_old_days.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_take_japanese_standards"
+		texturefile = "gfx/interface/goals/goal_CYS_take_japanese_standards.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_scholarship_for_good_ones"
+		texturefile = "gfx/interface/goals/goal_CYS_scholarship_for_good_ones.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_a_large_crowd_of_good_students"
+		texturefile = "gfx/interface/goals/goal_CYS_a_large_crowd_of_good_students.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_zsp_s_plan"
+		texturefile = "gfx/interface/goals/goal_CYS_zsp_s_plan.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_financial_reports"
+		texturefile = "gfx/interface/goals/goal_CYS_financial_reports.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_think_about_taking_in_more_students"
+		texturefile = "gfx/interface/goals/goal_CYS_think_about_taking_in_more_students.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_the_door_will_be_open_for_them"
+		texturefile = "gfx/interface/goals/goal_CYS_the_door_will_be_open_for_them.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_japanese_experts"
+		texturefile = "gfx/interface/goals/goal_CYS_japanese_experts.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_this_is_the_true_charity"
+		texturefile = "gfx/interface/goals/goal_CYS_this_is_the_true_charity.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_a_large_sum_of_good_money"
+		texturefile = "gfx/interface/goals/goal_CYS_a_large_sum_of_good_money.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_CYS_think_about_taking_in_more_students"
+		texturefile = "gfx/interface/goals/goal_CYS_think_about_taking_in_more_students.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_the_door_will_be_open_for_them"
+		texturefile = "gfx/interface/goals/goal_CYS_the_door_will_be_open_for_them.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_a_large_sum_of_good_money"
+		texturefile = "gfx/interface/goals/goal_CYS_a_large_sum_of_good_money.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_opening_ceremony_of_year_61to62"
+		texturefile = "gfx/interface/goals/goal_CYS_opening_ceremony_of_year_61to62.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_educational_research_survey_once_again"
+		texturefile = "gfx/interface/goals/goal_CYS_educational_research_survey_once_again.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_reevaluate_teachers"
+		texturefile = "gfx/interface/goals/goal_CYS_reevaluate_teachers.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_revise_contracts"
+		texturefile = "gfx/interface/goals/goal_CYS_revise_contracts.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_teachers_get_competitive"
+		texturefile = "gfx/interface/goals/goal_CYS_teachers_get_competitive.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_show_our_respect_for_them"
+		texturefile = "gfx/interface/goals/goal_CYS_show_our_respect_for_them.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_more_bonus_for_teachers"
+		texturefile = "gfx/interface/goals/goal_CYS_more_bonus_for_teachers.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_announcement_of_examination_plan"
+		texturefile = "gfx/interface/goals/goal_CYS_announcement_of_examination_plan.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_speed_up_the_reform"
+		texturefile = "gfx/interface/goals/goal_CYS_speed_up_the_reform.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_some_new_met_guys"
+		texturefile = "gfx/interface/goals/goal_CYS_some_new_met_guys.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_XCYS_japanese_experts"
+		texturefile = "gfx/interface/goals/goal_CYS_japanese_experts.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_YS_current_situation_of_teochewese"
+		texturefile = "gfx/interface/goals/goal_YS_current_situation_of_teochewese.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_put_an_end_to_dialect"
+		texturefile = "gfx/interface/goals/goal_CYS_put_an_end_to_dialect.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_more_languages_more_opportunities"
+		texturefile = "gfx/interface/goals/goal_CYS_more_languages_more_opportunities.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_unified_use_of_japanese"
+		texturefile = "gfx/interface/goals/goal_CYS_unified_use_of_japanese.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_finally_implement_the_new_teaching_rules"
+		texturefile = "gfx/interface/goals/goal_CYS_finally_implement_the_new_teaching_rules.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_stop_diverting_students"
+		texturefile = "gfx/interface/goals/goal_CYS_stop_diverting_students.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_diverting_goes_on"
+		texturefile = "gfx/interface/goals/goal_CYS_diverting_goes_on.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_black_box_diverting"
+		texturefile = "gfx/interface/goals/goal_CYS_black_box_diverting.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_diverting_with_fairness"
+		texturefile = "gfx/interface/goals/goal_CYS_diverting_with_fairness.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_special_class_for_teachers_children"
+		texturefile = "gfx/interface/goals/goal_CYS_special_class_for_teachers_children.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_new_years_eve_gala"
+		texturefile = "gfx/interface/goals/goal_CYS_new_years_eve_gala.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_CYS_make_up_the_list_for_next_year"
+		texturefile = "gfx/interface/goals/goal_CYS_make_up_the_list_for_next_year.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_plan_for_the_winter_vacation"
+		texturefile = "gfx/interface/goals/goal_CYS_plan_for_the_winter_vacation.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_CYS_published_the_list_for_next_year"
+		texturefile = "gfx/interface/goals/goal_CYS_published_the_list_for_next_year.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_saying_goodbye_for_the_moment"
+		texturefile = "gfx/interface/goals/goal_CYS_saying_goodbye_for_the_moment.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_CYS_this_year_s_harvest"
+		texturefile = "gfx/interface/goals/goal_CYS_this_year_s_harvest.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_teachers_annual_meeting"
+		texturefile = "gfx/interface/goals/goal_CYS_teachers_annual_meeting.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_report_to_the_board"
+		texturefile = "gfx/interface/goals/goal_CYS_report_to_the_board.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_make_a_year_of_hard_work"
+		texturefile = "gfx/interface/goals/goal_CYS_make_a_year_of_hard_work.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_CYS_current_situation_of_teochewese"
+		texturefile = "gfx/interface/goals/goal_CYS_current_situation_of_teochewese.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_CYS_make_up_the_list_for_next_year"
+		texturefile = "gfx/interface/goals/goal_CYS_make_up_the_list_for_next_year.dds"
+	}
+}
