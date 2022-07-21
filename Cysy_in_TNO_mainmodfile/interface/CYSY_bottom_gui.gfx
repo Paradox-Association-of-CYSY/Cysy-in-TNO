@@ -1,0 +1,9 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_chaoyangshixiao_crt_icon"
+		texturefile = "gfx/interface/CYSY_map_gui/chaoyangshixiao_crt_icon.dds"
+		noOfFrames = 2
+	}
+	
+}

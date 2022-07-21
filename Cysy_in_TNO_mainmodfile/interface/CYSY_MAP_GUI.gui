@@ -1,0 +1,209 @@
+guiTypes = {
+    containerWindowType = {
+        name = "CYSY_map_GUI"
+        size = { width = 1000 height = 788 }
+        position = { x = 538 y = 77 }
+        clipping = no
+        moveable = yes
+        background = {
+            name = "Background"
+            quadTextureSprite = "GFX_tiled_window_1b_no_border"
+            position = {x = 0 y = 22}
+        }
+            
+        background = {
+            name = "TNO_OpeningScreen_BG_real"
+            spriteType = "GFX_tiled_window_transparent"
+        }
+        
+        buttonType = {
+            name = "CYSY_map_close_button"
+            position = { x = -31 y = 38 }
+            quadTextureSprite = "GFX_crt_closebutton"
+            shortcut = "ESCAPE"
+            Orientation = "UPPER_RIGHT"
+            clicksound = click_close
+        }
+
+        ####地图本体
+        containerWindowType = {
+            name = "CYSY_map_GUI_mainmap"
+            size = { width = 600 height = 756 }
+            position = { x = 0 y = 0 }
+            clipping = no
+            moveable = no
+
+            background = {
+                name = "CYSY_based_map_bg"
+                spriteType = "GFX_CYSY_based_map"
+                position = {x = 10 y = 39}
+            }
+            buttonType = {
+                name = "CYSY_map_senior3_main"
+                position = { x = 270 y = 540 }
+                quadTextureSprite = "GFX_CYSY_map_senior3_main_ZJC"
+                shortcut = "ESCAPE"
+                Orientation = "UPPER_LEFT"
+            }
+            
+            buttonType = {
+                name = "CYSY_map_senior3_master"
+                position = { x = 323 y = 593 }
+                quadTextureSprite = "GFX_CYSY_map_senior3_master_ZJC"
+                shortcut = "ESCAPE"
+                Orientation = "UPPER_LEFT"
+            }
+            buttonType = {
+                name = "CYSY_map_senior2_B"
+                position = { x = 11 y = 502 }
+                quadTextureSprite = "GFX_CYSY_map_senior2_B_ZJC"
+                shortcut = "ESCAPE"
+                Orientation = "UPPER_LEFT"
+            }
+
+            
+            buttonType = {
+                name = "CYSY_map_senior2_north"
+                position = { x = 437 y = 376 }
+                quadTextureSprite = "GFX_CYSY_map_senior2_north_ZJC"
+                shortcut = "ESCAPE"
+                Orientation = "UPPER_LEFT"
+
+            }
+            
+            buttonType = {
+                name = "CYSY_map_senior2_south"
+                position = { x = 430 y = 444 }
+                quadTextureSprite = "GFX_CYSY_map_senior2_south_ZJC"
+                shortcut = "ESCAPE"
+                Orientation = "UPPER_LEFT"
+            }
+
+            buttonType = {
+                name = "CYSY_map_senior3_south"
+                position = { x = 283 y = 695 }
+                quadTextureSprite = "GFX_CYSY_map_senior3_south_ZJC"
+                shortcut = "ESCAPE"
+                Orientation = "UPPER_LEFT"
+            }
+
+            buttonType = {
+                name = "CYSY_map_senior_west"
+                position = { x = 195 y = 122 }
+                quadTextureSprite = "GFX_CYSY_map_senior_west_ZJC"
+                shortcut = "ESCAPE"
+                Orientation = "UPPER_LEFT"
+            }
+
+            buttonType = {
+                name = "CYSY_map_senior_east"
+                position = { x =444  y = 69 }
+                quadTextureSprite = "GFX_CYSY_map_senior_east_ZJC"
+                shortcut = "ESCAPE"
+                Orientation = "UPPER_LEFT"
+            }
+
+            buttonType = {
+                name = "CYSY_map_senior1_main"
+                position = { x = 298 y = 111 }
+                quadTextureSprite = "GFX_CYSY_map_senior1_main_ZJC"
+                shortcut = "ESCAPE"
+                Orientation = "UPPER_LEFT"
+            }
+
+            buttonType = {
+                name = "CYSY_map_school_hall"
+                position = { x = 9 y = 234 }
+                quadTextureSprite = "GFX_CYSY_map_school_hall_ZJC"
+                shortcut = "ESCAPE"
+                Orientation = "UPPER_LEFT"
+            }
+
+####地图描边####
+            
+            buttonType = {
+                name = "CYSY_map_senior3_main_outline"
+                position = { x = 270 y = 540 }
+                quadTextureSprite = "GFX_CYSY_map_senior3_main_unchosen"
+                shortcut = "ESCAPE"
+                Orientation = "UPPER_LEFT"
+            }
+
+            buttonType = {
+                name = "CYSY_map_senior2_B_outline"
+                position = { x = 11 y = 502 }
+                quadTextureSprite = "GFX_CYSY_map_senior2_B_unchosen"
+                shortcut = "ESCAPE"
+                Orientation = "UPPER_LEFT"
+            }
+
+            buttonType = {
+                name = "CYSY_map_senior3_master_outline"
+                position = { x = 323 y = 593 }
+                quadTextureSprite = "GFX_CYSY_map_senior3_master_unchosen"
+                shortcut = "ESCAPE"
+                Orientation = "UPPER_LEFT"
+            }
+            
+            buttonType = {
+                name = "CYSY_map_senior2_north_outline"
+                position = { x = 437 y = 376 }
+                quadTextureSprite = "GFX_CYSY_map_senior2_north_unchosen"
+                shortcut = "ESCAPE"
+                Orientation = "UPPER_LEFT"
+
+            }
+            
+            buttonType = {
+                name = "CYSY_map_senior2_south_outline"
+                position = { x = 430 y = 444 }
+                quadTextureSprite = "GFX_CYSY_map_senior2_south_unchosen"
+                shortcut = "ESCAPE"
+                Orientation = "UPPER_LEFT"
+            }
+
+            buttonType = {
+                name = "CYSY_map_senior3_south_outline"
+                position = { x = 283 y = 695 }
+                quadTextureSprite = "GFX_CYSY_map_senior3_south_unchosen"
+                shortcut = "ESCAPE"
+                Orientation = "UPPER_LEFT"
+            }
+
+            buttonType = {
+                name = "CYSY_map_senior_west_outline"
+                position = { x = 195 y = 122 }
+                quadTextureSprite = "GFX_CYSY_map_senior_west_unchosen"
+                shortcut = "ESCAPE"
+                Orientation = "UPPER_LEFT"
+            }
+
+            buttonType = {
+                name = "CYSY_map_senior_east_outline"
+                position = { x =444  y = 69 }
+                quadTextureSprite = "GFX_CYSY_map_senior_east_unchosen"
+                shortcut = "ESCAPE"
+                Orientation = "UPPER_LEFT"
+            }
+
+            buttonType = {
+                name = "CYSY_map_senior1_main_outline"
+                position = { x = 298 y = 111 }
+                quadTextureSprite = "GFX_CYSY_map_senior1_main_unchosen"
+                shortcut = "ESCAPE"
+                Orientation = "UPPER_LEFT"
+            }
+
+            buttonType = {
+                name = "CYSY_map_school_hall_outline"
+                position = { x = 9 y = 234 }
+                quadTextureSprite = "GFX_CYSY_map_school_hall_unchosen"
+                shortcut = "ESCAPE"
+                Orientation = "UPPER_LEFT"
+            }
+        }
+
+
+
+    }
+}

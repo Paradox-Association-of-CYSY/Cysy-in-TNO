@@ -1,0 +1,32 @@
+guiTypes = {
+	containerWindowType = {
+		name = "CYSY_bottom_gui"
+		size = { width = 95 height = 95 }
+		position = { x = -83 y = -379 }
+		orientation = lower_right
+
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_tiled_window_thin_border2"
+		}
+
+		buttonType = {
+			name = "chaoyangshixiao_crt_icon"
+			spriteType = "GFX_chaoyangshixiao_crt_icon"
+			position = { x = 48 y = 48 }
+			centerposition = yes
+			pdx_tooltip = "scripted_gui_open_chaoyangshixiao_map"
+		}
+
+	containerWindowType = {
+		name = "arrows_alert"
+		position = { x = 1842 y = 700 }
+
+		iconType = {
+			name = "gui_alert"
+			spriteType = "GFX_gui_alert"
+			position = { x = -29 y = -36 }
+		}
+	}
+	}
+}

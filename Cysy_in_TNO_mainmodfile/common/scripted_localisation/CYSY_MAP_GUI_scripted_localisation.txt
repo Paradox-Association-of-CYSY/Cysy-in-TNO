@@ -1,0 +1,198 @@
+defined_text = {
+	name = getGFX_CYSY_map_senior3_master_outline
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_senior3_master_chosen_flag
+		}
+		localization_key = "GFX_CYSY_map_senior3_master_chosen"
+	}
+	text = {
+		trigger = {
+			NOT= {
+				has_country_flag = CYSY_map_senior3_master_chosen_flag
+			}
+		}
+		localization_key = "GFX_CYSY_map_senior3_master_unchosen"
+	}
+}
+
+defined_text = {
+	name = getGFX_CYSY_map_senior3_main_outline
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_senior3_main_chosen_flag
+		}
+		localization_key = "GFX_CYSY_map_senior3_main_chosen"
+	}
+	text = {
+		trigger = {
+			NOT= {
+				has_country_flag = CYSY_map_senior3_main_chosen_flag
+			}
+		}
+		localization_key = "GFX_CYSY_map_senior3_main_unchosen"
+	}
+}
+
+defined_text = {
+	name = getGFX_CYSY_map_senior2_north_outline
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_senior2_north_chosen_flag
+		}
+		localization_key = "GFX_CYSY_map_senior2_north_chosen"
+	}
+	text = {
+		trigger = {
+			NOT= {
+				has_country_flag = CYSY_map_senior2_north_chosen_flag
+			}
+		}
+		localization_key = "GFX_CYSY_map_senior2_north_unchosen"
+	}
+}
+
+defined_text = {
+	name = getGFX_CYSY_map_senior2_B_outline
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_senior2_B_chosen_flag
+		}
+		localization_key = "GFX_CYSY_map_senior2_B_chosen"
+	}
+	text = {
+		trigger = {
+			NOT= {
+				has_country_flag = CYSY_map_senior2_B_chosen_flag
+			}
+		}
+		localization_key = "GFX_CYSY_map_senior2_B_unchosen"
+	}
+}
+
+defined_text = {
+	name = getGFX_CYSY_map_senior2_south_outline
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_senior2_south_chosen_flag
+		}
+		localization_key = "GFX_CYSY_map_senior2_south_chosen"
+	}
+	text = {
+		trigger = {
+			NOT= {
+				has_country_flag = CYSY_map_senior2_south_chosen_flag
+			}
+		}
+		localization_key = "GFX_CYSY_map_senior2_south_unchosen"
+	}
+}
+
+defined_text = {
+	name = getGFX_CYSY_map_senior3_south_outline
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_senior3_south_chosen_flag
+		}
+		localization_key = "GFX_CYSY_map_senior3_south_chosen"
+	}
+	text = {
+		trigger = {
+			NOT= {
+				has_country_flag = CYSY_map_senior3_south_chosen_flag
+			}
+		}
+		localization_key = "GFX_CYSY_map_senior3_south_unchosen"
+	}
+}
+defined_text = {
+	name = getGFX_CYSY_map_senior_west_outline
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_senior_west_chosen_flag
+		}
+		localization_key = "GFX_CYSY_map_senior_west_chosen"
+	}
+	text = {
+		trigger = {
+			NOT= {
+				has_country_flag = CYSY_map_senior_west_chosen_flag
+			}
+		}
+		localization_key = "GFX_CYSY_map_senior_west_unchosen"
+	}
+}
+
+
+defined_text = {
+	name = getGFX_CYSY_map_senior_east_outline
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_senior_east_chosen_flag
+		}
+		localization_key = "GFX_CYSY_map_senior_east_chosen"
+	}
+	text = {
+		trigger = {
+			NOT= {
+				has_country_flag = CYSY_map_senior_east_chosen_flag
+			}
+		}
+		localization_key = "GFX_CYSY_map_senior_east_unchosen"
+	}
+}
+
+defined_text = {
+	name = getGFX_CYSY_map_senior1_main_outline
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_senior1_main_chosen_flag
+		}
+		localization_key = "GFX_CYSY_map_senior1_main_chosen"
+	}
+	text = {
+		trigger = {
+			NOT= {
+				has_country_flag = CYSY_map_senior1_main_chosen_flag
+			}
+		}
+		localization_key = "GFX_CYSY_map_senior1_main_unchosen"
+	}
+}
+
+defined_text = {
+	name = getGFX_CYSY_map_school_hall_outline
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_school_hall_chosen_flag
+		}
+		localization_key = "GFX_CYSY_map_school_hall_chosen"
+	}
+	text = {
+		trigger = {
+			NOT= {
+				has_country_flag = CYSY_map_school_hall_chosen_flag
+			}
+		}
+		localization_key = "GFX_CYSY_map_school_hall_unchosen"
+	}
+}
+
+
+defined_text = {
+	name = GFX_##_outline
+	text = {
+		trigger = {
+			has_country_flag = CYSY_##_flag
+		}
+		localization_key = "GFX_##_chosen"
+	}
+	text = {
+		trigger = {
+			NOT= {
+				has_country_flag = CYSY_##_flag
+			}
+		}
+		localization_key = "GFX_##_unchosen"
+	}
+}
