@@ -1,0 +1,610 @@
+start_CYSY_map_control = {
+	#高三行政楼
+	set_variable = {ZJC_control_percent_senior3_master = 45 }
+	set_variable = {JWC_control_percent_senior3_master = 50 }
+	set_variable = {XSH_control_percent_senior3_master = 5 }
+	set_variable = {FJW_control_percent_senior3_master = 0 }
+	set_variable = {JBZX_control_percent_senior3_master = 0 }
+	#高三主教学楼
+	set_variable = {ZJC_control_percent_senior3_main = 50 }
+	set_variable = {JWC_control_percent_senior3_main = 30 }
+	set_variable = {XSH_control_percent_senior3_main = 20 }
+	set_variable = {FJW_control_percent_senior3_main = 0 }
+	set_variable = {JBZX_control_percent_senior3_main = 0 }
+	#高二北楼
+	set_variable = {ZJC_control_percent_senior2_north = 45 }
+	set_variable = {JWC_control_percent_senior2_north = 25 }
+	set_variable = {XSH_control_percent_senior2_north = 25 }
+	set_variable = {FJW_control_percent_senior2_north = 5 }
+	set_variable = {JBZX_control_percent_senior2_north = 0 }
+	#高二B宿舍楼
+	set_variable = {ZJC_control_percent_senior2_B = 25 }
+	set_variable = {JWC_control_percent_senior2_B = 5 }
+	set_variable = {XSH_control_percent_senior2_B = 25 }
+	set_variable = {FJW_control_percent_senior2_B = 45 }
+	set_variable = {JBZX_control_percent_senior2_B = 0 }
+	#高二南楼
+	set_variable = {ZJC_control_percent_senior2_south = 45 }
+	set_variable = {JWC_control_percent_senior2_south = 20 }
+	set_variable = {XSH_control_percent_senior2_south = 30 }
+	set_variable = {FJW_control_percent_senior2_south = 5 }
+	set_variable = {JBZX_control_percent_senior2_south = 0 }
+	#高三综合楼
+	set_variable = {ZJC_control_percent_senior3_south = 34 }
+	set_variable = {JWC_control_percent_senior3_south = 5 }
+	set_variable = {XSH_control_percent_senior3_south = 25 }
+	set_variable = {FJW_control_percent_senior3_south = 36 }
+	set_variable = {JBZX_control_percent_senior3_south = 0 }
+
+	#高一西楼
+	set_variable = {ZJC_control_percent_senior_west = 30 }
+	set_variable = {JWC_control_percent_senior_west = 5 }
+	set_variable = {XSH_control_percent_senior_west = 35 }
+	set_variable = {FJW_control_percent_senior_west = 30 }
+	set_variable = {JBZX_control_percent_senior_west = 0 }
+
+	#高一主楼
+	set_variable = {ZJC_control_percent_senior1_main = 48 }
+	set_variable = {JWC_control_percent_senior1_main = 15 }
+	set_variable = {XSH_control_percent_senior1_main = 32 }
+	set_variable = {FJW_control_percent_senior1_main = 5 }
+	set_variable = {JBZX_control_percent_senior1_main = 0 }
+
+	#体育馆
+	set_variable = {ZJC_control_percent_school_hall = 45 }
+	set_variable = {JWC_control_percent_school_hall = 5 }
+	set_variable = {XSH_control_percent_school_hall = 50 }
+	set_variable = {FJW_control_percent_school_hall = 0 }
+	set_variable = {JBZX_control_percent_school_hall = 0 }
+
+	#高一东楼
+	set_variable = {ZJC_control_percent_senior_east = 15 }
+	set_variable = {JWC_control_percent_senior_east = 5 }
+	set_variable = {XSH_control_percent_senior_east = 35 }
+	set_variable = {FJW_control_percent_senior_east = 45 }
+	set_variable = {JBZX_control_percent_senior_east = 0 }
+	
+}
+
+check_CYSY_map_controler = {
+	####################
+	if = {
+		limit = {
+			check_variable = { ZJC_XX > JWC_XX }
+			check_variable = { ZJC_XX > XSH_XX }
+			check_variable = { ZJC_XX > FJW_XX }
+			check_variable = { ZJC_XX > JBZX_XX }
+		}
+		set_country_flag = XX_ZJC_control
+	}
+	else_if = {
+		limit = {
+			check_variable = { JWC_XX > XSH_XX }
+			check_variable = { JWC_XX > FJW_XX }
+			check_variable = { JWC_XX > JBZX_XX }
+			check_variable = { JWC_XX > ZJC_XX }
+		}
+		set_country_flag = XX_JWC_control
+	}
+	else_if = {
+		limit = {
+			check_variable = { XSH_XX > FJW_XX }
+			check_variable = { XSH_XX > JBZX_XX }
+			check_variable = { XSH_XX > ZJC_XX }
+			check_variable = { XSH_XX > JWC_XX }
+		}
+		set_country_flag = XX_XSH_control
+	}
+	else_if = {
+		limit = {
+			check_variable = { FJW_XX > JBZX_XX }
+			check_variable = { FJW_XX > XSH_XX }
+			check_variable = { FJW_XX > ZJC_XX }
+			check_variable = { FJW_XX > JWC_XX }
+		}
+		set_country_flag = XX_FJW_control
+	}
+
+	else_if = {
+		limit = {
+			check_variable = { JBZX_XX > FJW_XX }
+			check_variable = { JBZX_XX > XSH_XX }
+			check_variable = { JBZX_XX > ZJC_XX }
+			check_variable = { JBZX_XX > JWC_XX }
+		}
+		set_country_flag = XX_JBZX_control
+	}
+    ####################
+
+	####################高三行政楼
+	if = {
+		limit = {
+			check_variable = { ZJC_control_percent_senior3_master > JWC_control_percent_senior3_master }
+			check_variable = { ZJC_control_percent_senior3_master > XSH_control_percent_senior3_master }
+			check_variable = { ZJC_control_percent_senior3_master > FJW_control_percent_senior3_master }
+			check_variable = { ZJC_control_percent_senior3_master > JBZX_control_percent_senior3_master }
+		}
+		set_country_flag = CYSY_map_senior3_master_ZJC_control
+	}
+	else_if = {
+		limit = {
+			check_variable = { JWC_control_percent_senior3_master > XSH_control_percent_senior3_master }
+			check_variable = { JWC_control_percent_senior3_master > FJW_control_percent_senior3_master }
+			check_variable = { JWC_control_percent_senior3_master > JBZX_control_percent_senior3_master }
+			check_variable = { JWC_control_percent_senior3_master > ZJC_control_percent_senior3_master }
+		}
+		set_country_flag = CYSY_map_senior3_master_JWC_control
+	}
+	else_if = {
+		limit = {
+			check_variable = { XSH_control_percent_senior3_master > FJW_control_percent_senior3_master }
+			check_variable = { XSH_control_percent_senior3_master > JBZX_control_percent_senior3_master }
+			check_variable = { XSH_control_percent_senior3_master > ZJC_control_percent_senior3_master }
+			check_variable = { XSH_control_percent_senior3_master > JWC_control_percent_senior3_master }
+		}
+		set_country_flag = CYSY_map_senior3_master_XSH_control
+	}
+	else_if = {
+		limit = {
+			check_variable = { FJW_control_percent_senior3_master > JBZX_control_percent_senior3_master }
+			check_variable = { FJW_control_percent_senior3_master > XSH_control_percent_senior3_master }
+			check_variable = { FJW_control_percent_senior3_master > ZJC_control_percent_senior3_master }
+			check_variable = { FJW_control_percent_senior3_master > JWC_control_percent_senior3_master }
+		}
+		set_country_flag = CYSY_map_senior3_master_FJW_control
+	}
+
+	else_if = {
+		limit = {
+			check_variable = { JBZX_control_percent_senior3_master > FJW_control_percent_senior3_master }
+			check_variable = { JBZX_control_percent_senior3_master > XSH_control_percent_senior3_master }
+			check_variable = { JBZX_control_percent_senior3_master > ZJC_control_percent_senior3_master }
+			check_variable = { JBZX_control_percent_senior3_master > JWC_control_percent_senior3_master }
+		}
+		set_country_flag = CYSY_map_senior3_master_JBZX_control
+	}
+    ####################
+
+	####################高三主教学楼
+	if = {
+		limit = {
+			check_variable = { ZJC_control_percent_senior3_main > JWC_control_percent_senior3_main }
+			check_variable = { ZJC_control_percent_senior3_main > XSH_control_percent_senior3_main }
+			check_variable = { ZJC_control_percent_senior3_main > FJW_control_percent_senior3_main }
+			check_variable = { ZJC_control_percent_senior3_main > JBZX_control_percent_senior3_main }
+		}
+		set_country_flag = CYSY_map_senior3_main_ZJC_control
+	}
+	else_if = {
+		limit = {
+			check_variable = { JWC_control_percent_senior3_main > XSH_control_percent_senior3_main }
+			check_variable = { JWC_control_percent_senior3_main > FJW_control_percent_senior3_main }
+			check_variable = { JWC_control_percent_senior3_main > JBZX_control_percent_senior3_main }
+			check_variable = { JWC_control_percent_senior3_main > ZJC_control_percent_senior3_main }
+		}
+		set_country_flag = CYSY_map_senior3_main_JWC_control
+	}
+	else_if = {
+		limit = {
+			check_variable = { XSH_control_percent_senior3_main > FJW_control_percent_senior3_main }
+			check_variable = { XSH_control_percent_senior3_main > JBZX_control_percent_senior3_main }
+			check_variable = { XSH_control_percent_senior3_main > ZJC_control_percent_senior3_main }
+			check_variable = { XSH_control_percent_senior3_main > JWC_control_percent_senior3_main }
+		}
+		set_country_flag = CYSY_map_senior3_main_XSH_control
+	}
+	else_if = {
+		limit = {
+			check_variable = { FJW_control_percent_senior3_main > JBZX_control_percent_senior3_main }
+			check_variable = { FJW_control_percent_senior3_main > XSH_control_percent_senior3_main }
+			check_variable = { FJW_control_percent_senior3_main > ZJC_control_percent_senior3_main }
+			check_variable = { FJW_control_percent_senior3_main > JWC_control_percent_senior3_main }
+		}
+		set_country_flag = CYSY_map_senior3_main_FJW_control
+	}
+
+	else_if = {
+		limit = {
+			check_variable = { JBZX_control_percent_senior3_main > FJW_control_percent_senior3_main }
+			check_variable = { JBZX_control_percent_senior3_main > XSH_control_percent_senior3_main }
+			check_variable = { JBZX_control_percent_senior3_main > ZJC_control_percent_senior3_main }
+			check_variable = { JBZX_control_percent_senior3_main > JWC_control_percent_senior3_main }
+		}
+		set_country_flag = CYSY_map_senior3_main_JBZX_control
+	}
+    ####################
+
+	####################高二北楼
+	if = {
+		limit = {
+			check_variable = { ZJC_control_percent_senior2_north > JWC_control_percent_senior2_north }
+			check_variable = { ZJC_control_percent_senior2_north > XSH_control_percent_senior2_north }
+			check_variable = { ZJC_control_percent_senior2_north > FJW_control_percent_senior2_north }
+			check_variable = { ZJC_control_percent_senior2_north > JBZX_control_percent_senior2_north }
+		}
+		set_country_flag = CYSY_map_senior2_north_ZJC_control
+	}
+	else_if = {
+		limit = {
+			check_variable = { JWC_control_percent_senior2_north > XSH_control_percent_senior2_north }
+			check_variable = { JWC_control_percent_senior2_north > FJW_control_percent_senior2_north }
+			check_variable = { JWC_control_percent_senior2_north > JBZX_control_percent_senior2_north }
+			check_variable = { JWC_control_percent_senior2_north > ZJC_control_percent_senior2_north }
+		}
+		set_country_flag = CYSY_map_senior2_north_JWC_control
+	}
+	else_if = {
+		limit = {
+			check_variable = { XSH_control_percent_senior2_north > FJW_control_percent_senior2_north }
+			check_variable = { XSH_control_percent_senior2_north > JBZX_control_percent_senior2_north }
+			check_variable = { XSH_control_percent_senior2_north > ZJC_control_percent_senior2_north }
+			check_variable = { XSH_control_percent_senior2_north > JWC_control_percent_senior2_north }
+		}
+		set_country_flag = CYSY_map_senior2_north_XSH_control
+	}
+	else_if = {
+		limit = {
+			check_variable = { FJW_control_percent_senior2_north > JBZX_control_percent_senior2_north }
+			check_variable = { FJW_control_percent_senior2_north > XSH_control_percent_senior2_north }
+			check_variable = { FJW_control_percent_senior2_north > ZJC_control_percent_senior2_north }
+			check_variable = { FJW_control_percent_senior2_north > JWC_control_percent_senior2_north }
+		}
+		set_country_flag = CYSY_map_senior2_north_FJW_control
+	}
+
+	else_if = {
+		limit = {
+			check_variable = { JBZX_control_percent_senior2_north > FJW_control_percent_senior2_north }
+			check_variable = { JBZX_control_percent_senior2_north > XSH_control_percent_senior2_north }
+			check_variable = { JBZX_control_percent_senior2_north > ZJC_control_percent_senior2_north }
+			check_variable = { JBZX_control_percent_senior2_north > JWC_control_percent_senior2_north }
+		}
+		set_country_flag = CYSY_map_senior2_north_JBZX_control
+	}
+    ####################
+
+	####################高二B宿舍楼
+	if = {
+		limit = {
+			check_variable = { ZJC_control_percent_senior2_B > JWC_control_percent_senior2_B }
+			check_variable = { ZJC_control_percent_senior2_B > XSH_control_percent_senior2_B }
+			check_variable = { ZJC_control_percent_senior2_B > FJW_control_percent_senior2_B }
+			check_variable = { ZJC_control_percent_senior2_B > JBZX_control_percent_senior2_B }
+		}
+		set_country_flag = CYSY_map_senior2_B_ZJC_control
+	}
+	else_if = {
+		limit = {
+			check_variable = { JWC_control_percent_senior2_B > XSH_control_percent_senior2_B }
+			check_variable = { JWC_control_percent_senior2_B > FJW_control_percent_senior2_B }
+			check_variable = { JWC_control_percent_senior2_B > JBZX_control_percent_senior2_B }
+			check_variable = { JWC_control_percent_senior2_B > ZJC_control_percent_senior2_B }
+		}
+		set_country_flag = CYSY_map_senior2_B_JWC_control
+	}
+	else_if = {
+		limit = {
+			check_variable = { XSH_control_percent_senior2_B > FJW_control_percent_senior2_B }
+			check_variable = { XSH_control_percent_senior2_B > JBZX_control_percent_senior2_B }
+			check_variable = { XSH_control_percent_senior2_B > ZJC_control_percent_senior2_B }
+			check_variable = { XSH_control_percent_senior2_B > JWC_control_percent_senior2_B }
+		}
+		set_country_flag = CYSY_map_senior2_B_XSH_control
+	}
+	else_if = {
+		limit = {
+			check_variable = { FJW_control_percent_senior2_B > JBZX_control_percent_senior2_B }
+			check_variable = { FJW_control_percent_senior2_B > XSH_control_percent_senior2_B }
+			check_variable = { FJW_control_percent_senior2_B > ZJC_control_percent_senior2_B }
+			check_variable = { FJW_control_percent_senior2_B > JWC_control_percent_senior2_B }
+		}
+		set_country_flag = CYSY_map_senior2_B_FJW_control
+	}
+
+	else_if = {
+		limit = {
+			check_variable = { JBZX_control_percent_senior2_B > FJW_control_percent_senior2_B }
+			check_variable = { JBZX_control_percent_senior2_B > XSH_control_percent_senior2_B }
+			check_variable = { JBZX_control_percent_senior2_B > ZJC_control_percent_senior2_B }
+			check_variable = { JBZX_control_percent_senior2_B > JWC_control_percent_senior2_B }
+		}
+		set_country_flag = CYSY_map_senior2_B_JBZX_control
+	}
+    ####################
+
+	####################高二南楼
+	if = {
+		limit = {
+			check_variable = { ZJC_control_percent_senior2_south > JWC_control_percent_senior2_south }
+			check_variable = { ZJC_control_percent_senior2_south > XSH_control_percent_senior2_south }
+			check_variable = { ZJC_control_percent_senior2_south > FJW_control_percent_senior2_south }
+			check_variable = { ZJC_control_percent_senior2_south > JBZX_control_percent_senior2_south }
+		}
+		set_country_flag = CYSY_map_senior2_south_ZJC_control
+	}
+	else_if = {
+		limit = {
+			check_variable = { JWC_control_percent_senior2_south > XSH_control_percent_senior2_south }
+			check_variable = { JWC_control_percent_senior2_south > FJW_control_percent_senior2_south }
+			check_variable = { JWC_control_percent_senior2_south > JBZX_control_percent_senior2_south }
+			check_variable = { JWC_control_percent_senior2_south > ZJC_control_percent_senior2_south }
+		}
+		set_country_flag = CYSY_map_senior2_south_JWC_control
+	}
+	else_if = {
+		limit = {
+			check_variable = { XSH_control_percent_senior2_south > FJW_control_percent_senior2_south }
+			check_variable = { XSH_control_percent_senior2_south > JBZX_control_percent_senior2_south }
+			check_variable = { XSH_control_percent_senior2_south > ZJC_control_percent_senior2_south }
+			check_variable = { XSH_control_percent_senior2_south > JWC_control_percent_senior2_south }
+		}
+		set_country_flag = CYSY_map_senior2_south_XSH_control
+	}
+	else_if = {
+		limit = {
+			check_variable = { FJW_control_percent_senior2_south > JBZX_control_percent_senior2_south }
+			check_variable = { FJW_control_percent_senior2_south > XSH_control_percent_senior2_south }
+			check_variable = { FJW_control_percent_senior2_south > ZJC_control_percent_senior2_south }
+			check_variable = { FJW_control_percent_senior2_south > JWC_control_percent_senior2_south }
+		}
+		set_country_flag = CYSY_map_senior2_south_FJW_control
+	}
+
+	else_if = {
+		limit = {
+			check_variable = { JBZX_control_percent_senior2_south > FJW_control_percent_senior2_south }
+			check_variable = { JBZX_control_percent_senior2_south > XSH_control_percent_senior2_south }
+			check_variable = { JBZX_control_percent_senior2_south > ZJC_control_percent_senior2_south }
+			check_variable = { JBZX_control_percent_senior2_south > JWC_control_percent_senior2_south }
+		}
+		set_country_flag = CYSY_map_senior2_south_JBZX_control
+	}
+    ####################
+
+	####################高三综合楼
+	if = {
+		limit = {
+			check_variable = { ZJC_control_percent_senior3_south > JWC_control_percent_senior3_south }
+			check_variable = { ZJC_control_percent_senior3_south > XSH_control_percent_senior3_south }
+			check_variable = { ZJC_control_percent_senior3_south > FJW_control_percent_senior3_south }
+			check_variable = { ZJC_control_percent_senior3_south > JBZX_control_percent_senior3_south }
+		}
+		set_country_flag = CYSY_map_senior3_south_ZJC_control
+	}
+	else_if = {
+		limit = {
+			check_variable = { JWC_control_percent_senior3_south > XSH_control_percent_senior3_south }
+			check_variable = { JWC_control_percent_senior3_south > FJW_control_percent_senior3_south }
+			check_variable = { JWC_control_percent_senior3_south > JBZX_control_percent_senior3_south }
+			check_variable = { JWC_control_percent_senior3_south > ZJC_control_percent_senior3_south }
+		}
+		set_country_flag = CYSY_map_senior3_south_JWC_control
+	}
+	else_if = {
+		limit = {
+			check_variable = { XSH_control_percent_senior3_south > FJW_control_percent_senior3_south }
+			check_variable = { XSH_control_percent_senior3_south > JBZX_control_percent_senior3_south }
+			check_variable = { XSH_control_percent_senior3_south > ZJC_control_percent_senior3_south }
+			check_variable = { XSH_control_percent_senior3_south > JWC_control_percent_senior3_south }
+		}
+		set_country_flag = CYSY_map_senior3_south_XSH_control
+	}
+	else_if = {
+		limit = {
+			check_variable = { FJW_control_percent_senior3_south > JBZX_control_percent_senior3_south }
+			check_variable = { FJW_control_percent_senior3_south > XSH_control_percent_senior3_south }
+			check_variable = { FJW_control_percent_senior3_south > ZJC_control_percent_senior3_south }
+			check_variable = { FJW_control_percent_senior3_south > JWC_control_percent_senior3_south }
+		}
+		set_country_flag = CYSY_map_senior3_south_FJW_control
+	}
+
+	else_if = {
+		limit = {
+			check_variable = { JBZX_control_percent_senior3_south > FJW_control_percent_senior3_south }
+			check_variable = { JBZX_control_percent_senior3_south > XSH_control_percent_senior3_south }
+			check_variable = { JBZX_control_percent_senior3_south > ZJC_control_percent_senior3_south }
+			check_variable = { JBZX_control_percent_senior3_south > JWC_control_percent_senior3_south }
+		}
+		set_country_flag = CYSY_map_senior3_south_JBZX_control
+	}
+    ####################
+
+	####################高一西楼
+	if = {
+		limit = {
+			check_variable = { ZJC_control_percent_senior_west > JWC_control_percent_senior_west }
+			check_variable = { ZJC_control_percent_senior_west > XSH_control_percent_senior_west }
+			check_variable = { ZJC_control_percent_senior_west > FJW_control_percent_senior_west }
+			check_variable = { ZJC_control_percent_senior_west > JBZX_control_percent_senior_west }
+		}
+		set_country_flag = CYSY_map_senior_west_ZJC_control
+	}
+	else_if = {
+		limit = {
+			check_variable = { JWC_control_percent_senior_west > XSH_control_percent_senior_west }
+			check_variable = { JWC_control_percent_senior_west > FJW_control_percent_senior_west }
+			check_variable = { JWC_control_percent_senior_west > JBZX_control_percent_senior_west }
+			check_variable = { JWC_control_percent_senior_west > ZJC_control_percent_senior_west }
+		}
+		set_country_flag = CYSY_map_senior_west_JWC_control
+	}
+	else_if = {
+		limit = {
+			check_variable = { XSH_control_percent_senior_west > FJW_control_percent_senior_west }
+			check_variable = { XSH_control_percent_senior_west > JBZX_control_percent_senior_west }
+			check_variable = { XSH_control_percent_senior_west > ZJC_control_percent_senior_west }
+			check_variable = { XSH_control_percent_senior_west > JWC_control_percent_senior_west }
+		}
+		set_country_flag = CYSY_map_senior_west_XSH_control
+	}
+	else_if = {
+		limit = {
+			check_variable = { FJW_control_percent_senior_west > JBZX_control_percent_senior_west }
+			check_variable = { FJW_control_percent_senior_west > XSH_control_percent_senior_west }
+			check_variable = { FJW_control_percent_senior_west > ZJC_control_percent_senior_west }
+			check_variable = { FJW_control_percent_senior_west > JWC_control_percent_senior_west }
+		}
+		set_country_flag = CYSY_map_senior_west_FJW_control
+	}
+
+	else_if = {
+		limit = {
+			check_variable = { JBZX_control_percent_senior_west > FJW_control_percent_senior_west }
+			check_variable = { JBZX_control_percent_senior_west > XSH_control_percent_senior_west }
+			check_variable = { JBZX_control_percent_senior_west > ZJC_control_percent_senior_west }
+			check_variable = { JBZX_control_percent_senior_west > JWC_control_percent_senior_west }
+		}
+		set_country_flag = CYSY_map_senior_west_JBZX_control
+	}
+    ####################
+
+	####################高一主楼
+	if = {
+		limit = {
+			check_variable = { ZJC_control_percent_senior1_main > JWC_control_percent_senior1_main }
+			check_variable = { ZJC_control_percent_senior1_main > XSH_control_percent_senior1_main }
+			check_variable = { ZJC_control_percent_senior1_main > FJW_control_percent_senior1_main }
+			check_variable = { ZJC_control_percent_senior1_main > JBZX_control_percent_senior1_main }
+		}
+		set_country_flag = CYSY_map_senior1_main_ZJC_control
+	}
+	else_if = {
+		limit = {
+			check_variable = { JWC_control_percent_senior1_main > XSH_control_percent_senior1_main }
+			check_variable = { JWC_control_percent_senior1_main > FJW_control_percent_senior1_main }
+			check_variable = { JWC_control_percent_senior1_main > JBZX_control_percent_senior1_main }
+			check_variable = { JWC_control_percent_senior1_main > ZJC_control_percent_senior1_main }
+		}
+		set_country_flag = CYSY_map_senior1_main_JWC_control
+	}
+	else_if = {
+		limit = {
+			check_variable = { XSH_control_percent_senior1_main > FJW_control_percent_senior1_main }
+			check_variable = { XSH_control_percent_senior1_main > JBZX_control_percent_senior1_main }
+			check_variable = { XSH_control_percent_senior1_main > ZJC_control_percent_senior1_main }
+			check_variable = { XSH_control_percent_senior1_main > JWC_control_percent_senior1_main }
+		}
+		set_country_flag = CYSY_map_senior1_main_XSH_control
+	}
+	else_if = {
+		limit = {
+			check_variable = { FJW_control_percent_senior1_main > JBZX_control_percent_senior1_main }
+			check_variable = { FJW_control_percent_senior1_main > XSH_control_percent_senior1_main }
+			check_variable = { FJW_control_percent_senior1_main > ZJC_control_percent_senior1_main }
+			check_variable = { FJW_control_percent_senior1_main > JWC_control_percent_senior1_main }
+		}
+		set_country_flag = CYSY_map_senior1_main_FJW_control
+	}
+
+	else_if = {
+		limit = {
+			check_variable = { JBZX_control_percent_senior1_main > FJW_control_percent_senior1_main }
+			check_variable = { JBZX_control_percent_senior1_main > XSH_control_percent_senior1_main }
+			check_variable = { JBZX_control_percent_senior1_main > ZJC_control_percent_senior1_main }
+			check_variable = { JBZX_control_percent_senior1_main > JWC_control_percent_senior1_main }
+		}
+		set_country_flag = CYSY_map_senior1_main_JBZX_control
+	}
+    ####################
+
+	####################体育馆
+	if = {
+		limit = {
+			check_variable = { ZJC_control_percent_school_hall > JWC_control_percent_school_hall }
+			check_variable = { ZJC_control_percent_school_hall > XSH_control_percent_school_hall }
+			check_variable = { ZJC_control_percent_school_hall > FJW_control_percent_school_hall }
+			check_variable = { ZJC_control_percent_school_hall > JBZX_control_percent_school_hall }
+		}
+		set_country_flag = CYSY_map_school_hall_ZJC_control
+	}
+	else_if = {
+		limit = {
+			check_variable = { JWC_control_percent_school_hall > XSH_control_percent_school_hall }
+			check_variable = { JWC_control_percent_school_hall > FJW_control_percent_school_hall }
+			check_variable = { JWC_control_percent_school_hall > JBZX_control_percent_school_hall }
+			check_variable = { JWC_control_percent_school_hall > ZJC_control_percent_school_hall }
+		}
+		set_country_flag = CYSY_map_school_hall_JWC_control
+	}
+	else_if = {
+		limit = {
+			check_variable = { XSH_control_percent_school_hall > FJW_control_percent_school_hall }
+			check_variable = { XSH_control_percent_school_hall > JBZX_control_percent_school_hall }
+			check_variable = { XSH_control_percent_school_hall > ZJC_control_percent_school_hall }
+			check_variable = { XSH_control_percent_school_hall > JWC_control_percent_school_hall }
+		}
+		set_country_flag = CYSY_map_school_hall_XSH_control
+	}
+	else_if = {
+		limit = {
+			check_variable = { FJW_control_percent_school_hall > JBZX_control_percent_school_hall }
+			check_variable = { FJW_control_percent_school_hall > XSH_control_percent_school_hall }
+			check_variable = { FJW_control_percent_school_hall > ZJC_control_percent_school_hall }
+			check_variable = { FJW_control_percent_school_hall > JWC_control_percent_school_hall }
+		}
+		set_country_flag = CYSY_map_school_hall_FJW_control
+	}
+
+	else_if = {
+		limit = {
+			check_variable = { JBZX_control_percent_school_hall > FJW_control_percent_school_hall }
+			check_variable = { JBZX_control_percent_school_hall > XSH_control_percent_school_hall }
+			check_variable = { JBZX_control_percent_school_hall > ZJC_control_percent_school_hall }
+			check_variable = { JBZX_control_percent_school_hall > JWC_control_percent_school_hall }
+		}
+		set_country_flag = CYSY_map_school_hall_JBZX_control
+	}
+    ####################
+
+	####################高一东楼
+	if = {
+		limit = {
+			check_variable = { ZJC_control_percent_senior_east > JWC_control_percent_senior_east }
+			check_variable = { ZJC_control_percent_senior_east > XSH_control_percent_senior_east }
+			check_variable = { ZJC_control_percent_senior_east > FJW_control_percent_senior_east }
+			check_variable = { ZJC_control_percent_senior_east > JBZX_control_percent_senior_east }
+		}
+		set_country_flag = CYSY_map_senior_east_ZJC_control
+	}
+	else_if = {
+		limit = {
+			check_variable = { JWC_control_percent_senior_east > XSH_control_percent_senior_east }
+			check_variable = { JWC_control_percent_senior_east > FJW_control_percent_senior_east }
+			check_variable = { JWC_control_percent_senior_east > JBZX_control_percent_senior_east }
+			check_variable = { JWC_control_percent_senior_east > ZJC_control_percent_senior_east }
+		}
+		set_country_flag = CYSY_map_senior_east_JWC_control
+	}
+	else_if = {
+		limit = {
+			check_variable = { XSH_control_percent_senior_east > FJW_control_percent_senior_east }
+			check_variable = { XSH_control_percent_senior_east > JBZX_control_percent_senior_east }
+			check_variable = { XSH_control_percent_senior_east > ZJC_control_percent_senior_east }
+			check_variable = { XSH_control_percent_senior_east > JWC_control_percent_senior_east }
+		}
+		set_country_flag = CYSY_map_senior_east_XSH_control
+	}
+	else_if = {
+		limit = {
+			check_variable = { FJW_control_percent_senior_east > JBZX_control_percent_senior_east }
+			check_variable = { FJW_control_percent_senior_east > XSH_control_percent_senior_east }
+			check_variable = { FJW_control_percent_senior_east > ZJC_control_percent_senior_east }
+			check_variable = { FJW_control_percent_senior_east > JWC_control_percent_senior_east }
+		}
+		set_country_flag = CYSY_map_senior_east_FJW_control
+	}
+
+	else_if = {
+		limit = {
+			check_variable = { JBZX_control_percent_senior_east > FJW_control_percent_senior_east }
+			check_variable = { JBZX_control_percent_senior_east > XSH_control_percent_senior_east }
+			check_variable = { JBZX_control_percent_senior_east > ZJC_control_percent_senior_east }
+			check_variable = { JBZX_control_percent_senior_east > JWC_control_percent_senior_east }
+		}
+		set_country_flag = CYSY_map_senior_east_JBZX_control
+	}
+    ####################
+	
+	
+}

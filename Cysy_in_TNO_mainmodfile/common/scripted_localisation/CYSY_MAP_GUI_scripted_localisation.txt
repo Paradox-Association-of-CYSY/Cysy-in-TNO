@@ -178,21 +178,548 @@ defined_text = {
 	}
 }
 
-
 defined_text = {
-	name = GFX_##_outline
+	name = getGFX_CYSY_map_pic
 	text = {
 		trigger = {
-			has_country_flag = CYSY_##_flag
+			has_country_flag = CYSY_map_senior3_master_chosen_flag
 		}
-		localization_key = "GFX_##_chosen"
+		localization_key = "GFX_CYSY_map_senior3_master_pic"
 	}
 	text = {
 		trigger = {
-			NOT= {
-				has_country_flag = CYSY_##_flag
-			}
+				has_country_flag = CYSY_map_senior3_main_chosen_flag
 		}
-		localization_key = "GFX_##_unchosen"
+		localization_key = "GFX_CYSY_map_senior3_main_pic"
+	}
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_senior2_north_chosen_flag
+		}
+		localization_key = "GFX_CYSY_map_senior2_north_pic"
+	}
+	text = {
+		trigger = {
+				has_country_flag = CYSY_map_senior2_B_chosen_flag
+		}
+		localization_key = "GFX_CYSY_map_senior2_B_pic"
+	}
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_senior2_south_chosen_flag
+		}
+		localization_key = "GFX_CYSY_map_senior2_south_pic"
+	}
+	text = {
+		trigger = {
+				has_country_flag = CYSY_map_senior3_south_chosen_flag
+		}
+		localization_key = "GFX_CYSY_map_senior3_south_pic"
+	}
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_senior_west_chosen_flag
+		}
+		localization_key = "GFX_CYSY_map_senior_west_pic"
+	}
+	text = {
+		trigger = {
+				has_country_flag = CYSY_map_senior1_main_chosen_flag
+		}
+		localization_key = "GFX_CYSY_map_senior1_main_pic"
+	}
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_school_hall_chosen_flag
+		}
+		localization_key = "GFX_CYSY_map_school_hall_pic"
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_senior_east_chosen_flag
+			has_country_flag = CYSY_senior_east_building
+		}
+		localization_key = "GFX_CYSY_map_senior_east_building_pic"
+	}
+	text = {
+		trigger = {
+				has_country_flag = CYSY_map_senior_east_chosen_flag
+				NOT = {
+					has_country_flag = CYSY_senior_east_building
+				} 
+		}
+		localization_key = "GFX_CYSY_map_senior_east_pic"
+	}
+	text = {
+		trigger = {
+				has_country_flag = CYSY_XX_chosen_flag
+		}
+		localization_key = "GFX_XX_pic"
+	}
+
+	
+}
+defined_text = {
+	name = CYSY_map_GUI_building_name
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_senior3_master_chosen_flag
+		}
+		localization_key = CYSY_map_senior3_master_name
+	}
+	text = {
+		trigger = {
+				has_country_flag = CYSY_map_senior3_main_chosen_flag
+		}
+		localization_key = CYSY_map_senior3_main_name
+	}
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_senior2_north_chosen_flag
+		}
+		localization_key = CYSY_map_senior2_north_name
+	}
+	text = {
+		trigger = {
+				has_country_flag = CYSY_map_senior2_B_chosen_flag
+		}
+		localization_key = CYSY_map_senior2_B_name
+	}
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_senior2_south_chosen_flag
+		}
+		localization_key = CYSY_map_senior2_south_name
+	}
+	text = {
+		trigger = {
+				has_country_flag = CYSY_map_senior3_south_chosen_flag
+		}
+		localization_key = CYSY_map_senior3_south_name
+	}
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_senior_west_chosen_flag
+		}
+		localization_key = CYSY_map_senior_west_name
+	}
+	text = {
+		trigger = {
+				has_country_flag = CYSY_map_senior1_main_chosen_flag
+		}
+		localization_key = CYSY_map_senior1_main_name
+	}
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_school_hall_chosen_flag
+		}
+		localization_key = CYSY_map_school_hall_name
+	}
+	text = {
+		trigger = {
+				has_country_flag = CYSY_map_senior_east_chosen_flag
+		}
+		localization_key = CYSY_map_senior_east_name
 	}
 }
+######################################################
+##################   这是地图染色    ##################
+######################################################
+defined_text = {
+	name = getCYSY_map_controler_XX
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_XX_ZJC_control
+		}
+		localization_key = "GFX_CYSY_map_XX_ZJC"
+	}
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_XX_JWC_control
+		}
+		localization_key = "GFX_CYSY_map_XX_JWC"
+	}
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_XX_XSH_control
+		}
+		localization_key = "GFX_CYSY_map_XX_XSH"
+	}
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_XX_FJW_control
+		}
+		localization_key = "GFX_CYSY_map_XX_ZJC"
+	}
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_XX_JBZX_control
+		}
+		localization_key = "GFX_CYSY_map_XX_JBZX"
+	}
+
+
+}
+########################高三行政楼
+defined_text = {
+	name = getCYSY_map_controler_senior3_master
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_senior3_master_ZJC_control
+		}
+		localization_key = "GFX_CYSY_map_senior3_master_ZJC"
+	}
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_senior3_master_JWC_control
+		}
+		localization_key = "GFX_CYSY_map_senior3_master_JWC"
+	}
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_senior3_master_XSH_control
+		}
+		localization_key = "GFX_CYSY_map_senior3_master_XSH"
+	}
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_senior3_master_FJW_control
+		}
+		localization_key = "GFX_CYSY_map_senior3_master_FJW"
+	}
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_senior3_master_JBZX_control
+		}
+		localization_key = "GFX_CYSY_map_senior3_master_JBZX"
+	}
+
+
+}
+########################高三主教学楼
+
+defined_text = {
+	name = getCYSY_map_controler_senior3_main
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_senior3_main_ZJC_control
+		}
+		localization_key = "GFX_CYSY_map_senior3_main_ZJC"
+	}
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_senior3_main_JWC_control
+		}
+		localization_key = "GFX_CYSY_map_senior3_main_JWC"
+	}
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_senior3_main_XSH_control
+		}
+		localization_key = "GFX_CYSY_map_senior3_main_XSH"
+	}
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_senior3_main_FJW_control
+		}
+		localization_key = "GFX_CYSY_map_senior3_main_FJW"
+	}
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_senior3_main_JBZX_control
+		}
+		localization_key = "GFX_CYSY_map_senior3_main_JBZX"
+	}
+
+
+}
+########################高二北楼
+defined_text = {
+	name = getCYSY_map_controler_senior2_north
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_senior2_north_ZJC_control
+		}
+		localization_key = "GFX_CYSY_map_senior2_north_ZJC"
+	}
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_senior2_north_JWC_control
+		}
+		localization_key = "GFX_CYSY_map_senior2_north_JWC"
+	}
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_senior2_north_XSH_control
+		}
+		localization_key = "GFX_CYSY_map_senior2_north_XSH"
+	}
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_senior2_north_FJW_control
+		}
+		localization_key = "GFX_CYSY_map_senior2_north_FJW"
+	}
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_senior2_north_JBZX_control
+		}
+		localization_key = "GFX_CYSY_map_senior2_north_JBZX"
+	}
+
+
+}
+########################高二B宿舍楼
+defined_text = {
+	name = getCYSY_map_controler_senior2_B
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_senior2_B_ZJC_control
+		}
+		localization_key = "GFX_CYSY_map_senior2_B_ZJC"
+	}
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_senior2_B_JWC_control
+		}
+		localization_key = "GFX_CYSY_map_senior2_B_JWC"
+	}
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_senior2_B_XSH_control
+		}
+		localization_key = "GFX_CYSY_map_senior2_B_XSH"
+	}
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_senior2_B_FJW_control
+		}
+		localization_key = "GFX_CYSY_map_senior2_B_FJW"
+	}
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_senior2_B_JBZX_control
+		}
+		localization_key = "GFX_CYSY_map_senior2_B_JBZX"
+	}
+
+
+}
+########################高二南楼
+defined_text = {
+	name = getCYSY_map_controler_senior2_south
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_senior2_south_ZJC_control
+		}
+		localization_key = "GFX_CYSY_map_senior2_south_ZJC"
+	}
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_senior2_south_JWC_control
+		}
+		localization_key = "GFX_CYSY_map_senior2_south_JWC"
+	}
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_senior2_south_XSH_control
+		}
+		localization_key = "GFX_CYSY_map_senior2_south_XSH"
+	}
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_senior2_south_FJW_control
+		}
+		localization_key = "GFX_CYSY_map_senior2_south_FJW"
+	}
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_senior2_south_JBZX_control
+		}
+		localization_key = "GFX_CYSY_map_senior2_south_JBZX"
+	}
+
+
+}
+########################高三综合楼
+defined_text = {
+	name = getCYSY_map_controler_senior3_south
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_senior3_south_ZJC_control
+		}
+		localization_key = "GFX_CYSY_map_senior3_south_ZJC"
+	}
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_senior3_south_JWC_control
+		}
+		localization_key = "GFX_CYSY_map_senior3_south_JWC"
+	}
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_senior3_south_XSH_control
+		}
+		localization_key = "GFX_CYSY_map_senior3_south_XSH"
+	}
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_senior3_south_FJW_control
+		}
+		localization_key = "GFX_CYSY_map_senior3_south_FJW"
+	}
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_senior3_south_JBZX_control
+		}
+		localization_key = "GFX_CYSY_map_senior3_south_JBZX"
+	}
+
+
+}
+########################高一西楼
+defined_text = {
+	name = getCYSY_map_controler_senior_west
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_senior_west_ZJC_control
+		}
+		localization_key = "GFX_CYSY_map_senior_west_ZJC"
+	}
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_senior_west_JWC_control
+		}
+		localization_key = "GFX_CYSY_map_senior_west_JWC"
+	}
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_senior_west_XSH_control
+		}
+		localization_key = "GFX_CYSY_map_senior_west_XSH"
+	}
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_senior_west_FJW_control
+		}
+		localization_key = "GFX_CYSY_map_senior_west_FJW"
+	}
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_senior_west_JBZX_control
+		}
+		localization_key = "GFX_CYSY_map_senior_west_JBZX"
+	}
+
+
+}
+########################高一主楼
+defined_text = {
+	name = getCYSY_map_controler_senior1_main
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_senior1_main_ZJC_control
+		}
+		localization_key = "GFX_CYSY_map_senior1_main_ZJC"
+	}
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_senior1_main_JWC_control
+		}
+		localization_key = "GFX_CYSY_map_senior1_main_JWC"
+	}
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_senior1_main_XSH_control
+		}
+		localization_key = "GFX_CYSY_map_senior1_main_XSH"
+	}
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_senior1_main_FJW_control
+		}
+		localization_key = "GFX_CYSY_map_senior1_main_FJW"
+	}
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_senior1_main_JBZX_control
+		}
+		localization_key = "GFX_CYSY_map_senior1_main_JBZX"
+	}
+
+
+}
+########################体育馆
+defined_text = {
+	name = getCYSY_map_controler_school_hall
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_school_hall_ZJC_control
+		}
+		localization_key = "GFX_CYSY_map_school_hall_ZJC"
+	}
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_school_hall_JWC_control
+		}
+		localization_key = "GFX_CYSY_map_school_hall_JWC"
+	}
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_school_hall_XSH_control
+		}
+		localization_key = "GFX_CYSY_map_school_hall_XSH"
+	}
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_school_hall_FJW_control
+		}
+		localization_key = "GFX_CYSY_map_school_hall_FJW"
+	}
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_school_hall_JBZX_control
+		}
+		localization_key = "GFX_CYSY_map_school_hall_JBZX"
+	}
+
+
+}
+########################高一东楼
+defined_text = {
+	name = getCYSY_map_controler_senior_east
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_senior_east_ZJC_control
+		}
+		localization_key = "GFX_CYSY_map_senior_east_ZJC"
+	}
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_senior_east_JWC_control
+		}
+		localization_key = "GFX_CYSY_map_senior_east_JWC"
+	}
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_senior_east_XSH_control
+		}
+		localization_key = "GFX_CYSY_map_senior_east_XSH"
+	}
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_senior_east_FJW_control
+		}
+		localization_key = "GFX_CYSY_map_senior_east_FJW"
+	}
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_senior_east_JBZX_control
+		}
+		localization_key = "GFX_CYSY_map_senior_east_JBZX"
+	}
+
+
+}
+########################
