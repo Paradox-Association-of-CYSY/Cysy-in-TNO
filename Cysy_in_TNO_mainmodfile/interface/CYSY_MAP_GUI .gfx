@@ -1,0 +1,414 @@
+spriteTypes = {
+    spriteType = {
+		name = "GFX_CYSY_based_map"
+		texturefile = "gfx/interface/CYSY_map_gui/CYSY_based_map.dds"
+	}
+
+#############################
+########   UNCHOSEN  #########
+############################
+spriteType = {
+    name = "GFX_CYSY_map_senior3_master_unchosen"
+    texturefile = "gfx/interface/CYSY_map_gui/CYSY_map_senior3_master.dds"
+}
+spriteType = {
+    name = "GFX_CYSY_map_senior3_main_unchosen"
+    texturefile = "gfx/interface/CYSY_map_gui/CYSY_map_senior3_main.dds"
+}
+spriteType = {
+    name = "GFX_CYSY_map_senior2_north_unchosen"
+    texturefile = "gfx/interface/CYSY_map_gui/CYSY_map_senior2_north.dds"
+}
+spriteType = {
+    name = "GFX_CYSY_map_senior2_B_unchosen"
+    texturefile = "gfx/interface/CYSY_map_gui/CYSY_map_senior2_B.dds"
+}
+spriteType = {
+    name = "GFX_CYSY_map_senior2_south_unchosen"
+    texturefile = "gfx/interface/CYSY_map_gui/CYSY_map_senior2_south.dds"
+}
+spriteType = {
+    name = "GFX_CYSY_map_senior3_south_unchosen"
+    texturefile = "gfx/interface/CYSY_map_gui/CYSY_map_senior3_south.dds"
+}
+spriteType = {
+    name = "GFX_CYSY_map_senior_west_unchosen"
+    texturefile = "gfx/interface/CYSY_map_gui/CYSY_map_senior_west.dds"
+}
+spriteType = {
+    name = "GFX_CYSY_map_senior_east_unchosen"
+    texturefile = "gfx/interface/CYSY_map_gui/CYSY_map_senior_east.dds"
+}
+spriteType = {
+    name = "GFX_CYSY_map_senior1_main_unchosen"
+    texturefile = "gfx/interface/CYSY_map_gui/CYSY_map_senior1_main.dds"
+}
+spriteType = {
+    name = "GFX_CYSY_map_school_hall_unchosen"
+    texturefile = "gfx/interface/CYSY_map_gui/CYSY_map_school_hall.dds"
+}
+spriteType = {
+    name = "GFX_"
+    texturefile = "gfx/interface/CYSY_map_gui/.dds"
+}
+#############################
+########   CHOSEN  #########
+############################
+    spriteType = {
+        name = "GFX_CYSY_map_senior3_master_chosen"
+        texturefile = "gfx/interface/CYSY_map_gui/CYSY_map_senior3_master_chosen.dds"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_senior3_main_chosen"
+        texturefile = "gfx/interface/CYSY_map_gui/CYSY_map_senior3_main_chosen.dds"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_senior2_north_chosen"
+        texturefile = "gfx/interface/CYSY_map_gui/CYSY_map_senior2_north_chosen.dds"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_senior2_B_chosen"
+        texturefile = "gfx/interface/CYSY_map_gui/CYSY_map_senior2_B_chosen.dds"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_senior2_south_chosen"
+        texturefile = "gfx/interface/CYSY_map_gui/CYSY_map_senior2_south_chosen.dds"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_senior3_south_chosen"
+        texturefile = "gfx/interface/CYSY_map_gui/CYSY_map_senior3_south_chosen.dds"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_senior_west_chosen"
+        texturefile = "gfx/interface/CYSY_map_gui/CYSY_map_senior_west_chosen.dds"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_senior_east_chosen"
+        texturefile = "gfx/interface/CYSY_map_gui/CYSY_map_senior_east_chosen.dds"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_senior1_main_chosen"
+        texturefile = "gfx/interface/CYSY_map_gui/CYSY_map_senior1_main_chosen.dds"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_school_hall_chosen"
+        texturefile = "gfx/interface/CYSY_map_gui/CYSY_map_school_hall_chosen.dds"
+    }
+    spriteType = {
+        name = "GFX_"
+        texturefile = "gfx/interface/CYSY_map_gui/.dds"
+    }
+
+############################
+########   ZJC  ############
+#############################
+    spriteType = {
+        name = "GFX_CYSY_map_senior3_master_ZJC"
+        texturefile = "gfx/interface/CYSY_map_gui/color/CYSY_map_senior3_master_ZJC.png"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_senior3_main_ZJC"
+        texturefile = "gfx/interface/CYSY_map_gui/color/CYSY_map_senior3_main_ZJC.png"
+    }
+
+    spriteType = {
+        name = "GFX_CYSY_map_senior2_north_ZJC"
+        texturefile = "gfx/interface/CYSY_map_gui/color/CYSY_map_senior2_north_ZJC.png"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_senior2_B_ZJC"
+        texturefile = "gfx/interface/CYSY_map_gui/color/CYSY_map_senior2_B_ZJC.png"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_senior2_south_ZJC"
+        texturefile = "gfx/interface/CYSY_map_gui/color/CYSY_map_senior2_south_ZJC.png"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_senior3_south_ZJC"
+        texturefile = "gfx/interface/CYSY_map_gui/color/CYSY_map_senior3_south_ZJC.png"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_senior_west_ZJC"
+        texturefile = "gfx/interface/CYSY_map_gui/color/CYSY_map_senior_west_ZJC.png"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_senior_east_ZJC"
+        texturefile = "gfx/interface/CYSY_map_gui/color/CYSY_map_senior_east_ZJC.png"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_senior1_main_ZJC"
+        texturefile = "gfx/interface/CYSY_map_gui/color/CYSY_map_senior1_main_ZJC.png"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_school_hall_ZJC"
+        texturefile = "gfx/interface/CYSY_map_gui/color/CYSY_map_school_hall_ZJC.png"
+    }
+
+############################
+########   JWC  ############
+#############################
+    spriteType = {
+        name = "GFX_CYSY_map_senior3_master_JWC"
+        texturefile = "gfx/interface/CYSY_map_gui/color/CYSY_map_senior3_master_JWC.png"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_senior3_main_JWC"
+        texturefile = "gfx/interface/CYSY_map_gui/color/CYSY_map_senior3_main_JWC.png"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_senior2_north_JWC"
+        texturefile = "gfx/interface/CYSY_map_gui/color/CYSY_map_senior2_north_JWC.png"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_senior2_B_JWC"
+        texturefile = "gfx/interface/CYSY_map_gui/color/CYSY_map_senior2_B_JWC.png"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_senior2_south_JWC"
+        texturefile = "gfx/interface/CYSY_map_gui/color/CYSY_map_senior2_south_JWC.png"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_senior3_south_JWC"
+        texturefile = "gfx/interface/CYSY_map_gui/color/CYSY_map_senior3_south_JWC.png"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_senior_west_JWC"
+        texturefile = "gfx/interface/CYSY_map_gui/color/CYSY_map_senior_west_JWC.png"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_senior_east_JWC"
+        texturefile = "gfx/interface/CYSY_map_gui/color/CYSY_map_senior_east_JWC.png"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_senior1_main_JWC"
+        texturefile = "gfx/interface/CYSY_map_gui/color/CYSY_map_senior1_main_JWC.png"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_school_hall_JWC"
+        texturefile = "gfx/interface/CYSY_map_gui/color/CYSY_map_school_hall_JWC.png"
+    }
+	
+############################
+########   XSH  ############
+#############################
+    spriteType = {
+        name = "GFX_CYSY_map_senior3_master_XSH"
+        texturefile = "gfx/interface/CYSY_map_gui/color/CYSY_map_senior3_master_XSH.png"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_senior3_main_XSH"
+        texturefile = "gfx/interface/CYSY_map_gui/color/CYSY_map_senior3_main_XSH.png"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_senior2_north_XSH"
+        texturefile = "gfx/interface/CYSY_map_gui/color/CYSY_map_senior2_north_XSH.png"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_senior2_B_XSH"
+        texturefile = "gfx/interface/CYSY_map_gui/color/CYSY_map_senior2_B_XSH.png"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_senior2_south_XSH"
+        texturefile = "gfx/interface/CYSY_map_gui/color/CYSY_map_senior2_south_XSH.png"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_senior3_south_XSH"
+        texturefile = "gfx/interface/CYSY_map_gui/color/CYSY_map_senior3_south_XSH.png"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_senior_west_XSH"
+        texturefile = "gfx/interface/CYSY_map_gui/color/CYSY_map_senior_west_XSH.png"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_senior_east_XSH"
+        texturefile = "gfx/interface/CYSY_map_gui/color/CYSY_map_senior_east_XSH.png"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_senior1_main_XSH"
+        texturefile = "gfx/interface/CYSY_map_gui/color/CYSY_map_senior1_main_XSH.png"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_school_hall_XSH"
+        texturefile = "gfx/interface/CYSY_map_gui/color/CYSY_map_school_hall_XSH.png"
+    }
+	
+	
+############################
+########   FJW  ############
+#############################
+    spriteType = {
+        name = "GFX_CYSY_map_senior3_master_FJW"
+        texturefile = "gfx/interface/CYSY_map_gui/color/CYSY_map_senior3_master_FJW.png"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_senior3_main_FJW"
+        texturefile = "gfx/interface/CYSY_map_gui/color/CYSY_map_senior3_main_FJW.png"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_senior2_north_FJW"
+        texturefile = "gfx/interface/CYSY_map_gui/color/CYSY_map_senior2_north_FJW.png"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_senior2_B_FJW"
+        texturefile = "gfx/interface/CYSY_map_gui/color/CYSY_map_senior2_B_FJW.png"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_senior2_south_FJW"
+        texturefile = "gfx/interface/CYSY_map_gui/color/CYSY_map_senior2_south_FJW.png"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_senior3_south_FJW"
+        texturefile = "gfx/interface/CYSY_map_gui/color/CYSY_map_senior3_south_FJW.png"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_senior_west_FJW"
+        texturefile = "gfx/interface/CYSY_map_gui/color/CYSY_map_senior_west_FJW.png"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_senior_east_FJW"
+        texturefile = "gfx/interface/CYSY_map_gui/color/CYSY_map_senior_east_FJW.png"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_senior1_main_FJW"
+        texturefile = "gfx/interface/CYSY_map_gui/color/CYSY_map_senior1_main_FJW.png"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_school_hall_FJW"
+        texturefile = "gfx/interface/CYSY_map_gui/color/CYSY_map_school_hall_FJW.png"
+    }
+	
+	
+############################
+########   JBZX  ############
+#############################
+    spriteType = {
+        name = "GFX_CYSY_map_senior3_master_JBZX"
+        texturefile = "gfx/interface/CYSY_map_gui/color/CYSY_map_senior3_master_JBZX.png"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_senior3_main_JBZX"
+        texturefile = "gfx/interface/CYSY_map_gui/color/CYSY_map_senior3_main_JBZX.png"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_senior2_north_JBZX"
+        texturefile = "gfx/interface/CYSY_map_gui/color/CYSY_map_senior2_north_JBZX.png"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_senior2_B_JBZX"
+        texturefile = "gfx/interface/CYSY_map_gui/color/CYSY_map_senior2_B_JBZX.png"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_senior2_south_JBZX"
+        texturefile = "gfx/interface/CYSY_map_gui/color/CYSY_map_senior2_south_JBZX.png"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_senior3_south_JBZX"
+        texturefile = "gfx/interface/CYSY_map_gui/color/CYSY_map_senior3_south_JBZX.png"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_senior_west_JBZX"
+        texturefile = "gfx/interface/CYSY_map_gui/color/CYSY_map_senior_west_JBZX.png"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_senior_east_JBZX"
+        texturefile = "gfx/interface/CYSY_map_gui/color/CYSY_map_senior_east_JBZX.png"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_senior1_main_JBZX"
+        texturefile = "gfx/interface/CYSY_map_gui/color/CYSY_map_senior1_main_JBZX.png"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_school_hall_JBZX"
+        texturefile = "gfx/interface/CYSY_map_gui/color/CYSY_map_school_hall_JBZX.png"
+    }
+
+#############################
+######   pictures  ##########
+#############################
+    spriteType = {
+        name = "GFX_CYSY_map_senior3_master_pic"
+        texturefile = "gfx/interface/CYSY_map_gui/picture/CYSY_map_senior3_master_pic.png"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_senior3_main_pic"
+        texturefile = "gfx/interface/CYSY_map_gui/picture/CYSY_map_senior3_main_pic.png"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_senior2_north_pic"
+        texturefile = "gfx/interface/CYSY_map_gui/picture/CYSY_map_senior2_north_pic.png"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_senior2_B_pic"
+        texturefile = "gfx/interface/CYSY_map_gui/picture/CYSY_map_senior2_B_pic.png"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_senior2_south_pic"
+        texturefile = "gfx/interface/CYSY_map_gui/picture/CYSY_map_senior2_south_pic.png"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_senior3_south_pic"
+        texturefile = "gfx/interface/CYSY_map_gui/picture/CYSY_map_senior3_south_pic.png"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_senior_west_pic"
+        texturefile = "gfx/interface/CYSY_map_gui/picture/CYSY_map_senior_west_pic.png"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_senior_east_pic"
+        texturefile = "gfx/interface/CYSY_map_gui/picture/CYSY_map_senior_east_pic.png"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_senior_east_building_pic"
+        texturefile = "gfx/interface/CYSY_map_gui/picture/CYSY_map_senior_east_building_pic.png"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_senior1_main_pic"
+        texturefile = "gfx/interface/CYSY_map_gui/picture/CYSY_map_senior1_main_pic.png"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_school_hall_pic"
+        texturefile = "gfx/interface/CYSY_map_gui/picture/CYSY_map_school_hall_pic.png"
+    }
+
+
+    #########################################################
+    progressbartype = {
+		name = "GFX_JBZX_pie"
+		textureFile1 = "gfx/interface/CYSY_map_gui/pie_chart/JBZX_pie.dds"
+		textureFile2 = "gfx/interface/CYSY_map_gui/pie_chart/empty_pie.dds"
+		size = { x = 100 y = 100 }
+		effectFile = "gfx/FX/progress_radial.lua"
+	}
+
+    progressbartype = {
+		name = "GFX_XSH_pie"
+		textureFile1 = "gfx/interface/CYSY_map_gui/pie_chart/XSH_pie.dds"
+		textureFile2 = "gfx/interface/CYSY_map_gui/pie_chart/empty_pie.dds"
+		size = { x = 100 y = 100 }
+		effectFile = "gfx/FX/progress_radial.lua"
+	}
+
+    progressbartype = {
+		name = "GFX_ZJC_pie"
+		textureFile1 = "gfx/interface/CYSY_map_gui/pie_chart/ZJC_pie.dds"
+		textureFile2 = "gfx/interface/CYSY_map_gui/pie_chart/empty_pie.dds"
+		size = { x = 100 y = 100 }
+		effectFile = "gfx/FX/progress_radial.lua"
+	}
+
+    progressbartype = {
+		name = "GFX_JWC_pie"
+		textureFile1 = "gfx/interface/CYSY_map_gui/pie_chart/JWC_pie.dds"
+		textureFile2 = "gfx/interface/CYSY_map_gui/pie_chart/empty_pie.dds"
+		size = { x = 100 y = 100 }
+		effectFile = "gfx/FX/progress_radial.lua"
+	}
+
+    progressbartype = {
+		name = "GFX_FJW_pie"
+		textureFile1 = "gfx/interface/CYSY_map_gui/pie_chart/FJW_pie.dds"
+		textureFile2 = "gfx/interface/CYSY_map_gui/pie_chart/empty_pie.dds"
+		size = { x = 100 y = 100 }
+		effectFile = "gfx/FX/progress_radial.lua"
+	}
+}

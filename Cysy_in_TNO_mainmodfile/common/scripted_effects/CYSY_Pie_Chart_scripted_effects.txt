@@ -1,0 +1,164 @@
+update_all_CYSY_control_pie_charts = {
+	update_all_CYSY_control_pie_percent = yes
+	create_CYSY_control_pie_charts = yes
+	check_CYSY_map_controler = yes
+}
+
+##################把各个地区的变量导入进来##################
+update_all_CYSY_control_pie_percent = {
+	if = {
+		limit = {
+			has_country_flag = CYSY_map_XX_chosen_flag
+		}
+		set_variable = { ZJC_control_percent = ZJC_control_percent_XX }
+		set_variable = { JWC_control_percent = JWC_control_percent_XX }
+		set_variable = { XSH_control_percent = XSH_control_percent_XX }
+		set_variable = { FJW_control_percent = FJW_control_percent_XX }
+		set_variable = { JBZX_control_percent = JBZX_control_percent_XX }
+
+	}
+	else_if = {
+		limit = {
+			has_country_flag = CYSY_map_senior3_master_chosen_flag
+		}
+		set_variable = { ZJC_control_percent = ZJC_control_percent_senior3_master }
+		set_variable = { JWC_control_percent = JWC_control_percent_senior3_master }
+		set_variable = { XSH_control_percent = XSH_control_percent_senior3_master }
+		set_variable = { FJW_control_percent = FJW_control_percent_senior3_master }
+		set_variable = { JBZX_control_percent = JBZX_control_percent_senior3_master }
+
+	}
+
+	else_if = {
+		limit = {
+			has_country_flag = CYSY_map_senior3_main_chosen_flag
+		}
+		set_variable = { ZJC_control_percent = ZJC_control_percent_senior3_main }
+		set_variable = { JWC_control_percent = JWC_control_percent_senior3_main }
+		set_variable = { XSH_control_percent = XSH_control_percent_senior3_main }
+		set_variable = { FJW_control_percent = FJW_control_percent_senior3_main }
+		set_variable = { JBZX_control_percent = JBZX_control_percent_senior3_main }
+
+	}
+
+	else_if = {
+		limit = {
+			has_country_flag = CYSY_map_senior2_north_chosen_flag
+		}
+		set_variable = { ZJC_control_percent = ZJC_control_percent_senior2_north }
+		set_variable = { JWC_control_percent = JWC_control_percent_senior2_north }
+		set_variable = { XSH_control_percent = XSH_control_percent_senior2_north }
+		set_variable = { FJW_control_percent = FJW_control_percent_senior2_north }
+		set_variable = { JBZX_control_percent = JBZX_control_percent_senior2_north }
+
+	}
+
+	else_if = {
+		limit = {
+			has_country_flag = CYSY_map_senior2_B_chosen_flag
+		}
+		set_variable = { ZJC_control_percent = ZJC_control_percent_senior2_B }
+		set_variable = { JWC_control_percent = JWC_control_percent_senior2_B }
+		set_variable = { XSH_control_percent = XSH_control_percent_senior2_B }
+		set_variable = { FJW_control_percent = FJW_control_percent_senior2_B }
+		set_variable = { JBZX_control_percent = JBZX_control_percent_senior2_B }
+
+	}
+
+	else_if = {
+		limit = {
+			has_country_flag = CYSY_map_senior2_south_chosen_flag
+		}
+		set_variable = { ZJC_control_percent = ZJC_control_percent_senior2_south }
+		set_variable = { JWC_control_percent = JWC_control_percent_senior2_south }
+		set_variable = { XSH_control_percent = XSH_control_percent_senior2_south }
+		set_variable = { FJW_control_percent = FJW_control_percent_senior2_south }
+		set_variable = { JBZX_control_percent = JBZX_control_percent_senior2_south }
+
+	}
+
+	else_if = {
+		limit = {
+			has_country_flag = CYSY_map_senior3_south_chosen_flag
+		}
+		set_variable = { ZJC_control_percent = ZJC_control_percent_senior3_south }
+		set_variable = { JWC_control_percent = JWC_control_percent_senior3_south }
+		set_variable = { XSH_control_percent = XSH_control_percent_senior3_south }
+		set_variable = { FJW_control_percent = FJW_control_percent_senior3_south }
+		set_variable = { JBZX_control_percent = JBZX_control_percent_senior3_south }
+
+	}
+	else_if = {
+		limit = {
+			has_country_flag = CYSY_map_senior_west_chosen_flag
+		}
+		set_variable = { ZJC_control_percent = ZJC_control_percent_senior_west }
+		set_variable = { JWC_control_percent = JWC_control_percent_senior_west }
+		set_variable = { XSH_control_percent = XSH_control_percent_senior_west }
+		set_variable = { FJW_control_percent = FJW_control_percent_senior_west }
+		set_variable = { JBZX_control_percent = JBZX_control_percent_senior_west }
+
+	}
+	else_if = {
+		limit = {
+			has_country_flag = CYSY_map_senior1_main_chosen_flag
+		}
+		set_variable = { ZJC_control_percent = ZJC_control_percent_senior1_main }
+		set_variable = { JWC_control_percent = JWC_control_percent_senior1_main }
+		set_variable = { XSH_control_percent = XSH_control_percent_senior1_main }
+		set_variable = { FJW_control_percent = FJW_control_percent_senior1_main }
+		set_variable = { JBZX_control_percent = JBZX_control_percent_senior1_main }
+
+	}
+	else_if = {
+		limit = {
+			has_country_flag = CYSY_map_school_hall_chosen_flag
+		}
+		set_variable = { ZJC_control_percent = ZJC_control_percent_school_hall }
+		set_variable = { JWC_control_percent = JWC_control_percent_school_hall }
+		set_variable = { XSH_control_percent = XSH_control_percent_school_hall }
+		set_variable = { FJW_control_percent = FJW_control_percent_school_hall }
+		set_variable = { JBZX_control_percent = JBZX_control_percent_school_hall }
+
+	}
+	else_if = {
+		limit = {
+			has_country_flag = CYSY_map_senior_east_chosen_flag
+		}
+		set_variable = { ZJC_control_percent = ZJC_control_percent_senior_east }
+		set_variable = { JWC_control_percent = JWC_control_percent_senior_east }
+		set_variable = { XSH_control_percent = XSH_control_percent_senior_east }
+		set_variable = { FJW_control_percent = FJW_control_percent_senior_east }
+		set_variable = { JBZX_control_percent = JBZX_control_percent_senior_east }
+
+	}
+}
+
+
+
+#############顺序应该与.gui文件中的相反#####
+####越往下走，在GUI里面就叠在下面
+create_CYSY_control_pie_charts = {
+
+	set_variable = { display_ZJC_pie = ZJC_control_percent } # 先导入百分比
+	round_variable = display_ZJC_pie
+
+	set_variable = { display_JWC_pie =  JWC_control_percent } # 先导入百分比
+	round_variable = display_JWC_pie
+	add_to_variable = { display_JWC_pie = display_ZJC_pie } #叠叠乐之前要把叠在上面的百分比加起来
+
+	set_variable = { display_XSH_pie =  XSH_control_percent }# 先导入百分比
+	round_variable = display_XSH_pie
+	add_to_variable = { display_XSH_pie = display_JWC_pie }#叠叠乐之前要把叠在上面的百分比加起来
+
+	set_variable = { display_FJW_pie =  FJW_control_percent } # 先导入百分比
+	round_variable = display_FJW_pie
+	add_to_variable = { display_FJW_pie = display_XSH_pie }#叠叠乐之前要把叠在上面的百分比加起来
+
+	set_variable = { display_JBZX_pie =  JBZX_control_percent } # 先导入百分比
+	round_variable = display_JBZX_pie
+	add_to_variable = { display_JBZX_pie = display_FJW_pie }#叠叠乐之前要把叠在上面的百分比加起来
+
+}
+
+

@@ -12,6 +12,8 @@ set_politics = {
 set_country_flag = CYS_Start_focus_tree_on
 set_country_flag = CYS_Start_crisis_focus_tree_on
 set_country_flag = CSY_hawaii_missile_crisis
+set_country_flag = CYSY_map_senior3_master_chosen_flag
+start_CYSY_map_control = yes
 ###Playable
 set_country_flag = tno_playable_country
 set_popularities = {
