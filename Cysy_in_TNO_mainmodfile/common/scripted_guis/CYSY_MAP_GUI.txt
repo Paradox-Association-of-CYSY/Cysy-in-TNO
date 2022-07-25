@@ -11,7 +11,7 @@ scripted_gui = {
 				clr_country_flag = CYSY_Map_GUI_open_flag
 			}
 		}
-
+		
 		effects = {
 			CYSY_map_senior3_master_outline_click = {
 				set_country_flag = CYSY_map_senior3_master_chosen_flag
@@ -144,8 +144,73 @@ scripted_gui = {
 				set_country_flag = CYSY_map_school_hall_chosen_flag
 				update_all_CYSY_control_pie_charts = yes
 			}
-		}
 
+			CYSY_map_data_display_button_ZJC_click = {
+				set_country_flag = CYSY_map_controler_data_ZJC_chosen
+				clr_country_flag = CYSY_map_controler_data_JWC_chosen
+				clr_country_flag = CYSY_map_controler_data_XSH_chosen
+				clr_country_flag = CYSY_map_controler_data_FJW_chosen
+				clr_country_flag = CYSY_map_controler_data_JBZX_chosen
+			}
+
+			CYSY_map_data_display_button_JWC_click = {
+				clr_country_flag = CYSY_map_controler_data_ZJC_chosen
+				set_country_flag = CYSY_map_controler_data_JWC_chosen
+				clr_country_flag = CYSY_map_controler_data_XSH_chosen
+				clr_country_flag = CYSY_map_controler_data_FJW_chosen
+				clr_country_flag = CYSY_map_controler_data_JBZX_chosen
+			}
+
+			CYSY_map_data_display_button_XSH_click = {
+				clr_country_flag = CYSY_map_controler_data_ZJC_chosen
+				clr_country_flag = CYSY_map_controler_data_JWC_chosen
+				set_country_flag = CYSY_map_controler_data_XSH_chosen
+				clr_country_flag = CYSY_map_controler_data_FJW_chosen
+				clr_country_flag = CYSY_map_controler_data_JBZX_chosen
+			}
+
+			CYSY_map_data_display_button_FJW_click = {
+				clr_country_flag = CYSY_map_controler_data_ZJC_chosen
+				clr_country_flag = CYSY_map_controler_data_JWC_chosen
+				clr_country_flag = CYSY_map_controler_data_XSH_chosen
+				set_country_flag = CYSY_map_controler_data_FJW_chosen
+				clr_country_flag = CYSY_map_controler_data_JBZX_chosen
+			}
+
+			CYSY_map_data_display_button_JBZX_click = {
+				clr_country_flag = CYSY_map_controler_data_ZJC_chosen
+				clr_country_flag = CYSY_map_controler_data_JWC_chosen
+				clr_country_flag = CYSY_map_controler_data_XSH_chosen
+				clr_country_flag = CYSY_map_controler_data_FJW_chosen
+				set_country_flag = CYSY_map_controler_data_JBZX_chosen
+			}
+		}
+		triggers = {
+			CYSY_building_constructing_title_visible = {
+				has_country_flag = CYSY_map_senior_east_chosen_flag
+				has_country_flag = CYSY_senior_east_building
+				
+			}
+
+			CYSY_building_constructing_meter_visible = {
+				has_country_flag = CYSY_map_senior_east_chosen_flag
+				has_country_flag = CYSY_senior_east_building
+				
+			}
+
+			CYSY_building_constructing_desc_visible = {
+				has_country_flag = CYSY_map_senior_east_chosen_flag
+				has_country_flag = CYSY_senior_east_building
+				
+			}
+
+			CYSY_building_constructing_background_visible = {
+				has_country_flag = CYSY_map_senior_east_chosen_flag
+				has_country_flag = CYSY_senior_east_building
+				
+			}
+			
+		}
 		properties = {
 			####描边
 			CYSY_map_senior3_master_outline = {
@@ -223,6 +288,32 @@ scripted_gui = {
 			XSH_pie = { frame = display_XSH_pie }
 			JWC_pie = { frame = display_JWC_pie }
 			ZJC_pie = { frame = display_ZJC_pie }
+
+			##控制力小小按钮
+			CYSY_map_data_display_button_ZJC = {
+				image = "[getCYSY_map_data_display_button_ZJC]"
+			}
+
+			CYSY_map_data_display_button_JWC = {
+				image = "[getCYSY_map_data_display_button_JWC]"
+			}
+
+			CYSY_map_data_display_button_XSH = {
+				image = "[getCYSY_map_data_display_button_XSH]"
+			}
+
+			CYSY_map_data_display_button_FJW = {
+				image = "[getCYSY_map_data_display_button_FJW]"
+			}
+
+			CYSY_map_data_display_button_JBZX = {
+				image = "[getCYSY_map_data_display_button_JBZX]"
+			}
+
+			CYSY_building_constructing_meter ={
+				frame = CYSY_building_constructing_data_completed 
+			}
+			
 		}
 		
 	}

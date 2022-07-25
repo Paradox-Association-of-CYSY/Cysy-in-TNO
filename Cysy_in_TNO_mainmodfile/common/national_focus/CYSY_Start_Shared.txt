@@ -1351,3 +1351,285 @@ shared_focus = {
 		}
 	}
 }
+
+
+######################################
+#######  开  局  建  筑  树	  #########
+######################################
+shared_focus = {
+	id = CYS_annual_construction_project ##年度扩建
+	icon = GFX_goal_CYS_annual_construction_project
+	cost = 3.00
+	allow_branch = { has_country_flag = CYS_Start_focus_tree_on }
+	#prerequisite = {
+	#
+	#	focus = 
+	#}
+	available = {
+		CSY_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes
+	x = 20
+	y = 7
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_nnual_construction_project"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CYS_that_s_a_great_deal_bro ##大笔生意
+	icon = GFX_goal_CYS_that_s_a_great_deal_bro
+	cost = 3.00
+	prerequisite = {
+		focus = CYS_annual_construction_project
+	}
+	
+	available = {
+		CSY_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes
+	x = 20
+	y = 8
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_that_s_a_great_deal_bro"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CYS_smooth_road_is_familiar_one ##轻车熟路
+	icon = GFX_goal_CYS_smooth_road_is_familiar_one
+	cost = 3.00
+	prerequisite = {
+		focus = CYS_that_s_a_great_deal_bro
+	}
+	mutually_exclusive = {
+		focus = CYS_the_first_test_of_the_inheritor
+	}
+	available = {
+		CSY_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes
+	x = 18
+	y = 9
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_smooth_road_is_familiar_one"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CYS_contact_our_relatives ##联系唇齿
+	icon = GFX_goal_CYS_contact_our_relatives
+	cost = 3.00
+	prerequisite = {
+		focus = CYS_smooth_road_is_familiar_one
+	}
+	available = {
+		CSY_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes
+	x = 17
+	y = 10
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_contact_our_relatives"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+shared_focus = {
+	id = CYS_experience_is_powerful ##稳健经验
+	icon = GFX_goal_CYS_experience_is_powerful
+	cost = 3.00
+	prerequisite = {
+		focus = CYS_smooth_road_is_familiar_one
+	}
+	available = {
+		CSY_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes
+	x = 19
+	y = 10
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_experience_is_powerful"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CYS_keep_the_goodies_inside ##肥水不流外人田
+	icon = GFX_goal_CYS_keep_the_goodies_inside
+	cost = 3.00
+	prerequisite = {
+		focus = CYS_experience_is_powerful
+	}
+	prerequisite = {
+		focus = CYS_contact_our_relatives
+	}
+	available = {
+		CSY_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes
+	x = 18
+	y = 11
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_keep_the_goodies_inside"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CYS_the_first_test_of_the_inheritor ##锋芒初试
+	icon = GFX_goal_CYS_smooth_road_is_familiar_one
+	cost = 3.00
+	prerequisite = {
+		focus = CYS_that_s_a_great_deal_bro
+	}
+	mutually_exclusive = {
+		focus =  CYS_smooth_road_is_familiar_one
+	}
+	available = {
+		CSY_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes
+	x = 22
+	y = 9
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_the_first_test_of_the_inheritor"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CYS_open_tendering ##公开招标
+	icon = GFX_goal_CYS_contact_our_relatives
+	cost = 3.00
+	prerequisite = {
+		focus = CYS_the_first_test_of_the_inheritor
+	}
+	available = {
+		CSY_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes
+	x = 21
+	y = 10
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_contact_our_relatives"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+shared_focus = {
+	id = CYS_it_is_important_to_try ##大胆尝试
+	icon = GFX_goal_CYS_it_is_important_to_try
+	cost = 3.00
+	prerequisite = {
+		focus = CYS_the_first_test_of_the_inheritor
+	}
+	available = {
+		CSY_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes
+	x = 23
+	y = 10
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_it_is_important_to_try"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CYS_goodies_comes_from_its_new_source ##自有新源活水来
+	icon = GFX_goal_CYS_goodies_comes_from_its_new_source
+	cost = 3.00
+	prerequisite = {
+		focus = CYS_open_tendering
+	}
+	prerequisite = {
+		focus = CYS_it_is_important_to_try
+	}
+	available = {
+		CSY_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes
+	x = 22
+	y = 11
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_goodies_comes_from_its_new_source"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CYS_take_advantage_of_vacation_time ##把握假期时间
+	icon = GFX_goal_CYS_take_advantage_of_vacation_time
+	cost = 3.00
+	prerequisite = {
+		focus = CYS_keep_the_goodies_inside
+		focus = CYS_goodies_comes_from_its_new_source
+	}
+	available = {
+		CSY_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes
+	x = 20
+	y = 12
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_take_advantage_of_vacation_time"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CYS_that_is_kwangtung_speed 
+	icon = GFX_goal_CYS_that_is_kwangtung_speed
+	cost = 3.00
+	prerequisite = {
+		focus = CYS_take_advantage_of_vacation_time
+	}
+	available = {
+		CSY_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes
+	x = 20
+	y = 13
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: FocusCYS_that_is_kwangtung_speed"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}

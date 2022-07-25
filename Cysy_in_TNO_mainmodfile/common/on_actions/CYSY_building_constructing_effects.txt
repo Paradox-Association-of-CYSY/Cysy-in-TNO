@@ -1,0 +1,30 @@
+on_actions = {
+	on_monthly = {
+		effect = { 
+			if = {
+				limit = {
+					CYS = {
+							has_country_flag = CYSY_something_constructing
+					}
+				}
+				monthly_CYSY_building_constructing = yes
+			}
+			
+		}
+		
+	}
+
+	on_daily = {
+		effect = { 
+			if = {
+				limit ={
+					CYS = {
+						has_country_flag = CYSY_something_constructing
+						has_country_flag = CYSY_constructing_debug_daily_speed
+					}
+				}
+				monthly_CYSY_building_constructing = yes
+			}
+		}
+	}
+}

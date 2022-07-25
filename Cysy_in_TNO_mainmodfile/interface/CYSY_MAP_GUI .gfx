@@ -411,4 +411,35 @@ spriteType = {
 		size = { x = 100 y = 100 }
 		effectFile = "gfx/FX/progress_radial.lua"
 	}
+
+###################################
+######   dividers&buttons  ########
+###################################
+    spriteType = {
+        name = "GFX_CYSY_divider_map_vertical"
+        texturefile = "gfx/interface/CYSY_map_gui/CYSY_divider_map_vertical.png"
+    }
+    spriteType = {
+        name = "GFX_CYSY_divider_map_bar_parallel"
+        texturefile = "gfx/interface/CYSY_map_gui/CYSY_divider_map_bar_parallel.png"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_data_display_button"
+        texturefile = "gfx/interface/CYSY_map_gui/CYSY_map_data_display_button.png"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_data_display_button_chosen"
+        texturefile = "gfx/interface/CYSY_map_gui/CYSY_map_data_display_button_chosen.png"
+    }
+
+###################################
+############  covers  #############
+###################################
+spriteType = {
+    name = "GFX_CYSY_building_constructing_cover"
+    texturefile = "gfx/interface/CYSY_map_gui/CYSY_building_constructing_cover.png"
+}
+    
+
+
 }

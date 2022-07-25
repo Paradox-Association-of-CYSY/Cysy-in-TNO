@@ -42,4 +42,14 @@ spriteTypes = {
 		name = "GFX_cysy_1962_newyeargala2"
 		texturefile = "gfx/event_pictures/cysy_1962_newyeargala2.dds"
 	} 
+
+	spriteType = {
+		name = "GFX_CYSY_building_constructing_begin"
+		texturefile = "gfx/event_pictures/CYSY_building_constructing_begin.dds"
+	} 
+
+	spriteType = {
+		name = "GFX_CYSY_building_constructing_done"
+		texturefile = "gfx/event_pictures/CYSY_building_constructing_done.dds"
+	} 
 }

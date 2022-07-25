@@ -1,7 +1,7 @@
 guiTypes = {
     containerWindowType = {
         name = "CYSY_map_GUI"
-        size = { width = 1100 height = 788 }
+        size = { width = 1100 height = 785 }
         position = { x = 538 y = 77 }
         clipping = no
         moveable = yes
@@ -10,11 +10,7 @@ guiTypes = {
             quadTextureSprite = "GFX_tiled_window_1b_no_border"
             position = {x = 0 y = 22}
         }
-            
-        background = {
-            name = "TNO_OpeningScreen_BG_real"
-            spriteType = "GFX_tiled_window_transparent"
-        }
+
 
  ####地图本体
         containerWindowType = {
@@ -191,6 +187,7 @@ guiTypes = {
                 Orientation = "UPPER_LEFT"
             }
         }
+        ####展示框里面的所有内容####
         containerWindowType = {
             name = "CYSY_map_GUI_display_bar"
             size = { width = 480 height = 760 }    
@@ -206,12 +203,12 @@ guiTypes = {
 				name = "CYSY_map_display_map_pic"
 				quadTextureSprite = "GFX_CYSY_map_senior3_master_pic"
 				 
-                position = { x = 10 y = 10 }    
+                position = { x = 10 y = 16 }    
 				pdx_tooltip = CYSY_map_display_map_pic_tt
 			}
             instantTextBoxType = {
 				name = "building_name"
-				position = { x = 160 y = 12 }
+				position = { x = 170 y = 12 }
 				maxWidth = 304
 				maxHeight = 53
 				format = center
@@ -223,7 +220,7 @@ guiTypes = {
             ##### #####pie ##### #####
             containerWindowType = {
                 name = "CYSY_control_pie_container"
-                position = { x = 250 y = 100 }
+                position = { x = 265 y = 50 }
                 size = { width = 250 height = 250 }
 
                 iconType = {
@@ -266,17 +263,187 @@ guiTypes = {
                 }
             }
 
+            ####展示框里面的数据和按钮####
+            containerWindowType = {
+                name = "CYSY_controler_data_display"
+                position = { x = 190 y = 140 }
+                size = { width = 200 height = 250 }
+
+                instantTextBoxType = {
+                    name = "CYSY_map_controler_ZJC"
+                    position = { x = 0 y = -10 }
+                    maxWidth = 70
+                    format = center
+                    orientation = upper_left
+                    font = "aldrich_24_outline"
+                    text = CYSY_map_controler_ZJC_data_display
+                }
+
+                instantTextBoxType = {
+                    name = "CYSY_map_controler_XSH"
+                    position = { x = 0 y = 50 }
+                    maxWidth = 70
+                    format = center
+                    orientation = upper_left
+                    font = "aldrich_24_outline"
+                    text = CYSY_map_controler_XSH_data_display
+                }
+                instantTextBoxType = {
+                    name = "CYSY_map_controler_JWC"
+                    position = { x = 0 y = -10 }
+                    maxWidth = 70
+                    format = center
+                    orientation = upper_right
+                    font = "aldrich_24_outline"
+                    text = CYSY_map_controler_JWC_data_display
+                }
+
+                instantTextBoxType = {
+                    name = "CYSY_map_controler_FJW"
+                    position = { x = 0 y = 50 }
+                    maxWidth = 70
+                    format = center
+                    orientation = upper_right
+                    font = "aldrich_24_outline"
+                    text = CYSY_map_controler_FJW_data_display
+                }
+
+                instantTextBoxType = {
+                    name = "CYSY_map_controler_JBZX"
+                    position = { x = 90 y = 50 } 
+                    maxWidth = 90
+                    format = center
+                    orientation = upper_left
+                    font = "aldrich_24_outline"
+                    text = CYSY_map_controler_JBZX_data_display
+                }
+                buttonType = {
+                    name = "CYSY_map_data_display_button_ZJC"
+                    position = { x = -11 y = -15 }
+                    quadTextureSprite = "GFX_CYSY_map_data_display_button"
+                    
+                    Orientation = "UPPER_LEFT"
+                }
+
+                buttonType = {
+                    name = "CYSY_map_data_display_button_JWC"
+                    position = { x = -11 y = -15 }
+                    quadTextureSprite = "GFX_CYSY_map_data_display_button"
+                    
+                    Orientation = "UPPER_RIGHT"
+                }
+
+                buttonType = {
+                    name = "CYSY_map_data_display_button_XSH"
+                    position = { x = -11 y = 45 }
+                    quadTextureSprite = "GFX_CYSY_map_data_display_button"
+                    
+                    Orientation = "UPPER_LEFT"
+                }
+
+                buttonType = {
+                    name = "CYSY_map_data_display_button_JBZX"
+                    position = { x = 90 y = 45 } 
+                    quadTextureSprite = "GFX_CYSY_map_data_display_button"
+                    
+                    Orientation = "UPPER_LEFT"
+                }
+
+                buttonType = {
+                    name = "CYSY_map_data_display_button_FJW"
+                    position = { x = -11 y = 45 }
+                    quadTextureSprite = "GFX_CYSY_map_data_display_button"
+                    
+                    Orientation = "UPPER_RIGHT"
+                }
+                
+                
+            }
 
 
             buttonType = {
                 name = "CYSY_map_close_button"
-                position = { x = -31 y = 38 }
+                position = { x = -25 y = 7 }
                 quadTextureSprite = "GFX_crt_closebutton"
                 shortcut = "ESCAPE"
                 Orientation = "UPPER_RIGHT"
                 clicksound = click_close
             }
         
+        }
+        ####和派系互动###
+        containerWindowType = {
+            name = "CYSY_controler_data_interaction"
+            size = { width = 480 height = 760 }    
+            position = { x = 610 y = 300 }   
+
+            instantTextBoxType = {
+				name = "controler_interaction_title"
+				position = { x = 0 y = 0` }
+				maxWidth = 480
+				maxHeight = 53
+				format = center
+				orientation = upper_left
+				font = "aldrich_28_outline"
+				text = "CYSY_controler_interaction_title_tt"
+				alwaystransparent = yes
+			}
+        }
+        iconType = {
+            name = "CYSY_divider_map_vertical"
+            quadTextureSprite = "GFX_CYSY_divider_map_vertical"
+            position = { x = 610 y = 35 }
+            frame = 100
+        }
+
+        iconType = {
+            name = "CYSY_CYSY_divider_map_bar_parallel_1"
+            quadTextureSprite = "GFX_CYSY_divider_map_bar_parallel"
+            position = { x = 610 y = 280 }
+            frame = 100
+        }
+
+        ###建筑中的建筑物###
+        containerWindowType = {
+            name = "CYSY_building_constructing_bar"
+            size = { width = 305 height = 195 }    
+            position = { x = 785 y = 80 }   
+            iconType = {
+                name = "CYSY_building_constructing_background"
+                quadTextureSprite = "GFX_CYSY_building_constructing_cover"
+                position = {x = 0 y = 0}
+            }
+            instantTextBoxType = {
+				name = "CYSY_building_constructing_title"
+				position = { x = 0 y = 15 }
+				maxWidth = 305
+				maxHeight = 53
+				format = center
+				orientation = upper_left
+				font = "aldrich_32_outline"
+				text = "CYSY_building_constructing_title_tt"
+				alwaystransparent = yes
+			}
+            iconType = {
+                name = "CYSY_building_constructing_meter"
+                spriteType = "GFX_BRA_Map_Development_Megaproject_Bar"
+                position = { x = 13 y = 60 }
+                frame = 18
+                Orientation = "UPPER_LEFT" 
+            }
+            instantTextBoxType = {
+				name = "CYSY_building_constructing_desc"
+				position = { x = 13 y = 115 }
+				maxWidth = 305
+				maxHeight = 53
+				format = left
+				orientation = upper_left
+				font = "aldrich_22_outline"
+				text = "CYSY_building_constructing_title_desc"
+				alwaystransparent = yes
+			}
+            
+
         }
     }
 }

@@ -63,6 +63,12 @@ start_CYSY_map_control = {
 	set_variable = {XSH_control_percent_senior_east = 35 }
 	set_variable = {FJW_control_percent_senior_east = 45 }
 	set_variable = {JBZX_control_percent_senior_east = 0 }
+	####高一东楼的建造####
+	set_variable = { CYSY_building_constructing_data_completed = 32 }
+	set_variable = { CYSY_building_constructing_data_speed = 9 }
+	set_country_flag = CYSY_something_constructing
+	set_country_flag = CYSY_senior_east_building
+	update_CYSY_building_constructing_completed_left = yes
 	
 }
 

@@ -69,3 +69,26 @@ country_event = {
 		
 	}
 }
+
+#建筑物 
+
+country_event = { ###东楼建造完成
+	id = cysyxx.1001 
+	
+	title = cysyxx.1001.t
+	
+	desc = cysyxx.1001.d
+	
+	picture = GFX_CYSY_building_constructing_done
+
+	major = yes  
+
+	is_triggered_only = yes 
+	fire_only_once = yes  
+
+	
+	option = {			
+		name = cysyxx.1001.a	
+		
+	}
+}

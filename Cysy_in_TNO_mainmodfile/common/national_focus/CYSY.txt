@@ -11,4 +11,5 @@ focus_tree = {
 	default = no
 	shared_focus = CYS_prepare_for_the_new_school_year
 	shared_focus = CYS_pull_the_alarm
+	shared_focus = CYS_annual_construction_project
 }

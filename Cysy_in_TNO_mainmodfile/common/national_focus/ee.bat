@@ -1,1 +1,0 @@
-start hoi4localisationadder1.py CYSY_Start_Shared.txt 3.yml

@@ -10,3 +10,44 @@
  CYSY_map_senior_east_name:0 "§Y高一综合东楼§!"
  CYSY_map_senior1_main_name:0 "§Y高一主教学楼§!"
  CYSY_map_school_hall_name:0 "§Y体育馆§!"
+
+ CYSY_map_controler_ZJC_data_display:0 "政教处\n[?ZJC_control_percent]%"
+ CYSY_map_controler_JWC_data_display:0 "教务处\n[?JWC_control_percent]%"
+ CYSY_map_controler_XSH_data_display:0 "学生会\n[?XSH_control_percent]%"
+ CYSY_map_controler_FJW_data_display:0 "风纪委\n[?FJW_control_percent]%"
+ CYSY_map_controler_JBZX_data_display:0 "进步阵线\n[?JBZX_control_percent]%"
+
+
+ CYSY_controler_interaction_title_tt:0 "[getCYSY_map_data_chosen_which_colored]在§W[getCYSY_map_building_chosen_which]§!的直接控制力"
+
+#   简易识别者
+ CYSY_map_data_ZJC_chosen_tt:0 "政教处"
+ CYSY_map_data_JWC_chosen_tt:0 "教务处"
+ CYSY_map_data_XSH_chosen_tt:0 "学生会"
+ CYSY_map_data_FJW_chosen_tt:0 "风纪委"
+ CYSY_map_data_JBZX_chosen_tt:0 "进步阵线"
+
+ CYSY_map_data_ZJC_chosen_colored_tt:0 "§n政教处§!"
+ CYSY_map_data_JWC_chosen_colored_tt:0 "§a教务处§!"
+ CYSY_map_data_XSH_chosen_colored_tt:0 "§l学生会§!"
+ CYSY_map_data_FJW_chosen_colored_tt:0 "§f风纪委§!"
+ CYSY_map_data_JBZX_chosen_colored_tt:0 "§e进步阵线§!"
+
+
+ CYSY_map_building_senior3_master_chosen_name:0 "高三行政楼"
+ CYSY_map_building_senior3_main_chosen_name:0 "高三主教学楼"
+ CYSY_map_building_senior2_north_chosen_name:0 "高二北楼"
+ CYSY_map_building_senior2_B_chosen_name:0 "高二宿舍楼B"
+ CYSY_map_building_senior2_south_chosen_name:0 "高二南楼"
+ CYSY_map_building_senior3_south_chosen_name:0 "高三综合楼"
+ CYSY_map_building_senior_west_chosen_name:0 "高一综合西楼"
+ CYSY_map_building_senior_east_chosen_name:0 "高一综合东楼"
+ CYSY_map_building_senior1_main_chosen_name:0 "高一主教学楼"
+ CYSY_map_building_school_hall_chosen_name:0 "体育馆"
+#ZJC_control_percent
+#JWC_control_percent
+#XSH_control_percent
+#FJW_control_percent
+#JBZX_control_percent
+ CYSY_building_constructing_title_tt:0 "该建筑物正在建造中"
+ CYSY_building_constructing_title_desc:0 "目前的建造进度:  §G[?CYSY_building_constructing_data_completed]%§!\n现在的建造速度:  §G[?CYSY_building_constructing_data_speed]%§!\n再经过 §Y[?CYSY_building_constructing_completed_left] 个月§!可以完工"

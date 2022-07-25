@@ -20,6 +20,7 @@ scripted_gui = {
 					limit = { NOT = { has_country_flag = CYSY_Map_GUI_open_flag } }
 					set_country_flag = CYSY_Map_GUI_open_flag
 					update_all_CYSY_control_pie_charts = yes
+					update_CYSY_building_constructing_completed_left = yes
 				}
 				else_if = {
 					limit = { has_country_flag = CYSY_Map_GUI_open_flag }
