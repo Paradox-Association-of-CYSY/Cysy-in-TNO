@@ -1498,7 +1498,7 @@ shared_focus = {
 
 shared_focus = {
 	id = CYS_the_first_test_of_the_inheritor ##锋芒初试
-	icon = GFX_goal_CYS_smooth_road_is_familiar_one
+	icon = GFX_goal_CYS_the_first_test_of_the_inheritor
 	cost = 3.00
 	prerequisite = {
 		focus = CYS_that_s_a_great_deal_bro
@@ -1523,7 +1523,7 @@ shared_focus = {
 
 shared_focus = {
 	id = CYS_open_tendering ##公开招标
-	icon = GFX_goal_CYS_contact_our_relatives
+	icon = GFX_goal_CYS_open_tendering
 	cost = 3.00
 	prerequisite = {
 		focus = CYS_the_first_test_of_the_inheritor
