@@ -4,7 +4,7 @@ tags={
 }
 dependencies={
 	"The New Order: Last Days of Europe"
-	"The New Order: Last Days of Europe(CN.Ver)"
+	"The New Order: Last Days of Europe(CN Ver.)"
 }
 name="ChaoyangShixiao"
 path="E:/Cysy in TNO/Cysy-in-TNO/Cysy_in_TNO_mainmodfile"

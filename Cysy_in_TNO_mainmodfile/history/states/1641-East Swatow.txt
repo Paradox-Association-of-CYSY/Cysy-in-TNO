@@ -1,0 +1,22 @@
+
+state={
+	id=1641
+	name="STATE_1641"
+	manpower = 225073
+	
+	state_category = town
+	
+	history={
+		owner = GNG
+		add_core_of = GNG
+		buildings = {
+			infrastructure = 4
+			thermoelectric_plant = 1
+		}
+		victory_points = { 15318 3 }
+	}
+
+	provinces={
+		15318
+	}
+}

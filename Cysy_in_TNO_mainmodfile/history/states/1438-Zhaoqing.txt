@@ -1,0 +1,22 @@
+state = {
+	id=1438
+	name = "STATE_1438"
+	
+	manpower = 3620589
+	state_category = city
+	
+	history = {
+		owner = GNG
+		add_core_of = GNG
+		victory_points = { 7108 5 }
+		victory_points = { 15312 5 }
+		buildings = {
+			barracks = 1
+			infrastructure = 6
+		}
+	}
+
+	provinces = {
+		 7108 12095 15312 15314
+	}
+}

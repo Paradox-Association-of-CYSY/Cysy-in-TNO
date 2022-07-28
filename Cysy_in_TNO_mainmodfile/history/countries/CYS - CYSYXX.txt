@@ -1,4 +1,4 @@
-capital = 323
+capital = 1639
 
 oob = "CYS_1962"
 

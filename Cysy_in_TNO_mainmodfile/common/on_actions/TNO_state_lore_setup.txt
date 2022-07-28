@@ -1146,11 +1146,16 @@ on_actions = {
 				add_to_array = { lore_entries = 191 }
 			}
 			
+			# Teoyall
+			1639 = {
+				add_to_array = { global.state_with_lore = THIS.id }
+				add_to_array = { lore_entries = 594 }
+			}
+			
 			# Swatow
-			593 = {
+			1640 = {
 				add_to_array = { global.state_with_lore = THIS.id }
 				add_to_array = { lore_entries = 593 }
-				add_to_array = { lore_entries = 594 }
 			}
 		}
 	}

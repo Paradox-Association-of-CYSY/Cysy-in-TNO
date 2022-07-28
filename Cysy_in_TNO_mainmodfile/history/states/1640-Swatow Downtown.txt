@@ -1,0 +1,28 @@
+
+state={
+	id=1640
+	name="STATE_1640"
+	manpower = 225073
+	
+	state_category = city
+	
+	history={
+		owner = GNG
+		add_core_of = GNG
+		buildings = {
+			offices = 1
+			infrastructure = 5
+			schools = 1
+			9938 = {
+				naval_base = 1
+				coastal_bunker = 1
+				bunker = 1
+			}
+		}
+		victory_points = { 9938 15 }
+	}
+
+	provinces={
+		9938
+	}
+}

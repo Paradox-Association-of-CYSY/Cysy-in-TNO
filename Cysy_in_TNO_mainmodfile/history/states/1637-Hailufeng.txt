@@ -1,0 +1,21 @@
+
+state={
+	id=1637
+	name="STATE_1637"
+	manpower = 225073
+	
+	state_category = rural
+	
+	history={
+		owner = GNG
+		add_core_of = GNG
+		buildings = {
+			infrastructure = 4
+		}
+		victory_points = { 7067 5 }
+	}
+
+	provinces={
+		7067
+	}
+}

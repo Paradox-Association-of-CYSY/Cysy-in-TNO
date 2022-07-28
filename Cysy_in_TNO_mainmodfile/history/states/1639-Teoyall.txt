@@ -1,0 +1,23 @@
+
+state={
+	id=1639
+	name="STATE_1639"
+	manpower = 225073
+	
+	state_category = city
+	
+	history={
+		owner = CYS
+		add_core_of = CYS
+		add_core_of = GNG
+		buildings = {
+			infrastructure = 5
+			schools = 1
+		}
+		victory_points = { 15316 10 }
+	}
+
+	provinces={
+		15316 
+	}
+}

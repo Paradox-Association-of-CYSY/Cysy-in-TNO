@@ -1,0 +1,24 @@
+
+state={
+	id=1635
+	name="STATE_1635"
+	manpower = 225073
+	
+	state_category = town
+	
+	history={
+		owner = JAP
+		add_core_of = GNG
+		victory_points = { 11981 10 }
+		buildings = {
+			infrastructure = 4
+			11981 = {
+				naval_base = 1
+			}
+		}
+	}
+
+	provinces={
+		4160 7135 11981 15308 
+	}
+}
