@@ -14,6 +14,8 @@ set_country_flag = CYS_Start_crisis_focus_tree_on
 set_country_flag = CSY_hawaii_missile_crisis
 set_country_flag = CYSY_map_senior3_master_chosen_flag
 set_country_flag = CYSY_map_controler_data_ZJC_chosen
+set_country_flag = CYSY_jbzx_has_not_appear
+set_country_flag = CYS_is_A_Campus
 start_CYSY_map_control = yes
 ###Playable
 set_country_flag = tno_playable_country
@@ -52,9 +54,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Lu Chuanhong"
 	desc = "POLITICS_LUCHUANHONG_DESC"
-	picture = "gfx/leaders/lch.dds"
+	picture = "gfx/leaders/lch_purple.png"
 	expire = "1999.1.1"
-	ideology = esoteric_nazism_burgundian_system_subtype
+	ideology = esoteric_nazism_lchism_subtype
 	traits = {
 		dictator
 	}

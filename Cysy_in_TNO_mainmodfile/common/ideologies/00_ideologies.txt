@@ -16,6 +16,9 @@ ideologies = {
 			esoteric_nazism_imperial_cult_subtype = { can_be_randomly_selected = no }
 			esoteric_nazism_agrarian_spartanism_subtype = { can_be_randomly_selected = no }
 			esoteric_nazism_spartanism_subtype = { can_be_randomly_selected = no }
+			###卢传红体制
+			esoteric_nazism_lchism_subtype = { can_be_randomly_selected = no }
+			###卢传红体制
 		}
 		dynamic_faction_names = {}
 		color = { 52 25 80 }
@@ -138,7 +141,9 @@ ideologies = {
 	despotism = {
 		types = {
 			despotism_subtype = {}
+			######潮实体制
 			despotism_cysy_system_subtype = { can_be_randomly_selected = no } ######
+			######
 			despotism_absolute_monarchy_subtype = { can_be_randomly_selected = no }
 			despotism_military_junta_subtype = { can_be_randomly_selected = no }
 			despotism_civilian_dictatorship_subtype = { can_be_randomly_selected = no }
@@ -360,7 +365,9 @@ ideologies = {
 	communist = {
 		types = {
 			communist_subtype = {}
+			#########学生改革主义
 			communist_cysy_student_reforming_subtype = { can_be_randomly_selected = no } #########
+			#########
 			communist_bukharinism_subtype = { can_be_randomly_selected = no }
 			communist_stalinism_subtype = { can_be_randomly_selected = no }
 			communist_neocommunism_subtype = { can_be_randomly_selected = no }

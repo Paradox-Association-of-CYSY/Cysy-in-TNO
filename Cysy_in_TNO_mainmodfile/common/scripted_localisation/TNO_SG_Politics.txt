@@ -48,12 +48,12 @@ defined_text = {
 
 defined_text = {
 	name = GetSubIdeologyLocCommunist
-
-	text = { #######################
+#######################学生改革主义
+	text = { 
 		trigger = { has_country_leader_ideology = communist_cysy_student_reforming_subtype }
 		localization_key = communist_cysy_student_reforming_subtype
 	}
-
+#######################学生改革主义
 	text = {
 		trigger = { has_country_leader_ideology = communist_bukharinism_subtype }
 		localization_key = communist_bukharinism_subtype
@@ -340,10 +340,12 @@ defined_text = {
 
 defined_text = {
 	name = GetSubIdeologyLocDespotism
-	text = { ########################
+	########################潮实体制
+	text = { 
 		trigger = { has_country_leader_ideology = despotism_cysy_system_subtype }
 		localization_key = despotism_cysy_system_subtype
 	}
+	########################
 	text = {
 		trigger = { has_country_leader_ideology = despotism_neo_baathism_subtype }
 		localization_key = despotism_neo_baathism_subtype
@@ -524,6 +526,12 @@ defined_text = {
 		trigger = { has_country_leader_ideology = esoteric_nazism_spartanism_subtype }
 		localization_key = esoteric_nazism_spartanism_subtype
 	}
+	########################卢传红lch体制
+	text = {
+		trigger = { has_country_leader_ideology = esoteric_nazism_lchism_subtype }
+		localization_key = esoteric_nazism_lchism_subtype
+	}
+	########################
 	text = {
 		localization_key = esoteric_nazism
 	}

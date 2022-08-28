@@ -1532,7 +1532,7 @@ shared_focus = {
 		CSY_is_not_in_crisis = yes
 	}
 	cancel_if_invalid = yes
-	x = 21
+	x = 23
 	y = 10
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CYS_contact_our_relatives"
@@ -1553,7 +1553,7 @@ shared_focus = {
 		CSY_is_not_in_crisis = yes
 	}
 	cancel_if_invalid = yes
-	x = 23
+	x = 21
 	y = 10
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CYS_it_is_important_to_try"

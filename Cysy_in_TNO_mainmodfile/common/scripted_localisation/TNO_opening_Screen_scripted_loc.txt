@@ -289,7 +289,22 @@ defined_text = {
 		localization_key = COUNTRY_INFO_2_YUN
 	}
 }
-
+defined_text = {
+	name = GET_COUNTRY_INFO_PAGE_TEXT_CYS
+	text = {
+		trigger = { check_variable = { COUNTRY_INFO_PAGE = 0 } }
+		localization_key = COUNTRY_INFO_1_CYSY
+	}
+	text = {
+		trigger = { check_variable = { COUNTRY_INFO_PAGE = 1 } }
+		localization_key = COUNTRY_INFO_2_CYSY
+	}
+	text = {
+		trigger = { check_variable = { COUNTRY_INFO_PAGE = 2 } }
+		localization_key = COUNTRY_INFO_3_CYSY
+	}
+}
+#######################################
 defined_text = {
 	name = GET_COUNTRY_INFO
 	## Countries with Opening pages
@@ -460,10 +475,6 @@ defined_text = {
 	}
 	## Asia
 	text = {
-		trigger = { tag = CYS }
-		localization_key = COUNTRY_INFO_CYSY
-	}
-	text = {
 		trigger = { tag = YUN }
 		localization_key = "[GET_COUNTRY_INFO_PAGE_TEXT_YUN]"
 	}
@@ -505,11 +516,15 @@ defined_text = {
 		trigger = { tag = BRA }
 		localization_key = [GET_COUNTRY_INFO_PAGE_TEXT_BRA]
 	}
+	##CYSY
+	text = {
+		trigger = { tag = CYS }
+		localization_key = "[GET_COUNTRY_INFO_PAGE_TEXT_CYS]"
+	}
 	## Default
 	text = {
 		localization_key = COUNTRY_INFO_NO_CONTENT
 	}
-
 }
 
 Gdefined_text = {
@@ -732,6 +747,7 @@ defined_text = {
 				tag = PHI
 				tag = FRI
 				tag = YUN
+				tag = CYS
 			}
 		}
 		localization_key = "GFX_TNO_OpeningScreen_Region_EASTERN_ASIA"
