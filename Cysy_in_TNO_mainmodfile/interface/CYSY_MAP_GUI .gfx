@@ -21,7 +21,7 @@ spriteType = {
 }
 spriteType = {
     name = "GFX_CYSY_map_senior2_B_unchosen"
-    texturefile = "gfx/interface/CYSY_map_gui/CYSY_map_senior2_B.dds"
+    texturefile = "gfx/interface/CYSY_map_gui/CYSY_map_senior2_B.dds" 
 }
 spriteType = {
     name = "GFX_CYSY_map_senior2_south_unchosen"
@@ -439,7 +439,19 @@ spriteType = {
     name = "GFX_CYSY_building_constructing_cover"
     texturefile = "gfx/interface/CYSY_map_gui/CYSY_building_constructing_cover.png"
 }
-    
+spriteType = {
+    name = "GFX_CYSY_map_senior_east_outline_building_chosen"
+    texturefile = "gfx/interface/CYSY_map_gui/CYSY_map_senior_east_outline_building_chosen.png"
+}
+spriteType = {
+    name = "GFX_CYSY_map_senior_east_outline_building"
+    texturefile = "gfx/interface/CYSY_map_gui/CYSY_map_senior_east_outline_building.png"
+}
+
+spriteType = {
+    name = "GFX_CYSY_map_data_display_button_hidden"
+    texturefile = "gfx/interface/CYSY_map_gui/CYSY_map_data_display_button_hidden.png"
+}
 
 
 }

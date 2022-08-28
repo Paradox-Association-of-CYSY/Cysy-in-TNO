@@ -324,7 +324,6 @@ guiTypes = {
                     
                     Orientation = "UPPER_LEFT"
                 }
-
                 buttonType = {
                     name = "CYSY_map_data_display_button_JWC"
                     position = { x = -11 y = -15 }
@@ -356,6 +355,14 @@ guiTypes = {
                     
                     Orientation = "UPPER_RIGHT"
                 }
+                
+                ####开局隐藏进步阵线####
+                iconType = {
+                    name = "CYSY_map_data_display_button_hidden_cover"
+                    quadTextureSprite = "GFX_CYSY_map_data_display_button_hidden"
+                    position = { x = 90 y = 45 } 
+                }
+                ########################
                 
                 
             }
@@ -395,7 +402,7 @@ guiTypes = {
             position = { x = 610 y = 35 }
             frame = 100
         }
-
+ 
         iconType = {
             name = "CYSY_CYSY_divider_map_bar_parallel_1"
             quadTextureSprite = "GFX_CYSY_divider_map_bar_parallel"

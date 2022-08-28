@@ -1,16 +1,24 @@
 spriteTypes = {
-
-
-	spriteType = {
-		name = "GFX_ideology_communist_national_communism_subtype"
-		texturefile = "gfx/interface/ideologies/communist_national_communism_subtype.dds"
-	}
 	spriteType = {
 		name = "GFX_ideology_communist_cysy_student_reforming_subtype"
 		texturefile = "gfx/interface/ideologies/communist_cysy_student_reforming_subtype.dds"
 	}
 	spriteType = {
-		name = "GFX_despotism_cysy_system_subtype"
+		name = "GFX_ideology_despotism_cysy_system_subtype"
 		texturefile = "gfx/interface/ideologies/despotism_cysy_system_subtype.dds"
 	}
+	spriteType = {
+		name = "GFX_ideology_esoteric_nazism_lchism_subtype"
+		texturefile = "gfx/interface/ideologies/esoteric_nazism_lchism_subtype.dds"
+	}
+
+
+	####暂时借用
+	spriteType = {
+		name = "GFX_Sphere_A_Campus"
+		texturefile = "gfx/interface/factions/status/Sphere_A_Campus.dds"
+	}
+
+	
+	
 }

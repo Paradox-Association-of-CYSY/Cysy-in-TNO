@@ -1976,7 +1976,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_goal_CYS_annual_construction_project"
+		name = "GFX_goal_CYS_annual_construction_project_shine"
 		texturefile = "gfx/interface/goals/goal_CYS_annual_construction_project.png"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -2009,7 +2009,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_goal_CYS_that_s_a_great_deal_bro"
+		name = "GFX_goal_CYS_that_s_a_great_deal_bro_shine"
 		texturefile = "gfx/interface/goals/goal_CYS_that_s_a_great_deal_bro.png"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -2042,7 +2042,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_goal_CYS_smooth_road_is_familiar_one"
+		name = "GFX_goal_CYS_smooth_road_is_familiar_one_shine"
 		texturefile = "gfx/interface/goals/goal_CYS_smooth_road_is_familiar_one.png"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -2075,7 +2075,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_goal_CYS_contact_our_relatives"
+		name = "GFX_goal_CYS_contact_our_relatives_shine"
 		texturefile = "gfx/interface/goals/goal_CYS_contact_our_relatives.png"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -2108,7 +2108,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_goal_CYS_experience_is_powerful"
+		name = "GFX_goal_CYS_experience_is_powerful_shine"
 		texturefile = "gfx/interface/goals/goal_CYS_experience_is_powerful.png"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -2141,7 +2141,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_goal_CYS_keep_the_goodies_inside"
+		name = "GFX_goal_CYS_keep_the_goodies_inside_shine"
 		texturefile = "gfx/interface/goals/goal_CYS_keep_the_goodies_inside.png"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -2174,7 +2174,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_goal_CYS_the_first_test_of_the_inheritor"
+		name = "GFX_goal_CYS_the_first_test_of_the_inheritor_shine"
 		texturefile = "gfx/interface/goals/goal_CYS_the_first_test_of_the_inheritor.png"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -2207,7 +2207,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_goal_CYS_open_tendering"
+		name = "GFX_goal_CYS_open_tendering_shine"
 		texturefile = "gfx/interface/goals/goal_CYS_open_tendering.png"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -2240,7 +2240,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_goal_CYS_it_is_important_to_try"
+		name = "GFX_goal_CYS_it_is_important_to_try_shine"
 		texturefile = "gfx/interface/goals/goal_CYS_it_is_important_to_try.png"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -2272,7 +2272,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_CYS_goodies_comes_from_its_new_source"
+		name = "GFX_goal_CYS_goodies_comes_from_its_new_source_shine"
 		texturefile = "gfx/interface/goals/goal_CYS_goodies_comes_from_its_new_source.png"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -2305,7 +2305,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_goal_CYS_experience_is_powerful"
+		name = "GFX_goal_CYS_experience_is_powerful_shine"
 		texturefile = "gfx/interface/goals/goal_CYS_experience_is_powerful.png"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -2338,7 +2338,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_goal_CYS_take_advantage_of_vacation_time"
+		name = "GFX_goal_CYS_take_advantage_of_vacation_time_shine"
 		texturefile = "gfx/interface/goals/goal_CYS_take_advantage_of_vacation_time.png"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -2371,7 +2371,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_goal_CYS_that_is_kwangtung_speed"
+		name = "GFX_goal_CYS_that_is_kwangtung_speed_shine"
 		texturefile = "gfx/interface/goals/goal_CYS_that_is_kwangtung_speed.png"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {

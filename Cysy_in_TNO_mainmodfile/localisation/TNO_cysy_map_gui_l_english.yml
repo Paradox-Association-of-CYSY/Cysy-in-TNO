@@ -18,7 +18,7 @@
  CYSY_map_controler_JBZX_data_display:0 "进步阵线\n[?JBZX_control_percent]%"
 
 
- CYSY_controler_interaction_title_tt:0 "[getCYSY_map_data_chosen_which_colored]在§W[getCYSY_map_building_chosen_which]§!的直接控制力"
+ CYSY_controler_interaction_title_tt:0 "影响[getCYSY_map_data_chosen_which_colored]在§W[getCYSY_map_building_chosen_which]§!的直接控制力"
 
 #   简易识别者
  CYSY_map_data_ZJC_chosen_tt:0 "政教处"

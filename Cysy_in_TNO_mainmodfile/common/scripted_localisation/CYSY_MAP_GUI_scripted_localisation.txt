@@ -128,6 +128,26 @@ defined_text = {
 	name = getGFX_CYSY_map_senior_east_outline
 	text = {
 		trigger = {
+			AND ={
+				has_country_flag = CYSY_map_senior_east_chosen_flag
+				has_country_flag = CYSY_senior_east_building
+			}
+		}
+		localization_key = "GFX_CYSY_map_senior_east_outline_building_chosen"
+	}
+	text = {
+		trigger = {
+			AND ={
+				NOT= {
+					has_country_flag = CYSY_map_senior_east_chosen_flag
+				}
+				has_country_flag = CYSY_senior_east_building
+			}
+		}
+		localization_key = "GFX_CYSY_map_senior_east_outline_building"
+	}
+	text = {
+		trigger = {
 			has_country_flag = CYSY_map_senior_east_chosen_flag
 		}
 		localization_key = "GFX_CYSY_map_senior_east_chosen"
@@ -140,6 +160,7 @@ defined_text = {
 		}
 		localization_key = "GFX_CYSY_map_senior_east_unchosen"
 	}
+	
 }
 
 defined_text = {
