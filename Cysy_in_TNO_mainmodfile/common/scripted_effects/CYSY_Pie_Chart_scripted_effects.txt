@@ -1,7 +1,84 @@
 update_all_CYSY_control_pie_charts = {
 	update_all_CYSY_control_pie_percent = yes
 	create_CYSY_control_pie_charts = yes
+	check_if_need_balance = yes
+	check_if_need_balance = yes
 	check_CYSY_map_controler = yes
+	create_CYSY_control_pie_charts = yes
+}
+check_if_need_balance = {
+	set_temp_variable = { total = ZJC_control_percent }
+	add_to_temp_variable = { total = JWC_control_percent }
+	add_to_temp_variable = { total = XSH_control_percent }
+	add_to_temp_variable = { total = FJW_control_percent }
+	add_to_temp_variable = { total = JBZX_control_percent }
+	if = {
+		limit = {
+			check_variable = { total > 100 }
+		}
+		balance_CYSY_map_control_one_hundred_limited = yes
+		updated_CYSY_map_control_one_hundred_limited = yes
+	}
+	else_if = {
+		limit = {
+			check_variable = { total < 100 }
+		}
+		add_to_variable = { ZJC_control_percent = 1 }
+		country_event = { id = cysy.999 }
+		updated_CYSY_map_control_one_hundred_limited = yes
+	}
+	round_variable  =  ZJC_control_percent 
+	round_variable  =  JWC_control_percent 
+	round_variable  =  XSH_control_percent
+	round_variable  =  FJW_control_percent
+	round_variable  =  JBZX_control_percent
+	set_temp_variable = { total = ZJC_control_percent }
+	add_to_temp_variable = { total = JWC_control_percent }
+	add_to_temp_variable = { total = XSH_control_percent }
+	add_to_temp_variable = { total = FJW_control_percent }
+	add_to_temp_variable = { total = JBZX_control_percent }
+	if = {
+		limit = {
+			NOT={
+				check_variable = { total = 100 }
+			}
+			check_if_need_balance = yes
+		}
+	}
+}
+######限制不超过100#####
+balance_CYSY_map_control_one_hundred_limited = {
+	#clamp_variable = { var = ZJC_control_percent min = 0 max = 100 }
+	#clamp_variable = { var = JWC_control_percent min = 0 max = 100 }
+	#clamp_variable = { var = XSH_control_percent min = 0 max = 100 }
+	#clamp_variable = { var = JWC_control_percent min = 0 max = 100 }
+	#clamp_variable = { var = JBZX_control_percent min = 0 max = 100 }
+
+	set_temp_variable = { total = ZJC_control_percent }
+	add_to_temp_variable = { total = JWC_control_percent }
+	add_to_temp_variable = { total = XSH_control_percent }
+	add_to_temp_variable = { total = FJW_control_percent }
+	add_to_temp_variable = { total = JBZX_control_percent }
+	#if = {
+	#	limit = {
+	#		NOT = {
+	#			check_variable = { total = 100 }
+	#		}
+			divide_temp_variable = { total = 100 }
+			divide_variable = { ZJC_control_percent = total }
+			divide_variable = { JWC_control_percent = total }
+			divide_variable = { XSH_control_percent = total }
+			divide_variable = { FJW_control_percent = total }
+			divide_variable = { JBZX_control_percent = total }
+			round_variable  =  ZJC_control_percent 
+			round_variable  =  JWC_control_percent 
+			round_variable  =  XSH_control_percent
+			round_variable  =  FJW_control_percent
+			round_variable  =  JBZX_control_percent 
+	#	}
+	#}
+	
+
 }
 
 ##################把各个地区的变量导入进来##################
@@ -162,3 +239,255 @@ create_CYSY_control_pie_charts = {
 }
 
 
+####把辛辛苦苦算出来的新数据代入原来数值###
+##也就是上面那个"导入"动作的逆向行为##
+updated_CYSY_map_control_one_hundred_limited = {
+	if = {
+		limit = {
+			has_country_flag = CYSY_map_XX_chosen_flag
+		}
+		set_variable = {  ZJC_control_percent_XX = ZJC_control_percent}
+		set_variable = {  JWC_control_percent_XX = JWC_control_percent}
+		set_variable = {  XSH_control_percent_XX = XSH_control_percent}
+		set_variable = {  FJW_control_percent_XX = FJW_control_percent}
+		set_variable = {  JBZX_control_percent_XX = JBZX_control_percent}
+
+	}
+	else_if = {
+		limit = {
+			has_country_flag = CYSY_map_senior3_master_chosen_flag
+		}
+		set_variable = {  ZJC_control_percent_senior3_master = ZJC_control_percent}
+		set_variable = {  JWC_control_percent_senior3_master = JWC_control_percent}
+		set_variable = {  XSH_control_percent_senior3_master = XSH_control_percent}
+		set_variable = {  FJW_control_percent_senior3_master = FJW_control_percent}
+		set_variable = {  JBZX_control_percent_senior3_master = JBZX_control_percent}
+
+	}
+	else_if = {
+		limit = {
+			has_country_flag = CYSY_map_senior3_main_chosen_flag
+		}
+		set_variable = {  ZJC_control_percent_senior3_main = ZJC_control_percent}
+		set_variable = {  JWC_control_percent_senior3_main = JWC_control_percent}
+		set_variable = {  XSH_control_percent_senior3_main = XSH_control_percent}
+		set_variable = {  FJW_control_percent_senior3_main = FJW_control_percent}
+		set_variable = {  JBZX_control_percent_senior3_main = JBZX_control_percent}
+
+	}
+	else_if = {
+		limit = {
+			has_country_flag = CYSY_map_senior2_north_chosen_flag
+		}
+		set_variable = {  ZJC_control_percent_senior2_north = ZJC_control_percent}
+		set_variable = {  JWC_control_percent_senior2_north = JWC_control_percent}
+		set_variable = {  XSH_control_percent_senior2_north = XSH_control_percent}
+		set_variable = {  FJW_control_percent_senior2_north = FJW_control_percent}
+		set_variable = {  JBZX_control_percent_senior2_north = JBZX_control_percent}
+
+	}
+	else_if = {
+		limit = {
+			has_country_flag = CYSY_map_senior2_B_chosen_flag
+		}
+		set_variable = {  ZJC_control_percent_senior2_B = ZJC_control_percent}
+		set_variable = {  JWC_control_percent_senior2_B = JWC_control_percent}
+		set_variable = {  XSH_control_percent_senior2_B = XSH_control_percent}
+		set_variable = {  FJW_control_percent_senior2_B = FJW_control_percent}
+		set_variable = {  JBZX_control_percent_senior2_B = JBZX_control_percent}
+
+	}
+	else_if = {
+		limit = {
+			has_country_flag = CYSY_map_senior2_south_chosen_flag
+		}
+		set_variable = {  ZJC_control_percent_senior2_south = ZJC_control_percent}
+		set_variable = {  JWC_control_percent_senior2_south = JWC_control_percent}
+		set_variable = {  XSH_control_percent_senior2_south = XSH_control_percent}
+		set_variable = {  FJW_control_percent_senior2_south = FJW_control_percent}
+		set_variable = {  JBZX_control_percent_senior2_south = JBZX_control_percent}
+
+	}
+	else_if = {
+		limit = {
+			has_country_flag = CYSY_map_senior3_south_chosen_flag
+		}
+		set_variable = {  ZJC_control_percent_senior3_south = ZJC_control_percent}
+		set_variable = {  JWC_control_percent_senior3_south = JWC_control_percent}
+		set_variable = {  XSH_control_percent_senior3_south = XSH_control_percent}
+		set_variable = {  FJW_control_percent_senior3_south = FJW_control_percent}
+		set_variable = {  JBZX_control_percent_senior3_south = JBZX_control_percent}
+
+	}
+	else_if = {
+		limit = {
+			has_country_flag = CYSY_map_senior_west_chosen_flag
+		}
+		set_variable = {  ZJC_control_percent_senior_west = ZJC_control_percent}
+		set_variable = {  JWC_control_percent_senior_west = JWC_control_percent}
+		set_variable = {  XSH_control_percent_senior_west = XSH_control_percent}
+		set_variable = {  FJW_control_percent_senior_west = FJW_control_percent}
+		set_variable = {  JBZX_control_percent_senior_west = JBZX_control_percent}
+
+	}
+	else_if = {
+		limit = {
+			has_country_flag = CYSY_map_senior1_main_chosen_flag
+		}
+		set_variable = {  ZJC_control_percent_senior1_main = ZJC_control_percent}
+		set_variable = {  JWC_control_percent_senior1_main = JWC_control_percent}
+		set_variable = {  XSH_control_percent_senior1_main = XSH_control_percent}
+		set_variable = {  FJW_control_percent_senior1_main = FJW_control_percent}
+		set_variable = {  JBZX_control_percent_senior1_main = JBZX_control_percent}
+
+	}
+	else_if = {
+		limit = {
+			has_country_flag = CYSY_map_school_hall_chosen_flag
+		}
+		set_variable = {  ZJC_control_percent_school_hall = ZJC_control_percent}
+		set_variable = {  JWC_control_percent_school_hall = JWC_control_percent}
+		set_variable = {  XSH_control_percent_school_hall = XSH_control_percent}
+		set_variable = {  FJW_control_percent_school_hall = FJW_control_percent}
+		set_variable = {  JBZX_control_percent_school_hall = JBZX_control_percent}
+
+	}
+	else_if = {
+		limit = {
+			has_country_flag = CYSY_map_senior_east_chosen_flag
+		}
+		set_variable = {  ZJC_control_percent_senior_east = ZJC_control_percent}
+		set_variable = {  JWC_control_percent_senior_east = JWC_control_percent}
+		set_variable = {  XSH_control_percent_senior_east = XSH_control_percent}
+		set_variable = {  FJW_control_percent_senior_east = FJW_control_percent}
+		set_variable = {  JBZX_control_percent_senior_east = JBZX_control_percent}
+
+	}
+	else_if = {
+		limit = {
+			has_country_flag = CYSY_map_XX_chosen_flag
+		}
+		set_variable = {  ZJC_control_percent_XX = ZJC_control_percent}
+		set_variable = {  JWC_control_percent_XX = JWC_control_percent}
+		set_variable = {  XSH_control_percent_XX = XSH_control_percent}
+		set_variable = {  FJW_control_percent_XX = FJW_control_percent}
+		set_variable = {  JBZX_control_percent_XX = JBZX_control_percent}
+
+	}
+
+}
+
+
+CYSY_very_simple_all_update = {
+	set_country_flag = CYSY_map_senior3_master_chosen_flag
+	clr_country_flag = CYSY_map_senior3_main_chosen_flag
+	clr_country_flag = CYSY_map_senior2_north_chosen_flag
+	clr_country_flag = CYSY_map_senior2_B_chosen_flag
+	clr_country_flag = CYSY_map_senior2_south_chosen_flag
+	clr_country_flag = CYSY_map_senior3_south_chosen_flag
+	clr_country_flag = CYSY_map_senior_west_chosen_flag
+	clr_country_flag = CYSY_map_senior_east_chosen_flag
+	clr_country_flag = CYSY_map_senior1_main_chosen_flag
+	clr_country_flag = CYSY_map_school_hall_chosen_flag
+	check_if_need_balance = yes
+	clr_country_flag = CYSY_map_senior3_master_chosen_flag
+	set_country_flag = CYSY_map_senior3_main_chosen_flag
+	clr_country_flag = CYSY_map_senior2_north_chosen_flag
+	clr_country_flag = CYSY_map_senior2_B_chosen_flag
+	clr_country_flag = CYSY_map_senior2_south_chosen_flag
+	clr_country_flag = CYSY_map_senior3_south_chosen_flag
+	clr_country_flag = CYSY_map_senior_west_chosen_flag
+	clr_country_flag = CYSY_map_senior_east_chosen_flag
+	clr_country_flag = CYSY_map_senior1_main_chosen_flag
+	clr_country_flag = CYSY_map_school_hall_chosen_flag
+	check_if_need_balance = yes
+	clr_country_flag = CYSY_map_senior3_master_chosen_flag
+	clr_country_flag = CYSY_map_senior3_main_chosen_flag
+	set_country_flag = CYSY_map_senior2_north_chosen_flag
+	clr_country_flag = CYSY_map_senior2_B_chosen_flag
+	clr_country_flag = CYSY_map_senior2_south_chosen_flag
+	clr_country_flag = CYSY_map_senior3_south_chosen_flag
+	clr_country_flag = CYSY_map_senior_west_chosen_flag
+	clr_country_flag = CYSY_map_senior_east_chosen_flag
+	clr_country_flag = CYSY_map_senior1_main_chosen_flag
+	clr_country_flag = CYSY_map_school_hall_chosen_flag
+	check_if_need_balance = yes
+	clr_country_flag = CYSY_map_senior3_master_chosen_flag
+	clr_country_flag = CYSY_map_senior3_main_chosen_flag
+	clr_country_flag = CYSY_map_senior2_north_chosen_flag
+	set_country_flag = CYSY_map_senior2_B_chosen_flag
+	clr_country_flag = CYSY_map_senior2_south_chosen_flag
+	clr_country_flag = CYSY_map_senior3_south_chosen_flag
+	clr_country_flag = CYSY_map_senior_west_chosen_flag
+	clr_country_flag = CYSY_map_senior_east_chosen_flag
+	clr_country_flag = CYSY_map_senior1_main_chosen_flag
+	clr_country_flag = CYSY_map_school_hall_chosen_flag
+	check_if_need_balance = yes
+	clr_country_flag = CYSY_map_senior3_master_chosen_flag
+	clr_country_flag = CYSY_map_senior3_main_chosen_flag
+	clr_country_flag = CYSY_map_senior2_north_chosen_flag
+	clr_country_flag = CYSY_map_senior2_B_chosen_flag
+	set_country_flag = CYSY_map_senior2_south_chosen_flag
+	clr_country_flag = CYSY_map_senior3_south_chosen_flag
+	clr_country_flag = CYSY_map_senior_west_chosen_flag
+	clr_country_flag = CYSY_map_senior_east_chosen_flag
+	clr_country_flag = CYSY_map_senior1_main_chosen_flag
+	clr_country_flag = CYSY_map_school_hall_chosen_flag
+	check_if_need_balance = yes
+	clr_country_flag = CYSY_map_senior3_master_chosen_flag
+	clr_country_flag = CYSY_map_senior3_main_chosen_flag
+	clr_country_flag = CYSY_map_senior2_north_chosen_flag
+	clr_country_flag = CYSY_map_senior2_B_chosen_flag
+	clr_country_flag = CYSY_map_senior2_south_chosen_flag
+	set_country_flag = CYSY_map_senior3_south_chosen_flag
+	clr_country_flag = CYSY_map_senior_west_chosen_flag
+	clr_country_flag = CYSY_map_senior_east_chosen_flag
+	clr_country_flag = CYSY_map_senior1_main_chosen_flag
+	clr_country_flag = CYSY_map_school_hall_chosen_flag
+	check_if_need_balance = yes
+	clr_country_flag = CYSY_map_senior3_master_chosen_flag
+	clr_country_flag = CYSY_map_senior3_main_chosen_flag
+	clr_country_flag = CYSY_map_senior2_north_chosen_flag
+	clr_country_flag = CYSY_map_senior2_B_chosen_flag
+	clr_country_flag = CYSY_map_senior2_south_chosen_flag
+	clr_country_flag = CYSY_map_senior3_south_chosen_flag
+	set_country_flag = CYSY_map_senior_west_chosen_flag
+	clr_country_flag = CYSY_map_senior_east_chosen_flag
+	clr_country_flag = CYSY_map_senior1_main_chosen_flag
+	clr_country_flag = CYSY_map_school_hall_chosen_flag
+	check_if_need_balance = yes
+	clr_country_flag = CYSY_map_senior3_master_chosen_flag
+	clr_country_flag = CYSY_map_senior3_main_chosen_flag
+	clr_country_flag = CYSY_map_senior2_north_chosen_flag
+	clr_country_flag = CYSY_map_senior2_B_chosen_flag
+	clr_country_flag = CYSY_map_senior2_south_chosen_flag
+	clr_country_flag = CYSY_map_senior3_south_chosen_flag
+	clr_country_flag = CYSY_map_senior_west_chosen_flag
+	set_country_flag = CYSY_map_senior_east_chosen_flag
+	clr_country_flag = CYSY_map_senior1_main_chosen_flag
+	clr_country_flag = CYSY_map_school_hall_chosen_flag
+	check_if_need_balance = yes
+	clr_country_flag = CYSY_map_senior3_master_chosen_flag
+	clr_country_flag = CYSY_map_senior3_main_chosen_flag
+	clr_country_flag = CYSY_map_senior2_north_chosen_flag
+	clr_country_flag = CYSY_map_senior2_B_chosen_flag
+	clr_country_flag = CYSY_map_senior2_south_chosen_flag
+	clr_country_flag = CYSY_map_senior3_south_chosen_flag
+	clr_country_flag = CYSY_map_senior_west_chosen_flag
+	clr_country_flag = CYSY_map_senior_east_chosen_flag
+	set_country_flag = CYSY_map_senior1_main_chosen_flag
+	clr_country_flag = CYSY_map_school_hall_chosen_flag
+	check_if_need_balance = yes
+	clr_country_flag = CYSY_map_senior3_master_chosen_flag
+	clr_country_flag = CYSY_map_senior3_main_chosen_flag
+	clr_country_flag = CYSY_map_senior2_north_chosen_flag
+	clr_country_flag = CYSY_map_senior2_B_chosen_flag
+	clr_country_flag = CYSY_map_senior2_south_chosen_flag
+	clr_country_flag = CYSY_map_senior3_south_chosen_flag
+	clr_country_flag = CYSY_map_senior_west_chosen_flag
+	clr_country_flag = CYSY_map_senior_east_chosen_flag
+	clr_country_flag = CYSY_map_senior1_main_chosen_flag
+	set_country_flag = CYSY_map_school_hall_chosen_flag
+	check_if_need_balance = yes
+
+}

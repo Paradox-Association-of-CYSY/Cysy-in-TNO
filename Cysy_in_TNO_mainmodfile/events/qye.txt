@@ -150,3 +150,148 @@ news_event = {
 			name = cysy.7.a
 		}
 	}
+country_event = { # 妈的，作死的脸！再看老子把你腿打断！
+	id = cysy.5555
+	immediate = {log = "[GetDateText]: [Root.GetName]: event cysyxx.5555"}
+	title = cysy.5555.t
+	desc = cysy.5555.desc
+	picture = GFX_report_event_map
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = cysy.5555.a
+		create_country_leader = {
+			name = "Lu Chuanhong"
+			picture = "gfx/leaders/lch_purple.png"
+			expire = "1994.4.20"
+			ideology = esoteric_nazism_lchism_subtype
+		}
+		set_politics = {
+			ruling_party = esoteric_nazism
+		}
+		add_popularity = {
+			ideology = esoteric_nazism
+			popularity = 0.50
+		}
+		add_ideas = cysy_zfc
+		add_ideas = cysy_xu
+		add_ideas = cysy_suannai
+		add_ideas = cysy_lch_zz
+		
+	}
+}
+country_event = {# 这是一个变量的测试事件
+	id = cysy.1001
+	immediate = {log = "[GetDateText]: [Root.GetName]: event cysyxx.1000"}
+	title = cysy.1001.t
+	desc = cysy.1001.desc
+	picture = GFX_report_event_map
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { #
+		name = cysy.1001.ZJC
+		add_to_variable = { ZJC_control_percent_senior3_master = 10}
+		
+	}
+	option = { #
+		name = cysy.1001.JWC
+		add_to_variable = { JWC_control_percent_senior3_master = 10}
+		
+	}
+	option = { #
+		name = cysy.1001.XSH
+		add_to_variable = { XSH_control_percent_senior3_master = 10}
+		
+	}
+	option = { #
+		name = cysy.1001.FJW
+		add_to_variable = { FJW_control_percent_senior3_master = 10} 
+		
+	}
+	option = { #
+		name = cysy.1001.JBZX
+		add_to_variable = { JBZX_control_percent_senior3_master = 10} 
+		
+	}
+
+}
+country_event = {# 这是一个变量的测试事件,给高三综合楼的那些玩意加控制力
+	id = cysy.1001
+	immediate = {log = "[GetDateText]: [Root.GetName]: event cysyxx.1000"}
+	title = cysy.1001.t
+	desc = cysy.1001.desc
+	picture = GFX_report_event_map
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { #
+		name = cysy.1001.ZJC
+		add_to_variable = { ZJC_control_percent_senior3_master = 10}
+		
+	}
+	option = { #
+		name = cysy.1001.JWC
+		add_to_variable = { JWC_control_percent_senior3_master = 10}
+		
+	}
+	option = { #
+		name = cysy.1001.XSH
+		add_to_variable = { XSH_control_percent_senior3_master = 10}
+		
+	}
+	option = { #
+		name = cysy.1001.FJW
+		add_to_variable = { FJW_control_percent_senior3_master = 10} 
+		
+	}
+	option = { #
+		name = cysy.1001.JBZX
+		add_to_variable = { JBZX_control_percent_senior3_master = 10} 
+		
+	}
+	update_all_CYSY_control_pie_charts = yes
+}
+country_event = {# 给全校的进步阵线加50， 大大带涂色捏
+	id = cysy.1002
+	immediate = {log = "[GetDateText]: [Root.GetName]: event cysyxx.1000"}
+	title = cysy.1002.t
+	desc = cysy.1002.desc
+	picture = GFX_report_event_map
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { #
+		name = cysy.1002.a
+		add_to_variable = { JBZX_control_percent_senior3_master = 50}
+		add_to_variable = { JBZX_control_percent_senior3_main = 50}
+		add_to_variable = { JBZX_control_percent_senior2_north = 50}
+		add_to_variable = { JBZX_control_percent_senior2_B = 50}
+		add_to_variable = { JBZX_control_percent_senior2_south = 50}
+		add_to_variable = { JBZX_control_percent_senior3_south = 50}
+		add_to_variable = { JBZX_control_percent_senior_west = 50}
+		add_to_variable = { JBZX_control_percent_senior1_main = 50}
+		add_to_variable = { JBZX_control_percent_school_hall = 55}
+		add_to_variable = { JBZX_control_percent_senior_east = 50}
+		update_all_CYSY_control_pie_charts = yes
+		clr_country_flag = CYSY_jbzx_has_not_appear
+	}
+
+}
+country_event = {# 用于测试是否触发effect country_event = { id = cysy.999 }
+	id = cysy.999
+	immediate = {log = "[GetDateText]: [Root.GetName]: event cysyxx.1000"}
+	title = cysy.999.t
+	desc = cysy.999.desc
+	picture = GFX_report_event_map
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { #
+		name = cysy.999.a
+
+	}
+
+}

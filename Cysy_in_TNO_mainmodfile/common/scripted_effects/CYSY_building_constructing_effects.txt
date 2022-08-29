@@ -54,4 +54,3 @@ complete_now_CYSY_building_constructing = {
 		country_event = { id = cysyxx.1001 }
 	}
 }
-

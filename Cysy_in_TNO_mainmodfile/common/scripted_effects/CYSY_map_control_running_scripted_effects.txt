@@ -1,0 +1,34 @@
+#balance_CYSY_map_control_one_hundred_limited = {
+#	putin_CYSY_map_control_running_data = yes
+#	update_CYSY_total_control_running_data = yes
+#	if = {
+#		limit = {
+#			check_variable = { CYSY_total_control_running_data > 100}
+#		}
+#
+#	}
+#}
+#putin_CYSY_map_control_running_data= {
+#	set_variable = { ZJC_control_running_data = ZJC_control_percent }
+#	set_variable = { JWC_control_running_data = JWC_control_percent }
+#	set_variable = { XSH_control_running_data = XSH_control_percent }
+#	set_variable = { FJW_control_running_data = FJW_control_percent }
+#	set_variable = { JBZX_control_running_data = JBZX_control_percent }
+#}
+#update_CYSY_total_control_running_data = {
+#	set_variable = { CYSY_total_control_running_data = 0}
+#	add_to_variable = { CYSY_total_control_running_data = ZJC_control_percent}
+#	add_to_variable = { CYSY_total_control_running_data = JWC_control_percent}
+#	add_to_variable = { CYSY_total_control_running_data = ZSH_control_percent}
+#	add_to_variable = { CYSY_total_control_running_data = FJW_control_percent}
+#	add_to_variable = { CYSY_total_control_running_data = JBZX_control_percent}
+#}
+
+#act_CYSY_map_control_running_data_subtraction = {
+
+#}
+#ZJC_control_running_data
+#JWC_control_running_data
+#XSH_control_running_data
+#FJW_control_running_data
+#JBZX_control_running_data
