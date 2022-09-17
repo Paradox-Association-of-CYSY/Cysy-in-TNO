@@ -282,7 +282,7 @@ country_event = {# 给全校的进步阵线加50， 大大带涂色捏
 }
 country_event = {# 用于测试是否触发effect country_event = { id = cysy.999 }
 	id = cysy.999
-	immediate = {log = "[GetDateText]: [Root.GetName]: event cysyxx.1000"}
+	immediate = {log = "[GetDateText]: [Root.GetName]: event cysyxx.999"}
 	title = cysy.999.t
 	desc = cysy.999.desc
 	picture = GFX_report_event_map
@@ -292,6 +292,23 @@ country_event = {# 用于测试是否触发effect country_event = { id = cysy.99
 	option = { #
 		name = cysy.999.a
 
+	}
+
+}
+
+country_event = {# 用于打开二阶段国策树 { id = cysy.1003 }
+	id = cysy.1003
+	immediate = {log = "[GetDateText]: [Root.GetName]: event cysy.1003"}
+	title = cysy.1003.t
+	desc = cysy.1003.desc
+	picture = GFX_report_event_map
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { #
+		name = cysy.1003.a
+		set_country_flag = CYS_Resignation_Crisis_tree_on
+		clr_country_flag = CYS_Start_focus_tree_on
 	}
 
 }

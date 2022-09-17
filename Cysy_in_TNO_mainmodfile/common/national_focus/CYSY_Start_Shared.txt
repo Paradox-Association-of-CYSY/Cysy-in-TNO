@@ -58,7 +58,7 @@ shared_focus = {
 	id = CYS_zfc_s_plan ##张复昌计划
 	icon = GFX_goal_CYS_zfc_s_plan
 	cost = 3.00
-
+	 
 	prerequisite = {
 		focus = CYS_prepare_for_the_new_school_year
 	}
@@ -84,7 +84,7 @@ shared_focus = {
 	id = CYS_evaluate_the_scores ##成绩评估
 	icon = GFX_goal_CYS_evaluate_the_scores
 	cost = 3.00
-	allow_branch = { has_country_flag = CYS_Start_focus_tree_on }
+	 
 	prerequisite = {
 		focus = CYS_zfc_s_plan
 	}
@@ -107,7 +107,7 @@ shared_focus = {
 	id = CYS_number_like_the_old_days ##旧年数目
 	icon = GFX_goal_CYS_number_like_the_old_days
 	cost = 3.00
-	allow_branch = { has_country_flag = CYS_Start_focus_tree_on }
+	 
 	prerequisite = {
 		focus = CYS_evaluate_the_scores
 	}
@@ -130,7 +130,7 @@ shared_focus = {
 	id = CYS_take_japanese_standards ##日本录取标准
 	icon = GFX_goal_CYS_take_japanese_standards
 	cost = 3.00
-	allow_branch = { has_country_flag = CYS_Start_focus_tree_on }
+	 
 	prerequisite = {
 		focus = CYS_evaluate_the_scores
 	}
@@ -153,7 +153,7 @@ shared_focus = {
 	id = CYS_scholarship_for_good_ones ##优生奖金
 	icon = GFX_goal_CYS_scholarship_for_good_ones
 	cost = 3.00
-	allow_branch = { has_country_flag = CYS_Start_focus_tree_on }
+	 
 	prerequisite = {
 		focus = CYS_evaluate_the_scores
 	}
@@ -176,7 +176,7 @@ shared_focus = {
 	id = CYS_a_large_crowd_of_good_students ##学子芸芸
 	icon = GFX_goal_CYS_a_large_crowd_of_good_students
 	cost = 3.00
-	allow_branch = { has_country_flag = CYS_Start_focus_tree_on }
+	 
 	prerequisite = {
 		focus = CYS_scholarship_for_good_ones
 	}
@@ -207,7 +207,7 @@ shared_focus = {
 	id = CYS_zsp_s_plan ##张仕平计划
 	icon = GFX_goal_CYS_zsp_s_plan
 	cost = 3.00
-
+	 
 	prerequisite = {
 		focus = CYS_prepare_for_the_new_school_year
 	}
@@ -233,7 +233,7 @@ shared_focus = {
 	id = CYS_financial_reports ##财报统计
 	icon = GFX_goal_CYS_financial_reports
 	cost = 3.00
-	allow_branch = { has_country_flag = CYS_Start_focus_tree_on }
+	 
 	prerequisite = {
 		focus = CYS_zsp_s_plan
 	}
@@ -256,7 +256,7 @@ shared_focus = {
 	id = CYS_think_about_taking_in_more_students ##考虑扩招
 	icon = GFX_goal_CYS_think_about_taking_in_more_students
 	cost = 3.00
-	allow_branch = { has_country_flag = CYS_Start_focus_tree_on }
+	 
 	prerequisite = {
 		focus = CYS_financial_reports
 	}
@@ -279,7 +279,7 @@ shared_focus = {
 	id = CYS_the_door_will_be_open_for_them ##向他们敞开大门
 	icon = GFX_goal_CYS_the_door_will_be_open_for_them
 	cost = 3.00
-	allow_branch = { has_country_flag = CYS_Start_focus_tree_on }
+	 
 	prerequisite = {
 		focus = CYS_financial_reports
 	}
@@ -302,7 +302,7 @@ shared_focus = {
 	id = CYS_this_is_the_true_charity ##这才是慈善
 	icon = GFX_goal_CYS_this_is_the_true_charity
 	cost = 3.00
-	allow_branch = { has_country_flag = CYS_Start_focus_tree_on }
+	 
 	prerequisite = {
 		focus = CYS_financial_reports
 	}
@@ -325,7 +325,7 @@ shared_focus = {
 	id = CYS_a_large_sum_of_good_money ##财源滚滚
 	icon = GFX_goal_CYS_a_large_sum_of_good_money
 	cost = 3.00
-	allow_branch = { has_country_flag = CYS_Start_focus_tree_on }
+	 
 	prerequisite = {
 		focus = CYS_think_about_taking_in_more_students
 	}
@@ -356,7 +356,7 @@ shared_focus = {
 	id = CYS_opening_ceremony_of_year_61to62 #开学典礼
 	icon = GFX_goal_CYS_opening_ceremony_of_year_61to62
 	cost = 3.00
-	allow_branch = { has_country_flag = CYS_Start_focus_tree_on }
+	 
 	prerequisite = {
 		focus = CYS_a_large_crowd_of_good_students
 		focus = CYS_a_large_sum_of_good_money
@@ -381,6 +381,7 @@ shared_focus = {
 	id = CYS_educational_research_survey_once_again ##再次教研调查
 	icon = GFX_goal_CYS_educational_research_survey_once_again
 	cost = 3.00
+	 
 	prerequisite = {
 		focus = CYS_opening_ceremony_of_year_61to62
 	}
@@ -403,6 +404,7 @@ shared_focus = {
 	id = CYS_reevaluate_teachers ##重评教师等级
 	icon = GFX_goal_CYS_reevaluate_teachers
 	cost = 3.00
+	 
 	prerequisite = {
 		focus = CYS_educational_research_survey_once_again
 	}
@@ -425,6 +427,7 @@ shared_focus = {
 	id = CYS_revise_contracts ##修改合同
 	icon = GFX_goal_CYS_revise_contracts
 	cost = 3.00
+	 
 	prerequisite = {
 		focus = CYS_reevaluate_teachers
 	}
@@ -450,6 +453,7 @@ shared_focus = {
 	id = CYS_teachers_get_competitive ##教师也得卷
 	icon = GFX_goal_CYS_teachers_get_competitive
 	cost = 3.00
+	 
 	prerequisite = {
 		focus = CYS_revise_contracts
 	}
@@ -472,6 +476,7 @@ shared_focus = {
 	id = CYS_show_our_respect_for_them ##尊重职业
 	icon = GFX_goal_CYS_show_our_respect_for_them
 	cost = 3.00
+	 
 	prerequisite = {
 		focus = CYS_reevaluate_teachers
 	}
@@ -497,6 +502,7 @@ shared_focus = {
 	id = CYS_more_bonus_for_teachers ##增加教师奖金
 	icon = GFX_goal_CYS_more_bonus_for_teachers
 	cost = 3.00
+	 
 	prerequisite = {
 		focus = CYS_show_our_respect_for_them
 	}
@@ -518,6 +524,7 @@ shared_focus = {
 	id = CYS_announcement_of_examination_plan ##公布考试计划
 	icon = GFX_goal_CYS_announcement_of_examination_plan
 	cost = 3.00
+	 
 	prerequisite = {
 		focus = CYS_educational_research_survey_once_again
 	}
@@ -540,6 +547,7 @@ shared_focus = {
 	id = CYS_speed_up_the_reform ##加快改革步伐
 	icon = GFX_goal_CYS_speed_up_the_reform
 	cost = 3.00
+	 
 	prerequisite = {
 		focus = CYS_opening_ceremony_of_year_61to62
 	}
@@ -561,6 +569,7 @@ shared_focus = {
 	id = CYS_some_new_met_guys ##提拔新人
 	icon = GFX_goal_CYS_some_new_met_guys
 	cost = 3.00
+	 
 	prerequisite = {
 		focus = CYS_speed_up_the_reform
 	}
@@ -585,6 +594,7 @@ shared_focus = {
 	id = CYS_japanese_experts ##日本专家
 	icon = GFX_goal_CYS_japanese_experts
 	cost = 3.00
+	
 	prerequisite = {
 		focus = CYS_speed_up_the_reform
 	}
@@ -1360,7 +1370,7 @@ shared_focus = {
 	id = CYS_annual_construction_project ##年度扩建
 	icon = GFX_goal_CYS_annual_construction_project
 	cost = 3.00
-	allow_branch = { has_country_flag = CYS_Start_focus_tree_on }
+	 
 	#prerequisite = {
 	#
 	#	focus = 

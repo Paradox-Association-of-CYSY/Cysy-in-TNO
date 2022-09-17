@@ -1,0 +1,311 @@
+##########################################
+##########################################
+##########################################
+#######   Oilfield Su Designed	  ########
+##########################################
+##########################################
+##########################################
+##########################################
+#shared_focus = {
+#	id = CYS_XXXXXX ##模板
+#	icon = GFX_goal_
+#	cost = 3.00
+#	prerequisite = {
+#		focus = XXXXXX
+#	}
+#	available = {
+#		CSY_is_not_in_crisis = yes
+#	}
+#	cancel_if_invalid = yes
+#	x = 0
+#	y = 0
+#	completion_reward = {
+#		log = "[GetDateText]: [Root.GetName]: Focus XXXXXX"
+#		hidden_effect = {
+#			country_event = {
+#			}
+#		}
+#	}
+#}
+##############################################
+#######  张 复 昌 辞 职 危 机 国 策 树 #########
+##############################################
+shared_focus = {
+	id = CYS_resignation_of_the_designer ##设计师的离职
+	icon = GFX_goal_CYS_resignation_of_the_designer 
+	cost = 3.00
+	allow_branch = { has_country_flag = CYS_Resignation_Crisis_tree_on }
+	#prerequisite = {
+	#
+	#	focus = 
+	#}
+	available = {
+		CSY_is_not_in_crisis = no
+	}
+	cancel_if_invalid = yes
+	x = 7
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_departure_of_the_designer"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+
+}
+
+shared_focus = {
+	id = CYS_emergency_personnel_meeting ##紧急人事会议
+	icon = GFX_goal_CYS_emergency_personnel_meeting
+	cost = 3.00
+
+	prerequisite = {
+		focus = CYS_resignation_of_the_designer
+	}
+	available = {
+		CSY_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes 
+	x = 7
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_emergency_personnel_meeting"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+ #####处理教师方面问题
+shared_focus = {
+	id = CYS_job_hopping_doubts #绕树三匝
+	icon = GFX_goal_CYS_job_hopping_doubts
+	cost = 3.00
+
+	prerequisite = {
+		focus = CYS_emergency_personnel_meeting
+	}
+
+	available = {
+		CSY_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes
+	x = 5
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_job_hopping_doubts"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CYS_promise_some_positions #许诺职位
+	icon = GFX_goal_CYS_promise_some_positions
+	cost = 3.00
+
+	prerequisite = {
+		focus = CYS_job_hopping_doubts
+	}
+	mutually_exclusive = {
+		focus = CYS_the_market_rule_of_interest
+	}
+	available = {
+		CSY_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes
+	x = 4
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_promise_some_positions"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CYS_the_market_rule_of_interest #市场法则
+	icon = GFX_goal_CYS_the_market_rule_of_interest
+	cost = 3.00
+
+	prerequisite = {
+		focus = CYS_job_hopping_doubts
+	}
+	mutually_exclusive = {
+		focus = CYS_promise_some_positions
+	}
+	available = {
+		CSY_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes
+	x = 6
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_the_market_rule_of_interest"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CYS_back_to_work_securely_teachers #请安心回岗
+	icon = GFX_goal_CYS_back_to_work_teachers
+	cost = 3.00
+
+	prerequisite = {
+		focus = CYS_promise_some_positions
+	}
+	prerequisite = {
+		focus = CYS_the_market_rule_of_interest
+	}
+	available = {
+		CSY_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes
+	x = 5
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_back_to_work_securely_teachers"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+
+
+ #####处理学生方面问题
+ shared_focus = {
+	id = CYS_school_qualities_doubts #后浪汇涌
+	icon = GFX_goal_CYS_school_qualities_doubts
+	cost = 3.00
+
+	prerequisite = {
+		focus = CYS_emergency_personnel_meeting
+	}
+
+	available = {
+		CSY_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes
+	x = 9
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_school_qualities_doubts"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CYS_calm_their_nerves #安抚情绪
+	icon = GFX_goal_CYS_calm_their_nerves
+	cost = 3.00
+
+	prerequisite = {
+		focus = CYS_school_qualities_doubts
+	}
+	mutually_exclusive = {
+		focus = CYS_give_tangible_benefits
+	}
+	available = {
+		CSY_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes
+	x = 8
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_calm_their_nerves"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CYS_give_tangible_benefits #给予实利
+	icon = GFX_goal_CYS_give_tangible_benefits
+	cost = 3.00
+
+	prerequisite = {
+		focus = CYS_school_qualities_doubts
+	}
+	mutually_exclusive = {
+		focus = CYS_calm_their_nerves
+	}
+	available = {
+		CSY_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes
+	x = 10
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_give_tangible_benefits"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CYS_back_to_study_quietly_students #快静心学习
+	icon = GFX_goal_CYS_back_to_study_quietly_students
+	cost = 3.00
+
+	prerequisite = {
+		focus = CYS_calm_their_nerves
+	}
+	prerequisite = {
+		focus = CYS_give_tangible_benefits
+	}
+	available = {
+		CSY_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes
+	x = 9
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_back_to_study_quietly_students"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CYS_the_aftermath_will_be_quelled #余波终将平
+	icon = GFX_goal_CYS_the_aftermath_will_be_quelled
+	cost = 3.00
+
+	prerequisite = {
+		focus = CYS_back_to_study_quietly_students
+	}
+	prerequisite = {
+		focus = CYS_back_to_work_securely_teachers
+	}
+	available = {
+		CSY_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes
+	x = 7
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_the_aftermath_will_be_quelled"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}

@@ -282,7 +282,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/goal_CYS_keep_the_goodies_inside.png"
 	}
 
-	SpriteType = {
+	SpriteType = { 
 		name = "GFX_goal_CYS_the_first_test_of_the_inheritor"
 		texturefile = "gfx/interface/goals/goal_CYS_the_first_test_of_the_inheritor.png"
 	}
@@ -311,7 +311,10 @@ spriteTypes = {
 		name = "GFX_goal_CYS_that_is_kwangtung_speed"
 		texturefile = "gfx/interface/goals/goal_CYS_that_is_kwangtung_speed.png"
 	}
-
+	SpriteType = {
+		name = "GFX_goal_CYS_resignation_of_the_designer"
+		texturefile = "gfx/interface/goals/goal_CYS_resignation_of_the_designer.dds"
+	}
 	SpriteType = {
 		name = "GFX_goal_XX"
 		texturefile = "gfx/interface/goals/goal_XX.png"
