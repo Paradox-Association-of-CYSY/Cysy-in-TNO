@@ -209,6 +209,17 @@ update_all_CYSY_control_pie_percent = {
 		set_variable = { JBZX_control_percent = JBZX_control_percent_senior_east }
 
 	}
+	else_if = {
+		limit = {
+			has_country_flag = CYSY_map_senior2_multi_chosen_flag
+		}
+		set_variable = { ZJC_control_percent = ZJC_control_percent_senior2_multi }
+		set_variable = { JWC_control_percent = JWC_control_percent_senior2_multi }
+		set_variable = { XSH_control_percent = XSH_control_percent_senior2_multi }
+		set_variable = { FJW_control_percent = FJW_control_percent_senior2_multi }
+		set_variable = { JBZX_control_percent = JBZX_control_percent_senior2_multi }
+
+	}
 }
 
 

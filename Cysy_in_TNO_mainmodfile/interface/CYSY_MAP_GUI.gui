@@ -25,6 +25,15 @@ guiTypes = {
                 spriteType = "GFX_CYSY_based_map"
                 position = {x = 10 y = 39}
             }
+
+            buttonType = {
+                name = "CYSY_map_senior2_multi"
+                position = { x = 436 y = 520 } 
+                quadTextureSprite = "GFX_CYSY_map_senior2_multi_ZJC"
+                
+                Orientation = "UPPER_LEFT"
+            }
+
             buttonType = {
                 name = "CYSY_map_senior3_main"
                 position = { x = 270 y = 540 }
@@ -107,7 +116,14 @@ guiTypes = {
             }
 
 ####地图描边###
-            
+            buttonType = {
+                name = "CYSY_map_senior2_multi_outline"
+                position = { x = 436 y = 520 } 
+                quadTextureSprite = "GFX_CYSY_map_senior2_multi_unchosen"
+                
+                Orientation = "UPPER_LEFT"
+            }
+
             buttonType = {
                 name = "CYSY_map_senior3_main_outline"
                 position = { x = 270 y = 540 }
@@ -115,7 +131,7 @@ guiTypes = {
                 
                 Orientation = "UPPER_LEFT"
             }
-
+ 
             buttonType = {
                 name = "CYSY_map_senior2_B_outline"
                 position = { x = 11 y = 502 }

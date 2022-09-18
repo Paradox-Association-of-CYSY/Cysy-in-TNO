@@ -1,4 +1,22 @@
 defined_text = {
+	name = getGFX_CYSY_map_senior2_multi_outline
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_senior2_multi_chosen_flag
+		}
+		localization_key = "GFX_CYSY_map_senior2_multi_chosen"
+	}
+	text = {
+		trigger = {
+			NOT= {
+				has_country_flag = CYSY_map_senior2_multi_chosen_flag
+			}
+		}
+		localization_key = "GFX_CYSY_map_senior2_multi_unchosen"
+	}
+}
+ 
+defined_text = {
 	name = getGFX_CYSY_map_senior3_master_outline
 	text = {
 		trigger = {
@@ -203,6 +221,12 @@ defined_text = {
 	name = getGFX_CYSY_map_pic
 	text = {
 		trigger = {
+			has_country_flag = CYSY_map_senior2_multi_chosen_flag
+		}
+		localization_key = "GFX_CYSY_map_senior2_multi_pic"
+	}
+	text = {
+		trigger = {
 			has_country_flag = CYSY_map_senior3_master_chosen_flag
 		}
 		localization_key = "GFX_CYSY_map_senior3_master_pic"
@@ -283,6 +307,13 @@ defined_text = {
 }
 defined_text = {
 	name = CYSY_map_GUI_building_name
+	
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_senior2_multi_chosen_flag
+		}
+		localization_key = CYSY_map_senior2_multi_name
+	}
 	text = {
 		trigger = {
 			has_country_flag = CYSY_map_senior3_master_chosen_flag
@@ -382,6 +413,43 @@ defined_text = {
 
 
 }
+########################高二综合楼
+defined_text = {
+	name = getCYSY_map_controler_senior2_multi
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_senior2_multi_ZJC_control
+		}
+		localization_key = "GFX_CYSY_map_senior2_multi_ZJC"
+	}
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_senior2_multi_JWC_control
+		}
+		localization_key = "GFX_CYSY_map_senior2_multi_JWC"
+	}
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_senior2_multi_XSH_control
+		}
+		localization_key = "GFX_CYSY_map_senior2_multi_XSH"
+	}
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_senior2_multi_FJW_control
+		}
+		localization_key = "GFX_CYSY_map_senior2_multi_ZJC"
+	}
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_senior2_multi_JBZX_control
+		}
+		localization_key = "GFX_CYSY_map_senior2_multi_JBZX"
+	}
+
+
+}
+
 ########################高三行政楼
 defined_text = {
 	name = getCYSY_map_controler_senior3_master
@@ -932,6 +1000,12 @@ defined_text = {
 			has_country_flag = CYSY_map_XX_chosen_flag
 		}
 		localization_key = CYSY_map_building_XX_chosen_name
+	}
+	text = {
+		trigger = {
+			has_country_flag = CYSY_map_senior2_multi_chosen_flag
+		}
+		localization_key = CYSY_map_building_senior2_multi_chosen_name
 	}
 	text = {
 		trigger = {

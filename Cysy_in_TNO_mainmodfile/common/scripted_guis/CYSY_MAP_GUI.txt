@@ -13,7 +13,22 @@ scripted_gui = {
 		}
 		
 		effects = {
+			CYSY_map_senior2_multi_outline_click = {
+				set_country_flag = CYSY_map_senior2_multi_chosen_flag
+				clr_country_flag = CYSY_map_senior3_master_chosen_flag
+				clr_country_flag = CYSY_map_senior3_main_chosen_flag
+				clr_country_flag = CYSY_map_senior2_north_chosen_flag
+				clr_country_flag = CYSY_map_senior2_B_chosen_flag
+				clr_country_flag = CYSY_map_senior2_south_chosen_flag
+				clr_country_flag = CYSY_map_senior3_south_chosen_flag
+				clr_country_flag = CYSY_map_senior_west_chosen_flag
+				clr_country_flag = CYSY_map_senior_east_chosen_flag
+				clr_country_flag = CYSY_map_senior1_main_chosen_flag
+				clr_country_flag = CYSY_map_school_hall_chosen_flag
+				update_all_CYSY_control_pie_charts = yes
+			}
 			CYSY_map_senior3_master_outline_click = {
+				clr_country_flag = CYSY_map_senior2_multi_chosen_flag
 				set_country_flag = CYSY_map_senior3_master_chosen_flag
 				clr_country_flag = CYSY_map_senior3_main_chosen_flag
 				clr_country_flag = CYSY_map_senior2_north_chosen_flag
@@ -27,6 +42,7 @@ scripted_gui = {
 				update_all_CYSY_control_pie_charts = yes
 			}
 			CYSY_map_senior3_main_outline_click = {
+				clr_country_flag = CYSY_map_senior2_multi_chosen_flag
 				clr_country_flag = CYSY_map_senior3_master_chosen_flag
 				set_country_flag = CYSY_map_senior3_main_chosen_flag
 				clr_country_flag = CYSY_map_senior2_north_chosen_flag
@@ -40,6 +56,7 @@ scripted_gui = {
 				update_all_CYSY_control_pie_charts = yes
 			}
 			CYSY_map_senior2_north_outline_click = {
+				clr_country_flag = CYSY_map_senior2_multi_chosen_flag
 				clr_country_flag = CYSY_map_senior3_master_chosen_flag
 				clr_country_flag = CYSY_map_senior3_main_chosen_flag
 				set_country_flag = CYSY_map_senior2_north_chosen_flag
@@ -53,6 +70,7 @@ scripted_gui = {
 				update_all_CYSY_control_pie_charts = yes
 			}
 			CYSY_map_senior2_B_outline_click = {
+				clr_country_flag = CYSY_map_senior2_multi_chosen_flag
 				clr_country_flag = CYSY_map_senior3_master_chosen_flag
 				clr_country_flag = CYSY_map_senior3_main_chosen_flag
 				clr_country_flag = CYSY_map_senior2_north_chosen_flag
@@ -65,7 +83,8 @@ scripted_gui = {
 				clr_country_flag = CYSY_map_school_hall_chosen_flag
 				update_all_CYSY_control_pie_charts = yes
 			}
-			CYSY_map_senior2_south_outline_click = {
+			CYSY_map_senior2_south_outline_click = { 
+				clr_country_flag = CYSY_map_senior2_multi_chosen_flag
 				clr_country_flag = CYSY_map_senior3_master_chosen_flag
 				clr_country_flag = CYSY_map_senior3_main_chosen_flag
 				clr_country_flag = CYSY_map_senior2_north_chosen_flag
@@ -78,7 +97,8 @@ scripted_gui = {
 				clr_country_flag = CYSY_map_school_hall_chosen_flag
 				update_all_CYSY_control_pie_charts = yes
 			}
-			CYSY_map_senior3_south_outline_click = {
+			CYSY_map_senior3_south_outline_click = { 
+				clr_country_flag = CYSY_map_senior2_multi_chosen_flag
 				clr_country_flag = CYSY_map_senior3_master_chosen_flag
 				clr_country_flag = CYSY_map_senior3_main_chosen_flag
 				clr_country_flag = CYSY_map_senior2_north_chosen_flag
@@ -91,7 +111,8 @@ scripted_gui = {
 				clr_country_flag = CYSY_map_school_hall_chosen_flag
 				update_all_CYSY_control_pie_charts = yes
 			}
-			CYSY_map_senior_west_outline_click = {
+			CYSY_map_senior_west_outline_click = { 
+				clr_country_flag = CYSY_map_senior2_multi_chosen_flag
 				clr_country_flag = CYSY_map_senior3_master_chosen_flag
 				clr_country_flag = CYSY_map_senior3_main_chosen_flag
 				clr_country_flag = CYSY_map_senior2_north_chosen_flag
@@ -104,7 +125,8 @@ scripted_gui = {
 				clr_country_flag = CYSY_map_school_hall_chosen_flag
 				update_all_CYSY_control_pie_charts = yes
 			}
-			CYSY_map_senior_east_outline_click = {
+			CYSY_map_senior_east_outline_click = { 
+				clr_country_flag = CYSY_map_senior2_multi_chosen_flag
 				clr_country_flag = CYSY_map_senior3_master_chosen_flag
 				clr_country_flag = CYSY_map_senior3_main_chosen_flag
 				clr_country_flag = CYSY_map_senior2_north_chosen_flag
@@ -117,7 +139,8 @@ scripted_gui = {
 				clr_country_flag = CYSY_map_school_hall_chosen_flag
 				update_all_CYSY_control_pie_charts = yes
 			}
-			CYSY_map_senior1_main_outline_click = {
+			CYSY_map_senior1_main_outline_click = { 
+				clr_country_flag = CYSY_map_senior2_multi_chosen_flag
 				clr_country_flag = CYSY_map_senior3_master_chosen_flag
 				clr_country_flag = CYSY_map_senior3_main_chosen_flag
 				clr_country_flag = CYSY_map_senior2_north_chosen_flag
@@ -184,8 +207,14 @@ scripted_gui = {
 				clr_country_flag = CYSY_map_controler_data_FJW_chosen
 				set_country_flag = CYSY_map_controler_data_JBZX_chosen
 			}
-		}
+		} 
+		
 		triggers = {
+			CYSY_map_senior_east_visible = {
+				NOT={
+					has_country_flag = CYSY_senior_east_building	
+				}
+			}
 			CYSY_building_constructing_title_visible = {
 				has_country_flag = CYSY_map_senior_east_chosen_flag
 				has_country_flag = CYSY_senior_east_building
@@ -217,6 +246,11 @@ scripted_gui = {
 		}
 		properties = {
 			####描边
+			
+			CYSY_map_senior2_multi_outline = {
+				image = "[getGFX_CYSY_map_senior2_multi_outline]"
+			}
+
 			CYSY_map_senior3_master_outline = {
 				image = "[getGFX_CYSY_map_senior3_master_outline]"
 			}
@@ -227,7 +261,7 @@ scripted_gui = {
 				image = "[getGFX_CYSY_map_senior2_north_outline]"
 			}
 			CYSY_map_senior2_B_outline = {
-				image = "[getGFX_CYSY_map_senior2_B_outline]"
+				image = "[getGFX_CYSY_map_senior2_B_outline]" 
 			}
 			CYSY_map_senior2_south_outline = {
 				image = "[getGFX_CYSY_map_senior2_south_outline]"
@@ -248,7 +282,10 @@ scripted_gui = {
 				image = "[getGFX_CYSY_map_school_hall_outline]"
 			}
 			#####染色
-
+			
+			CYSY_map_senior2_multi = {
+				image = "[getCYSY_map_controler_senior2_multi]"
+			}
 			CYSY_map_senior3_master = {
 				image = "[getCYSY_map_controler_senior3_master]"
 			}

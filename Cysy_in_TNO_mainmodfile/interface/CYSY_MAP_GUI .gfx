@@ -7,53 +7,61 @@ spriteTypes = {
 #############################
 ########   UNCHOSEN  #########
 ############################
-spriteType = {
-    name = "GFX_CYSY_map_senior3_master_unchosen"
-    texturefile = "gfx/interface/CYSY_map_gui/CYSY_map_senior3_master.dds"
-}
-spriteType = {
-    name = "GFX_CYSY_map_senior3_main_unchosen"
-    texturefile = "gfx/interface/CYSY_map_gui/CYSY_map_senior3_main.dds"
-}
-spriteType = {
-    name = "GFX_CYSY_map_senior2_north_unchosen"
-    texturefile = "gfx/interface/CYSY_map_gui/CYSY_map_senior2_north.dds"
-}
-spriteType = {
-    name = "GFX_CYSY_map_senior2_B_unchosen"
-    texturefile = "gfx/interface/CYSY_map_gui/CYSY_map_senior2_B.dds" 
-}
-spriteType = {
-    name = "GFX_CYSY_map_senior2_south_unchosen"
-    texturefile = "gfx/interface/CYSY_map_gui/CYSY_map_senior2_south.dds"
-}
-spriteType = {
-    name = "GFX_CYSY_map_senior3_south_unchosen"
-    texturefile = "gfx/interface/CYSY_map_gui/CYSY_map_senior3_south.dds"
-}
-spriteType = {
-    name = "GFX_CYSY_map_senior_west_unchosen"
-    texturefile = "gfx/interface/CYSY_map_gui/CYSY_map_senior_west.dds"
-}
-spriteType = {
-    name = "GFX_CYSY_map_senior_east_unchosen"
-    texturefile = "gfx/interface/CYSY_map_gui/CYSY_map_senior_east.dds"
-}
-spriteType = {
-    name = "GFX_CYSY_map_senior1_main_unchosen"
-    texturefile = "gfx/interface/CYSY_map_gui/CYSY_map_senior1_main.dds"
-}
-spriteType = {
-    name = "GFX_CYSY_map_school_hall_unchosen"
-    texturefile = "gfx/interface/CYSY_map_gui/CYSY_map_school_hall.dds"
-}
-spriteType = {
-    name = "GFX_"
-    texturefile = "gfx/interface/CYSY_map_gui/.dds"
-}
+    spriteType = {
+        name = "GFX_CYSY_map_senior2_multi_unchosen"
+        texturefile = "gfx/interface/CYSY_map_gui/CYSY_map_senior2_multi.png"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_senior3_master_unchosen"
+        texturefile = "gfx/interface/CYSY_map_gui/CYSY_map_senior3_master.dds"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_senior3_main_unchosen"
+        texturefile = "gfx/interface/CYSY_map_gui/CYSY_map_senior3_main.dds"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_senior2_north_unchosen"
+        texturefile = "gfx/interface/CYSY_map_gui/CYSY_map_senior2_north.dds"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_senior2_B_unchosen"
+        texturefile = "gfx/interface/CYSY_map_gui/CYSY_map_senior2_B.dds" 
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_senior2_south_unchosen"
+        texturefile = "gfx/interface/CYSY_map_gui/CYSY_map_senior2_south.dds"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_senior3_south_unchosen"
+        texturefile = "gfx/interface/CYSY_map_gui/CYSY_map_senior3_south.dds"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_senior_west_unchosen"
+        texturefile = "gfx/interface/CYSY_map_gui/CYSY_map_senior_west.dds"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_senior_east_unchosen"
+        texturefile = "gfx/interface/CYSY_map_gui/CYSY_map_senior_east.dds"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_senior1_main_unchosen"
+        texturefile = "gfx/interface/CYSY_map_gui/CYSY_map_senior1_main.dds"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_school_hall_unchosen"
+        texturefile = "gfx/interface/CYSY_map_gui/CYSY_map_school_hall.dds"
+    }
+    spriteType = {
+        name = "GFX_"
+        texturefile = "gfx/interface/CYSY_map_gui/.dds"
+    }
 #############################
 ########   CHOSEN  #########
 ############################
+    spriteType = {
+        name = "GFX_CYSY_map_senior2_multi_chosen"
+        texturefile = "gfx/interface/CYSY_map_gui/CYSY_map_senior2_multi_chosen.png"
+    }
     spriteType = {
         name = "GFX_CYSY_map_senior3_master_chosen"
         texturefile = "gfx/interface/CYSY_map_gui/CYSY_map_senior3_master_chosen.dds"
@@ -103,6 +111,10 @@ spriteType = {
 ########   ZJC  ############
 #############################
     spriteType = {
+        name = "GFX_CYSY_map_senior2_multi_ZJC"
+        texturefile = "gfx/interface/CYSY_map_gui/color/CYSY_map_senior2_multi_ZJC.png"
+    }
+    spriteType = {
         name = "GFX_CYSY_map_senior3_master_ZJC"
         texturefile = "gfx/interface/CYSY_map_gui/color/CYSY_map_senior3_master_ZJC.png"
     }
@@ -148,6 +160,10 @@ spriteType = {
 ########   JWC  ############
 #############################
     spriteType = {
+        name = "GFX_CYSY_map_senior2_multi_JWC"
+        texturefile = "gfx/interface/CYSY_map_gui/color/CYSY_map_senior2_multi_JWC.png"
+    }
+    spriteType = {
         name = "GFX_CYSY_map_senior3_master_JWC"
         texturefile = "gfx/interface/CYSY_map_gui/color/CYSY_map_senior3_master_JWC.png"
     }
@@ -191,6 +207,10 @@ spriteType = {
 ############################
 ########   XSH  ############
 #############################
+    spriteType = {
+        name = "GFX_CYSY_map_senior2_multi_XSH"
+        texturefile = "gfx/interface/CYSY_map_gui/color/CYSY_map_senior2_multi_XSH.png"
+    }
     spriteType = {
         name = "GFX_CYSY_map_senior3_master_XSH"
         texturefile = "gfx/interface/CYSY_map_gui/color/CYSY_map_senior3_master_XSH.png"
@@ -236,6 +256,11 @@ spriteType = {
 ############################
 ########   FJW  ############
 #############################
+
+    spriteType = {
+        name = "GFX_CYSY_map_senior2_multi_FJW"
+        texturefile = "gfx/interface/CYSY_map_gui/color/CYSY_map_senior2_multi_FJW.png"
+    }
     spriteType = {
         name = "GFX_CYSY_map_senior3_master_FJW"
         texturefile = "gfx/interface/CYSY_map_gui/color/CYSY_map_senior3_master_FJW.png"
@@ -282,6 +307,10 @@ spriteType = {
 ########   JBZX  ############
 #############################
     spriteType = {
+        name = "GFX_CYSY_map_senior2_multi_JBZX"
+        texturefile = "gfx/interface/CYSY_map_gui/color/CYSY_map_senior2_multi_JBZX.png"
+    }
+    spriteType = {
         name = "GFX_CYSY_map_senior3_master_JBZX"
         texturefile = "gfx/interface/CYSY_map_gui/color/CYSY_map_senior3_master_JBZX.png"
     }
@@ -325,6 +354,10 @@ spriteType = {
 #############################
 ######   pictures  ##########
 #############################
+    spriteType = {
+        name = "GFX_CYSY_map_senior2_multi_pic"
+        texturefile = "gfx/interface/CYSY_map_gui/picture/CYSY_map_senior2_multi_pic.png"
+    }
     spriteType = {
         name = "GFX_CYSY_map_senior3_master_pic"
         texturefile = "gfx/interface/CYSY_map_gui/picture/CYSY_map_senior3_master_pic.png"

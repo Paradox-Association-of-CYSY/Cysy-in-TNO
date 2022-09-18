@@ -1,4 +1,12 @@
 start_CYSY_map_control = {
+
+	#高二综合楼
+	set_variable = {ZJC_control_percent_senior2_multi = 30 }
+	set_variable = {JWC_control_percent_senior2_multi = 5 }
+	set_variable = {XSH_control_percent_senior2_multi = 42 }
+	set_variable = {FJW_control_percent_senior2_multi = 23 }
+	set_variable = {JBZX_control_percent_senior2_multi = 0 }
+
 	#高三行政楼
 	set_variable = {ZJC_control_percent_senior3_master = 45 }
 	set_variable = {JWC_control_percent_senior3_master = 50 }
@@ -63,6 +71,8 @@ start_CYSY_map_control = {
 	set_variable = {XSH_control_percent_senior_east = 35 }
 	set_variable = {FJW_control_percent_senior_east = 45 }
 	set_variable = {JBZX_control_percent_senior_east = 0 }
+
+
 	####高一东楼的建造####
 	set_variable = { CYSY_building_constructing_data_completed = 32 }
 	set_variable = { CYSY_building_constructing_data_speed = 9 }
@@ -76,52 +86,144 @@ check_CYSY_map_controler = {
 	####################
 	if = {
 		limit = {
-			check_variable = { ZJC_XX > JWC_XX }
-			check_variable = { ZJC_XX > XSH_XX }
-			check_variable = { ZJC_XX > FJW_XX }
-			check_variable = { ZJC_XX > JBZX_XX }
+			check_variable = { ZJC_control_percent_XX > JWC_control_percent_XX }
+			check_variable = { ZJC_control_percent_XX > XSH_control_percent_XX }
+			check_variable = { ZJC_control_percent_XX > FJW_control_percent_XX }
+			check_variable = { ZJC_control_percent_XX > JBZX_control_percent_XX }
 		}
-		set_country_flag = XX_ZJC_control
+		clr_country_flag = CYSY_map_XX_ZJC_control
+		clr_country_flag = CYSY_map_XX_JWC_control
+		clr_country_flag = CYSY_map_XX_XSH_control
+		clr_country_flag = CYSY_map_XX_FJW_control
+		clr_country_flag = CYSY_map_XX_JBZX_control
+		set_country_flag = CYSY_map_XX_ZJC_control
 	}
 	else_if = {
 		limit = {
-			check_variable = { JWC_XX > XSH_XX }
-			check_variable = { JWC_XX > FJW_XX }
-			check_variable = { JWC_XX > JBZX_XX }
-			check_variable = { JWC_XX > ZJC_XX }
+			check_variable = { JWC_control_percent_XX > XSH_control_percent_XX }
+			check_variable = { JWC_control_percent_XX > FJW_control_percent_XX }
+			check_variable = { JWC_control_percent_XX > JBZX_control_percent_XX }
+			check_variable = { JWC_control_percent_XX > ZJC_control_percent_XX }
 		}
-		set_country_flag = XX_JWC_control
+		set_country_flag = CYSY_map_XX_JWC_control
 	}
 	else_if = {
 		limit = {
-			check_variable = { XSH_XX > FJW_XX }
-			check_variable = { XSH_XX > JBZX_XX }
-			check_variable = { XSH_XX > ZJC_XX }
-			check_variable = { XSH_XX > JWC_XX }
+			check_variable = { XSH_control_percent_XX > FJW_control_percent_XX }
+			check_variable = { XSH_control_percent_XX > JBZX_control_percent_XX }
+			check_variable = { XSH_control_percent_XX > ZJC_control_percent_XX }
+			check_variable = { XSH_control_percent_XX > JWC_control_percent_XX }
 		}
-		set_country_flag = XX_XSH_control
+		clr_country_flag = CYSY_map_XX_ZJC_control
+		clr_country_flag = CYSY_map_XX_JWC_control
+		clr_country_flag = CYSY_map_XX_XSH_control
+		clr_country_flag = CYSY_map_XX_FJW_control
+		clr_country_flag = CYSY_map_XX_JBZX_control
+
+		set_country_flag = CYSY_map_XX_XSH_control
 	}
 	else_if = {
 		limit = {
-			check_variable = { FJW_XX > JBZX_XX }
-			check_variable = { FJW_XX > XSH_XX }
-			check_variable = { FJW_XX > ZJC_XX }
-			check_variable = { FJW_XX > JWC_XX }
+			check_variable = { FJW_control_percent_XX > JBZX_control_percent_XX }
+			check_variable = { FJW_control_percent_XX > XSH_control_percent_XX }
+			check_variable = { FJW_control_percent_XX > ZJC_control_percent_XX }
+			check_variable = { FJW_control_percent_XX > JWC_control_percent_XX }
 		}
-		set_country_flag = XX_FJW_control
+		clr_country_flag = CYSY_map_XX_ZJC_control
+		clr_country_flag = CYSY_map_XX_JWC_control
+		clr_country_flag = CYSY_map_XX_XSH_control
+		clr_country_flag = CYSY_map_XX_FJW_control
+		clr_country_flag = CYSY_map_XX_JBZX_control
+		set_country_flag = CYSY_map_XX_FJW_control
 	}
 
 	else_if = {
 		limit = {
-			check_variable = { JBZX_XX > FJW_XX }
-			check_variable = { JBZX_XX > XSH_XX }
-			check_variable = { JBZX_XX > ZJC_XX }
-			check_variable = { JBZX_XX > JWC_XX }
+			check_variable = { JBZX_control_percent_XX > FJW_control_percent_XX }
+			check_variable = { JBZX_control_percent_XX > XSH_control_percent_XX }
+			check_variable = { JBZX_control_percent_XX > ZJC_control_percent_XX }
+			check_variable = { JBZX_control_percent_XX > JWC_control_percent_XX }
 		}
-		set_country_flag = XX_JBZX_control
+		clr_country_flag = CYSY_map_XX_ZJC_control
+		clr_country_flag = CYSY_map_XX_JWC_control
+		clr_country_flag = CYSY_map_XX_XSH_control
+		clr_country_flag = CYSY_map_XX_FJW_control
+		clr_country_flag = CYSY_map_XX_JBZX_control
+		set_country_flag = CYSY_map_XX_JBZX_control
 	}
     ####################
+	####################高二综合楼
+	if = {
+		limit = {
+			check_variable = { ZJC_control_percent_senior2_multi > JWC_control_percent_senior2_multi }
+			check_variable = { ZJC_control_percent_senior2_multi > XSH_control_percent_senior2_multi }
+			check_variable = { ZJC_control_percent_senior2_multi > FJW_control_percent_senior2_multi }
+			check_variable = { ZJC_control_percent_senior2_multi > JBZX_control_percent_senior2_multi }
+		}
+		clr_country_flag = CYSY_map_senior2_multi_ZJC_control
+		clr_country_flag = CYSY_map_senior2_multi_JWC_control
+		clr_country_flag = CYSY_map_senior2_multi_XSH_control
+		clr_country_flag = CYSY_map_senior2_multi_FJW_control
+		clr_country_flag = CYSY_map_senior2_multi_JBZX_control
+		set_country_flag = CYSY_map_senior2_multi_ZJC_control
+	}
+	else_if = {
+		limit = {
+			check_variable = { JWC_control_percent_senior2_multi > XSH_control_percent_senior2_multi }
+			check_variable = { JWC_control_percent_senior2_multi > FJW_control_percent_senior2_multi }
+			check_variable = { JWC_control_percent_senior2_multi > JBZX_control_percent_senior2_multi }
+			check_variable = { JWC_control_percent_senior2_multi > ZJC_control_percent_senior2_multi }
+		}
+		clr_country_flag = CYSY_map_senior2_multi_ZJC_control
+		clr_country_flag = CYSY_map_senior2_multi_JWC_control
+		clr_country_flag = CYSY_map_senior2_multi_XSH_control
+		clr_country_flag = CYSY_map_senior2_multi_FJW_control
+		clr_country_flag = CYSY_map_senior2_multi_JBZX_control
+		set_country_flag = CYSY_map_senior2_multi_JWC_control
+	}
+	else_if = {
+		limit = {
+			check_variable = { XSH_control_percent_senior2_multi > FJW_control_percent_senior2_multi }
+			check_variable = { XSH_control_percent_senior2_multi > JBZX_control_percent_senior2_multi }
+			check_variable = { XSH_control_percent_senior2_multi > ZJC_control_percent_senior2_multi }
+			check_variable = { XSH_control_percent_senior2_multi > JWC_control_percent_senior2_multi }
+		}
+		clr_country_flag = CYSY_map_senior2_multi_ZJC_control
+		clr_country_flag = CYSY_map_senior2_multi_JWC_control
+		clr_country_flag = CYSY_map_senior2_multi_XSH_control
+		clr_country_flag = CYSY_map_senior2_multi_FJW_control
+		clr_country_flag = CYSY_map_senior2_multi_JBZX_control
+		set_country_flag = CYSY_map_senior2_multi_XSH_control
+	}
+	else_if = {
+		limit = {
+			check_variable = { FJW_control_percent_senior2_multi > JBZX_control_percent_senior2_multi}
+			check_variable = { FJW_control_percent_senior2_multi > XSH_control_percent_senior2_multi }
+			check_variable = { FJW_control_percent_senior2_multi > ZJC_control_percent_senior2_multi }
+			check_variable = { FJW_control_percent_senior2_multi > JWC_control_percent_senior2_multi }
+		}
+		clr_country_flag = CYSY_map_senior2_multi_ZJC_control
+		clr_country_flag = CYSY_map_senior2_multi_JWC_control
+		clr_country_flag = CYSY_map_senior2_multi_XSH_control
+		clr_country_flag = CYSY_map_senior2_multi_FJW_control
+		clr_country_flag = CYSY_map_senior2_multi_JBZX_control
+		set_country_flag = CYSY_map_senior2_multi_FJW_control
+	}
 
+	else_if = {
+		limit = {
+			check_variable = { JBZX_control_percent_senior2_multi > FJW_control_percent_senior2_multi }
+			check_variable = { JBZX_control_percent_senior2_multi > XSH_control_percent_senior2_multi }
+			check_variable = { JBZX_control_percent_senior2_multi > ZJC_control_percent_senior2_multi }
+			check_variable = { JBZX_control_percent_senior2_multi > JWC_control_percent_senior2_multi }
+		}
+		clr_country_flag = CYSY_map_senior2_multi_ZJC_control
+		clr_country_flag = CYSY_map_senior2_multi_JWC_control
+		clr_country_flag = CYSY_map_senior2_multi_XSH_control
+		clr_country_flag = CYSY_map_senior2_multi_FJW_control
+		clr_country_flag = CYSY_map_senior2_multi_JBZX_control
+		set_country_flag = CYSY_map_senior2_multi_JBZX_control
+	}
 	####################高三行政楼senior3_master
 	if = {
 		limit = {

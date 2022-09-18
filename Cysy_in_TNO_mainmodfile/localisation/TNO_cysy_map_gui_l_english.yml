@@ -1,5 +1,7 @@
 ﻿l_english:
  scripted_gui_open_chaoyangshixiao_map:0 "查看潮阳实验学校地图" 
+
+ CYSY_map_senior2_multi_name:0 "§Y高二综合楼§!"
  CYSY_map_senior3_master_name:0 "§Y高三行政楼§!"
  CYSY_map_senior3_main_name:0 "§Y高三主教学楼§!"
  CYSY_map_senior2_north_name:0 "§Y高二北楼§!"
@@ -33,7 +35,7 @@
  CYSY_map_data_FJW_chosen_colored_tt:0 "§f风纪委§!"
  CYSY_map_data_JBZX_chosen_colored_tt:0 "§e进步阵线§!"
 
-
+ CYSY_map_building_senior2_multi_chosen_name:0 "高二综合楼"
  CYSY_map_building_senior3_master_chosen_name:0 "高三行政楼"
  CYSY_map_building_senior3_main_chosen_name:0 "高三主教学楼"
  CYSY_map_building_senior2_north_chosen_name:0 "高二北楼"
