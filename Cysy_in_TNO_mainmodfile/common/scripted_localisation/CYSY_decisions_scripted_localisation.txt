@@ -1,0 +1,115 @@
+defined_text = {
+	name = getCYS_Zsp_and_Zyf_relationship_status
+	text = {
+		trigger = {
+			check_variable = { Zsp_and_Zyf_relationship_value < 2}
+		}
+		localization_key = Zsp_and_Zyf_relationship_status_level_1
+	}
+	text = {
+		trigger = {
+			OR = {
+				check_variable = { Zsp_and_Zyf_relationship_value = 2}		
+				check_variable = { Zsp_and_Zyf_relationship_value = 3}
+			}
+		}
+		localization_key = Zsp_and_Zyf_relationship_status_level_2
+	}
+	text = {
+		trigger = {
+			OR = {
+				check_variable = { Zsp_and_Zyf_relationship_value = 4}		
+				check_variable = { Zsp_and_Zyf_relationship_value = 5}
+			}
+		}
+		localization_key = Zsp_and_Zyf_relationship_status_level_3
+	}
+	text = {
+		trigger = {
+			OR = {
+				check_variable = { Zsp_and_Zyf_relationship_value = 6}		
+				check_variable = { Zsp_and_Zyf_relationship_value = 7}
+				check_variable = { Zsp_and_Zyf_relationship_value = 8}
+			}
+		}
+		localization_key = Zsp_and_Zyf_relationship_status_level_4
+	}
+	text = {
+		trigger = {
+			OR = {
+				check_variable = { Zsp_and_Zyf_relationship_value = 9}		
+				check_variable = { Zsp_and_Zyf_relationship_value = 10}
+			}
+		}
+		localization_key = Zsp_and_Zyf_relationship_status_level_5
+	}
+	text = {
+		trigger = {
+			OR = {
+				check_variable = { Zsp_and_Zyf_relationship_value = 11}		
+				check_variable = { Zsp_and_Zyf_relationship_value = 12}
+			}
+		}
+		localization_key = Zsp_and_Zyf_relationship_status_level_6
+	}
+	text = {
+		trigger = {
+			check_variable = { Zsp_and_Zyf_relationship_value > 12}		
+		}
+		localization_key = Zsp_and_Zyf_relationship_status_level_7
+	}
+
+
+}
+
+defined_text = {
+	name = getCYSY_stability_status_level
+	text = {
+		trigger = {
+			check_variable = { CYS.stability < 0.16}
+		}
+		localization_key = CYSY_stability_status_level_1
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { CYS.stability > 0.15}		
+				check_variable = { CYS.stability < 0.36}
+			}
+		}
+		localization_key = CYSY_stability_status_level_2
+	}
+	text = {
+		trigger = {
+			check_variable = { CYS.stability > 0.35}		
+		}
+		localization_key = CYSY_stability_status_level_3
+	}
+}
+
+defined_text = {
+	name = getGFX_CYSY_stability_decison_picture
+	text = {
+		trigger = {
+			check_variable = { CYS.stability < 0.16}
+		}
+		localization_key = "GFX_CYSY_stability_decison_picture_1"
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { CYS.stability > 0.15}		
+				check_variable = { CYS.stability < 0.36}
+			}
+		}
+		localization_key = "GFX_CYSY_stability_decison_picture_2"
+	}
+	text = {
+		trigger = {
+			check_variable = { CYS.stability > 0.35}		
+		}
+		localization_key = "GFX_CYSY_stability_decison_picture_3"
+	}
+}
+ 
+ 

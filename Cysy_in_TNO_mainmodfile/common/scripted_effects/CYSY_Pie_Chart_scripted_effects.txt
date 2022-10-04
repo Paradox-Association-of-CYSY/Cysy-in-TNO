@@ -5,6 +5,7 @@ update_all_CYSY_control_pie_charts = {
 	check_if_need_balance = yes
 	check_CYSY_map_controler = yes
 	create_CYSY_control_pie_charts = yes
+	update_stability_status = yes
 }
 check_if_need_balance = {
 	set_temp_variable = { total = ZJC_control_percent }

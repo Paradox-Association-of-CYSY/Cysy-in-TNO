@@ -1,0 +1,113 @@
+##############################################################
+########             郑益峰和张仕平权力斗争             ########
+##############################################################
+CYSY_Zsp_and_Zyf_category = {
+
+}
+CYSY_school_stability_category = {
+
+	CYSY_Zfc_resignation_crisis = {
+		days_remove = 30
+
+		icon = GFX_decision_generic_political_discourse
+		days_mission_timeout = 60
+		is_good = no
+
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = "CYSY_Zfc_resignation_crisis_is_ended_trigger"
+				NOT = {
+					has_country_flag = CYSY_Zfc_resignation_crisis_is_going_on
+				}
+			}
+		}
+
+		fire_only_once = no
+
+		activation = {
+			custom_trigger_tooltip = {
+				tooltip = "CYSY_Zfc_resignation_crisis_is_going_on_trigger"
+				has_country_flag = CYSY_Zfc_resignation_crisis_is_going_on
+			}
+		}
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		timeout_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision timeout CYSY_Zfc_resignation_crisis"
+			custom_effect_tooltip = "CYSY_Zfc_resignation_crisis_fail_effect"
+			hidden_effect = {
+				#country_event = { id = }
+			}
+		}
+	}
+
+	CYSY_school_stability_too_low = {
+		days_remove = 1
+
+		icon = GFX_decision_category_border_war
+		days_mission_timeout = 60
+		is_good = no
+
+
+		available = {
+			check_variable = { CYS.stability > 0.16}
+		}
+
+		fire_only_once = no 
+
+		activation = {
+			check_variable = { CYS.stability < 0.16}
+		}
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		timeout_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision timeout CYSY_school_stability_too_low"
+			custom_effect_tooltip = "CYSY_school_stability_too_low_fail_effect"
+			hidden_effect = {
+				#country_event = { id = }
+			}
+		}
+	}
+
+}
+
+CYSY_school_stability_category = {
+
+	CYSY_Zfc_resignation_crisis = {
+		days_remove = 1
+
+		icon = GFX_decision_generic_political_discourse
+		days_mission_timeout = 60
+		is_good = no
+
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = "BRA_lottquadros_impending_resignation_trigger"
+				check_variable = { BRA_lottquadros_cooperation > 0.99 }
+			}
+		}
+
+		fire_only_once = no
+
+		activation = {
+			check_variable = { BRA_lottquadros_cooperation < 0.99 }
+			check_variable = { BRA_lottquadros_resigned < 1 }
+			NOT = { has_country_flag = BRA_lottquadros_over }
+		}
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		timeout_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision timeout BRA_lottquadros_impending_resignation"
+			custom_effect_tooltip = "BRA_lottquadros_impending_resignation_fail_effect"
+			hidden_effect = {
+				country_event = { id = brazil.2 }
+			}
+		}
+	}
+
+}

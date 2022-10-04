@@ -70,6 +70,22 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = cysyxx.10003 
+	title = cysyxx.10003.t
+	desc = cysyxx.10003.d
+	picture = GFX_cysy_1962_newyeargala1
+	major = yes  
+	is_triggered_only = yes 
+	fire_only_once = no
+	option = {			
+		name = cysyxx.10003.a	
+		hidden_effect = {
+			
+		}
+	}
+}
+
 #建筑物 
 
 country_event = { ###东楼建造完成

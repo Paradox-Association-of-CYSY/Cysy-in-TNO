@@ -183,7 +183,7 @@ country_event = { # 妈的，作死的脸！再看老子把你腿打断！
 	}
 }
 country_event = {# 这是一个变量的测试事件
-	id = cysy.1001
+	id = cysy.1000
 	immediate = {log = "[GetDateText]: [Root.GetName]: event cysyxx.1000"}
 	title = cysy.1001.t
 	desc = cysy.1001.desc
@@ -280,9 +280,29 @@ country_event = {# 给全校的进步阵线加50， 大大带涂色捏
 	}
 
 }
+
+#country_event = {# 用于测试地图气泡系统
+#	id = cysy.998
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event cysy.998"}
+#	title = cysy.998.t
+#	desc = cysy.998.desc
+#	picture = GFX_report_event_map
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#	option = { #
+	#	name = cysy.998.a
+	#	set_country_flag = CYSY_there_is_a_event_bubble_1
+	#	set_variable = {CYSY_map_event_bubble_1_position_x = 110 }
+	#	set_variable = {CYSY_map_event_bubble_1_position_y = 320 }
+	#	set_variable = {CYSY_map_event_bubble_1_event_id = 10003 }
+	#}
+
+#}
+
 country_event = {# 用于测试是否触发effect country_event = { id = cysy.999 }
 	id = cysy.999
-	immediate = {log = "[GetDateText]: [Root.GetName]: event cysyxx.999"}
+	immediate = {log = "[GetDateText]: [Root.GetName]: event cysy.999"}
 	title = cysy.999.t
 	desc = cysy.999.desc
 	picture = GFX_report_event_map
@@ -311,4 +331,50 @@ country_event = {# 用于打开二阶段国策树 { id = cysy.1003 }
 		clr_country_flag = CYS_Start_focus_tree_on
 	}
 
+}
+
+country_event = {# 用于设定郑益峰影响力
+	id = cysy.1004
+	immediate = {log = "[GetDateText]: [Root.GetName]: event cysy.1004"}
+	title = cysy.1004.t
+	desc = cysy.1004.desc
+	picture = GFX_report_event_map
+	is_triggered_only = yes
+	option = { #
+		name = cysy.1004.a
+		set_variable = {CYS_Zyf_competing_power_value = 50 }
+	}
+	option = { #
+		name = cysy.1004.b
+		add_to_variable = {CYS_Zyf_competing_power_value = 5 }
+		country_event = { id = cysy.1004 hours = 1}
+	}
+	option = { #
+		name = cysy.1004.c
+		add_to_variable = {CYS_Zyf_competing_power_value = -5 }
+		country_event = { id = cysy.1004 hours = 1}
+	}
+}
+
+country_event = {# 用于设定郑益峰和张仕平的关系
+	id = cysy.1005
+	immediate = {log = "[GetDateText]: [Root.GetName]: event cysy.1005"}
+	title = cysy.1005.t
+	desc = cysy.1005.desc
+	picture = GFX_report_event_map
+	is_triggered_only = yes
+	option = { #
+		name = cysy.1005.a
+		set_variable = {Zsp_and_Zyf_relationship_value = 7 }
+	}
+	option = { #
+		name = cysy.1005.b
+		add_to_variable = {Zsp_and_Zyf_relationship_value = 2 }
+		country_event = { id = cysy.1005 hours = 1}
+	}
+	option = { #
+		name = cysy.1005.c
+		add_to_variable = {Zsp_and_Zyf_relationship_value = -2 }
+		country_event = { id = cysy.1005 hours = 1}
+	}
 }

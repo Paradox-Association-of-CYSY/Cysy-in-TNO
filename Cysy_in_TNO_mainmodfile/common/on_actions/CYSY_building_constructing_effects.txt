@@ -27,4 +27,12 @@ on_actions = {
 			}
 		}
 	}
+	on_daily = {
+		effect = { 
+			if = {
+				always = yes
+				update_stability_status = yes
+			}
+		}
+	}
 }

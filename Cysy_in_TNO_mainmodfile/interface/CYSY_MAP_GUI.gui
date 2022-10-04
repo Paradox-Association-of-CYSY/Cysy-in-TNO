@@ -12,7 +12,7 @@ guiTypes = {
         }
 
 
- ####地图本体
+        ####地图本体
         containerWindowType = {
             name = "CYSY_map_GUI_mainmap"
             size = { width = 600 height = 756 }
@@ -26,7 +26,7 @@ guiTypes = {
                 position = {x = 10 y = 39}
             }
 
-            buttonType = {
+            iconType = {
                 name = "CYSY_map_senior2_multi"
                 position = { x = 436 y = 520 } 
                 quadTextureSprite = "GFX_CYSY_map_senior2_multi_ZJC"
@@ -34,7 +34,7 @@ guiTypes = {
                 Orientation = "UPPER_LEFT"
             }
 
-            buttonType = {
+            iconType = {
                 name = "CYSY_map_senior3_main"
                 position = { x = 270 y = 540 }
                 quadTextureSprite = "GFX_CYSY_map_senior3_main_ZJC"
@@ -42,14 +42,14 @@ guiTypes = {
                 Orientation = "UPPER_LEFT"
             }
             
-            buttonType = {
+            iconType = {
                 name = "CYSY_map_senior3_master"
                 position = { x = 323 y = 593 }
                 quadTextureSprite = "GFX_CYSY_map_senior3_master_ZJC"
                 
                 Orientation = "UPPER_LEFT"
             }
-            buttonType = {
+            iconType = {
                 name = "CYSY_map_senior2_B"
                 position = { x = 11 y = 502 }
                 quadTextureSprite = "GFX_CYSY_map_senior2_B_ZJC"
@@ -58,7 +58,7 @@ guiTypes = {
             }
 
             
-            buttonType = {
+            iconType = {
                 name = "CYSY_map_senior2_north"
                 position = { x = 437 y = 376 }
                 quadTextureSprite = "GFX_CYSY_map_senior2_north_ZJC"
@@ -67,7 +67,7 @@ guiTypes = {
 
             }
             
-            buttonType = {
+            iconType = {
                 name = "CYSY_map_senior2_south"
                 position = { x = 430 y = 444 }
                 quadTextureSprite = "GFX_CYSY_map_senior2_south_ZJC"
@@ -75,7 +75,7 @@ guiTypes = {
                 Orientation = "UPPER_LEFT"
             }
 
-            buttonType = {
+            iconType = {
                 name = "CYSY_map_senior3_south"
                 position = { x = 283 y = 695 }
                 quadTextureSprite = "GFX_CYSY_map_senior3_south_ZJC"
@@ -83,7 +83,7 @@ guiTypes = {
                 Orientation = "UPPER_LEFT"
             }
 
-            buttonType = {
+            iconType = {
                 name = "CYSY_map_senior_west"
                 position = { x = 195 y = 122 }
                 quadTextureSprite = "GFX_CYSY_map_senior_west_ZJC"
@@ -91,7 +91,7 @@ guiTypes = {
                 Orientation = "UPPER_LEFT"
             }
 
-            buttonType = {
+            iconType = {
                 name = "CYSY_map_senior_east"
                 position = { x =444  y = 69 }
                 quadTextureSprite = "GFX_CYSY_map_senior_east_ZJC"
@@ -99,7 +99,7 @@ guiTypes = {
                 Orientation = "UPPER_LEFT"
             }
 
-            buttonType = {
+            iconType = {
                 name = "CYSY_map_senior1_main"
                 position = { x = 298 y = 111 }
                 quadTextureSprite = "GFX_CYSY_map_senior1_main_ZJC"
@@ -107,7 +107,7 @@ guiTypes = {
                 Orientation = "UPPER_LEFT"
             }
 
-            buttonType = {
+            iconType = {
                 name = "CYSY_map_school_hall"
                 position = { x = 9 y = 234 }
                 quadTextureSprite = "GFX_CYSY_map_school_hall_ZJC"
@@ -115,7 +115,7 @@ guiTypes = {
                 Orientation = "UPPER_LEFT"
             }
 
-####地图描边###
+            ####地图描边###
             buttonType = {
                 name = "CYSY_map_senior2_multi_outline"
                 position = { x = 436 y = 520 } 
@@ -200,8 +200,17 @@ guiTypes = {
                 name = "CYSY_map_school_hall_outline"
                 position = { x = 9 y = 234 }
                 quadTextureSprite = "GFX_CYSY_map_school_hall_unchosen"
-                Orientation = "UPPER_LEFT"
+                Orientation = "UPPER_LEFT" 
             }
+            ####风味事件 气泡###
+
+            #buttonType = {
+             #   name = "CYSY_map_event_bubble_1"
+              #  position = { x = 100 y =  100 }
+               # quadTextureSprite = "GFX_crt_closebutton"
+                #Orientation = "UPPER_LEFT"
+            #}
+
         }
         ####展示框里面的所有内容####
         containerWindowType = {
@@ -271,7 +280,7 @@ guiTypes = {
                 }
 
                 iconType = {
-                    name = "economic_expenditures_pie_overlay"
+                    name = "control_pie_pie_overlay"
                     quadTextureSprite = "GFX_pol_piechart_overlay_63x63"
                     position = { x = 0 y = 0 }
                     scale = 0.71

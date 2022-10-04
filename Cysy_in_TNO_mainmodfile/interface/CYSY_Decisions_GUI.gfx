@@ -1,0 +1,109 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_zyf_decision_picture"
+		texturefile = "gfx/interface/CYSY_decision_gui/zyf_decision_picture.png"
+	}
+
+    spriteType = {
+		name = "GFX_zsp_decision_picture"
+		texturefile = "gfx/interface/CYSY_decision_gui/zsp_decision_picture.png"
+	}
+	progressbartype = {
+		name = "GFX_Zsp_and_Zyf_competition_bar"
+		textureFile1 = "gfx/interface/CYSY_decision_gui/zyf_power_bar.png"
+		textureFile2 = "gfx/interface/CYSY_decision_gui/zsp_power_bar.png"
+		size = { x = 372 y = 40 } 
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = yes
+	}
+
+	spriteType = {
+		name = "GFX_CYSY_dial_plate"
+		texturefile = "gfx/interface/CYSY_decision_gui/dial_plate.png"
+		noOfFrames = 180
+	}
+	spriteType = {
+		name = "GFX_decision_CYSY_school_stability_category_icon"
+		texturefile = "gfx/interface/CYSY_decision_gui/CYSY_school_stability_category_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_CYSY_the_conflict_between_the_offices_category_icon"
+		texturefile = "gfx/interface/CYSY_decision_gui/CYSY_the_conflict_between_the_offices_category_icon.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_stability_dial_plate_background"
+		texturefile = "gfx/interface/CYSY_decision_gui/CYSY_stability_dial_plate_background.png"
+	}
+
+	spriteType = {
+		name = "GFX_CYSY_stability_decison_picture_3"
+		texturefile = "gfx/interface/CYSY_decision_gui/CYSY_stability_decison_picture_1.png"
+	}
+
+	spriteType = {
+		name = "GFX_CYSY_stability_decison_picture_2"
+		texturefile = "gfx/interface/CYSY_decision_gui/CYSY_stability_decison_picture_2.png"
+	}
+
+	spriteType = {
+		name = "GFX_CYSY_stability_decison_picture_1"
+		texturefile = "gfx/interface/CYSY_decision_gui/CYSY_stability_decison_picture_3.png"
+	}
+
+	spriteType = {
+		name = "GFX_CYSY_JWC_office_icon_150"
+		texturefile = "gfx/interface/CYSY_decision_gui/JWC_office_icon_150.png"
+	}
+
+	spriteType = {
+		name = "GFX_CYSY_JWC_office_icon_150_blue"
+		texturefile = "gfx/interface/CYSY_decision_gui/JWC_office_icon_150_blue.png"
+	}
+
+	spriteType = {
+		name = "GFX_CYSY_ZJC_office_icon_150"
+		texturefile = "gfx/interface/CYSY_decision_gui/ZJC_office_icon_150.png"
+	}
+
+	spriteType = {
+		name = "GFX_CYSY_ZJC_office_icon_150_green"
+		texturefile = "gfx/interface/CYSY_decision_gui/ZJC_office_icon_150_green.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_piechart_overlay_200"
+		textureFile = "gfx/interface/CYSY_decision_gui/CYSY_piechart_overlay_200.png"
+	}
+
+    progressbartype = {
+		name = "GFX_CYSY_ZJC_guy_pie"
+		textureFile1 = "gfx/interface/CYSY_decision_gui/pie_chart/ZJC_guy_pie.dds"
+		textureFile2 = "gfx/interface/CYSY_decision_gui/pie_chart/empty_pie.dds"
+		size = { x = 175 y = 175 }
+		effectFile = "gfx/FX/progress_radial.lua"
+	}
+
+    progressbartype = {
+		name = "GFX_CYSY_JWC_guy_pie"
+		textureFile1 = "gfx/interface/CYSY_decision_gui/pie_chart/JWC_guy_pie.dds"
+		textureFile2 = "gfx/interface/CYSY_decision_gui/pie_chart/empty_pie.dds"
+		size = { x = 175 y = 175 }
+		effectFile = "gfx/FX/progress_radial.lua"
+	}
+
+    progressbartype = {
+		name = "GFX_CYSY_no_position_pie"
+		textureFile1 = "gfx/interface/CYSY_decision_gui/pie_chart/no_position_pie.dds"
+		textureFile2 = "gfx/interface/CYSY_decision_gui/pie_chart/empty_pie.dds"
+		size = { x = 175 y = 175 }
+		effectFile = "gfx/FX/progress_radial.lua"
+	}
+
+    progressbartype = {
+		name = "GFX_CYSY_both_guy_pie"
+		textureFile1 = "gfx/interface/CYSY_decision_gui/pie_chart/both_guy_pie.dds"
+		textureFile2 = "gfx/interface/CYSY_decision_gui/pie_chart/empty_pie.dds"
+		size = { x = 175 y = 175 }
+		effectFile = "gfx/FX/progress_radial.lua"
+	}
+}

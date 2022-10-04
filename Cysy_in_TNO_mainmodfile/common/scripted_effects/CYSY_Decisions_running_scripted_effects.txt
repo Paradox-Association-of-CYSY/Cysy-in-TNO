@@ -1,0 +1,111 @@
+scr_effect_test_my_dial_plate_plus = {
+    add_to_variable = { CYS_test_my_dial_plate_value = 1 }
+}
+
+scr_effect_test_my_dial_plate_minus = {
+    add_to_variable = { CYS_test_my_dial_plate_value = -1 }
+}
+scr_effect_CYSY_stability_plus = {
+    add_stability = 0.01
+    update_stability_status = yes
+}
+
+scr_effect_CYSY_stability_minus = {
+    add_stability = -0.01
+    update_stability_status = yes
+}
+
+update_stability_status = {
+    set_variable = { CYSY_stability_display = CYS.stability }
+    multiply_variable = { CYSY_stability_display = 100 }
+    set_variable = { CYSY_stability_pointer_value = CYS.stability }
+    multiply_variable = { CYSY_stability_pointer_value = 180 }
+    round_variable = CYSY_stability_display
+    round_variable = CYSY_stability_pointer_value
+}
+
+CYSY_debug_modding = {
+    set_country_flag = CYSY_the_conflict_between_the_offices_category_allowed
+    set_country_flag = CYSY_Zsp_and_Zyf_category_allowed
+    set_country_flag = CYSY_school_stability_category_allowed
+}
+
+########             教务处政教处职权冲突             ########
+
+#############顺序应该与.gui文件中的相反#####
+####越往下走，在GUI里面就叠在下面
+start_CYSY_CbtF_initialization = {
+    set_variable = { CYSY_CbtF_ZJC_guy_percent = 17}
+    set_variable = { CYSY_CbtF_both_guy_percent = 13}
+    set_variable = { CYSY_CbtF_JWC_guy_percent = 24}
+    set_variable = { CYSY_CbtF_no_position_percent = 46}
+    #CYSY_CbtF_ZJC_guy_percent      行政管理工作
+    #CYSY_CbtF_both_guy_percent     身兼数职者
+    #CYSY_CbtF_ZJC_guy_percent      教学管理工作
+    #CYSY_CbtF_no_position_percent  无管理工作
+   # update_CbtF_values = yes
+   create_CYSY_CbtF_pie_charts = yes
+}
+update_CbtF_values = {
+    set_variable = { CYSY_CbtF_total_sum = CYSY_CbtF_ZJC_guy_percent }
+    add_to_variable = { CYSY_CbtF_total_sum = CYSY_CbtF_both_guy_percent } 
+    add_to_variable = { CYSY_CbtF_total_sum = CYSY_CbtF_JWC_guy_percent } 
+    set_variable = { CYSY_CbtF_has_position_sum = CYSY_CbtF_total_sum}
+    add_to_variable = { CYSY_CbtF_total_sum = CYSY_CbtF_no_position_percent } 
+
+    set_variable = { CYSY_CbtF_checking_position_if_reach_standard = CYSY_CbtF_total_sum}
+    add_to_variable =  { CYSY_CbtF_checking_position_if_reach_standard = CYSY_CbtF_both_guy_percent}
+
+    if = {
+        limit = {
+            check_variable = {CYSY_CbtF_total_sum > 100} #如果总人数超了，那么肯定是有人任职两个职位
+        }
+        add_to_variable = { CYSY_CbtF_ZJC_guy_percent = -1}
+        add_to_variable = { CYSY_CbtF_JWC_guy_percent = -1}
+        add_to_variable = { CYSY_CbtF_both_guy_percent = 1}
+    }
+        
+    else_if = {#如果总人数少了，那么肯定是有人被开除了
+        limit = {
+            check_variable = {CYSY_CbtF_total_sum < 100}
+        }
+        add_to_variable = { CYSY_CbtF_no_position_percent = 1}
+    }
+    set_variable = { CYSY_CbtF_total_sum = CYSY_CbtF_ZJC_guy_percent }
+    add_to_variable = { CYSY_CbtF_total_sum = CYSY_CbtF_both_guy_percent } 
+    add_to_variable = { CYSY_CbtF_total_sum = CYSY_CbtF_JWC_guy_percent } 
+    set_variable = { CYSY_CbtF_has_position_sum = CYSY_CbtF_total_sum}
+    add_to_variable = { CYSY_CbtF_total_sum = CYSY_CbtF_no_position_percent } 
+    set_variable = { CYSY_CbtF_checking_position_if_reach_standard = CYSY_CbtF_total_sum}
+    add_to_variable =  { CYSY_CbtF_checking_position_if_reach_standard = CYSY_CbtF_both_guy_percent}
+
+    if = {
+        limit = {
+            NOT= {
+                check_variable = {CYSY_CbtF_total_sum = 100}
+                update_CbtF_values = yes
+            }
+        }
+    }
+
+    create_CYSY_CbtF_pie_charts = yes
+}
+create_CYSY_CbtF_pie_charts = {
+
+
+	set_variable = { display_both_guy_pie =  CYSY_CbtF_both_guy_percent } # 先导入百分比
+	round_variable = display_both_guy_pie
+
+	set_variable = { display_JWC_guy_pie =  CYSY_CbtF_JWC_guy_percent} # 先导入百分比
+	round_variable = display_JWC_guy_pie
+	add_to_variable = {  display_JWC_guy_pie = display_both_guy_pie }#叠叠乐之前要把叠在上面的百分比加起来
+    
+	set_variable = { display_no_position_pie =  CYSY_CbtF_no_position_percent } # 先导入百分比
+	round_variable =display_no_position_pie
+	add_to_variable = { display_no_position_pie = display_JWC_guy_pie} #叠叠乐之前要把叠在上面的百分比加起来
+
+	set_variable = { display_ZJC_guy_pie = CYSY_CbtF_ZJC_guy_percent } # 先导入百分比
+	round_variable = display_ZJC_guy_pie
+    add_to_variable = { display_ZJC_guy_pie =  display_no_position_pie } #叠叠乐之前要把叠在上面的百分比加起来
+
+}			

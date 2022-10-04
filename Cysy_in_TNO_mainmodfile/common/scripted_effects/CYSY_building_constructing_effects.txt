@@ -2,6 +2,7 @@ monthly_CYSY_building_constructing = {
 	do_CYSY_building_constructing = yes
 	check_CYSY_building_constructing = yes
 	update_CYSY_building_constructing_completed_left = yes
+	update_stability_status = yes
 }
 
 # CYSY_building_constructing_data_completed 已经完成的工作量

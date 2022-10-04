@@ -207,6 +207,11 @@ scripted_gui = {
 				clr_country_flag = CYSY_map_controler_data_FJW_chosen
 				set_country_flag = CYSY_map_controler_data_JBZX_chosen
 			}
+		#	CYSY_map_event_bubble_1_click = { 
+		#		clr_country_flag = CYSY_there_is_a_event_bubble_1
+		#		country_event = { id = cysyxx.CYSY_map_event_bubble_1_event_id }
+		#	}
+
 		} 
 		
 		triggers = {
@@ -242,6 +247,10 @@ scripted_gui = {
 			CYSY_map_data_display_button_hidden_cover_visible = {
 				has_country_flag = CYSY_jbzx_has_not_appear
 			}
+
+		#	CYSY_map_event_bubble_1_visible = {
+		#		has_country_flag = CYSY_there_is_a_event_bubble_1
+		#	}
 			
 		}
 		properties = {
@@ -322,8 +331,7 @@ scripted_gui = {
 			CYSY_map_display_map_pic = {
 				image = "[getGFX_CYSY_map_pic]"
 			}
-
-
+			
 			JBZX_pie = { frame = display_JBZX_pie }
 			FJW_pie = { frame = display_FJW_pie }
 			XSH_pie = { frame = display_XSH_pie }
@@ -354,8 +362,17 @@ scripted_gui = {
 			CYSY_building_constructing_meter ={
 				frame = CYSY_building_constructing_data_completed 
 			}
-			
-		}
+
+
+	#		CYSY_map_event_bubble_1 = {
+	#			image = "GFX_CYSY_map_event_bubble_[?event_bubble_1_level]"
+	#			#level 1 =普通风味事件		绿色
+	#			#level 2 =待处理普通事件	黄色
+	#			#level 3 =紧急事件			红色
+	#			x = CYSY_map_event_bubble_1_position_x
+	#			y = CYSY_map_event_bubble_1_position_y
+	#		}
+	#	}
 		
 	}
 }

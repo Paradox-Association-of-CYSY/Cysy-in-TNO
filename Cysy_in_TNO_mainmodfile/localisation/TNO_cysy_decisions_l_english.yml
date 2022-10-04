@@ -1,0 +1,33 @@
+﻿l_english:
+ zsp_picture_tt:0 "这是张仕平【文本缺失】"
+ zyf_picture_tt:0 "这是郑益峰【文本缺失】"
+ CYSY_Zsp_and_Zyf_category:0 "新“张-郑”联盟"
+ CYS_Zsp_power:0 "张仕平影响力"
+ CYS_Zyf_power:0 "郑益烽影响力"
+ CYS_Zsp_and_Zyf_relationship_status_long:0 "联盟双方目前关系[getCYS_Zsp_and_Zyf_relationship_status]"
+ Zsp_and_Zyf_relationship_status_level_1:0 "§e极其紧张§!" 
+ Zsp_and_Zyf_relationship_status_level_2:0 "§R紧张§!"
+ Zsp_and_Zyf_relationship_status_level_3:0 "§Y疏远§!"
+ Zsp_and_Zyf_relationship_status_level_4:0 "§W一般§!"
+ Zsp_and_Zyf_relationship_status_level_5:0 "§a亲近§!"
+ Zsp_and_Zyf_relationship_status_level_6:0 "§G紧密§!"
+ Zsp_and_Zyf_relationship_status_level_7:0 "§n极其紧密§!"
+ CYS_Zsp_and_Zyf_decision_desc:0 "张复昌的离职象征自潮实建校以来的权力轴心——“张-郑”联盟的彻底破碎。，另外一个*新*“张-郑”联盟很难与此撇清关系。不过既然这一切已经发生了，在这巨大的权力真空中，两人爬上了渴望之位：郑益烽暂时接替父亲代理学校的公司财务，而张仕平则坐上了实验学校总校长的大位。\n不过，这仅仅只是这一新联盟千里之行的第一步......"
+
+ CYSY_Zfc_resignation_crisis:0 "张复昌辞职危机"
+ CYSY_Zfc_resignation_crisis_is_going_on_trigger:0 "张复昌辞职事件余波未平"
+ CYSY_Zfc_resignation_crisis_is_ended_trigger:0 "完成张复昌辞职事件善后工作"
+ CYSY_Zfc_resignation_crisis_fail_effect:0 "或许张复昌是对的......"
+
+ CYSY_school_stability_too_low:0 "学校正在走向§R失控§!"
+ CYSY_school_stability_too_low_fail_effect:0 "§R万劫不复！§!"
+
+ CYSY_school_stability_category:0 "实验学校稳定度"
+ CYSY_stability_status_display_long:0 "[?CYSY_stability_display]\n[getCYSY_stability_status_level]"
+ CYSY_stability_status_level_1:0 "§R失控§!" 
+ CYSY_stability_status_level_2:0 "§Y动荡§!"
+ CYSY_stability_status_level_3:0 "§G稳定§!"
+ CYSY_school_stability_decision_desc:0 "大到一国，小到一家，在所有的情形下，§W稳定§!几乎总是排在一切事务之前。自潮实建校以来，或大或小的§Y风风雨雨§!就没停过，幸好潮实无不例外地都挺过来了，而其中对学校§W稳定§!的重视功不可没。于是，我们不难从几年的经验里得到一个结论：虽然，潮实很小，但是管理学校就和治理国家一样，它的§W稳定§!与否决定着我们能否继续走下去，一旦§R失去控制§!，广大学生和老教师付出辛酸汗泪所创造的实验学校的前途就会面临§R严重的威胁§!。即便如此，潮实还是§G很小§!，只是一个由教师和学生成的小集体，看起来§Y并没有多难§!对付..."
+
+ CYSY_the_conflict_between_the_offices_category:0 "§a两§n处§!§!之争"
+ CYSY_the_conflict_between_the_offices_decision_desc:0 "从潮实建校起，§n政教处§!和§a教务处§!的权责界限就可以说是泾渭分明，§n政教处§!统领各年级组进而主管学校§Y行政事务§!、执行学校高层的意志；§a教务处§!指导各级各科备课组，进而安排学校的§Y教学事务§!、协调教师工作。这§a两§n“处”§!§!两责的划分使学校的各方面工作专一高效。然而这张复昌一手打造的实验学校的运行机器，随着他的辞职而近乎被摧毁了：张复昌带走了他培养的大批骨干教师，包括那些管理人才。这使得我们不得不临时拆东墙补西墙，这不免导致了暂时的§Y人事安排混乱，职权界限模糊§!。而如何安排好剩下同事们的位置，决定了我们能否使机器再次§G丝滑运转§!——亦或是§R彻底报废§!......" 

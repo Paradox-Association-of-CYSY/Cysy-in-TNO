@@ -1,0 +1,75 @@
+scripted_gui = {
+	CYSY_Zsp_and_Zyf_decision_gui = {
+		context_type = decision_category
+		window_name = "CYSY_Zsp_and_Zyf_decision_gui" 
+		parent_window_token = decision_tab
+		visible = { always = yes }
+
+		properties = {
+			Zsp_and_Zyf_competition_bar = {
+				frame = CYS_Zyf_competing_power_value
+			}
+
+			
+		}
+
+		effects = {
+			
+		}
+
+		
+	}
+	CYSY_school_stability_decision_gui = {
+		context_type = decision_category
+		window_name = "CYSY_school_stability_decision_gui" 
+		parent_window_token = decision_tab
+		visible = { always = yes }
+	
+		properties = {
+			CYSY_stability_dial_plate_pointer = {
+				image = "GFX_CYSY_dial_plate_[?CYSY_stability_pointer_value]"
+			}
+
+			CYSY_stability_status_picture = {
+				image = "[getGFX_CYSY_stability_decison_picture]"
+			}
+
+		}
+
+		effects = {
+			
+			test_my_dial_plate_plus_click = {
+				scr_effect_CYSY_stability_plus = yes
+			}
+			test_my_dial_plate_minus_click = {
+				scr_effect_CYSY_stability_minus = yes
+			}
+		}
+
+		triggers = {
+			test_my_dial_plate_plus_visible = {
+				has_country_flag = test_my_dial_plate_plus_on
+			}
+			test_my_dial_plate_minus_visible = {
+				has_country_flag = test_my_dial_plate_plus_on
+			}
+		}
+	}
+	CYSY_the_conflict_between_the_offices_gui = {
+		context_type = decision_category
+		window_name = "CYSY_the_conflict_between_the_offices_gui" 
+		parent_window_token = decision_tab
+		visible = { always = yes }
+	
+		properties = {
+			no_position_pie = { frame = display_no_position_pie }
+			both_guy_pie = { frame = display_both_guy_pie }
+			JWC_guy_pie = { frame = display_JWC_guy_pie }
+			ZJC_guy_pie = { frame = display_ZJC_guy_pie }
+		}
+
+		effects = {
+		
+		}
+	}
+}

@@ -79,7 +79,10 @@ start_CYSY_map_control = {
 	set_country_flag = CYSY_something_constructing
 	set_country_flag = CYSY_senior_east_building
 	update_CYSY_building_constructing_completed_left = yes
-	
+
+	##一些决议来搭便车
+	update_stability_status = yes
+	start_CYSY_CbtF_initialization = yes
 }
 
 check_CYSY_map_controler = {

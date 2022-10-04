@@ -53,3 +53,12 @@
 #JBZX_control_percent
  CYSY_building_constructing_title_tt:0 "该建筑物正在建造中"
  CYSY_building_constructing_title_desc:0 "目前的建造进度:  §G[?CYSY_building_constructing_data_completed]%§!\n现在的建造速度:  §G[?CYSY_building_constructing_data_speed]%§!\n再经过 §Y[?CYSY_building_constructing_completed_left] 个月§!可以完工"
+
+
+
+
+
+
+
+
+

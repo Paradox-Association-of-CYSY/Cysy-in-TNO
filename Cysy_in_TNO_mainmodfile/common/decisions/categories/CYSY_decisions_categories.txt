@@ -1,0 +1,47 @@
+#############################################################
+########                实验学校稳定度                ########
+#############################################################
+CYSY_school_stability_category = {
+	icon = GFX_decision_CYSY_school_stability_category_icon
+	priority = 300 
+	scripted_gui = CYSY_school_stability_decision_gui
+	allowed = {
+		original_tag = CYS
+	}
+	visible_when_empty = yes
+	visible = {
+		has_country_flag = CYSY_school_stability_category_allowed
+	}
+}
+
+##############################################################
+########             郑益峰和张仕平权力斗争             ########
+##############################################################
+CYSY_Zsp_and_Zyf_category = {
+	icon = GFX_decision_BRA_decision_category_lottquadros
+	priority = 300 
+	scripted_gui = CYSY_Zsp_and_Zyf_decision_gui
+	allowed = {
+		original_tag = CYS
+	}
+	visible_when_empty = yes
+	visible = {
+		has_country_flag = CYSY_Zsp_and_Zyf_category_allowed
+	}
+}
+
+############################################################
+########             教务处政教处职权冲突             ########
+############################################################
+CYSY_the_conflict_between_the_offices_category = {
+	icon = GFX_decision_CYSY_the_conflict_between_the_offices_category_icon
+	priority = 300 
+	scripted_gui = CYSY_the_conflict_between_the_offices_gui
+	allowed = {
+		original_tag = CYS
+	}
+	visible_when_empty = yes
+	visible = {
+		has_country_flag = CYSY_the_conflict_between_the_offices_category_allowed
+	}
+}

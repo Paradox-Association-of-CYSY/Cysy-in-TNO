@@ -1,0 +1,748 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_CYSY_dial_plate_"
+		texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_.png"
+	}
+
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_1"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_1.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_2"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_2.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_3"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_3.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_4"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_4.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_5"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_5.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_6"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_6.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_7"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_7.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_8"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_8.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_9"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_9.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_10"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_10.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_11"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_11.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_12"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_12.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_13"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_13.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_14"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_14.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_15"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_15.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_16"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_16.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_17"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_17.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_18"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_18.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_19"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_19.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_20"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_20.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_21"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_21.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_22"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_22.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_23"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_23.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_24"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_24.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_25"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_25.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_26"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_26.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_27"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_27.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_28"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_28.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_29"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_29.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_30"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_30.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_31"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_31.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_32"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_32.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_33"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_33.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_34"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_34.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_35"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_35.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_36"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_36.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_37"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_37.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_38"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_38.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_39"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_39.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_40"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_40.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_41"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_41.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_42"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_42.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_43"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_43.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_44"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_44.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_45"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_45.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_46"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_46.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_47"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_47.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_48"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_48.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_49"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_49.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_50"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_50.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_51"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_51.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_52"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_52.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_53"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_53.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_54"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_54.png"
+		    }				
+						
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_55"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_55.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_56"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_56.png"
+		    }				
+						
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_57"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_57.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_58"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_58.png"
+		    }				
+						
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_59"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_59.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_60"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_60.png"
+		    }				
+						
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_61"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_61.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_62"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_62.png"
+		    }				
+						
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_63"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_63.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_64"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_64.png"
+		    }				
+						
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_65"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_65.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_66"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_66.png"
+		    }				
+						
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_67"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_67.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_68"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_68.png"
+		    }				
+						
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_69"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_69.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_70"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_70.png"
+		    }				
+						
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_71"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_71.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_72"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_72.png"
+		    }				
+						
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_73"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_73.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_74"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_74.png"
+		    }				
+						
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_75"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_75.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_76"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_76.png"
+		    }				
+						
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_77"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_77.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_78"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_78.png"
+		    }				
+						
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_79"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_79.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_80"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_80.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_81"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_81.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_82"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_82.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_83"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_83.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_84"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_84.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_85"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_85.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_86"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_86.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_87"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_87.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_88"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_88.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_89"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_89.png"
+		    }				
+		spriteType = {				
+		        name = "GFX_CYSY_dial_plate_90"	
+		        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_90.png"
+		    }				
+		spriteType = {				
+			        name = "GFX_CYSY_dial_plate_91"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/CYSY_dial_plate_90.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_92"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_89.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_93"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_88.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_94"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_87.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_95"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_86.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_96"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_85.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_97"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_84.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_98"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_83.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_99"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_82.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_100"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_81.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_101"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_80.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_102"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_79.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_103"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_78.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_104"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_77.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_105"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_76.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_106"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_75.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_107"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_74.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_108"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_73.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_109"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_72.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_110"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_71.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_111"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_70.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_112"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_69.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_113"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_68.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_114"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_67.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_115"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_66.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_116"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_65.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_117"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_64.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_118"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_63.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_119"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_62.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_120"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_61.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_121"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_60.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_122"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_59.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_123"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_58.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_124"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_57.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_125"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_56.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_126"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_55.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_127"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_54.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_128"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_53.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_129"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_52.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_130"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_51.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_131"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_50.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_132"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_49.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_133"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_48.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_134"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_47.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_135"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_46.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_136"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_45.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_137"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_44.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_138"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_43.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_139"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_42.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_140"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_41.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_141"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_40.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_142"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_39.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_143"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_38.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_144"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_37.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_145"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_36.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_146"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_35.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_147"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_34.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_148"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_33.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_149"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_32.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_150"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_31.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_151"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_30.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_152"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_29.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_153"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_28.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_154"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_27.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_155"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_26.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_156"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_25.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_157"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_24.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_158"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_23.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_159"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_22.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_160"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_21.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_161"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_20.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_162"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_19.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_163"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_18.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_164"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_17.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_165"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_16.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_166"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_15.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_167"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_14.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_168"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_13.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_169"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_12.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_170"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_11.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_171"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_10.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_172"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_9.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_173"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_8.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_174"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_7.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_175"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_6.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_176"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_5.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_177"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_4.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_178"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_3.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_179"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_2.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_180"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_1.png"
+			    }				
+			spriteType = {				
+			        name = "GFX_CYSY_dial_plate_181"	
+			        texturefile = "gfx/interface/CYSY_decision_gui/dial_plates/fzl/CYSY_dial_plate_0.png"
+			    }				
+			
+
+
+}
