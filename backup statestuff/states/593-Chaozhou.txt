@@ -1,0 +1,28 @@
+
+state={
+	id=593
+	name="STATE_593"
+	resources={
+		tungsten=20
+		steel=14
+	}
+
+	history={
+		owner = GNG
+		add_core_of = GNG
+		buildings = {
+			infrastructure = 3
+		}
+		victory_points = { 4165 5 }
+		victory_points = { 7141 3 }
+		victory_points = { 7182 1 }
+
+	}
+
+	provinces={
+		1078 1162 4165 7141 7182 
+	}
+	manpower=10777393
+	buildings_max_level_factor=1.750
+	state_category=town
+}
