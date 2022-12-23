@@ -16,9 +16,10 @@ guiTypes = {
 			position = { x = 48 y = 48 }
 			centerposition = yes
 			pdx_tooltip = "scripted_gui_open_chaoyangshixiao_map"
+			shortcut = "m" 
 		}
 
-	containerWindowType = {
+	containerWindowType = { 
 		name = "arrows_alert"
 		position = { x = 1842 y = 700 }
 
@@ -29,4 +30,24 @@ guiTypes = {
 		}
 	}
 	}
+	containerWindowType = { 
+		name = "CYSY_top_statistics_bottom"
+		size = { width = 95 height = 95 }
+		position = { x = 226 y = 35 } 
+		Orientation = "UPPER_LEFT"
+	
+		buttonType = {
+			name = "statistics_button"
+			#position = { x = 80 y = -2 } - Swapped w/ Diplomacy
+			position = { x = 0 y = 0 }
+			quadTextureSprite ="GFX_statistics_button_icon"
+			Orientation = "UPPER_LEFT"
+			#shortcut = "e" 
+			clicksound = click_close
+			oversound = ui_menu_over
+		}
+	
+	}
 }
+
+

@@ -1,0 +1,87 @@
+scripted_gui = {
+	TNO_CYS_statistics = {
+		context_type = player_context
+		window_name = "CYSY_statistics_GUI"
+		parent_window_token = CYSY_statistics_GUI
+
+		visible = { has_country_flag =  CYSY_statistics_GUI_open_flag }
+
+		effects = { 
+			CYSY_statistics_close_button_click = {
+				clr_country_flag = CYSY_statistics_GUI_open_flag
+				set_variable = { CYSY_statistics_button_frame = 1}
+			}
+			CYSY_statistics_tabs_layer_click = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = CYSY_statistics_finance_window }
+					}
+					set_country_flag = CYSY_statistics_finance_window
+					clr_country_flag = CYSY_statistics_education_window
+					set_variable = { CYSY_statistics_tabs_frame = 2}
+				}
+				else = {
+					clr_country_flag = CYSY_statistics_finance_window
+					set_country_flag = CYSY_statistics_education_window
+					set_variable = { CYSY_statistics_tabs_frame = 1}
+				}
+				
+			}
+		}
+		
+		triggers = {
+			
+		}
+		properties = {
+			CYSY_statistics_tabs_layer = { frame = CYSY_statistics_tabs_frame }
+
+		}
+	}
+}
+scripted_gui = {
+	CYSY_statistics_finance_gui = {
+		context_type = player_context
+		window_name = "CYSY_statistics_finance_gui"
+		parent_window_name = CYSY_statistics_GUI
+
+		visible = { has_country_flag = CYSY_statistics_finance_window }
+		
+		dynamic_lists = {
+			CYSY_line_segments = {
+				array = CYSY_Line_graph_offsets 
+				change_scope = no
+				entry_container = CYSY_line_graph_line_segment
+				index = segment_idx
+			}  
+			vbars = {
+				array = CYSY_Line_graph_vbars
+				change_scope = no
+				entry_container = CYSY_line_graph_vbar
+				index = vbar_idx
+			}
+
+		} 
+		properties = {
+			segment = {
+				frame = CYSY_Line_graph_deltas^segment_idx
+				y = CYSY_Line_graph_offsets^segment_idx
+			}
+			horizontal_bar = {
+				y = CYSY_Line_graph_vbar_offsets^vbar_idx
+			}
+			horizontal_bar_label = {
+				y = CYSY_Line_graph_vbar_offsets^vbar_idx
+			}
+		}
+	}
+}
+
+scripted_gui = {
+	CYSY_statistics_education_gui = {
+		context_type = player_context
+		window_name = "CYSY_statistics_education_gui"
+		parent_window_name = CYSY_statistics_GUI
+
+		visible = { has_country_flag = CYSY_statistics_education_window }
+	}
+}

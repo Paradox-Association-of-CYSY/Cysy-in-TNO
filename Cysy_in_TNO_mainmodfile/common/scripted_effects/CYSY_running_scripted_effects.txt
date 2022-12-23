@@ -1,0 +1,334 @@
+#######################################
+#############条形图###################
+#######################################
+
+
+
+
+#######################################
+#############建筑进度###################
+#######################################
+monthly_CYSY_building_constructing = {
+	do_CYSY_building_constructing = yes
+	check_CYSY_building_constructing = yes
+	update_CYSY_building_constructing_completed_left = yes
+	update_stability_status = yes
+}
+
+# CYSY_building_constructing_data_completed 已经完成的工作量
+# CYSY_building_constructing_data_speed 每月速度
+# CYSY_building_constructing_completed_left 剩余的月数（四舍五入）
+do_CYSY_building_constructing = {
+	add_to_variable = { CYSY_building_constructing_data_completed = CYSY_building_constructing_data_speed }
+}
+
+update_CYSY_building_constructing_completed_left = {
+	set_variable = { CYSY_building_constructing_in_left = 100 }
+	subtract_from_variable= { CYSY_building_constructing_in_left = CYSY_building_constructing_data_completed }
+
+	set_variable = {CYSY_building_constructing_completed_left = CYSY_building_constructing_in_left}
+	divide_variable = {CYSY_building_constructing_completed_left = CYSY_building_constructing_data_speed}
+
+	round_variable = CYSY_building_constructing_completed_left # （四舍五入）
+}
+check_CYSY_building_constructing = {
+	if = {
+		limit = {
+			OR={
+				check_variable = { CYSY_building_constructing_data_completed > 100 }
+				check_variable = { CYSY_building_constructing_data_completed = 100 }
+			}
+		}
+		complete_now_CYSY_building_constructing = yes
+	}
+}
+
+complete_now_CYSY_building_constructing = {
+	if = {
+		limit = {
+			has_country_flag = CYSY_XXX_building
+		}
+		clr_country_flag = CYSY_XXX_building
+		set_variable = {CYSY_building_constructing_data_speed = 0}
+		set_variable = {CYSY_building_constructing_completed_left = 0}
+		set_variable = {CYSY_building_constructing_data_completed = 0}
+	}
+
+	else_if = {
+		limit = {
+			has_country_flag = CYSY_senior_east_building
+		}
+		clr_country_flag = CYSY_senior_east_building
+		set_variable = {CYSY_building_constructing_data_speed = 0}
+		set_variable = {CYSY_building_constructing_completed_left = 0}
+		set_variable = {CYSY_building_constructing_data_completed = 0}
+		country_event = { id = cysyxx.1001 }
+	}
+}
+CYSY_draw_the_graph = {
+	CYSY_develop_ready_graph = yes
+	###处理月份
+	set_variable = { CYSY_TYBLY_year = -1} #前年是1961
+	set_variable = { CYSY_NOW_year = 1} #今年是1961
+
+	add_to_variable = { CYSY_TYBLY_year = CYSY_standard_year}
+	add_to_variable = { CYSY_NOW_year = CYSY_standard_year}
+	#负数部分为标准年的前一年，大于13的部分为标准年的后一年
+}
+####是的，这玩意我从巴西那里偷过来的，贼鸡儿好用，非常感谢！
+CYSY_develop_ready_graph = {
+	# Update frames of buttons
+	
+	clear_array = CYSY_Line_graph_values
+	if = {
+		limit = {
+			always = yes
+		}
+		set_variable = { CYSY_Line_graph_base_unit = 2 }
+		for_loop_effect = {
+			start = 0
+			end = 16
+			value = i
+
+			add_to_array = { CYSY_Line_graph_values = CYSY_finance_profit_data_history^i }
+		}
+	}
+
+	clear_array = CYSY_Line_graph_offsets
+	clear_array = CYSY_Line_graph_deltas
+	clear_array = CYSY_Line_graph_vbars
+	clear_array = CYSY_Line_graph_vbar_offsets
+
+	# 找出我们折线的最高点和最低点
+	set_temp_variable = { min = CYSY_Line_graph_values^0 }
+	set_temp_variable = { max = CYSY_Line_graph_values^0 }
+	for_loop_effect = {
+		end = 16
+		value = i
+
+		if = {
+			limit = {
+				check_variable = { CYSY_Line_graph_values^i > max }
+			}
+			set_temp_variable = { max = CYSY_Line_graph_values^i }
+		}
+		if = {
+			limit = {
+				check_variable = { CYSY_Line_graph_values^i < min }
+			}
+			set_temp_variable = { min = CYSY_Line_graph_values^i }
+		}
+	}
+	set_temp_variable = { range = max }
+	subtract_from_temp_variable = { range = min }
+
+	# 我们需要找出区间大小，以便后续确定我们的最小单位，或者你理解成分度值，，，
+	set_temp_variable = { unit = 10000 }
+	if = {
+		limit = {
+			check_variable = { range < 3 }
+		}
+		set_temp_variable = { unit = 0.5 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { range < 6 }
+		}
+		set_temp_variable = { unit = 1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { range < 12 }
+		}
+		set_temp_variable = { unit = 2 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { range < 30 }
+		}
+		set_temp_variable = { unit = 5 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { range < 60 }
+		}
+		set_temp_variable = { unit = 10 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { range < 120 }
+		}
+		set_temp_variable = { unit = 20 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { range < 300 }
+		}
+		set_temp_variable = { unit = 50 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { range < 600 }
+		}
+		set_temp_variable = { unit = 100 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { range < 1200 }
+		}
+		set_temp_variable = { unit = 200 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { range < 3000 }
+		}
+		set_temp_variable = { unit = 500 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { range < 6000 }
+		}
+		set_temp_variable = { unit = 1000 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { range < 12000 }
+		}
+		set_temp_variable = { unit = 2000 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { range < 30000 }
+		}
+		set_temp_variable = { unit = 5000 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { range < 50000 }
+		}
+		set_temp_variable = { unit = 8000 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { range < 80000 }
+		}
+		set_temp_variable = { unit = 12000 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { range < 100000 }
+		}
+		set_temp_variable = { unit = 11500 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { range < 150000 }
+		}
+		set_temp_variable = { unit = 25000 }
+	}
+	else_if = {
+		limit = { 
+			check_variable = { range < 180000 }
+		}
+		set_temp_variable = { unit = 40000 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { range < 200000 }
+		}
+		set_temp_variable = { unit = 50000 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { range > 200000 }
+		}
+		set_temp_variable = { unit = 85000 }
+	}
+
+	divide_temp_variable = { min = unit }
+	divide_temp_variable = { max = unit }
+	subtract_from_temp_variable = { min = 0.6 }
+	add_to_temp_variable = { max = 0.6 }
+	round_temp_variable = min
+	round_temp_variable = max
+
+	multiply_temp_variable = { min = unit }
+	multiply_temp_variable = { max = unit }
+
+	set_temp_variable = { range = max }
+	subtract_from_temp_variable = { range = min }
+
+	# Find the unit we should display next to the y axis ticks (ie K, M, B etc)
+	#给它上好我们的单位，，， (不是洋人的玩意，是万 百万 和 亿
+	set_variable = { CYSY_Line_graph_display_unit = CYSY_Line_graph_base_unit }
+	set_temp_variable = { divisor = 10000 } #基础是万
+	while_loop_effect = {
+		limit = {
+			check_variable = { divisor < min } 
+		}
+		multiply_temp_variable = { divisor = 100 } #100万=1百万#100百万=亿
+		add_to_variable = { CYSY_Line_graph_display_unit = 1 }
+	}
+
+	# Generate the y axis ticks for our graph
+	divide_temp_variable = { range = 100 }
+	set_temp_variable = { m2 = max }
+	add_to_temp_variable = { m2 = 0.25 }
+	set_temp_variable = { k = min }
+	while_loop_effect = {
+		limit = {
+			check_variable = { k < m2 }
+		}
+		set_temp_variable = { label = k}
+		divide_temp_variable = { label = 10000 }
+		add_to_array = { CYSY_Line_graph_vbars = label }
+ 
+		set_temp_variable = { offset = k }
+		subtract_from_temp_variable = { offset = min }
+		divide_temp_variable = { offset = range }
+		multiply_temp_variable = { offset = -1.5 }
+		add_to_array = { CYSY_Line_graph_vbar_offsets = offset }
+
+		add_to_temp_variable = { k = unit }
+	}
+	for_loop_effect = {
+		end = 16
+		value = i
+		subtract_from_temp_variable = { CYSY_Line_graph_vbars^i = divisor}
+	}
+	# Actually generate the graph line segments
+	for_loop_effect = {
+		start = 0
+		end = 16
+		value = i
+
+		set_temp_variable = { j = i }
+		add_to_temp_variable = { j = 1 }
+
+		set_temp_variable = { vj = CYSY_Line_graph_values^j }
+		set_temp_variable = { vi = CYSY_Line_graph_values^i }
+		subtract_from_temp_variable = { vj = min }
+		subtract_from_temp_variable = { vi = min }
+		divide_temp_variable = { vj = range }
+		divide_temp_variable = { vi = range }
+
+		divide_temp_variable = { vj = 2 }
+		divide_temp_variable = { vi = 2 }
+		round_temp_variable = vi
+		round_temp_variable = vj
+		multiply_temp_variable = { vj = 2 }
+		multiply_temp_variable = { vi = 2 }
+
+		set_temp_variable = { delta = vj }
+		subtract_from_temp_variable = { delta = vi }
+		divide_temp_variable = { delta = 2 }
+		round_temp_variable = delta
+		add_to_temp_variable = { delta = 50 }
+
+		set_temp_variable = { offset = vi }
+		multiply_temp_variable = { offset = -1.5 }
+
+		add_to_array = { CYSY_Line_graph_offsets = offset }
+		add_to_array = { CYSY_Line_graph_deltas = delta }
+	}
+}

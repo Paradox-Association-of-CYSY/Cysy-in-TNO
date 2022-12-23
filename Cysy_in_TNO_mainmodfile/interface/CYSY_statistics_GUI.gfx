@@ -1,0 +1,26 @@
+spriteTypes = {
+    spriteType = {
+		name = "GFX_CYSY_statistics_tabs_base"
+		texturefile = "gfx/interface/CYSY_statistics_gui/tabs/statistics_tabs_base.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_statistics_tabs_layer" 
+		texturefile = "gfx/interface/CYSY_statistics_gui/tabs/statistics_tabs_layer.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_CYSY_finance_pie_colors_legend" 
+		texturefile = "gfx/interface/CYSY_statistics_gui/finance/finance_pie_colors_legend.png"
+	}
+	progressbartype = {
+		name = "GFX_CYSY_finance_line_segment"
+		textureFile1 = "gfx/interface/line_graph/graph_line_full_green.dds"
+		textureFile2 = "gfx/interface/line_graph/graph_line_empty.dds"
+		size = {
+			x = 20
+			y = 200
+		}
+		effectFile = "gfx/FX/line_graph.lua"
+		horizontal = yes
+	}
+}

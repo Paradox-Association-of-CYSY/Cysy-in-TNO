@@ -39,7 +39,7 @@
  CYSY_map_building_senior3_master_chosen_name:0 "高三行政楼"
  CYSY_map_building_senior3_main_chosen_name:0 "高三主教学楼"
  CYSY_map_building_senior2_north_chosen_name:0 "高二北楼"
- CYSY_map_building_senior2_B_chosen_name:0 "高二宿舍楼B"
+ CYSY_map_building_senior2_B_chosen_name:0 "高二宿舍楼B" 
  CYSY_map_building_senior2_south_chosen_name:0 "高二南楼"
  CYSY_map_building_senior3_south_chosen_name:0 "高三综合楼"
  CYSY_map_building_senior_west_chosen_name:0 "高一综合西楼"
@@ -54,11 +54,35 @@
  CYSY_building_constructing_title_tt:0 "该建筑物正在建造中"
  CYSY_building_constructing_title_desc:0 "目前的建造进度:  §G[?CYSY_building_constructing_data_completed]%§!\n现在的建造速度:  §G[?CYSY_building_constructing_data_speed]%§!\n再经过 §Y[?CYSY_building_constructing_completed_left] 个月§!可以完工"
 
+ statistics_view_title:0 "学校管理"
+ statistics_tabs_1_text:0 "财务"
+ statistics_tabs_2_text:0 "教育"
 
+ statistics_finance_income_title:0 "收入"
+ statistics_finance_income_details_txt:0 "§B学费收入§!\n§W???.??M§!\n§n赞助收入\n§W???.??M§!\n§Q食宿收入§!\n§W???.??M§!\n§I杂项收入§!\n§W???.??M§!"   
+ statistics_finance_expend_title:0 "支出" 
+ statistics_finance_expend_details_txt:0 "§S教职工资§!\n§W???.??M§!\n§w设施维护§!\n§W???.??M§!\n§O食宿管理§!\n§W???.??M§!\n§l杂项支出§!\n§W???.??M§!" 
 
+ CYSY_graph_label_month_1:0 "一月"
+ CYSY_graph_label_month_2:0 "二月"
+ CYSY_graph_label_month_3:0 "三月"
+ CYSY_graph_label_month_4:0 "四月"
+ CYSY_graph_label_month_5:0 "五月"
+ CYSY_graph_label_month_6:0 "六月"
+ CYSY_graph_label_month_7:0 "七月"
+ CYSY_graph_label_month_8:0 "八月"
+ CYSY_graph_label_month_9:0 "九月"
+ CYSY_graph_label_month_10:0 "十月"
+ CYSY_graph_label_month_11:0 "十一月"
+ CYSY_graph_label_month_12:0 "十二月"
 
+ CYSY_graph_label_year_TYBLY:0 "[?CYSY_TYBLY_year]年"
+ CYSY_graph_label_year_LAST:0 "[?CYSY_standard_year]年"
+ CYSY_graph_label_year_NOW:0 "[?CYSY_NOW_year]年"
+ CYSY_graph_label_x_label:0 "[getCYSY_graph_label_year] [getCYSY_graph_label_month]" 
 
-
-
-
-
+ CYSY_graph_label_unit_none:0 ""
+ CYSY_graph_label_unit_w:0 "万"
+ CYSY_graph_label_unit_m:0 "百万"
+ CYSY_graph_label_unit_y:0 "亿"
+ CYSY_graph_label_unit_pct:0 "%"

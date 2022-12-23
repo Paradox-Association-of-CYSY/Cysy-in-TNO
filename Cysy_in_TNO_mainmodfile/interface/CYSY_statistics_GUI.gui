@@ -1,0 +1,317 @@
+guiTypes = {
+    containerWindowType = {
+        name = "CYSY_statistics_GUI"
+        
+        position = { x = -606 y = 78 }
+		show_position = { x = -4 y =78 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 300
+		size = { width = 830 height = 100%% }
+		clipping = no
+
+        background = {
+			name = "Background"
+			quadTextureSprite = "GFX_tiled_window_thin_border2"
+		}
+		show_sound = menu_open_window
+
+        iconType = {
+			name = "statistics_header_bg"
+			spriteType = "GFX_header_wider_bg"
+			position = { x = 0 y = 3 }
+			orientation = "UPPER_LEFT"
+		}
+
+        buttonType = {
+			name = "CYSY_statistics_close_button"
+			position = { x = -34 y = 7 }
+			quadTextureSprite ="GFX_closebutton_small"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+
+        instantTextboxType = {
+			name = "statistics_title"
+			position = { x = 45 y = 4 }
+			borderSize = { x = 0 y = 0 }
+			maxWidth = 240
+			maxHeight = 20
+			font = "Bomb_36"
+
+			#text = "TRADE_TRADE"
+			text = "statistics_view_title" 
+		} 
+
+        ####选择面板
+        containerWindowType = {
+            name = "CYSY_statistics_tabs"
+            size = { width = 600 height = 756 }
+            position = { x = -2 y = 40 }
+            clipping = no
+            moveable = no
+
+            background = {
+                name = "CYSY_statistics_tabs_base"
+                spriteType = "GFX_CYSY_statistics_tabs_base"
+                position = {x = 0 y = 0}
+            }
+            instantTextboxType = {
+                name = "statistics_tabs_1"
+                position = { x = 0 y = 10 }
+                borderSize = { x = 0 y = 0 }
+                maxWidth = 290
+                maxHeight = 20
+                font = "Bomb_28"
+                format = center
+                text = "statistics_tabs_1_text" 
+            } 
+            instantTextboxType = {
+                name = "statistics_tabs_2"
+                position = { x = 290 y = 10 }
+                borderSize = { x = 0 y = 0 }
+                maxWidth = 290
+                maxHeight = 20
+                font = "Bomb_28"
+                format = center
+                text = "statistics_tabs_2_text" 
+            } 
+            buttonType = {
+                name = "CYSY_statistics_tabs_layer"
+                position = { x = 0 y = 0 }
+                quadTextureSprite ="GFX_CYSY_statistics_tabs_layer"
+            }  
+
+        }   
+        
+        
+    }
+
+    ############财务界面############
+
+
+    containerWindowType = {
+        name = "CYSY_statistics_finance_gui"
+        size = { width = 825 height = 100%% }
+        position = { x = 0 y = 74 }
+        clipping = no
+        moveable = no
+
+        background = {
+            name = "Background" 
+            quadTextureSprite = "GFX_tiled_window_thin_border2"
+        }
+            ############收入############
+
+        containerWindowType = {
+            name = "CYSY_finance_income_area"
+            size = { width = 250 height = 280 }    
+            position = { x = 20 y = 20 }
+            clipping = no        
+            moveable = no
+            Orientation = UPPER_LEFT
+            background = {     
+                name = "Background"
+                quadTextureSprite = "GFX_crt_2b_tile"
+            }
+            
+            containerWindowType = {
+                name = "CYSY_finance_income_details"
+                size = { width = 140 height = 220 }    
+                position = { x = 0 y = 20 }        
+                clipping = no       
+                moveable = no
+                Orientation = UPPER_RIGHT
+                background = {
+                    name = "Background"
+                    quadTextureSprite = "GFX_crt_1b_tile"
+                }
+                instantTextboxType = {
+                    name = "CYSY_finance_income_details"
+                    position = { x = 0 y = 20 }
+                    font = "aldrich_24_outline" 
+                    text = statistics_finance_income_details_txt
+                    maxWidth = 180 
+                    maxHeight = 20
+                    format = center
+                    maxWidth = 140
+                    maxHeight = 220
+                }
+                iconType = {
+                    name = "finance_pie_colors_legend"
+                    quadTextureSprite = "GFX_CYSY_finance_pie_colors_legend"
+                    position = { x = -65 y = 20 } 
+                    Orientation = "CENTER_UP"
+                }
+                
+            }
+        }
+            ############支出############
+        containerWindowType = {
+            name = "CYSY_finance_expend_area"
+            size = { width = 250 height = 280 } 
+            position = { x = -270 y = 20 }   
+            clipping = no  
+            moveable = no
+            Orientation = UPPER_RIGHT
+            background = {
+                name = "Background"
+                quadTextureSprite = "GFX_crt_2b_tile"
+            }
+ 
+            containerWindowType = { 
+                name = "CYSY_finance_expend_details"
+                size = { width = 140 height = 220 } 
+                position = { x = -140 y = 20 }   
+                clipping = no       
+                moveable = no
+                Orientation = UPPER_LEFT 
+                background = {
+                    name = "Background"
+                    quadTextureSprite = "GFX_crt_1b_tile"
+                }
+       
+                instantTextboxType = { 
+                    name = "CYSY_finance_expend_details"  
+                    position = { x = 0 y = 20 }  
+                    font = "aldrich_24_outline"
+                    text = statistics_finance_expend_details_txt
+                    maxHeight = 20
+                    format = center
+                    maxWidth = 140
+                    maxHeight = 220
+                }
+                
+            }
+        }
+
+        containerWindowType = {
+            name = "CYSY_finance_graph_line_area"
+            size = { width = 500 height = 250 } 
+            position = { x = -250 y = -100 }   
+            clipping = no 
+            moveable = no
+            Orientation = CENTER
+
+            #background = {
+            #    name = "Background"
+            #    quadTextureSprite = "GFX_tiled_window_thin_border2"
+            #}
+            containerWindowType = { 
+                name = "line_graph"
+                position = { x = 0 y = 0 }
+                instantTextBoxType = {
+                    name = "econ_title"	
+                    position = { x = 0 y = -26 }
+                    maxWidth = 300
+                    maxHeight = 53
+                    format = center
+                    orientation = upper_left
+                    font = "aldrich_24_outline"
+                    text = "[CYSY_Line_graph_title]"
+                    alwaystransparent = yes
+                }
+                gridboxtype = { 
+                    name = "CYSY_line_segments"
+                    position = { x = 0 y = 0 }
+                    size = { width = 0 height = 300 }
+                    slotsize = { width = 25 height = 300 }
+                    max_slots_horizontal = 16 
+                    add_horizontal = yes
+                }
+                gridboxtype = {
+                    name = "vbars"
+                    position = { x = 145 y = 150 }
+                    size = { width = 0 height = 300 }
+                    slotsize = { width = 300 height = 1 }
+                    max_slots_horizontal = 1
+                    add_horizontal = no
+                }
+                iconType = {
+                    name = "vertical_bar"
+                    spriteType = "GFX_BRA_Map_Graph_Vertical_Bar"
+                    position = { x = 0 y = 0}
+                }
+                instantTextboxType = {
+                    name = "label"
+                    position = { x = -15 y = 157}
+                    font = "aldrich_14_outline"
+                    text = "CYSY_graph_label_x_label"
+                    maxWidth = 30
+                    format = center
+                }
+            }
+        }
+    }
+
+
+ 
+    ############教育界面############
+
+    containerWindowType = {
+        name = "CYSY_statistics_education_gui"
+        size = { width = 825 height = 100%% }
+        position = { x = 0 y = 74 }
+        clipping = no
+        moveable = no
+ 
+        background = {
+            name = "Background"
+            quadTextureSprite = "GFX_tiled_window_thin_border2"
+        }
+    }
+ 
+    containerWindowType = {
+        name = "CYSY_line_graph_line_segment"
+        size = { width = 25 height = 300 }
+        position = { x = 12 y = 0 }
+        iconType = {
+            name = "segment"
+            spriteType = "GFX_Line_Segment"
+            position = { x = 0 y = 0 }   
+            frame = 57
+        }
+        instantTextboxType = {
+            name = "label"
+            position = { x = 10 y = 157}
+            font = "aldrich_14_outline" 
+            text = "CYSY_graph_label_x_label"
+            maxWidth = 30
+            format = center
+        }
+        iconType = {
+            name = "vertical_bar"
+            spriteType = "GFX_BRA_Map_Graph_Vertical_Bar"
+            position = { x = 25 y = 0}
+        } 
+    }
+    containerWindowType = {
+        name = "CYSY_line_graph_vbar"
+        size = { width = 300 height = 1 } 
+        position = { x = 0 y = 0 }
+        iconType = {
+            name = "horizontal_bar"
+            spriteType = "GFX_BRA_Map_Graph_Horizontal_Bar"
+            position = { x = 0 y = 0}
+        }
+        containerWindowType = {
+            name = "label_container"
+            position = { x = 0 y = -5 }
+
+            instantTextboxType = {
+                name = "horizontal_bar_label"
+                position = { x = -105 y = 0} 
+                font = "aldrich_14_outline"
+                text = "[?CYSY_Line_graph_vbars^vbar_idx|*][CYSY_Line_graph_display_unit_name]"
+                maxWidth = 100
+                format = right
+            }
+        }
+    }
+}
+guiTypes = {
+    
+    
+}

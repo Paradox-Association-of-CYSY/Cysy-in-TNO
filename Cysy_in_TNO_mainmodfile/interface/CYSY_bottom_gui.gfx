@@ -5,5 +5,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/CYSY_map_gui/chaoyangshixiao_crt_icon.dds"
 		noOfFrames = 2
 	}
-	
+	spriteType = {
+		name = "GFX_statistics_button_icon"
+		texturefile = "gfx/interface/CYSY_statistics_gui/statistics_button.dds"
+		noOfFrames = 2
+	}
 }
