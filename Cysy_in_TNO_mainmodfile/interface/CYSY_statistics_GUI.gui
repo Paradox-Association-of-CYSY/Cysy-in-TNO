@@ -112,11 +112,23 @@ guiTypes = {
             clipping = no        
             moveable = no
             Orientation = UPPER_LEFT
+
             background = {     
                 name = "Background"
                 quadTextureSprite = "GFX_crt_2b_tile"
             }
-            
+            instantTextboxType = {
+                name = "CYSY_finance_income_title"
+                position = { x = 0 y = 20 }
+                font = "aldrich_28_outline" 
+                text = CYSY_finance_income_title_tt
+                maxWidth = 180 
+                maxHeight = 20
+                format = center
+                maxWidth = 250
+                maxHeight = 220
+            }
+
             containerWindowType = {
                 name = "CYSY_finance_income_details"
                 size = { width = 140 height = 220 }    
@@ -139,13 +151,49 @@ guiTypes = {
                     maxWidth = 140
                     maxHeight = 220
                 }
+
+
                 iconType = {
                     name = "finance_pie_colors_legend"
                     quadTextureSprite = "GFX_CYSY_finance_pie_colors_legend"
                     position = { x = -65 y = 20 } 
                     Orientation = "CENTER_UP"
+                } 
+            }
+            containerWindowType = {
+                name = "finance_income_pie_container"
+                position = { x = 50 y = 65 }  
+                size = { width = 250 height = 250 }
+                Orientation = UPPER_LEFT      
+        
+                iconType = {
+                    name = "finance_income_Other_pie"
+                    quadTextureSprite = "GFX_pie_chart_CYSY_finance_income_Other"
+                    position = { x = 7 y = 7 }
+                    frame = 100
                 }
-                
+                iconType = {
+                    name = "finance_income_Boardlodge_pie"
+                    quadTextureSprite = "GFX_pie_chart_CYSY_finance_income_Boardlodge"
+                    position = { x = 7 y = 7 }
+                }
+                iconType = {
+                    name = "finance_income_Educhoice_pie"
+                    quadTextureSprite = "GFX_pie_chart_CYSY_finance_income_Educhoice"
+                    position = { x = 7 y = 7 }
+                }
+                iconType = {
+                    name = "finance_income_Tuition_pie"
+                    quadTextureSprite = "GFX_pie_chart_CYSY_finance_income_Tuition"
+                    position = { x = 7 y = 7 }
+                }
+                 
+                iconType = {
+                    name = "economic_expenditures_pie_overlay"
+                    quadTextureSprite = "GFX_pol_piechart_overlay_63x63" 
+                    position = { x = -5 y = -2 }
+                    scale = 1.05
+                }
             }
         }
             ############支出############
@@ -156,11 +204,23 @@ guiTypes = {
             clipping = no  
             moveable = no
             Orientation = UPPER_RIGHT
+
             background = {
                 name = "Background"
                 quadTextureSprite = "GFX_crt_2b_tile"
             }
- 
+
+            instantTextboxType = {
+                name = "CYSY_finance_expend_title"
+                position = { x = 0 y = 20 }
+                font = "aldrich_28_outline" 
+                text = CYSY_finance_expend_title_tt
+                maxWidth = 180 
+                maxHeight = 20
+                format = center
+                maxWidth = 250
+                maxHeight = 220
+            }
             containerWindowType = {  
                 name = "CYSY_finance_expend_details"
                 size = { width = 140 height = 220 } 
@@ -183,7 +243,42 @@ guiTypes = {
                     maxWidth = 140
                     maxHeight = 220
                 }
-                
+
+            }
+            containerWindowType = {
+                name = "finance_expend_pie_container"
+                position = { x = 50 y = 65 }  
+                size = { width = 250 height = 250 }
+                Orientation = UPPER_LEFT      
+        
+                iconType = {
+                    name = "finance_expend_Other_pie"
+                    quadTextureSprite = "GFX_pie_chart_CYSY_finance_expend_Other"
+                    position = { x = 7 y = 7 }
+                    frame = 100
+                }
+                iconType = {
+                    name = "finance_expend_Boardlodge_pie"  
+                    quadTextureSprite = "GFX_pie_chart_CYSY_finance_expend_Boardlodge"
+                    position = { x = 7 y = 7 }
+                }
+                iconType = {
+                    name = "finance_expend_Facility_pie"
+                    quadTextureSprite = "GFX_pie_chart_CYSY_finance_expend_Facility"
+                    position = { x = 7 y = 7 }
+                }
+                iconType = {
+                    name = "finance_expend_Salary_pie"
+                    quadTextureSprite = "GFX_pie_chart_CYSY_finance_expend_Salary" 
+                    position = { x = 7 y = 7 }
+                }
+                 
+                iconType = {
+                    name = "economic_expenditures_pie_overlay"
+                    quadTextureSprite = "GFX_pol_piechart_overlay_63x63" 
+                    position = { x = -5 y = -2 }
+                    scale = 1.05
+                }
             }
         }
 
@@ -195,11 +290,30 @@ guiTypes = {
             moveable = no
             Orientation = CENTER
 
-            background = {
+            background = { 
                 name = "Background"
                 quadTextureSprite = "GFX_tiled_window_thin_border2"
             }
 
+
+            instantTextboxType = {
+                name = "CYSY_finance_profit_title"
+                position = { x = 0 y = -60 }
+                font = "aldrich_32_outline" 
+                text = CYSY_finance_profit_title_tt  
+                format = center 
+                maxWidth = 540
+                maxHeight = 220
+            }
+            iconType = {
+                name = "CYSY_finance_profit_decoration_line"
+                spriteType = "GFX_CYSY_finance_profit_decoration_line"
+                position = { x = 10 y = -60 }
+                format = center 
+                maxWidth = 540
+                maxHeight = 220
+                frame = 1
+            }
             instantTextBoxType = {
 				name = "CYSY_finance_graph_line_title" 
 				position = { x = 30 y = 20` }
@@ -215,17 +329,7 @@ guiTypes = {
             containerWindowType = { 
                 name = "line_graph"
                 position = { x = 80 y = 60 }
-                instantTextBoxType = {
-                    name = "econ_title"	
-                    position = { x = 0 y = -26 }
-                    maxWidth = 300
-                    maxHeight = 53
-                    format = center
-                    orientation = upper_left
-                    font = "aldrich_24_outline"
-                    text = "[CYSY_Line_graph_title]"
-                    alwaystransparent = yes
-                }
+                
                 gridboxtype = {
                     name = "vbars" 
                     position = { x = 145 y = 150 }
@@ -285,7 +389,11 @@ guiTypes = {
             quadTextureSprite = "GFX_tiled_window_thin_border2"
         }
     }
- 
+    ####################################
+    ####################################
+    ############条形图玩意###############
+    ####################################
+    ####################################
     containerWindowType = {
         name = "CYSY_line_graph_line_segment"
         size = { width = 25 height = 300 }         
@@ -335,10 +443,11 @@ guiTypes = {
                 name = "horizontal_bar_label"
                 position = { x = -105 y = 0}  
                 font = "aldrich_14_outline"
-                text = "[?CYSY_Line_graph_vbars^vbar_idx|*][CYSY_Line_graph_display_unit_name]"
+                text = "[?CYSY_Line_graph_vbars^vbar_idx|1][CYSY_Line_graph_display_unit_name]"
                 maxWidth = 100
                 format = right 
             }
+            
         }
     }
 
@@ -355,7 +464,8 @@ guiTypes = {
                 name = "horizontal_bar_label"
                 position = { x = -105 y = 0} 
                 font = "aldrich_14_outline"
-                text = "[?CYSY_Line_graph_vbars^vbar_idx|*][CYSY_Line_graph_display_unit_name]"
+                text = "[?CYSY_Line_graph_vbars^vbar_idx|1][CYSY_Line_graph_display_unit_name]"
+                #text = "[?CYSY_Line_graph_vbar_offsets^vbar_idx]" 
                 maxWidth = 100
                 format = right
             }

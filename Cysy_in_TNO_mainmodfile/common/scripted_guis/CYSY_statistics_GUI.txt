@@ -2,7 +2,7 @@ scripted_gui = {
 	TNO_CYS_statistics = {
 		context_type = player_context
 		window_name = "CYSY_statistics_GUI"
-		parent_window_token = CYSY_statistics_GUI
+		parent_window_token = CYSY_statistics_GUI 
 
 		visible = { has_country_flag =  CYSY_statistics_GUI_open_flag }
 
@@ -19,11 +19,13 @@ scripted_gui = {
 					set_country_flag = CYSY_statistics_finance_window
 					clr_country_flag = CYSY_statistics_education_window
 					set_variable = { CYSY_statistics_tabs_frame = 2}
+					CYSY_update_finance_statistics = yes
 				}
 				else = {
 					clr_country_flag = CYSY_statistics_finance_window
 					set_country_flag = CYSY_statistics_education_window
 					set_variable = { CYSY_statistics_tabs_frame = 1}
+					CYSY_update_finance_statistics = yes
 				}
 				
 			}
@@ -34,7 +36,7 @@ scripted_gui = {
 		}
 		properties = {
 			CYSY_statistics_tabs_layer = { frame = CYSY_statistics_tabs_frame }
-
+			
 		}
 	}
 }
@@ -46,7 +48,7 @@ scripted_gui = {
 
 		visible = { has_country_flag = CYSY_statistics_finance_window }
 		
-		dynamic_lists = {
+		dynamic_lists = { 
 			CYSY_line_segments = {
 				array = CYSY_Line_graph_offsets 
 				change_scope = no
@@ -75,21 +77,35 @@ scripted_gui = {
 			horizontal_bar = {
 				y = CYSY_Line_graph_vbar_offsets^vbar_idx
 			} 
-
-			
 			
 			horizontal_bar_red = {
 				y = CYSY_Line_graph_vbar_offsets^vbar_idx
 			}
 
-			
-
 			horizontal_bar_label = {
 				y = CYSY_Line_graph_vbar_offsets^vbar_idx
 			}
+
+			CYSY_finance_profit_decoration_line = { frame = CYSY_finance_profit_decoration_line_frame }
+
 			
 		}
 
+		properties = {
+			finance_income_Tuition_pie = { frame = CYSY_finance_income_Tuition_percent } 
+
+			finance_income_Educhoice_pie = { frame = CYSY_finance_income_Educhoice_percent }
+
+			finance_income_Boardlodge_pie = { frame = CYSY_finance_income_Boardlodge_percent }
+
+
+			finance_expend_Salary_pie = { frame = CYSY_finance_expend_Salary_percent } 
+
+			finance_expend_Facility_pie = { frame = CYSY_finance_expend_Facility_percent }
+
+			finance_expend_Boardlodge_pie = { frame = CYSY_finance_expend_Boardlodge_percent }
+
+		}
 		triggers = {
 			horizontal_bar_red_visible = {
 				check_variable = { CYSY_Line_graph_vbars^vbar_idx = 0}     

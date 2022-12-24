@@ -6,28 +6,28 @@ start_CYSY_statistics_data = {
 		CYSY_finance_profit_data_history = 16
 	}
 	####所有的货币数据单位为万，也即我后面会给乘上10000
-	set_variable = { CYSY_finance_profit_data_history^0 = 13}
-	set_variable = { CYSY_finance_profit_data_history^1 = 15}
-	set_variable = { CYSY_finance_profit_data_history^2 = 16}
-	set_variable = { CYSY_finance_profit_data_history^3 = 14}
-	set_variable = { CYSY_finance_profit_data_history^4 = 15}
-	set_variable = { CYSY_finance_profit_data_history^5 = 14}
-	set_variable = { CYSY_finance_profit_data_history^6 = 15}
-	set_variable = { CYSY_finance_profit_data_history^7 = 10}
-	set_variable = { CYSY_finance_profit_data_history^8 = 14}
-	set_variable = { CYSY_finance_profit_data_history^9 = 12}
-	set_variable = { CYSY_finance_profit_data_history^10 = 14}
-	set_variable = { CYSY_finance_profit_data_history^11 = 15} 
-	set_variable = { CYSY_finance_profit_data_history^12 = 10}
-	set_variable = { CYSY_finance_profit_data_history^13 = -4}
-	set_variable = { CYSY_finance_profit_data_history^14 = -3}
+	set_variable = { CYSY_finance_profit_data_history^0 = 63}
+	set_variable = { CYSY_finance_profit_data_history^1 = 89}
+	set_variable = { CYSY_finance_profit_data_history^2 = 98}
+	set_variable = { CYSY_finance_profit_data_history^3 = 80}  
+	set_variable = { CYSY_finance_profit_data_history^4 = 75}
+	set_variable = { CYSY_finance_profit_data_history^5 = 115}
+	set_variable = { CYSY_finance_profit_data_history^6 = 84}
+	set_variable = { CYSY_finance_profit_data_history^7 = 98}
+	set_variable = { CYSY_finance_profit_data_history^8 = 94}
+	set_variable = { CYSY_finance_profit_data_history^9 = 93}
+	set_variable = { CYSY_finance_profit_data_history^10 = 62}
+	set_variable = { CYSY_finance_profit_data_history^11 = 75} 
+	set_variable = { CYSY_finance_profit_data_history^12 = 100}
+	set_variable = { CYSY_finance_profit_data_history^13 = 54}
+	set_variable = { CYSY_finance_profit_data_history^14 = 13}
 	set_variable = { CYSY_finance_profit_data_history^15 = -20}
 	for_loop_effect = {
 		start = 0
-		end = 16
-		value = i
-		multiply_variable = {CYSY_finance_profit_data_history^i = 10000}
-	}
+		end = 16 
+		value = i 
+		multiply_variable = {CYSY_finance_profit_data_history^i = 1}
+	} 
 
 	clear_array = CYSY_graph_months
 	set_variable = { CYSY_graph_months^0 = -2 } #1960.10
@@ -38,7 +38,7 @@ start_CYSY_statistics_data = {
 	set_variable = { CYSY_graph_months^5 = 3 }
 	set_variable = { CYSY_graph_months^6 = 4 }
 	set_variable = { CYSY_graph_months^7 = 5 }
-	set_variable = { CYSY_graph_months^8 = 6 }
+	set_variable = { CYSY_graph_months^8 = 6 } 
 	set_variable = { CYSY_graph_months^9 = 7 }
 	set_variable = { CYSY_graph_months^10 = 8 }
 	set_variable = { CYSY_graph_months^11 = 9 }
@@ -48,6 +48,30 @@ start_CYSY_statistics_data = {
 	set_variable = { CYSY_graph_months^15 = 13 } #1962 
 	set_variable = { CYSY_standard_year = 61} #标准年/去年是1961
 	CYSY_draw_the_graph = yes
+
+
+
+	#set_variable = { CYSY_finance_income_Tuition = 13212 }
+	#set_variable = { CYSY_finance_income_Educhoice = 8335 }
+	#set_variable = { CYSY_finance_income_Boardlodge = 1461.45 }
+	#set_variable = { CYSY_finance_income_Other = 1914.52 }
+	#set_variable = { CYSY_finance_expend_Salary = 12578 }
+	#set_variable = { CYSY_finance_expend_Facility = 7123 }
+	#set_variable = { CYSY_finance_expend_Boardlodge = 2567.32 }
+	#set_variable = { CYSY_finance_expend_Other = 2348.45 }
+
+	set_variable = { CYSY_finance_income_Tuition = 1902.24 }
+	set_variable = { CYSY_finance_income_Educhoice = 1444.58 }
+	set_variable = { CYSY_finance_income_Boardlodge = 121.78 }
+	set_variable = { CYSY_finance_income_Other = 159.54 }
+
+	set_variable = { CYSY_finance_expend_Salary = 1648.16 }
+	set_variable = { CYSY_finance_expend_Facility = 1593.58 }
+	set_variable = { CYSY_finance_expend_Boardlodge = 213.93 }
+	set_variable = { CYSY_finance_expend_Other = 195.70 }
+
+
+
 
 }
 start_CYSY_map_control = {

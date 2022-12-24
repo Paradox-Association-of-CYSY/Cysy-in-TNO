@@ -26,6 +26,7 @@ scripted_gui = {
 					limit = { has_country_flag = CYSY_Map_GUI_open_flag }
 					clr_country_flag = CYSY_Map_GUI_open_flag
 				}
+				
 			}
 		}
 	}
@@ -43,11 +44,13 @@ scripted_gui = {
 					limit = { NOT = { has_country_flag = CYSY_statistics_GUI_open_flag } }
 					set_country_flag = CYSY_statistics_GUI_open_flag
 					set_variable = { CYSY_statistics_button_frame = 2}
+					CYSY_update_finance_statistics = yes
 				}
 				else_if = {
 					limit = { has_country_flag = CYSY_statistics_GUI_open_flag }
 					clr_country_flag = CYSY_statistics_GUI_open_flag
 					set_variable = { CYSY_statistics_button_frame = 1}
+					CYSY_update_finance_statistics  = yes
 				}
 			}
 		}

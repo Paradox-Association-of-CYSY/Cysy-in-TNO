@@ -65,7 +65,104 @@ complete_now_CYSY_building_constructing = {
 		country_event = { id = cysyxx.1001 }
 	}
 }
+
+
+
+
+
+
+
+#################################
+###########刷新经济界面###########
+#################################
+CYSY_update_finance_statistics = {
+
+	set_variable = { CYSY_finance_income_sum = CYSY_finance_income_Tuition }
+	add_to_variable = { CYSY_finance_income_sum = CYSY_finance_income_Educhoice }
+	add_to_variable = { CYSY_finance_income_sum = CYSY_finance_income_Boardlodge }
+	add_to_variable = { CYSY_finance_income_sum = CYSY_finance_income_Other }
+
+	set_variable = { CYSY_finance_expend_sum = CYSY_finance_expend_Salary }
+	add_to_variable = { CYSY_finance_expend_sum = CYSY_finance_expend_Facility }
+	add_to_variable = { CYSY_finance_expend_sum = CYSY_finance_expend_Boardlodge }
+	add_to_variable = { CYSY_finance_expend_sum = CYSY_finance_expend_Other }
+
+	set_variable = { CYSY_finance_current_profit = CYSY_finance_income_sum}
+	subtract_from_variable = { CYSY_finance_current_profit = CYSY_finance_expend_sum}
+
+	set_variable = { CYSY_finance_profit_decoration_line_frame = 2 }
+	if = {
+		limit = {
+			check_variable = { CYSY_finance_current_profit < 0 } 
+		}
+		set_variable = { CYSY_finance_profit_decoration_line_frame = 1 }
+	}
+	
+
+	CYSY_draw_the_graph = yes
+	CYSY_update_finance_statistics = yes
+}
+
+############绘制饼状图
+CYSY_update_finance_statistics = {
+	set_variable = { CYSY_finance_income_Tuition_percent = CYSY_finance_income_Tuition }
+	
+	set_variable = { CYSY_finance_income_Educhoice_percent = CYSY_finance_income_Tuition_percent }
+	add_to_variable = { CYSY_finance_income_Educhoice_percent = CYSY_finance_income_Educhoice }
+	
+	set_variable = { CYSY_finance_income_Boardlodge_percent = CYSY_finance_income_Educhoice_percent }
+	add_to_variable = { CYSY_finance_income_Boardlodge_percent = CYSY_finance_income_Boardlodge }
+	
+	divide_variable = { CYSY_finance_income_Tuition_percent = CYSY_finance_income_sum }
+	multiply_variable = { CYSY_finance_income_Tuition_percent = 100 }
+	round_variable = CYSY_finance_income_Tuition_percent
+ 
+	divide_variable = { CYSY_finance_income_Boardlodge_percent = CYSY_finance_income_sum }
+	multiply_variable= { CYSY_finance_income_Boardlodge_percent = 100 }
+	round_variable = CYSY_finance_income_Boardlodge_percent
+	
+	divide_variable = { CYSY_finance_income_Educhoice_percent = CYSY_finance_income_sum } 
+	multiply_variable= { CYSY_finance_income_Educhoice_percent = 100 }
+	round_variable = CYSY_finance_income_Educhoice_percent 
+
+
+
+
+
+	
+	set_variable = { CYSY_finance_expend_Salary_percent = CYSY_finance_expend_Salary }
+	
+	set_variable = { CYSY_finance_expend_Facility_percent = CYSY_finance_expend_Salary_percent }
+	add_to_variable = { CYSY_finance_expend_Facility_percent = CYSY_finance_expend_Facility }
+	
+	set_variable = { CYSY_finance_expend_Boardlodge_percent = CYSY_finance_expend_Facility_percent }
+	add_to_variable = { CYSY_finance_expend_Boardlodge_percent = CYSY_finance_expend_Boardlodge }
+	
+	divide_variable = { CYSY_finance_expend_Salary_percent = CYSY_finance_expend_sum }
+	multiply_variable = { CYSY_finance_expend_Salary_percent = 100 }
+	round_variable = CYSY_finance_expend_Salary_percent
+ 
+	divide_variable = { CYSY_finance_expend_Boardlodge_percent = CYSY_finance_expend_sum }
+	multiply_variable= { CYSY_finance_expend_Boardlodge_percent = 100 }
+	round_variable = CYSY_finance_expend_Boardlodge_percent
+	
+	divide_variable = { CYSY_finance_expend_Facility_percent = CYSY_finance_expend_sum } 
+	multiply_variable= { CYSY_finance_expend_Facility_percent = 100 }
+	round_variable = CYSY_finance_expend_Facility_percent 
+
+}
+
+############绘制折线统计图
 CYSY_draw_the_graph = {
+	
+	###处理月份
+	set_variable = { CYSY_TYBLY_year = -1} #前年是1961
+	set_variable = { CYSY_NOW_year = 1} #今年是1961
+
+	add_to_variable = { CYSY_TYBLY_year = CYSY_standard_year}
+	add_to_variable = { CYSY_NOW_year = CYSY_standard_year}
+	#负数部分为标准年的前一年，大于13的部分为标准年的后一年
+	
 	CYSY_develop_ready_graph = yes
 	###处理月份
 	set_variable = { CYSY_TYBLY_year = -1} #前年是1961
@@ -164,7 +261,7 @@ CYSY_develop_ready_graph = {
 		limit = {
 			check_variable = { range < 300 }
 		}
-		set_temp_variable = { unit = 50 }
+		set_temp_variable = { unit = 25 }
 	}
 	else_if = {
 		limit = {
@@ -182,7 +279,7 @@ CYSY_develop_ready_graph = {
 		limit = {
 			check_variable = { range < 3000 }
 		}
-		set_temp_variable = { unit = 500 }
+		set_temp_variable = { unit = 250 }
 	}
 	else_if = {
 		limit = {
@@ -200,7 +297,7 @@ CYSY_develop_ready_graph = {
 		limit = {
 			check_variable = { range < 30000 }
 		}
-		set_temp_variable = { unit = 5000 }
+		set_temp_variable = { unit = 2500 }
 	}
 	else_if = {
 		limit = {
@@ -218,7 +315,13 @@ CYSY_develop_ready_graph = {
 		limit = {
 			check_variable = { range < 100000 }
 		}
-		set_temp_variable = { unit = 11500 }
+		set_temp_variable = { unit = 13500 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { range < 135000 }
+		}
+		set_temp_variable = { unit = 15000 }
 	}
 	else_if = {
 		limit = {
@@ -230,23 +333,86 @@ CYSY_develop_ready_graph = {
 		limit = { 
 			check_variable = { range < 180000 }
 		}
-		set_temp_variable = { unit = 40000 }
+		set_temp_variable = { unit = 25000 }
 	}
 	else_if = {
 		limit = {
 			check_variable = { range < 200000 }
 		}
-		set_temp_variable = { unit = 50000 }
+		set_temp_variable = { unit = 30000 }
 	}
 	else_if = {
 		limit = {
-			check_variable = { range > 200000 }
+			check_variable = { range < 600000 }
 		}
-		set_temp_variable = { unit = 85000 }
+		set_temp_variable = { unit = 100000 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { range < 800000 }
+		}
+		set_temp_variable = { unit = 200000 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { range < 1000000 }
+		}
+		set_temp_variable = { unit = 200000 }
+	}
+
+	else_if = {
+		limit = {
+			check_variable = { range < 2000000 }
+		}
+		set_temp_variable = { unit = 250000 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { range < 5000000 }
+		}
+		set_temp_variable = { unit = 800000 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { range < 8000000 }
+		}
+		set_temp_variable = { unit = 1000000 }
+	}
+
+	else_if = {
+		limit = {
+			check_variable = { range < 10000000 }
+		}
+		set_temp_variable = { unit = 2000000 }
+	}
+	
+	else_if = {
+		limit = {
+			check_variable = { range < 20000000 }
+		}
+		set_temp_variable = { unit = 4000000 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { range < 50000000 }
+		}
+		set_temp_variable = { unit = 8000000 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { range < 80000000 }
+		}
+		set_temp_variable = { unit = 10000000 }
+	}
+	else_if = {
+		limit = { 
+			check_variable = { range > 100000000 }
+		}
+		set_temp_variable = { unit = 40000000 }
 	}
 
 	divide_temp_variable = { min = unit }
-	divide_temp_variable = { max = unit }
+	divide_temp_variable = { max = unit } 
 	subtract_from_temp_variable = { min = 0.6 }
 	add_to_temp_variable = { max = 0.6 }
 	round_temp_variable = min
@@ -257,19 +423,28 @@ CYSY_develop_ready_graph = {
 
 	set_temp_variable = { range = max }
 	subtract_from_temp_variable = { range = min }
-
+	if = {
+		limit = {
+			check_variable = { min < 0 }
+		}
+		set_temp_variable = { absmin = 0}
+		subtract_from_variable = { absmin = min }
+	}
+	else = {
+		set_temp_variable = { absmin = min }
+	}
 	# Find the unit we should display next to the y axis ticks (ie K, M, B etc)
 	#给它上好我们的单位，，， (不是洋人的玩意，是万 百万 和 亿
 	set_variable = { CYSY_Line_graph_display_unit = CYSY_Line_graph_base_unit }
-	set_temp_variable = { divisor = 10000 } #基础是万
+	set_temp_variable = { divisor = 1 } #基础是万
 	while_loop_effect = {
 		limit = {
-			check_variable = { divisor < min } 
+			check_variable = { divisor < absmin } 
 		}
-		multiply_temp_variable = { divisor = 100 } #100万=1百万#100百万=亿
+		multiply_temp_variable = { divisor = 10000 } #100万=1百万#100百万=亿
 		add_to_variable = { CYSY_Line_graph_display_unit = 1 }
 	}
-
+	#divide_temp_variable = { divisor = 100 }
 	# Generate the y axis ticks for our graph
 	divide_temp_variable = { range = 100 }
 	set_temp_variable = { m2 = max }
@@ -280,7 +455,7 @@ CYSY_develop_ready_graph = {
 			check_variable = { k < m2 }
 		}
 		set_temp_variable = { label = k}
-		divide_temp_variable = { label = 10000 }
+		divide_temp_variable = { label = divisor }
 		add_to_array = { CYSY_Line_graph_vbars = label }
  
 		set_temp_variable = { offset = k }

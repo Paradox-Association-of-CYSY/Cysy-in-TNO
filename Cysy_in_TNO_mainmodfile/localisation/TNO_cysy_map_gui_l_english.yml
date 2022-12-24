@@ -59,9 +59,18 @@
  statistics_tabs_2_text:0 "教育"
 
  statistics_finance_income_title:0 "收入"
- statistics_finance_income_details_txt:0 "§B学费收入§!\n§W???.??M§!\n§n赞助收入\n§W???.??M§!\n§Q食宿收入§!\n§W???.??M§!\n§I杂项收入§!\n§W???.??M§!"   
+ statistics_finance_income_details_txt:0 "§B学费收入§!\n§W[?CYSY_finance_income_Tuition|2]万§!\n§n赞助收入\n§W[?CYSY_finance_income_Educhoice|2]万§!\n§Q食宿收入§!\n§W[?CYSY_finance_income_Boardlodge|2]万§!\n§I杂项收入§!\n§W[?CYSY_finance_income_Other|2]万 §!"   
  statistics_finance_expend_title:0 "支出" 
- statistics_finance_expend_details_txt:0 "§S教职工资§!\n§W???.??M§!\n§w设施维护§!\n§W???.??M§!\n§O食宿管理§!\n§W???.??M§!\n§l杂项支出§!\n§W???.??M§!" 
+ statistics_finance_expend_details_txt:0 "§S教职工资§!\n§W[?CYSY_finance_expend_Salary|2]万§!\n§w设施维护§!\n§W[?CYSY_finance_expend_Facility|2]万§!\n§O食宿管理§!\n§W[?CYSY_finance_expend_Boardlodge|2]万§!\n§l杂项支出§!\n§W[?CYSY_finance_expend_Other|2]万§!" 
+ #学费收入 [?CYSY_finance_income_Tuition]
+ #赞助收入 [?CYSY_finance_income_Educhoice]
+ #食宿收入 [?CYSY_finance_income_Boardlodge]
+ #杂项收入 [?CYSY_finance_income_Other]
+
+ #教职工资 [?CYSY_finance_expend_Salary]
+ #设施维护 [?CYSY_finance_expend_Facility]
+ #食宿管理 [?CYSY_finance_expend_Boardlodge]
+ #杂项支出 [?CYSY_finance_expend_Other]
 
  CYSY_graph_label_month_1:0 "一月"
  CYSY_graph_label_month_2:0 "二月"
@@ -88,6 +97,13 @@
  CYSY_graph_label_unit_m:0 "百万"
  CYSY_graph_label_unit_y:0 "亿"
  CYSY_graph_label_unit_pct:0 "%"
+
+ CYSY_finance_income_title_tt:0 "§G月收入:§!§W[?CYSY_finance_income_sum|2]万§!" 
+ CYSY_finance_expend_title_tt:0 "§R月支出:§!§W[?CYSY_finance_expend_sum|2]万§!"
+ CYSY_finance_profit_title_tt:0 "[getCYSY_finance_profit_title]"
+
+ CYSY_finance_profit_green_number:0 "§G正在盈利§!\n§W[?CYSY_finance_current_profit|2]万§!"
+ CYSY_finance_profit_red_number:0 "§R正在亏损§!\n§W[?CYSY_finance_current_profit|2]万§!"
 
  CYSY_finance_graph_line_title_tt:0 "§G利润§!统计图"
  

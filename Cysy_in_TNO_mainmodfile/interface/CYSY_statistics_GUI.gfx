@@ -8,8 +8,15 @@ spriteTypes = {
 		texturefile = "gfx/interface/CYSY_statistics_gui/tabs/statistics_tabs_layer.png"
 		noOfFrames = 2
 	}
+
 	spriteType = {
-		name = "GFX_CYSY_finance_pie_colors_legend" 
+		name = "GFX_CYSY_finance_profit_decoration_line"
+		texturefile = "gfx/interface/CYSY_statistics_gui/finance_profit_decoration_line.png"
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		name = "GFX_CYSY_finance_pie_colors_legend"  
 		texturefile = "gfx/interface/CYSY_statistics_gui/finance/finance_pie_colors_legend.png"
 	}
 	#progressbartype = {
@@ -58,4 +65,62 @@ spriteTypes = {
 	#	}
 	#	effectFile = "gfx/FX/line_graph_2.lua"
 	#}
+	progressbartype = {
+		name = "GFX_pie_chart_CYSY_finance_income_Tuition"
+		textureFile1 = "gfx/interface/economy_gui/pie_chart/income_revenue.dds"
+		textureFile2 = "gfx/interface/economy_gui/pie_chart/empty_pie.dds"
+		size = { x = 150 y = 150 }
+		effectFile = "gfx/FX/progress_radial.lua"
+	}
+	progressbartype = {
+		name = "GFX_pie_chart_CYSY_finance_income_Educhoice"
+		textureFile1 = "gfx/interface/economy_gui/pie_chart/business_revenue.dds"
+		textureFile2 = "gfx/interface/economy_gui/pie_chart/empty_pie.dds"
+		size = { x = 150 y = 150 }
+		effectFile = "gfx/FX/progress_radial.lua"
+	}
+	progressbartype = {
+		name = "GFX_pie_chart_CYSY_finance_income_Boardlodge"
+		textureFile1 = "gfx/interface/economy_gui/pie_chart/excise_revenue.dds"
+		textureFile2 = "gfx/interface/economy_gui/pie_chart/empty_pie.dds"
+		size = { x = 150 y = 150 }
+		effectFile = "gfx/FX/progress_radial.lua"
+	}
+	progressbartype = {
+		name = "GFX_pie_chart_CYSY_finance_income_Other"
+		textureFile1 = "gfx/interface/economy_gui/pie_chart/other_revenue.dds"
+		textureFile2 = "gfx/interface/economy_gui/pie_chart/empty_pie.dds"
+		size = { x = 150 y = 150 }
+		effectFile = "gfx/FX/progress_radial.lua"
+	}
+
+	progressbartype = {
+		name = "GFX_pie_chart_CYSY_finance_expend_Salary"
+		textureFile1 = "gfx/interface/economy_gui/pie_chart/military_expenditures.dds"
+		textureFile2 = "gfx/interface/economy_gui/pie_chart/empty_pie.dds"
+		size = { x = 150 y = 150 }
+		effectFile = "gfx/FX/progress_radial.lua"
+	}
+	progressbartype = {
+		name = "GFX_pie_chart_CYSY_finance_expend_Facility"
+		textureFile1 = "gfx/interface/economy_gui/pie_chart/civilian_expenditures.dds"
+		textureFile2 = "gfx/interface/economy_gui/pie_chart/empty_pie.dds"
+		size = { x = 150 y = 150 }
+		effectFile = "gfx/FX/progress_radial.lua"
+	}
+	progressbartype = { 
+		name = "GFX_pie_chart_CYSY_finance_expend_Boardlodge"
+		textureFile1 = "gfx/interface/economy_gui/pie_chart/debt_expenditures.dds"
+		textureFile2 = "gfx/interface/economy_gui/pie_chart/empty_pie.dds"
+		size = { x = 150 y = 150 }
+		effectFile = "gfx/FX/progress_radial.lua"
+	}
+
+	progressbartype = { 
+		name = "GFX_pie_chart_CYSY_finance_expend_Other" 
+		textureFile1 = "gfx/interface/economy_gui/pie_chart/misc_expenditures.dds"
+		textureFile2 = "gfx/interface/economy_gui/pie_chart/empty_pie.dds"
+		size = { x = 150 y = 150 }
+		effectFile = "gfx/FX/progress_radial.lua"
+	}
 }
