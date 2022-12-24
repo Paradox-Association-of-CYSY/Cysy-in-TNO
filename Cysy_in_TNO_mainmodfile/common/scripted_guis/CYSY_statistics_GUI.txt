@@ -107,8 +107,32 @@ scripted_gui = {
 
 		}
 		triggers = {
+
 			horizontal_bar_red_visible = {
 				check_variable = { CYSY_Line_graph_vbars^vbar_idx = 0}     
+			}
+
+			CYSY_finance_parent_company_interact_reward_visible = {
+				check_variable = { CYSY_finance_current_cash_reserve > 25}    
+			} 
+			finance_warnings_icon_Negative_profit_active_visible = {
+				check_variable = { CYSY_finance_current_profit < 0 }
+			}
+
+			finance_warnings_icon_Overindebtedness_active_visible = {
+				always = no
+			}
+
+			finance_warnings_icon_Bankrupt_active_visible = {
+				always = no
+			}
+
+			finance_warnings_icon_Disinvestment_active_visible = {
+				always = no
+			}
+
+			finance_warnings_icon_Cash_overholding_active_visible = {
+				check_variable = { CYSY_finance_current_cash_reserve > 250}
 			}
 		}
 	}

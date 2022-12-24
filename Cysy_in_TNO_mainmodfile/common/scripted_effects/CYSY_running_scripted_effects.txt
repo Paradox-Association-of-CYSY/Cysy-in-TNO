@@ -93,18 +93,18 @@ CYSY_update_finance_statistics = {
 	set_variable = { CYSY_finance_profit_decoration_line_frame = 2 }
 	if = {
 		limit = {
-			check_variable = { CYSY_finance_current_profit < 0 } 
+			check_variable = { CYSY_finance_current_profit < 0 }
 		}
 		set_variable = { CYSY_finance_profit_decoration_line_frame = 1 }
 	}
 	
 
 	CYSY_draw_the_graph = yes
-	CYSY_update_finance_statistics = yes
+	CYSY_finance_statistics_draw_the_pie = yes
 }
 
 ############绘制饼状图
-CYSY_update_finance_statistics = {
+CYSY_finance_statistics_draw_the_pie = {
 	set_variable = { CYSY_finance_income_Tuition_percent = CYSY_finance_income_Tuition }
 	
 	set_variable = { CYSY_finance_income_Educhoice_percent = CYSY_finance_income_Tuition_percent }

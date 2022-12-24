@@ -196,7 +196,7 @@ guiTypes = {
                 }
             }
         }
-            ############支出############
+        ############支出############
         containerWindowType = {
             name = "CYSY_finance_expend_area"
             size = { width = 250 height = 280 } 
@@ -281,7 +281,32 @@ guiTypes = {
                 }
             }
         }
+        containerWindowType = { 
+            name = "CYSY_finance_cash_reserve_area"
+            size = { width = 250 height = 100 } 
+            position = { x = -125 y = 140 }    
+            clipping = no     
+            moveable = no
+            Orientation = CENTER
 
+            background = { 
+                name = "Background"
+                quadTextureSprite = "GFX_tiled_window_thin_border2"
+            } 
+            instantTextboxType = {
+                name = "CYSY_cash_reserve_title"
+                position = { x = 0 y = 20 }
+                font = "aldrich_32_outline" 
+                text = CYSY_cash_reserve_title_tt  
+                format = center  
+                maxWidth = 250
+                maxHeight = 220 
+            }
+            
+            
+
+        }
+    ############折线图############
         containerWindowType = {
             name = "CYSY_finance_graph_line_area"
             size = { width = 540 height = 250 }      
@@ -368,15 +393,320 @@ guiTypes = {
                     text = "CYSY_graph_label_first_label" 
                     maxWidth = 30
                     format = center
+                } 
+
+                
+            }
+            #iconType = {
+             #   name = "cash_reserve_dividerConnector_right"
+              #  quadTextureSprite = "GFX_dividerConnector" 
+               # Orientation = CENTER
+                #position = { x = 138 y = 118 }
+                #frame = 4
+            #}
+        }
+
+
+
+        containerWindowType = { 
+            name = "CYSY_finance_parent_company_area"
+            size = { width = 290 height = 310 } 
+            position = { x = 0 y = 620 }    
+            clipping = no     
+            moveable = no
+            Orientation = LEFT
+
+            background = { 
+                name = "Background"
+                quadTextureSprite = "GFX_tiled_window_thin_border2"
+            } 
+
+            containerWindowType = { 
+                name = "CYSY_finance_parent_company_text_box"
+                size = { width = 270 height = 100 } 
+                position = { x = 10 y = 10 }    
+                clipping = no     
+                moveable = no
+
+                background = { 
+                    name = "Background"
+                    quadTextureSprite = "GFX_crt_1b_tile"
+                }
+                instantTextboxType = {
+                    name = "CYSY_parent_company_title" 
+                    position = { x = 0 y = 5 }
+                    font = "aldrich_32_outline"  
+                    text = CYSY_parent_company_title_tt  
+                    format = center  
+                    maxWidth = 270
+                    maxHeight = 220 
+                }
+                instantTextboxType = {
+                    name = "CYSY_parent_company_name" 
+                    position = { x = 0 y = 35 }
+                    font = "aldrich_28_outline"
+                    text = CYSY_parent_company_name_tt  
+                    format = center   
+                    maxWidth = 270
+                    maxHeight = 220 
+                }
+                instantTextboxType = {
+                    name = "CYSY_parent_company_relationship" 
+                    position = { x = 15 y = 65 }
+                    font = "aldrich_28_outline"  
+                    text = CYSY_parent_company_relationship_tt  
+                    format = left
+                    maxWidth = 270
+                    maxHeight = 220 
                 }
             }
+            containerWindowType = { 
+                name = "CYSY_finance_parent_company_interact_box"
+                size = { width = 270 height = 150 } 
+                position = { x = -135  y = -42 } 
+                clipping = no
+                moveable = no
+                Orientation = CENTER
+
+                iconType = {
+                    name = "CYSY_finance_parent_company_interact_left"
+                    quadTextureSprite = "GFX_CYSY_statistics_finance_interact_buttom_base" 
+                    position = { x = 0 y = 0 }
+                }
+                iconType = {
+                    name = "CYSY_finance_parent_company_interact_right"
+                    quadTextureSprite = "GFX_CYSY_statistics_finance_interact_buttom_base" 
+                    position = { x = 137 y = 0  }
+                }
+                instantTextboxType = {
+                    name = "CYSY_finance_parent_company_interact_reward_txt" 
+                    position = { x = -2 y = 2 }
+                    font = "aldrich_32_outline"
+                    text = CYSY_parent_company_interact_reward_tt  
+                    format = center
+                    maxWidth = 140
+                    maxHeight = 220 
+                }
+                instantTextboxType = {
+                    name = "CYSY_finance_parent_company_interact_assistance_txt" 
+                    position = { x = 135 y = 2 }
+                    font = "aldrich_32_outline"
+                    text = CYSY_parent_company_interact_assistance_tt  
+                    format = center   
+                    maxWidth = 140
+                    maxHeight = 220 
+                } 
+                buttonType = {
+                    name = "CYSY_finance_parent_company_interact_reward"
+                    position = { x = -5 y = -5 }
+                    quadTextureSprite = "GFX_CYSY_statistics_finance_interact_buttom_available"
+                    
+                    Orientation = "UPPER_LEFT"
+                }
+
+                buttonType = {
+                    name = "CYSY_finance_parent_company_interact_assistance"
+                    position = { x = 132 y = -5 } 
+                    quadTextureSprite = "GFX_CYSY_statistics_finance_interact_buttom_available" 
+                    
+                    Orientation = "UPPER_LEFT"
+                }
+
+            }
+            containerWindowType = { 
+                name = "CYSY_finance_parent_company_icon_box"
+                size = { width = 270 height = 150 } 
+                position = { x = -135  y = -5 } 
+                clipping = no
+                moveable = no
+                Orientation = CENTER
+                background = { 
+                    name = "Background"
+                    quadTextureSprite = "GFX_crt_2b_tile"
+                }
+            }
+            iconType = {
+                name = "finance_parent_company_Jp"
+                quadTextureSprite = "GFX_CYSY_statistics_finance_parent_company_Jp" 
+                position = { x = -120  y = 0 } 
+                Orientation = CENTER
+            }
+            
+        } 
+
+
+
+        containerWindowType = { 
+            name = "CYSY_finance_warnings_area"
+            size = { width = 290 height = 310 } 
+            position = { x = 535 y = 620 }    
+            clipping = no     
+            moveable = no
+            Orientation = RIGHT
+
+            background = { 
+                name = "Background"
+                quadTextureSprite = "GFX_tiled_window_thin_border2"
+            }  
+            iconType = {
+                name = "finance_warnings_display_windows"
+                quadTextureSprite = "GFX_CYSY_statistics_finance_warnings_display_windows" 
+                position = { x = -138  y = -111 }  
+                Orientation = CENTER
+            }
+            
+            iconType = {
+                name = "finance_warnings_area_head"
+                quadTextureSprite = "GFX_CYSY_statistics_finance_warnings_area_head" 
+                position = { x = -138  y = -150 }  
+                Orientation = CENTER
+            }
+           
+            instantTextboxType = {
+                name = "CYSY_warnings_title"
+                position = { x = 0 y = 10 }
+                font = "Bomb_32"
+                text = TNO_Econ_Warning_alerts_title_tt
+                maxWidth = 290
+                maxHeight = 20
+                format = center
+            }
+            ##############
+
+            iconType = {
+                name = "finance_warnings_icon_Negative_profit_inactive"
+                quadTextureSprite = "GFX_CYSY_statistics_finance_warnings_icon_Negative_profit_inactive" 
+                position = { x = -135  y = -110 }  
+                Orientation = CENTER
+            }
+
+            iconType = {
+                name = "finance_warnings_icon_Overindebtedness_inactive"
+                quadTextureSprite = "GFX_CYSY_statistics_finance_warnings_icon_Overindebtedness_inactive" 
+                position = { x = 4  y = -110 }  
+                Orientation = CENTER
+            }
+
+            iconType = {
+                name = "finance_warnings_icon_Bankrupt_inactive"
+                quadTextureSprite = "GFX_CYSY_statistics_finance_warnings_icon_Bankrupt_inactive" 
+                position = { x = -135  y = -25 }  
+                Orientation = CENTER
+            }
+
+            iconType = {
+                name = "finance_warnings_icon_Disinvestment_inactive"
+                quadTextureSprite = "GFX_CYSY_statistics_finance_warnings_icon_Disinvestment_inactive" 
+                position = { x = 4  y = -25 }  
+                Orientation = CENTER
+            }
+
+            iconType = {
+                name = "finance_warnings_icon_Cash_overholding_inactive"
+                quadTextureSprite = "GFX_CYSY_statistics_finance_warnings_icon_Cash_overholding_inactive" 
+                position = { x = -135  y = 61 }  
+                Orientation = CENTER
+            }
+            ############
+            iconType = {
+                name = "finance_warnings_icon_Negative_profit_active"
+                quadTextureSprite = "GFX_CYSY_statistics_finance_warnings_icon_Negative_profit_active" 
+                position = { x = -135  y = -110 }  
+                Orientation = CENTER
+            }
+
+            iconType = {
+                name = "finance_warnings_icon_Overindebtedness_active"
+                quadTextureSprite = "GFX_CYSY_statistics_finance_warnings_icon_Overindebtedness_active" 
+                position = { x = 4  y = -110 }  
+                Orientation = CENTER
+            }
+
+            iconType = {
+                name = "finance_warnings_icon_Bankrupt_active"
+                quadTextureSprite = "GFX_CYSY_statistics_finance_warnings_icon_Bankrupt_active" 
+                position = { x = -135  y = -25 }  
+                Orientation = CENTER
+            }
+
+            iconType = {
+                name = "finance_warnings_icon_Disinvestment_active"
+                quadTextureSprite = "GFX_CYSY_statistics_finance_warnings_icon_Disinvestment_active" 
+                position = { x = 4  y = -25 }  
+                Orientation = CENTER
+            }
+
+            iconType = {
+                name = "finance_warnings_icon_Cash_overholding_active"
+                quadTextureSprite = "GFX_CYSY_statistics_finance_warnings_icon_Cash_overholding_active" 
+                position = { x = -135  y = 61 }  
+                Orientation = CENTER
+            }
+            
+            ##############
+            instantTextboxType = {
+                name = "CYSY_Negative_profit_title"
+                position = { x = -30 y = 50 }
+
+                font = "aldrich_14_outline" 
+                text = CYSY_Negative_profit_title_tt
+                maxWidth = 290
+                maxHeight = 20
+                format = center
+            }
+
+            instantTextboxType = {
+                name = "CYSY_Overindebtedness_title"
+                position = { x = 30 y = 50 }
+                font = "aldrich_14_outline" 
+                text = CYSY_Overindebtedness_title_tt
+                maxWidth = 290
+                maxHeight = 20
+                format = center
+            }
+
+            instantTextboxType = {
+                name = "CYSY_Bankrupt_title"
+                position = { x = -110 y = 135 }
+                font = "aldrich_14_outline" 
+                text = CYSY_Bankrupt_title_tt
+                maxWidth = 290
+                maxHeight = 20
+                format = center
+            }
+
+            
+
+            instantTextboxType = {
+                name = "CYSY_Disinvestment_title"
+                position = { x = 35 y = 135 }
+                font = "aldrich_14_outline" 
+                text = CYSY_Disinvestment_title_tt
+                maxWidth = 290
+                maxHeight = 20
+                format = center
+            }
+
+            instantTextboxType = {
+                name = "CYSY_Cash_overholding_title"
+                position = { x = -40 y = 220 }
+                font = "aldrich_14_outline" 
+                text = CYSY_Cash_overholding_title_tt
+                maxWidth = 290
+                maxHeight = 20
+                format = center
+            }
+
         }
     }
+    
 
 
- 
+
+
+ ####################################
     ############教育界面############
-
+####################################
     containerWindowType = {
         name = "CYSY_statistics_education_gui"
         size = { width = 825 height = 100%% }
@@ -391,7 +721,7 @@ guiTypes = {
     }
     ####################################
     ####################################
-    ############条形图玩意###############
+   ############折线图############
     ####################################
     ####################################
     containerWindowType = {

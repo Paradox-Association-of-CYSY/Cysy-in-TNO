@@ -21,7 +21,24 @@ defined_text = {
 		localization_key = CYSY_finance_profit_red_number
 	}
 }
-
+defined_text = {
+	name = getCYSY_cash_reserve_title
+	text = {
+		trigger = {
+			OR = {
+				check_variable = { CYSY_finance_current_cash_reserve > 0 }
+				check_variable = { CYSY_finance_current_cash_reserve = 0 }
+			}
+		}
+		localization_key = CYSY_cash_reserve_available
+	}
+	text = {
+		trigger = {
+			check_variable = {CYSY_finance_current_cash_reserve < 0 }
+		}
+		localization_key = CYSY_cash_reserve_in_debt
+	}
+}
 
 
 

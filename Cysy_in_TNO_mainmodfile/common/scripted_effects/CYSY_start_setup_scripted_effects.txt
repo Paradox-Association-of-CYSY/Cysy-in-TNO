@@ -70,7 +70,7 @@ start_CYSY_statistics_data = {
 	set_variable = { CYSY_finance_expend_Boardlodge = 213.93 }
 	set_variable = { CYSY_finance_expend_Other = 195.70 }
 
-
+	set_variable = { CYSY_finance_current_cash_reserve = 11.40 }
 
 
 }

@@ -3,8 +3,32 @@ spriteTypes = {
 		name = "GFX_CYSY_statistics_tabs_base"
 		texturefile = "gfx/interface/CYSY_statistics_gui/tabs/statistics_tabs_base.png"
 	}
+
 	spriteType = {
-		name = "GFX_CYSY_statistics_tabs_layer" 
+		name = "GFX_CYSY_statistics_finance_parent_company_Jp"
+		texturefile = "gfx/interface/CYSY_statistics_gui/finance/parent_company_Jp.png"
+	}
+
+	spriteType = {
+		name = "GFX_CYSY_statistics_finance_warnings_area_head"
+		texturefile = "gfx/interface/CYSY_statistics_gui/finance/finance_warnings_area_head.png"
+	} 
+
+	spriteType = {
+		name = "GFX_CYSY_statistics_finance_interact_buttom_available"
+		texturefile = "gfx/interface/CYSY_statistics_gui/finance/parent_company_interact_buttom_available.png" 
+	}
+	spriteType = {
+		name = "GFX_CYSY_statistics_finance_warnings_display_windows"
+		texturefile = "gfx/interface/CYSY_statistics_gui/finance/finance_warnings_display_windows.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_statistics_finance_interact_buttom_base"
+		texturefile = "gfx/interface/CYSY_statistics_gui/finance/parent_company_interact_buttom_base.png"
+	}
+	
+	spriteType = {
+		name = "GFX_CYSY_statistics_tabs_layer"  
 		texturefile = "gfx/interface/CYSY_statistics_gui/tabs/statistics_tabs_layer.png"
 		noOfFrames = 2
 	}
@@ -19,7 +43,7 @@ spriteTypes = {
 		name = "GFX_CYSY_finance_pie_colors_legend"  
 		texturefile = "gfx/interface/CYSY_statistics_gui/finance/finance_pie_colors_legend.png"
 	}
-	#progressbartype = {
+	#progressbartype = { 
 	#	name = "GFX_CYSY_finance_line_segment"
 	#	textureFile1 = "gfx/interface/line_graph/graph_line_full_green.dds"
 	#	textureFile2 = "gfx/interface/line_graph/graph_line_empty.dds"
@@ -122,5 +146,48 @@ spriteTypes = {
 		textureFile2 = "gfx/interface/economy_gui/pie_chart/empty_pie.dds"
 		size = { x = 150 y = 150 }
 		effectFile = "gfx/FX/progress_radial.lua"
+	}
+
+	###
+	spriteType = {
+		name = "GFX_CYSY_statistics_finance_warnings_icon_Bankrupt_active"
+		texturefile = "gfx/interface/CYSY_statistics_gui/finance/warnings_icon_Bankrupt_active.png" 
+	}
+	spriteType = {
+		name = "GFX_CYSY_statistics_finance_warnings_icon_Negative_profit_active"
+		texturefile = "gfx/interface/CYSY_statistics_gui/finance/warnings_icon_Negative_profit_active.png" 
+	}
+	spriteType = {
+		name = "GFX_CYSY_statistics_finance_warnings_icon_Disinvestment_active"
+		texturefile = "gfx/interface/CYSY_statistics_gui/finance/warnings_icon_Disinvestment_active.png" 
+	}
+	spriteType = {
+		name = "GFX_CYSY_statistics_finance_warnings_icon_Cash_overholding_active"
+		texturefile = "gfx/interface/CYSY_statistics_gui/finance/warnings_icon_Cash_overholding_active.png" 
+	}
+	spriteType = {
+		name = "GFX_CYSY_statistics_finance_warnings_icon_Overindebtedness_active"
+		texturefile = "gfx/interface/CYSY_statistics_gui/finance/warnings_icon_Overindebtedness_active.png" 
+	}
+
+	spriteType = {
+		name = "GFX_CYSY_statistics_finance_warnings_icon_Bankrupt_inactive"
+		texturefile = "gfx/interface/CYSY_statistics_gui/finance/warnings_icon_Bankrupt_inactive.png" 
+	}
+	spriteType = {
+		name = "GFX_CYSY_statistics_finance_warnings_icon_Negative_profit_inactive"
+		texturefile = "gfx/interface/CYSY_statistics_gui/finance/warnings_icon_Negative_profit_inactive.png" 
+	}
+	spriteType = {
+		name = "GFX_CYSY_statistics_finance_warnings_icon_Disinvestment_inactive"
+		texturefile = "gfx/interface/CYSY_statistics_gui/finance/warnings_icon_Disinvestment_inactive.png" 
+	}
+	spriteType = {
+		name = "GFX_CYSY_statistics_finance_warnings_icon_Cash_overholding_inactive"
+		texturefile = "gfx/interface/CYSY_statistics_gui/finance/warnings_icon_Cash_overholding_inactive.png" 
+	} 
+	spriteType = {
+		name = "GFX_CYSY_statistics_finance_warnings_icon_Overindebtedness_inactive"
+		texturefile = "gfx/interface/CYSY_statistics_gui/finance/warnings_icon_Overindebtedness_inactive.png" 
 	}
 }
