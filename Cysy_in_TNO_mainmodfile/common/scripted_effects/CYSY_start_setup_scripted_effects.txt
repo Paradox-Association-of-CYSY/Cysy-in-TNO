@@ -3,7 +3,7 @@ start_CYSY_statistics_data = {
 	set_country_flag = CYSY_statistics_finance_window
 	clear_array = CYSY_finance_profit_data_history
 	resize_array = {
-		CYSY_finance_profit_data_history = 17
+		CYSY_finance_profit_data_history = 16
 	}
 	####所有的货币数据单位为万，也即我后面会给乘上10000
 	set_variable = { CYSY_finance_profit_data_history^0 = 13}
@@ -17,12 +17,11 @@ start_CYSY_statistics_data = {
 	set_variable = { CYSY_finance_profit_data_history^8 = 14}
 	set_variable = { CYSY_finance_profit_data_history^9 = 12}
 	set_variable = { CYSY_finance_profit_data_history^10 = 14}
-	set_variable = { CYSY_finance_profit_data_history^11 = 15}
+	set_variable = { CYSY_finance_profit_data_history^11 = 15} 
 	set_variable = { CYSY_finance_profit_data_history^12 = 10}
 	set_variable = { CYSY_finance_profit_data_history^13 = -4}
 	set_variable = { CYSY_finance_profit_data_history^14 = -3}
 	set_variable = { CYSY_finance_profit_data_history^15 = -20}
- 
 	for_loop_effect = {
 		start = 0
 		end = 16
@@ -44,11 +43,11 @@ start_CYSY_statistics_data = {
 	set_variable = { CYSY_graph_months^10 = 8 }
 	set_variable = { CYSY_graph_months^11 = 9 }
 	set_variable = { CYSY_graph_months^12 = 10 }
-	set_variable = { CYSY_graph_months^13 = 11 }
+	set_variable = { CYSY_graph_months^13 = 11 }    
 	set_variable = { CYSY_graph_months^14 = 12 }
-	aset_variable = { CYSY_graph_months^15 = 13 } #1962
-	CYSY_draw_the_graph = yes
+	set_variable = { CYSY_graph_months^15 = 13 } #1962 
 	set_variable = { CYSY_standard_year = 61} #标准年/去年是1961
+	CYSY_draw_the_graph = yes
 
 }
 start_CYSY_map_control = {
@@ -137,5 +136,5 @@ start_CYSY_map_control = {
 	update_stability_status = yes
 	start_CYSY_CbtF_initialization = yes
 	set_country_flag = CYSY_statistice_finance_window
-	
+	start_CYSY_statistics_data = yes
 }

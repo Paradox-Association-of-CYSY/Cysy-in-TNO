@@ -17,7 +17,6 @@ set_country_flag = CYSY_map_controler_data_ZJC_chosen
 set_country_flag = CYSY_jbzx_has_not_appear
 set_country_flag = CYS_is_A_Campus
 start_CYSY_map_control = yes
-start_CYSY_statistics_data = yes 
 CYSY_debug_modding = yes
 ###Playable
 set_country_flag = tno_playable_country

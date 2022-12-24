@@ -161,7 +161,7 @@ guiTypes = {
                 quadTextureSprite = "GFX_crt_2b_tile"
             }
  
-            containerWindowType = { 
+            containerWindowType = {  
                 name = "CYSY_finance_expend_details"
                 size = { width = 140 height = 220 } 
                 position = { x = -140 y = 20 }   
@@ -189,19 +189,32 @@ guiTypes = {
 
         containerWindowType = {
             name = "CYSY_finance_graph_line_area"
-            size = { width = 500 height = 250 } 
-            position = { x = -250 y = -100 }   
-            clipping = no 
+            size = { width = 540 height = 250 }      
+            position = { x = -270 y = -100 }   
+            clipping = no  
             moveable = no
             Orientation = CENTER
 
-            #background = {
-            #    name = "Background"
-            #    quadTextureSprite = "GFX_tiled_window_thin_border2"
-            #}
+            background = {
+                name = "Background"
+                quadTextureSprite = "GFX_tiled_window_thin_border2"
+            }
+
+            instantTextBoxType = {
+				name = "CYSY_finance_graph_line_title" 
+				position = { x = 30 y = 20` }
+				maxWidth = 480
+				maxHeight = 53
+				format = center
+				orientation = UP_CENTER
+				font = "aldrich_32_outline"
+				text = "CYSY_finance_graph_line_title_tt"
+				alwaystransparent = yes
+			}
+
             containerWindowType = { 
                 name = "line_graph"
-                position = { x = 0 y = 0 }
+                position = { x = 80 y = 60 }
                 instantTextBoxType = {
                     name = "econ_title"	
                     position = { x = 0 y = -26 }
@@ -213,6 +226,14 @@ guiTypes = {
                     text = "[CYSY_Line_graph_title]"
                     alwaystransparent = yes
                 }
+                gridboxtype = {
+                    name = "vbars" 
+                    position = { x = 145 y = 150 }
+                    size = { width = 0 height = 300 }
+                    slotsize = { width = 300 height = 1 }
+                    max_slots_horizontal = 1
+                    add_horizontal = no
+                }
                 gridboxtype = { 
                     name = "CYSY_line_segments"
                     position = { x = 0 y = 0 }
@@ -221,24 +242,26 @@ guiTypes = {
                     max_slots_horizontal = 16 
                     add_horizontal = yes
                 }
+                
                 gridboxtype = {
-                    name = "vbars"
-                    position = { x = 145 y = 150 }
+                    name = "vbars_right"  
+                    position = { x = 590 y = 150 }
                     size = { width = 0 height = 300 }
                     slotsize = { width = 300 height = 1 }
                     max_slots_horizontal = 1
                     add_horizontal = no
                 }
+
                 iconType = {
                     name = "vertical_bar"
                     spriteType = "GFX_BRA_Map_Graph_Vertical_Bar"
                     position = { x = 0 y = 0}
                 }
                 instantTextboxType = {
-                    name = "label"
+                    name = "label" 
                     position = { x = -15 y = 157}
                     font = "aldrich_14_outline"
-                    text = "CYSY_graph_label_x_label"
+                    text = "CYSY_graph_label_first_label" 
                     maxWidth = 30
                     format = center
                 }
@@ -265,11 +288,11 @@ guiTypes = {
  
     containerWindowType = {
         name = "CYSY_line_graph_line_segment"
-        size = { width = 25 height = 300 }
+        size = { width = 25 height = 300 }         
         position = { x = 12 y = 0 }
         iconType = {
             name = "segment"
-            spriteType = "GFX_Line_Segment"
+            spriteType = "GFX_CYSY_finance_line_segment"
             position = { x = 0 y = 0 }   
             frame = 57
         }
@@ -284,7 +307,7 @@ guiTypes = {
         iconType = {
             name = "vertical_bar"
             spriteType = "GFX_BRA_Map_Graph_Vertical_Bar"
-            position = { x = 25 y = 0}
+            position = { x = 25 y = 0} 
         } 
     }
     containerWindowType = {
@@ -293,9 +316,37 @@ guiTypes = {
         position = { x = 0 y = 0 }
         iconType = {
             name = "horizontal_bar"
-            spriteType = "GFX_BRA_Map_Graph_Horizontal_Bar"
+            spriteType = "GFX_CYSY_Map_Graph_Horizontal_Bar"
             position = { x = 0 y = 0}
         }
+
+        iconType = {
+            name = "horizontal_bar_red"
+            spriteType = "GFX_CYSY_Map_Graph_Horizontal_Bar_Red"
+            position = { x = 0 y = 0}
+        }
+
+
+        containerWindowType = {
+            name = "label_container"
+            position = { x = 0 y = -5 }
+
+            instantTextboxType = {
+                name = "horizontal_bar_label"
+                position = { x = -105 y = 0}  
+                font = "aldrich_14_outline"
+                text = "[?CYSY_Line_graph_vbars^vbar_idx|*][CYSY_Line_graph_display_unit_name]"
+                maxWidth = 100
+                format = right 
+            }
+        }
+    }
+
+    containerWindowType = {
+        name = "CYSY_line_graph_vbar_right"
+        size = { width = 300 height = 1 } 
+        position = { x = 0 y = 0 }
+
         containerWindowType = {
             name = "label_container"
             position = { x = 0 y = -5 }

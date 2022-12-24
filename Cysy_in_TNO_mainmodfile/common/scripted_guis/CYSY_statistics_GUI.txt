@@ -60,6 +60,12 @@ scripted_gui = {
 				index = vbar_idx
 			}
 
+			vbars_right = {
+				array = CYSY_Line_graph_vbars
+				change_scope = no
+				entry_container = CYSY_line_graph_vbar_right
+				index = vbar_idx
+			}
 		} 
 		properties = {
 			segment = {
@@ -68,9 +74,25 @@ scripted_gui = {
 			}
 			horizontal_bar = {
 				y = CYSY_Line_graph_vbar_offsets^vbar_idx
+			} 
+
+			
+			
+			horizontal_bar_red = {
+				y = CYSY_Line_graph_vbar_offsets^vbar_idx
 			}
+
+			
+
 			horizontal_bar_label = {
 				y = CYSY_Line_graph_vbar_offsets^vbar_idx
+			}
+			
+		}
+
+		triggers = {
+			horizontal_bar_red_visible = {
+				check_variable = { CYSY_Line_graph_vbars^vbar_idx = 0}     
 			}
 		}
 	}

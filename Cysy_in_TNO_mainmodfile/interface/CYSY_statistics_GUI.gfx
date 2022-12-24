@@ -12,15 +12,50 @@ spriteTypes = {
 		name = "GFX_CYSY_finance_pie_colors_legend" 
 		texturefile = "gfx/interface/CYSY_statistics_gui/finance/finance_pie_colors_legend.png"
 	}
+	#progressbartype = {
+	#	name = "GFX_CYSY_finance_line_segment"
+	#	textureFile1 = "gfx/interface/line_graph/graph_line_full_green.dds"
+	#	textureFile2 = "gfx/interface/line_graph/graph_line_empty.dds"
+	#	size = {
+	#		x = 25
+	#		y = 300
+	#	}     
+	#	effectFile = "gfx/FX/line_graph.lua"
+	#	horizontal = yes  
+	#}#
 	progressbartype = {
 		name = "GFX_CYSY_finance_line_segment"
 		textureFile1 = "gfx/interface/line_graph/graph_line_full_green.dds"
 		textureFile2 = "gfx/interface/line_graph/graph_line_empty.dds"
+		#textureFile1 = "gfx/interface/brazil/map/line_segment_full.dds"     
+		#textureFile2 = "gfx/interface/brazil/map/line_segment_empty.dds"
 		size = {
-			x = 20
-			y = 200
+			x = 25
+			y = 300
 		}
 		effectFile = "gfx/FX/line_graph.lua"
 		horizontal = yes
 	}
+
+	spriteType = {
+		name = "GFX_CYSY_Map_Graph_Horizontal_Bar"
+		textureFile = "gfx/interface/CYSY_statistics_gui/CYSY_graph_horizontal_bar.png"
+	}
+
+	spriteType = {
+		name = "GFX_CYSY_Map_Graph_Horizontal_Bar_Red"
+		textureFile = "gfx/interface/CYSY_statistics_gui/CYSY_graph_horizontal_bar_red.png"
+	}
+
+	#progressbartype = {
+	#	name = "GFX_CYSY_finance_line_segment"
+	#	steps = 1000000
+	#	color = { 0.015 0.200 0.250 0.0 }
+	#	colortwo = { 0.52 0.92 0.56 1 }
+	#	size = { 
+	#		x = 25
+	#		y = 300
+	#	}
+	#	effectFile = "gfx/FX/line_graph_2.lua"
+	#}
 }

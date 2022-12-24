@@ -73,16 +73,21 @@
  CYSY_graph_label_month_8:0 "八月"
  CYSY_graph_label_month_9:0 "九月"
  CYSY_graph_label_month_10:0 "十月"
- CYSY_graph_label_month_11:0 "十一月"
- CYSY_graph_label_month_12:0 "十二月"
+ CYSY_graph_label_month_11:0 "十一"
+ CYSY_graph_label_month_12:0 "十二"
 
  CYSY_graph_label_year_TYBLY:0 "[?CYSY_TYBLY_year]年"
  CYSY_graph_label_year_LAST:0 "[?CYSY_standard_year]年"
- CYSY_graph_label_year_NOW:0 "[?CYSY_NOW_year]年"
+ CYSY_graph_label_year_NOW:0 "[?CYSY_NOW_year]年" 
  CYSY_graph_label_x_label:0 "[getCYSY_graph_label_year] [getCYSY_graph_label_month]" 
+
+ CYSY_graph_label_first_label:0 "[getCYSY_graph_first_label_year] [getCYSY_graph_first_label_month]" 
 
  CYSY_graph_label_unit_none:0 ""
  CYSY_graph_label_unit_w:0 "万"
  CYSY_graph_label_unit_m:0 "百万"
  CYSY_graph_label_unit_y:0 "亿"
  CYSY_graph_label_unit_pct:0 "%"
+
+ CYSY_finance_graph_line_title_tt:0 "§G利润§!统计图"
+ 

@@ -169,38 +169,219 @@ defined_text = { ##今夕是何年？？
 	name = getCYSY_graph_label_year 
 	text = {
 		trigger = {
-			set_temp_variable = { i = segment_idx }
-			set_temp_variable = { months = CYSY_graph_months^i }
-			check_variable = { months < 1 } #就是前年
+			set_temp_variable = { i = segment_idx }add_to_temp_variable = { i = 1}   
+			set_temp_variable = { yearmonths = CYSY_graph_months^i }
+			check_variable = { yearmonths < 1 } #就是前年
 		}
 		localization_key = CYSY_graph_label_year_TYBLY #The year before last year
+	}
+
+	text = {
+			trigger = {
+				set_temp_variable = { i = segment_idx }add_to_temp_variable = { i = 1}   
+				set_temp_variable = { yearmonths = CYSY_graph_months^i } 
+				check_variable = { yearmonths > 12 } #就是今年
+			}
+		localization_key = CYSY_graph_label_year_NOW
+	}
+
+	text = {
+		trigger = {
+			set_temp_variable = { i = segment_idx }add_to_temp_variable = { i = 1}   
+			set_temp_variable = { yearmonths = CYSY_graph_months^i }
+				NOT = {
+					AND = {
+						check_variable = { yearmonths < 1 }
+						check_variable = { yearmonths > 12 } #就是去年
+					}
+				}
+			}
+		localization_key = CYSY_graph_label_year_LAST    
+	}
+}
+#########################FIRST LABEL#####################
+defined_text = { 
+	name = getCYSY_graph_first_label_year 
+	text = {
+		trigger = {
+			set_temp_variable = { i = segment_idx }add_to_temp_variable = { i = 1}   
+			set_temp_variable = { yearmonths = CYSY_graph_months^i }
+			check_variable = { yearmonths < 1 } #就是前年
+		}
+		localization_key = CYSY_graph_label_year_TYBLY #The year before last year
+	}
+
+	text = {
+			trigger = {
+				set_temp_variable = { i = segment_idx }add_to_temp_variable = { i = 1}   
+				set_temp_variable = { yearmonths = CYSY_graph_months^i } 
+				check_variable = { yearmonths > 12 } #就是今年
+			}
+		localization_key = CYSY_graph_label_year_NOW
+	}
+
+	text = {
+		trigger = {
+			set_temp_variable = { i = segment_idx }add_to_temp_variable = { i = 1}   
+			set_temp_variable = { yearmonths = CYSY_graph_months^i }
+				NOT = {
+					AND = {
+						check_variable = { yearmonths < 1 }
+						check_variable = { yearmonths > 12 } #就是去年
+					}
+				}
+			}
+		localization_key = CYSY_graph_label_year_LAST    
+	}
+}
+
+defined_text = {
+	name = getCYSY_graph_first_label_month
+	text = {
+		trigger = {
+			set_temp_variable = { i = segment_idx }
+			set_temp_variable = { months = CYSY_graph_months^i }
+			
+			add_to_temp_variable = { months = 12 }
+			modulo_temp_variable = { months = 12 }
+			check_variable = { months = 0 }
+		}
+		localization_key = CYSY_graph_label_month_12
 	}
 
 	text = {
 		trigger = {
 			set_temp_variable = { i = segment_idx }
 			set_temp_variable = { months = CYSY_graph_months^i }
-				NOT = {
-					OR = {
-						check_variable = { months < 1 }
-						check_variable = { months > 12 } #就是去年
-					}
-				}
-			}
-		localization_key = CYSY_graph_label_year_LAST
+			add_to_temp_variable = { months = 12 }
+			modulo_temp_variable = { months = 12 }
+			check_variable = { months = 1 }
+			
+			
+		}
+		localization_key = CYSY_graph_label_month_1
 	}
 
 	text = {
-			trigger = {
-				set_temp_variable = { i = segment_idx }
-				set_temp_variable = { months = CYSY_graph_months^i } 
-				check_variable = { months > 12 } #就是今年
-			}
-		localization_key = CYSY_graph_label_year_NOW
+		trigger = {
+			set_temp_variable = { i = segment_idx }
+			set_temp_variable = { months = CYSY_graph_months^i }
+			add_to_temp_variable = { months = 12 }
+			modulo_temp_variable = { months = 12 }
+			check_variable = { months = 2 }
+			
+			
+		}
+		localization_key = CYSY_graph_label_month_2
+	}
+
+	text = {
+		trigger = {
+			set_temp_variable = { i = segment_idx }
+			set_temp_variable = { months = CYSY_graph_months^i }
+			add_to_temp_variable = { months = 12 }
+			modulo_temp_variable = { months = 12 }
+			check_variable = { months = 3 }
+			
+			
+		}
+		localization_key = CYSY_graph_label_month_3
+	}
+
+	text = {
+		trigger = {
+			set_temp_variable = { i = segment_idx }
+			set_temp_variable = { months = CYSY_graph_months^i }
+			add_to_temp_variable = { months = 12 }
+				modulo_temp_variable = { months = 12 }
+				check_variable = { months = 4 }
+			
+			
+		}
+		localization_key = CYSY_graph_label_month_4
+	}
+
+	text = {
+		trigger = {
+			set_temp_variable = { i = segment_idx }
+			set_temp_variable = { months = CYSY_graph_months^i }
+			add_to_temp_variable = { months = 12 }
+			modulo_temp_variable = { months = 12 }
+			check_variable = { months = 5 }
+		}
+		localization_key = CYSY_graph_label_month_5
+	}
+
+	text = {
+		trigger = {
+			set_temp_variable = { i = segment_idx }
+			set_temp_variable = { months = CYSY_graph_months^i }
+			add_to_temp_variable = { months = 12 }
+			modulo_temp_variable = { months = 12 }
+			check_variable = { months = 6 }
+		}
+		localization_key = CYSY_graph_label_month_6
+	}
+
+	text = {
+		trigger = {
+			set_temp_variable = { i = segment_idx }
+			set_temp_variable = { months = CYSY_graph_months^i }
+			add_to_temp_variable = { months = 12 }
+			modulo_temp_variable = { months = 12 }
+			check_variable = { months = 7 }
+			
+			
+		}
+		localization_key = CYSY_graph_label_month_7
+	}
+
+	text = {
+		trigger = {
+			set_temp_variable = { i = segment_idx }
+			set_temp_variable = { months = CYSY_graph_months^i }
+			add_to_temp_variable = { months = 12 }
+			modulo_temp_variable = { months = 12 }
+			check_variable = { months = 8 }
+			
+		}
+		localization_key = CYSY_graph_label_month_8
+	}
+	text = {
+		trigger = {
+			set_temp_variable = { i = segment_idx }
+			set_temp_variable = { months = CYSY_graph_months^i }
+			add_to_temp_variable = { months = 12 }
+			modulo_temp_variable = { months = 12 }
+			check_variable = { months = 9 }
+			
+		}
+		localization_key = CYSY_graph_label_month_9
+	}        
+	text = {
+		trigger = {
+			set_temp_variable = { i = segment_idx }    
+			set_temp_variable = { months = CYSY_graph_months^i }
+			add_to_temp_variable = { months = 12 }
+			modulo_temp_variable = { months = 12 }
+			check_variable = { months = 10 }
+			
+		}
+		localization_key = CYSY_graph_label_month_10
+	}
+	text = {
+		trigger = {
+			set_temp_variable = { i = segment_idx }
+			set_temp_variable = { months = CYSY_graph_months^i }
+			add_to_temp_variable = { months = 12 }
+			modulo_temp_variable = { months = 12 }
+			check_variable = { months = 11 }
+			
+		}
+		localization_key = CYSY_graph_label_month_11
 	}
 }
-
-
+###################################################################
 defined_text = {
 	name = CYSY_Line_graph_display_unit_name 
 	text = {
